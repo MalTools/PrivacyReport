@@ -43,5 +43,9 @@ if __name__ == '__main__':
             append_messages(messages, ROLE_ASSISTANT, chat(messages))
         # else:
         print_messages(messages)
+<<<<<<< HEAD
         store_messages(messages, 'result/domain_desc_log.txt')
+=======
+        store_messages(messages, 'data/domain_log.txt')
+>>>>>>> 5663ddca6fc347aa4a0aa26b47908ac6096ced6e
         time.sleep(5)
