@@ -1,4 +1,4 @@
-# Examination and Improvements for iOS App Privacy Report
+# Examination & Improvements for iOS App Privacy Report
 
 This repository contains the first systematical study of the usability and effectiveness of the iOS App Privacy Report in real-world settings.
 Our research follows a clear and logical workflow: 
