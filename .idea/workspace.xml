@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c674e0a0-c28a-48ab-ade6-0a93279a7ca5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/cot_reasoning.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/extract_domain_info.py" beforeDir="false" afterPath="$PROJECT_DIR$/extract_domain_info.py" afterDir="false" />
     </list>
@@ -112,7 +113,7 @@
       <workItem from="1717230422194" duration="13161000" />
       <workItem from="1717381536910" duration="10472000" />
       <workItem from="1717590548639" duration="1158000" />
-      <workItem from="1717632698681" duration="1607000" />
+      <workItem from="1717632698681" duration="7410000" />
     </task>
     <servers />
   </component>

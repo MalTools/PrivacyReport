@@ -8,7 +8,7 @@ from lib import ROLE_SYSTEM, ROLE_USER, ROLE_ASSISTANT, chat, append_messages, p
 
 
 domain_list = []
-with open('data/domain_list.txt', 'r') as f:
+with open('../data/domain_list.txt', 'r') as f:
     for line in f:
         domain = line.rstrip('\n')
         domain_list.append(domain)
@@ -31,9 +31,10 @@ if __name__ == '__main__':
     append_messages(base_messages, ROLE_SYSTEM, prompt_system())
 
     statements = domain_list
+
     for sec in statements:
         messages = copy.deepcopy(base_messages)
-
+        start = time.time()
         append_messages(messages, ROLE_USER, prompt_identify(sec))
         resp = chat(messages)
         append_messages(messages, ROLE_ASSISTANT, resp)
@@ -41,7 +42,10 @@ if __name__ == '__main__':
         if 'Yes' in resp:
             append_messages(messages, ROLE_USER, prompt_extract())
             append_messages(messages, ROLE_ASSISTANT, chat(messages))
+            end = time.time()
+            print("time:", end - start)
         # else:
+
         print_messages(messages)
-        store_messages(messages, 'result/domain_desc_log.txt')
+        store_messages(messages, '../result/domain_desc_log.txt')
         time.sleep(5)
