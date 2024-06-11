@@ -18,12 +18,6 @@ client = OpenAI(
 )
 
 
-# messages=[
-#     {"role": "user", "content": "你知道鸡你太美么"},
-#     {"role": "assistant", "content": "“鸡你太美”这个词语，是近年来流行的网络语言，有着玩笑或恶搞的意味。实际上，鸡并没有美丽的外貌，它是一种常见的家禽。"},
-#     {"role": "user", "content": "那你知道蔡徐坤么"},
-# ]
-
 def chat(messages: list[dict[str, str]]) -> str:
     while True:
         try:
