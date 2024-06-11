@@ -15,17 +15,25 @@ In this repository, we provide the key data and code used in our study.
 ```
 .
 ├── README.md
+├── __pycache__
+│   └── lib.cpython-39.pyc
 ├── data
+│   ├── Jingdong-pp-segmented.txt
+│   ├── Jingdong-pp.html
+│   ├── Weibo-pp-segmented.txt
+│   ├── Weibo-pp.html
 │   └── domain_list.txt
 ├── result
 │   └── domain_desc_log.txt
 ├── src
 │   ├── cot_reasoning.py
+│   ├── crawl_privacy_policy.py
 │   ├── extract_description.py
 │   ├── extract_domain_info.py
 │   ├── extract_privacy_policy.py
 │   ├── lib.py
 │   ├── privacy_policy_segment.py
+│   └── tttt.py
 └── userstudy
     ├── Slides_FocusGroup.pdf
     └── Slides_ThinkAloud.pdf
