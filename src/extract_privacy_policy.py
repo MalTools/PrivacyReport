@@ -3,11 +3,10 @@
 
 import copy
 import time
+from lib import ROLE_SYSTEM, ROLE_USER, ROLE_ASSISTANT, chat, append_messages, print_messages, store_messages
+from input_privacy_policy import input_paragraphs
 
-from lib import ROLE_SYSTEM, ROLE_USER, ROLE_ASSISTANT, chat, append_messages, print_messages
-
-
-privacy_policy_statements = []
+privacy_policy_statements = input_paragraphs('../data/Weibo-segmented.txt')
 
 
 def prompt_system() -> str:
@@ -21,10 +20,12 @@ def prompt_identify(statements: str) -> str:
 
 
 def prompt_extract() -> str:
-    return '''Please extract each related statement and organize them in three items: <“subject”, “object”, “scenario”>.
+    return '''Please extract each related statement and organize them in three items: <"subject", "object", "scenario">.
+            subject indicates the data controller, object indicates the data type, and scenario describes the specific activities or usage with the data. 
             For example: 
             Statement in privacy policy: “To save photos, the developer will request your permission to access your photo library”.
-            Extracted items: <“developer”, “photo library”, “save photo”>.    
+            Output Extracted items: <"developer", "photo library", "save photo">.
+            If you can't extract any item, use "-". For example if you are not sure that subject is developer, output <"-", "photo library", "save photo">   
         '''
 
 
@@ -45,4 +46,5 @@ if __name__ == '__main__':
             append_messages(messages, ROLE_ASSISTANT, chat(messages))
 
         print_messages(messages)
+        store_messages(messages, '../result/Weibo_pp_log.txt')
         time.sleep(5)

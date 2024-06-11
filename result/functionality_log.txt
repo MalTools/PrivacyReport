@@ -1,14 +1,5 @@
-#!/usr/bin/env python3.9
-# -*- coding: utf-8 -*-
-
-import copy
-import time
-
-from lib import ROLE_SYSTEM, ROLE_USER, ROLE_ASSISTANT, chat, append_messages, print_messages, store_messages
-
-
-description_list = [('Jingdong',
-                     '''---买在京东 多快好省---
+[1;33msystem: [0mI need your help to summarize the main features of an app from its description.
+[1;32muser: [0mHere is a description about "Jingdong" app: ---买在京东 多快好省---
 
 -新人大礼：新人1元包邮
 
@@ -79,8 +70,11 @@ APP首页。）
 
 可通过以下方式联系我们：
 
-京东客服热线：950618'''),
-                    ('Weibo', '''在微博，随时随地，发现新鲜事；
+京东客服热线：950618
+Your task is to briefly summarize (in a few sentences) the main functionalities and services of this app.
+[1;34massistant: [0mThe "Jingdong" (JD) app offers a comprehensive shopping experience with features such as exclusive new user gifts, flash sales on genuine products, and a variety of delivery options including same-day and next-day delivery. It provides a vast selection of items from numerous categories, ensuring quick and reliable service with customer support for returns and exchanges. Additionally, the app integrates with the iPhone Health app to offer health management features, including period management, and offers valuable official subsidies, flash sales, and low-cost shipping deals. For customer support, users can contact via the provided hotline or give feedback directly through the app.
+[1;33msystem: [0mI need your help to summarize the main features of an app from its description.
+[1;32muser: [0mHere is a description about "Weibo" app: 在微博，随时随地，发现新鲜事；
 
 
 在微博，每天有数以亿计的网友在围观、分享和互动；
@@ -149,32 +143,6 @@ APP首页。）
 
 【微博直播】
 
-汇聚明星、红人、媒体热门事件等直播内容，在观看直播内容的同时可以实时与大V互动！同时，可自己发布直播微博并及时通知给你的粉丝噢！''')
-                    ]
-
-
-def prompt_system() -> str:
-    return "I need your help to summarize the main features of an app from its description."
-
-
-def prompt_extract(app: str, description: str) -> str:
-    return f'Here is a description about "{app}" app: {description}\n' \
-           f'Your task is to briefly summarize (in a few sentences) the main functionalities and services of this app.'
-
-
-if __name__ == '__main__':
-    base_messages = []
-    append_messages(base_messages, ROLE_SYSTEM, prompt_system())
-
-    statements = description_list
-
-    for sec in statements:
-        messages = copy.deepcopy(base_messages)
-        start = time.time()
-        append_messages(messages, ROLE_USER, prompt_extract(sec[0], sec[1]))
-        resp = chat(messages)
-        append_messages(messages, ROLE_ASSISTANT, resp)
-
-        print_messages(messages)
-        store_messages(messages, '../result/functionality_log.txt')
-        time.sleep(5)
+汇聚明星、红人、媒体热门事件等直播内容，在观看直播内容的同时可以实时与大V互动！同时，可自己发布直播微博并及时通知给你的粉丝噢！
+Your task is to briefly summarize (in a few sentences) the main functionalities and services of this app.
+[1;34massistant: [0mWeibo is a social media app that allows users to discover and share trending topics and events, interact with millions of users, and stay updated on news, entertainment, and various other interests through a vast array of videos and posts. Key features include a trending search list, updates from celebrities and influencers, short videos, topic communities for discussions, and personalized content recommendations. Users can post their own updates in various formats, such as text, photos, videos, and live streams. Additionally, the app offers a membership service with exclusive functionalities and enhancements available through different subscription plans.

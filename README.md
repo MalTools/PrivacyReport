@@ -15,25 +15,21 @@ In this repository, we provide the key data and code used in our study.
 ```
 .
 ├── README.md
-├── __pycache__
-│   └── lib.cpython-39.pyc
 ├── data
-│   ├── Jingdong-pp-segmented.txt
-│   ├── Jingdong-pp.html
-│   ├── Weibo-pp-segmented.txt
-│   ├── Weibo-pp.html
+│   ├── Weibo-segmented.txt
 │   └── domain_list.txt
 ├── result
-│   └── domain_desc_log.txt
+│   ├── Weibo_pp_log.txt
+│   ├── domain_desc_log.txt
+│   └── functionality_log.txt
 ├── src
 │   ├── cot_reasoning.py
-│   ├── crawl_privacy_policy.py
 │   ├── extract_description.py
 │   ├── extract_domain_info.py
 │   ├── extract_privacy_policy.py
+│   ├── input_privacy_policy.py
 │   ├── lib.py
-│   ├── privacy_policy_segment.py
-│   └── tttt.py
+│   └── process_privacy_policy.py
 └── userstudy
     ├── Slides_FocusGroup.pdf
     └── Slides_ThinkAloud.pdf
@@ -41,7 +37,18 @@ In this repository, we provide the key data and code used in our study.
 ***Note:*** This tree includes only main files. 
 
 ## Description
-Below we describe each main file in our folder.
+Below we describe each main file in our folder. The improvements include two aspects: purpose inference and domain clarification. 
+The ```src``` directory contains the main code implementation scripts, 
+and the ```data``` and ```result``` directories contain examples of the data used by the scripts and the results generated.
 
-(To update later)
+#### For Purpose Inference:
+```*_privacy_policy.py```:  These scripts handle privacy policies, including crawling, slicing, and key information extraction.
+```extract_description.py```: This script is used to extract the main functionalities of the app from its description in the App Store.
+```cot_reasoning.py```: This script uses the chain-of-thought method to infer purpose using LLM. It takes as input the 
+app functionalities, the triple statements from the privacy policy, and the call stack traces.
 
+#### For Domain Clarification
+```extract_domain_info.py```: This script uses LLM to identify information about a domain name.
+
+#### User Study
+```Slides_*```: The key presentations we use when launching user studies such as focus group discussions and Think Aloud study.
