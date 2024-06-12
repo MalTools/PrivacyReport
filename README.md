@@ -16,17 +16,20 @@ In this repository, we provide the key data and code used in our study.
 .
 ├── README.md
 ├── data
+│   ├── Weibo-description.txt
 │   ├── Weibo-segmented.txt
 │   └── domain_list.txt
 ├── result
 │   ├── Weibo_pp_log.txt
 │   ├── domain_desc_log.txt
-│   └── functionality_log.txt
+│   ├── functionality_log.txt
+│   └── inference_res.xlsx
 ├── src
 │   ├── cot_reasoning.py
 │   ├── extract_description.py
 │   ├── extract_domain_info.py
 │   ├── extract_privacy_policy.py
+│   ├── hook_sensitive_api.js
 │   ├── input_privacy_policy.py
 │   ├── lib.py
 │   └── process_privacy_policy.py
@@ -44,6 +47,7 @@ and the ```data``` and ```result``` directories contain examples of the data use
 #### For Purpose Inference:
 ```*_privacy_policy.py```:  These scripts handle privacy policies, including crawling, slicing, and key information extraction.
 ```extract_description.py```: This script is used to extract the main functionalities of the app from its description in the App Store.
+```hook_sensitive_api.js```: This script can track sensitive API invocations and get call stack traces.
 ```cot_reasoning.py```: This script uses the chain-of-thought method to infer purpose using LLM. It takes as input the 
 app functionalities, the triple statements from the privacy policy, and the call stack traces.
 
@@ -51,4 +55,4 @@ app functionalities, the triple statements from the privacy policy, and the call
 ```extract_domain_info.py```: This script uses LLM to identify information about a domain name.
 
 #### User Study
-```Slides_*```: The key presentations we use when launching user studies such as focus group discussions and Think Aloud study.
+```Slides_*.pdf```: The key presentations we use when launching user studies such as focus group discussions and Think Aloud study.
