@@ -21,6 +21,7 @@ In this repository, we provide the key data and code used in our study.
 │   └── domain_list.txt
 ├── result
 │   ├── Weibo_pp_log.txt
+│   ├── app_permission_track.xlsx
 │   ├── domain_desc_log.txt
 │   ├── functionality_log.txt
 │   └── inference_res.xlsx
