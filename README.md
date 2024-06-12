@@ -51,8 +51,8 @@ and the ```data``` and ```result``` directories contain examples of the data use
 ```cot_reasoning.py```: This script uses the chain-of-thought method to infer purpose using LLM. It takes as input the 
 app functionalities, the triple statements from the privacy policy, and the call stack traces.
 
-#### For Domain Clarification
+#### For Domain Clarification:
 ```extract_domain_info.py```: This script uses LLM to identify information about a domain name.
 
-#### User Study
+#### User Study:
 ```Slides_*.pdf```: The key presentations we use when launching user studies such as focus group discussions and Think Aloud study.
