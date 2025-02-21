@@ -2,8 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c674e0a0-c28a-48ab-ade6-0a93279a7ca5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/process_privacy_policy_2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userstudy/Ethics_Review_Form_for_Evaluation.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userstudy/Ethics_Review_Form_for_FocusGroup.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userstudy/Participant_InfoSheet_Consent_Form_FocusGroup.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userstudy/Participant_InfoSheet_Consent_Form_ReportDataCleection.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userstudy/Participant_InfoSheet_Consent_Form_ThinkAloud.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userstudy/readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cot_reasoning.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cot_reasoning.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/extract_privacy_policy.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/extract_privacy_policy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +43,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2hGplUYQiRXaXKK4KYPs3ktrBO1" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -44,13 +54,41 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;ToolWindowRun.ShowToolbar&quot;: &quot;false&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;last_opened_file_path&quot;: &quot;/Users/liuwang/test/priReport&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
 }</component>
-  <component name="RunManager" selected="Python.input_description">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.extract_privacy_policy">
+    <configuration name="extract_privacy_policy" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="extractor" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/extract_privacy_policy.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="input_description" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="extractor" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -95,28 +133,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="privacy_policy_segment" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="extractor" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/privacy_policy_segment.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="process_privacy_policy" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="extractor" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -139,7 +155,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="tttt" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="process_privacy_policy_2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="extractor" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -147,12 +163,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tttt.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/process_privacy_policy_2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -163,11 +179,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.extract_privacy_policy" />
+        <item itemvalue="Python.process_privacy_policy_2" />
         <item itemvalue="Python.input_description" />
         <item itemvalue="Python.input_privacy_policy" />
         <item itemvalue="Python.process_privacy_policy" />
-        <item itemvalue="Python.privacy_policy_segment" />
-        <item itemvalue="Python.tttt" />
       </list>
     </recent_temporary>
   </component>
@@ -186,7 +202,14 @@
       <workItem from="1718189593744" duration="671000" />
       <workItem from="1718246101056" duration="1000" />
       <workItem from="1718246356002" duration="601000" />
-      <workItem from="1721913688385" duration="1295000" />
+      <workItem from="1721913688385" duration="2059000" />
+      <workItem from="1724057653583" duration="38889000" />
+      <workItem from="1724389837505" duration="932000" />
+      <workItem from="1724396666364" duration="9000" />
+      <workItem from="1724396687457" duration="10570000" />
+      <workItem from="1724826682764" duration="13000" />
+      <workItem from="1725603196332" duration="599000" />
+      <workItem from="1740146948303" duration="1178000" />
     </task>
     <servers />
   </component>
@@ -208,8 +231,10 @@
     <SUITE FILE_PATH="coverage/priReport$privacy_policy_segment.coverage" NAME="privacy_policy_segment Coverage Results" MODIFIED="1718013270991" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/priReport$input_description.coverage" NAME="input_description Coverage Results" MODIFIED="1718159767674" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/extractor$domain_process.coverage" NAME="domain_process Coverage Results" MODIFIED="1717249747913" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/priReport$process_privacy_policy_2.coverage" NAME="process_privacy_policy_2 Coverage Results" MODIFIED="1724428192498" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/priReport$tttt__1_.coverage" NAME="tttt (1) Coverage Results" MODIFIED="1718113589714" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/extractor$tttt.coverage" NAME="tttt Coverage Results" MODIFIED="1717407166202" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/priReport$extract_privacy_policy.coverage" NAME="extract_privacy_policy Coverage Results" MODIFIED="1724428636581" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/priReport$crawl_privacy_policy.coverage" NAME="process_privacy_policy Coverage Results" MODIFIED="1718112252853" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
   </component>
 </project>

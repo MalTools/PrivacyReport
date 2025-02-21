@@ -10,7 +10,8 @@ ROLE_ASSISTANT = "assistant"
 client = OpenAI(
     # This is the default and can be omitted
     base_url="https://api.xty.app/v1",
-    api_key=os.environ.get("OPENAI_API_KEY"),
+    # api_key=os.environ.get("OPENAI_API_KEY"),
+    api_key='sk-srljt7dQbU9C8S6p8372A5Fd5aB2476b920837E43d84138c',
     http_client=httpx.Client(
         base_url="https://api.xty.app/v1",
         follow_redirects=True,
