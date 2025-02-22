@@ -1,6 +1,6 @@
 # Examination & Improvements for iOS App Privacy Report
 
-This repository contains the first systematical study of the usability and effectiveness of the iOS App Privacy Report in real-world settings.
+This repository contains the systematical study of the usability and effectiveness of the iOS App Privacy Report in real-world settings.
 Our research follows a clear and logical workflow: 
 1) We organized a focus group discussion to explore users' experiences, perceptions,
 attitudes, and expectations regarding the App Privacy Report. The findings revealed practical deficiencies of the feature, 
@@ -20,11 +20,14 @@ In this repository, we provide the key data and code used in our study.
 │   ├── Weibo-segmented.txt
 │   └── domain_list.txt
 ├── result
+│   ├── Final_Codebook.xlsx
 │   ├── Weibo_pp_log.txt
 │   ├── app_permission_track.xlsx
 │   ├── domain_desc_log.txt
 │   ├── functionality_log.txt
-│   └── inference_res.xlsx
+│   ├── inference_examples.xlsx
+│   ├── tracker_logs
+│   └── ~$app_permission_track.xlsx
 ├── src
 │   ├── cot_reasoning.py
 │   ├── extract_description.py
@@ -33,10 +36,11 @@ In this repository, we provide the key data and code used in our study.
 │   ├── hook_sensitive_api.js
 │   ├── input_privacy_policy.py
 │   ├── lib.py
-│   └── process_privacy_policy.py
+│   ├── process_privacy_policy.py
 └── userstudy
     ├── Slides_FocusGroup.pdf
     └── Slides_ThinkAloud.pdf
+
 ```
 ***Note:*** This tree includes only main files. 
 
@@ -57,3 +61,4 @@ app functionalities, the triple statements from the privacy policy, and the call
 
 #### User Study:
 ```Slides_*.pdf```: The key presentations we use when launching user studies such as focus group discussions and Think Aloud study.
+```*_Form_*.pdf```: The ethics-related materials for the user-related studies.
