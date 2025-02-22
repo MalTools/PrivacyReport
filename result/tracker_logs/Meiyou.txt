@@ -1,0 +1,238 @@
+(base) mac@macdeMacBook-Pro autoTestiOS % frida -U -F -l hook_sensitive_api.js
+     ____
+    / _  |   Frida 16.2.1 - A world-class dynamic instrumentation toolkit
+   | (_| |
+    > _  |   Commands:
+   /_/ |_|       help      -> Displays the help system
+   . . . .       object?   -> Display information about 'object'
+   . . . .       exit/quit -> Exit
+   . . . .
+   . . . .   More info at https://frida.re/docs/home/
+   . . . .
+   . . . .   Connected to iPhone (id=02f66296483099a1e80d262c998b9f8feb885523)
+[*] Started: Modify Return Value
+funcName_arg namePrefix
+[!] funcName_arg Exception: 
+funcName_arg givenName
+[!] funcName_arg Exception: 
+funcName_arg middleName
+[!] funcName_arg Exception: 
+funcName_arg familyName
+[!] funcName_arg Exception: 
+funcName_arg previousFamilyName
+[!] funcName_arg Exception: 
+funcName_arg nickname
+[!] funcName_arg Exception: 
+funcName_arg phoneticGivenName
+[!] funcName_arg Exception: 
+funcName_arg phoneticMiddleName
+[!] funcName_arg Exception: 
+funcName_arg phoneticFamilyName
+[!] funcName_arg Exception: 
+funcName_arg jobTitle
+[!] funcName_arg Exception: 
+funcName_arg departmentName
+[!] funcName_arg Exception: 
+funcName_arg organizationName
+[!] funcName_arg Exception: 
+funcName_arg phoneticOrganizationName
+[!] funcName_arg Exception: 
+funcName_arg postalAddresses
+[!] funcName_arg Exception: 
+funcName_arg urlAddresses
+[!] funcName_arg Exception: 
+funcName_arg phoneNumbers
+[!] funcName_arg Exception: 
+funcName_arg socialProfiles
+[!] funcName_arg Exception: 
+funcName_arg emailAddresses
+[!] funcName_arg Exception: 
+funcName_arg birthday
+[!] funcName_arg Exception: 
+funcName_arg dates
+[!] funcName_arg Exception: 
+funcName_arg nonGregorianBirthday
+[!] funcName_arg Exception: 
+funcName_arg note
+[!] funcName_arg Exception: 
+funcName_arg emailAddresses
+[!] funcName_arg Exception: 
+funcName_arg unifiedMeContactWithKeysToFetch:error:
+[!] funcName_arg Exception: 
+funcName_arg rfetchAssetsInAssetCollection:options:
+[!] funcName_arg Exception: 
+message: {'type': 'send', 'payload': '[*] Started: Modify Return Value'} data: None
+[iPhone::美柚 ]->
+[*] Class Name: CLLocationManager
+[*] Method Name: authorizationStatus
+	Backtrace:
+	0x10385ab2c Seeyou!0x11aeb2c (0x1011aeb2c)
+	0x10385d4a8 Seeyou!0x11b14a8 (0x1011b14a8)
+	0x1038888e8 Seeyou!0x11dc8e8 (0x1011dc8e8)
+        0x103896678 Seeyou!0x11ea678 (0x1011ea678)
+	0x10389b808 Seeyou!0x11ef808 (0x1011ef808)
+	0x1038507f4 Seeyou!0x11a47f4 (0x1011a47f4)
+	0x1038945b8 Seeyou!0x11e85b8 (0x1011e85b8)
+        0x103847718 Seeyou!0x119b718 (0x10119b718)
+	0x2206b30ec libsystem_pthread.dylib!_pthread_start
+
+[*] Class Name: CLLocationManager
+[*] Method Name: locationServicesEnabled
+
+[*] Class Name: CLLocationManager
+[*] Method Name: authorizationStatus
+	Backtrace:
+	0x1048573d8 /private/var/containers/Bundle/Application/ADE3198B-A03C-496A-8643-CFD001A9BE4A/Seeyou.app/Seeyou!+[IMYAdUtils getOnceGPSSwtich]
+	0x104857378 Seeyou!0x21ab378 (0x1021ab378)
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc68dd48 libdispatch.dylib!_dispatch_continuation_pop$VARIANT$armv81
+	0x1dc69f780 libdispatch.dylib!_dispatch_source_invoke$VARIANT$armv81
+	0x1dc68d8d8 libdispatch.dylib!_dispatch_queue_override_invoke
+	0x1dc69ac68 libdispatch.dylib!_dispatch_root_queue_drain
+	0x1dc69b430 libdispatch.dylib!_dispatch_worker_thread2
+	0x2206b1b94 libsystem_pthread.dylib!_pthread_wqthread
+
+[*] Class Name: CLLocationManager
+[*] Method Name: authorizationStatus
+	Backtrace:
+	0x1048573e4 /private/var/containers/Bundle/Application/ADE3198B-A03C-496A-8643-CFD001A9BE4A/Seeyou.app/Seeyou!+[IMYAdUtils getOnceGPSSwtich]
+	0x104857378 Seeyou!0x21ab378 (0x1021ab378)
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc68dd48 libdispatch.dylib!_dispatch_continuation_pop$VARIANT$armv81
+	0x1dc69f780 libdispatch.dylib!_dispatch_source_invoke$VARIANT$armv81
+	0x1dc68d8d8 libdispatch.dylib!_dispatch_queue_override_invoke
+	0x1dc69ac68 libdispatch.dylib!_dispatch_root_queue_drain
+	0x1dc69b430 libdispatch.dylib!_dispatch_worker_thread2
+	0x2206b1b94 libsystem_pthread.dylib!_pthread_wqthread
+	Backtrace:
+	0x10385ab2c Seeyou!0x11aeb2c (0x1011aeb2c)
+	0x10385d4a8 Seeyou!0x11b14a8 (0x1011b14a8)
+	0x1038888e8 Seeyou!0x11dc8e8 (0x1011dc8e8)
+	0x103896678 Seeyou!0x11ea678 (0x1011ea678)
+	0x10389b808 Seeyou!0x11ef808 (0x1011ef808)
+	0x1038507f4 Seeyou!0x11a47f4 (0x1011a47f4)
+	0x1038945b8 Seeyou!0x11e85b8 (0x1011e85b8)
+	0x103847718 Seeyou!0x119b718 (0x10119b718)
+	0x2206b30ec libsystem_pthread.dylib!_pthread_start
+
+[*] Class Name: CLLocationManager
+[*] Method Name: authorizationStatus
+	Backtrace:
+	0x10385ab2c Seeyou!0x11aeb2c (0x1011aeb2c)
+	0x10385d4a8 Seeyou!0x11b14a8 (0x1011b14a8)
+	0x1038888e8 Seeyou!0x11dc8e8 (0x1011dc8e8)
+	0x103896678 Seeyou!0x11ea678 (0x1011ea678)
+	0x10389b808 Seeyou!0x11ef808 (0x1011ef808)
+	0x1038507f4 Seeyou!0x11a47f4 (0x1011a47f4)
+	0x1038945b8 Seeyou!0x11e85b8 (0x1011e85b8)
+	0x103847718 Seeyou!0x119b718 (0x10119b718)
+	0x2206b30ec libsystem_pthread.dylib!_pthread_start
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: authorizationStatusForMediaType:
+	Backtrace:
+	0x104dcfe04 /private/var/containers/Bundle/Application/ADE3198B-A03C-496A-8643-CFD001A9BE4A/Seeyou.app/Seeyou!+[UIImagePickerController needAlertForType:]
+	0x105330a28 Seeyou!0x2c84a28 (0x102c84a28)
+	0x104b9f69c /private/var/containers/Bundle/Application/ADE3198B-A03C-496A-8643-CFD001A9BE4A/Seeyou.app/Seeyou!-[IMYActionSheet buttonPressed:]
+	0x1d7ad1764 UIKitCore!-[UIApplication sendAction:to:from:forEvent:]
+	0x1d7ad1484 UIKitCore!-[UIControl sendAction:to:forEvent:]
+	0x1d7ad0e8c UIKitCore!-[UIControl _sendActionsForEvents:withEvent:]
+	0x1d7ad0d68 UIKitCore!-[UIButton _sendActionsForEvents:withEvent:]
+	0x1d7ad0944 UIKitCore!-[UIControl touchesEnded:withEvent:]
+	0x103909dd8 /private/var/containers/Bundle/Application/ADE3198B-A03C-496A-8643-CFD001A9BE4A/Seeyou.app/Seeyou!-[UIButton touchesEnded:withEvent:]
+	0x1d7991b18 UIKitCore!-[UIWindow _sendTouchesForEvent:]
+	0x1d7990e2c UIKitCore!-[UIWindow sendEvent:]
+	0x1d7990118 UIKitCore!-[UIApplication sendEvent:]
+	0x104dc0dac /private/var/containers/Bundle/Application/ADE3198B-A03C-496A-8643-CFD001A9BE4A/Seeyou.app/Seeyou!-[UIApplication sendEvent:]
+	0x1d798e38c UIKitCore!__dispatchPreprocessedEventFromEventQueue
+	0x1d79d3d58 UIKitCore!__processEventQueue
+	0x1d7cb40d4 UIKitCore!__eventFetcherSourceCallback
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: authorizationStatusForMediaType:
+	Backtrace:
+	0x1edbc6a94 AVFCapture!-[AVCaptureDeviceInput _authorizedToUseDeviceAndRequestIfNecessary:]
+	0x1edbc6848 AVFCapture!-[AVCaptureDeviceInput initWithDevice:error:]
+	0x1edbc67bc AVFCapture!+[AVCaptureDeviceInput deviceInputWithDevice:error:]
+	0x21d54a184 CameraUI!___prewarmAudioVideoDevices_block_invoke
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc686ddc libdispatch.dylib!_dispatch_once_callout
+	0x21d552c80 CameraUI!-[CAMCaptureEngine prewarmedVideoDeviceInput:position:device:]
+	0x21d552ae8 CameraUI!-[CAMCaptureEngineDevice captureDeviceInput]
+	0x21d552a0c CameraUI!-[CAMModeAndDeviceCommand _desiredInputsWithContext:]
+	0x21d551ccc CameraUI!-[CAMModeAndDeviceCommand executeWithContext:]
+	0x21d551704 CameraUI!-[CAMCaptureEngine _executeCommand:withContext:]
+	0x21d551794 CameraUI!-[CAMCaptureEngine _executeCommand:withContext:]
+	0x21d551794 CameraUI!-[CAMCaptureEngine _executeCommand:withContext:]
+	0x21d5512d0 CameraUI!__35-[CAMCaptureEngine enqueueCommand:]_block_invoke
+	0x1e9ca6c18 PhotoLibraryServicesCore!__pl_dispatch_async_block_invoke
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: requestAccessForMediaType:completionHandler:
+	Backtrace:
+	0x1edbc6ab4 AVFCapture!-[AVCaptureDeviceInput _authorizedToUseDeviceAndRequestIfNecessary:]
+	0x1edbc6848 AVFCapture!-[AVCaptureDeviceInput initWithDevice:error:]
+	0x1edbc67bc AVFCapture!+[AVCaptureDeviceInput deviceInputWithDevice:error:]
+	0x21d54a184 CameraUI!___prewarmAudioVideoDevices_block_invoke
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc686ddc libdispatch.dylib!_dispatch_once_callout
+	0x21d552c80 CameraUI!-[CAMCaptureEngine prewarmedVideoDeviceInput:position:device:]
+	0x21d552ae8 CameraUI!-[CAMCaptureEngineDevice captureDeviceInput]
+	0x21d552a0c CameraUI!-[CAMModeAndDeviceCommand _desiredInputsWithContext:]
+	0x21d551ccc CameraUI!-[CAMModeAndDeviceCommand executeWithContext:]
+	0x21d551704 CameraUI!-[CAMCaptureEngine _executeCommand:withContext:]
+	0x21d551794 CameraUI!-[CAMCaptureEngine _executeCommand:withContext:]
+	0x21d551794 CameraUI!-[CAMCaptureEngine _executeCommand:withContext:]
+	0x21d5512d0 CameraUI!__35-[CAMCaptureEngine enqueueCommand:]_block_invoke
+	0x1e9ca6c18 PhotoLibraryServicesCore!__pl_dispatch_async_block_invoke
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+
+[*] Class Name: PHPhotoLibrary
+[*] Method Name: requestAuthorizationForAccessLevel:handler:
+	Backtrace:
+	0x104bc6968 /private/var/containers/Bundle/Application/ADE3198B-A03C-496A-8643-CFD001A9BE4A/Seeyou.app/Seeyou!+[IMYAssetsManager requestAuthorizationForAccessLevel:handler:]
+	0x104bbb9d8 /private/var/containers/Bundle/Application/ADE3198B-A03C-496A-8643-CFD001A9BE4A/Seeyou.app/Seeyou!-[IMYAssetPickerController setupData]
+	0x104bbb8d8 /private/var/containers/Bundle/Application/ADE3198B-A03C-496A-8643-CFD001A9BE4A/Seeyou.app/Seeyou!-[IMYAssetPickerController viewDidLoad]
+	0x105b67a30 /private/var/containers/Bundle/Application/ADE3198B-A03C-496A-8643-CFD001A9BE4A/Seeyou.app/Seeyou!-[IMYPanAssetPickerController viewDidLoad]
+	0x102726ca0 /private/var/containers/Bundle/Application/ADE3198B-A03C-496A-8643-CFD001A9BE4A/Seeyou.app/Seeyou!-[NSKVONotifying_PLPhotoTileViewController viewDidLoad]
+	0x1d7bf6d8c UIKitCore!-[UIViewController _sendViewDidLoadWithAppearanceProxyObjectTaggingEnabled]
+	0x1d78bc5b8 UIKitCore!-[UIViewController loadViewIfRequired]
+	0x1d7b5d088 UIKitCore!-[UINavigationController _updateScrollViewFromViewController:toViewController:]
+	0x1d7a34340 UIKitCore!-[UINavigationController _startTransition:fromViewController:toViewController:]
+	0x1d7a337ec UIKitCore!-[UINavigationController _startDeferredTransitionIfNeeded:]
+	0x1d7a32e78 UIKitCore!-[UINavigationController __viewWillLayoutSubviews]
+	0x1d7a32de0 UIKitCore!-[UILayoutContainerView layoutSubviews]
+	0x1d78a77a8 UIKitCore!-[UIView(CALayerDelegate) layoutSublayersOfLayer:]
+	0x1d6dad60c QuartzCore!CA::Layer::layout_if_needed(CA::Transaction*)
+	0x1d7969078 UIKitCore!-[UIView(Hierarchy) layoutBelowIfNeeded]
+	0x1d78dd56c UIKitCore!-[UINavigationController _layoutViewController:]
+
+[*] Class Name: PHPhotoLibrary
+[*] Method Name: requestAuthorizationForAccessLevel:handler:
+	Backtrace:
+	0x104bc6968 /private/var/containers/Bundle/Application/ADE3198B-A03C-496A-8643-CFD001A9BE4A/Seeyou.app/Seeyou!+[IMYAssetsManager requestAuthorizationForAccessLevel:handler:]
+	0x104bb3f1c /private/var/containers/Bundle/Application/ADE3198B-A03C-496A-8643-CFD001A9BE4A/Seeyou.app/Seeyou!-[IMYAssetListViewController viewDidLoad]
+	0x102726ca0 /private/var/containers/Bundle/Application/ADE3198B-A03C-496A-8643-CFD001A9BE4A/Seeyou.app/Seeyou!-[NSKVONotifying_PLPhotoTileViewController viewDidLoad]
+	0x1d7bf6d8c UIKitCore!-[UIViewController _sendViewDidLoadWithAppearanceProxyObjectTaggingEnabled]
+	0x1d78bc5b8 UIKitCore!-[UIViewController loadViewIfRequired]
+	0x1d78bc2e4 UIKitCore!-[UIViewController view]
+	0x104bbc318 /private/var/containers/Bundle/Application/ADE3198B-A03C-496A-8643-CFD001A9BE4A/Seeyou.app/Seeyou!-[IMYAssetPickerController setupUI]
+	0x104bbb8e0 /private/var/containers/Bundle/Application/ADE3198B-A03C-496A-8643-CFD001A9BE4A/Seeyou.app/Seeyou!-[IMYAssetPickerController viewDidLoad]
+	0x105b67a30 /private/var/containers/Bundle/Application/ADE3198B-A03C-496A-8643-CFD001A9BE4A/Seeyou.app/Seeyou!-[IMYPanAssetPickerController viewDidLoad]
+	0x102726ca0 /private/var/containers/Bundle/Application/ADE3198B-A03C-496A-8643-CFD001A9BE4A/Seeyou.app/Seeyou!-[NSKVONotifying_PLPhotoTileViewController viewDidLoad]
+	0x1d7bf6d8c UIKitCore!-[UIViewController _sendViewDidLoadWithAppearanceProxyObjectTaggingEnabled]
+	0x1d78bc5b8 UIKitCore!-[UIViewController loadViewIfRequired]
+	0x1d7b5d088 UIKitCore!-[UINavigationController _updateScrollViewFromViewController:toViewController:]
+	0x1d7a34340 UIKitCore!-[UINavigationController _startTransition:fromViewController:toViewController:]
+	0x1d7a337ec UIKitCore!-[UINavigationController _startDeferredTransitionIfNeeded:]
+	0x1d7a32e78 UIKitCore!-[UINavigationController __viewWillLayoutSubviews]
+[iPhone::美柚 ]->                                                                                                                                                                                                                                    
+[iPhone::美柚 ]->
+
+
+
+
+
+
+ 

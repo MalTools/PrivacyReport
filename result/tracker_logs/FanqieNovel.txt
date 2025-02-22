@@ -1,0 +1,282 @@
+(base) mac@macdeMacBook-Pro autoTestiOS % frida -U -F -l hook_sensitive_api.js
+     ____
+    / _  |   Frida 16.2.1 - A world-class dynamic instrumentation toolkit
+   | (_| |
+    > _  |   Commands:
+   /_/ |_|       help      -> Displays the help system
+   . . . .       object?   -> Display information about 'object'
+   . . . .       exit/quit -> Exit
+   . . . .
+   . . . .   More info at https://frida.re/docs/home/
+   . . . .
+   . . . .   Connected to iPhone (id=02f66296483099a1e80d262c998b9f8feb885523)
+[*] Started: Modify Return Value
+funcName_arg namePrefix
+[!] funcName_arg Exception: 
+funcName_arg givenName
+[!] funcName_arg Exception: 
+funcName_arg middleName
+[!] funcName_arg Exception: 
+funcName_arg familyName
+[!] funcName_arg Exception: 
+funcName_arg previousFamilyName
+[!] funcName_arg Exception: 
+funcName_arg nickname
+[!] funcName_arg Exception: 
+funcName_arg phoneticGivenName
+[!] funcName_arg Exception: 
+funcName_arg phoneticMiddleName
+[!] funcName_arg Exception: 
+funcName_arg phoneticFamilyName
+[!] funcName_arg Exception: 
+funcName_arg jobTitle
+[!] funcName_arg Exception: 
+funcName_arg departmentName
+[!] funcName_arg Exception: 
+funcName_arg organizationName
+[!] funcName_arg Exception: 
+funcName_arg phoneticOrganizationName
+[!] funcName_arg Exception: 
+funcName_arg postalAddresses
+[!] funcName_arg Exception: 
+funcName_arg urlAddresses
+[!] funcName_arg Exception: 
+funcName_arg phoneNumbers
+[!] funcName_arg Exception: 
+funcName_arg socialProfiles
+[!] funcName_arg Exception: 
+funcName_arg emailAddresses
+[!] funcName_arg Exception: 
+funcName_arg birthday
+[!] funcName_arg Exception: 
+funcName_arg dates
+[!] funcName_arg Exception: 
+funcName_arg nonGregorianBirthday
+[!] funcName_arg Exception: 
+funcName_arg note
+[!] funcName_arg Exception: 
+funcName_arg emailAddresses
+[!] funcName_arg Exception: 
+funcName_arg unifiedMeContactWithKeysToFetch:error:
+[!] funcName_arg Exception: 
+funcName_arg rfetchAssetsInAssetCollection:options:
+[!] funcName_arg Exception: 
+message: {'type': 'send', 'payload': '[*] Started: Modify Return Value'} data: None
+[iPhone::番茄小说 ]->
+[*] Class Name: CLLocationManager
+[*] Method Name: locationServicesEnabled
+
+[*] Class Name: CLLocationManager
+[*] Method Name: authorizationStatus
+	Backtrace:
+        0x10a46b9dc /private/var/containers/Bundle/Application/70319494-6F1C-4070-B9B1-769E4C7C5295/Reading.app/Reading!-[CSJSDKLocation serviceEnable]
+	0x10a46b658 Reading!0x837f658 (0x10837f658)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+        0x1dc68d9f8 libdispatch.dylib!_dispatch_queue_override_invoke
+	0x1dc69ac68 libdispatch.dylib!_dispatch_root_queue_drain
+	0x1dc69b430 libdispatch.dylib!_dispatch_worker_thread2
+	0x2206b1b94 libsystem_pthread.dylib!_pthread_wqthread
+
+[*] Class Name: CLLocationManager
+[*] Method Name: authorizationStatus
+	Backtrace:
+	0x10a46ba54 /private/var/containers/Bundle/Application/70319494-6F1C-4070-B9B1-769E4C7C5295/Reading.app/Reading!-[CSJSDKLocation serviceEnable]
+	0x10a46b658 Reading!0x837f658 (0x10837f658)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc68d9f8 libdispatch.dylib!_dispatch_queue_override_invoke
+	0x1dc69ac68 libdispatch.dylib!_dispatch_root_queue_drain
+	0x1dc69b430 libdispatch.dylib!_dispatch_worker_thread2
+	0x2206b1b94 libsystem_pthread.dylib!_pthread_wqthread
+	Backtrace:
+	0x10a6a1b2c Reading!0x85b5b2c (0x1085b5b2c)
+	0x10a6a44a8 Reading!0x85b84a8 (0x1085b84a8)
+	0x10a6cf8e8 Reading!0x85e38e8 (0x1085e38e8)
+	0x10a6dd678 Reading!0x85f1678 (0x1085f1678)
+	0x10a6e2808 Reading!0x85f6808 (0x1085f6808)
+	0x10a6977f4 Reading!0x85ab7f4 (0x1085ab7f4)
+	0x10a6db5b8 Reading!0x85ef5b8 (0x1085ef5b8)
+	0x10a68e718 Reading!0x85a2718 (0x1085a2718)
+	0x2206b30ec libsystem_pthread.dylib!_pthread_start
+
+[*] Class Name: PHPhotoLibrary
+[*] Method Name: authorizationStatus
+	Backtrace:
+	0x1028086f8 /private/var/containers/Bundle/Application/70319494-6F1C-4070-B9B1-769E4C7C5295/Reading.app/Reading!+[SSAuthenticationManager checkAuthorizationForPhotoLibraryParams:completion:]
+	0x10763a944 Reading!0x554e944 (0x10554e944)
+	0x102739020 /private/var/containers/Bundle/Application/70319494-6F1C-4070-B9B1-769E4C7C5295/Reading.app/Reading!-[SSNewKCAlertView actionBtnClick:]
+	0x1d7ad1764 UIKitCore!-[UIApplication sendAction:to:from:forEvent:]
+	0x1d7ad1484 UIKitCore!-[UIControl sendAction:to:forEvent:]
+	0x103c23b70 /private/var/containers/Bundle/Application/70319494-6F1C-4070-B9B1-769E4C7C5295/Reading.app/Reading!-[UIControl sendAction:to:forEvent:]
+	0x1d7ad0e8c UIKitCore!-[UIControl _sendActionsForEvents:withEvent:]
+	0x1d7ad0d68 UIKitCore!-[UIButton _sendActionsForEvents:withEvent:]
+	0x1d7ad0944 UIKitCore!-[UIControl touchesEnded:withEvent:]
+	0x10a769370 /private/var/containers/Bundle/Application/70319494-6F1C-4070-B9B1-769E4C7C5295/Reading.app/Reading!-[UIButton touchesEnded:withEvent:]
+	0x1d7991b18 UIKitCore!-[UIWindow _sendTouchesForEvent:]
+	0x1d7990e2c UIKitCore!-[UIWindow sendEvent:]
+	0x1d7990118 UIKitCore!-[UIApplication sendEvent:]
+	0x1d798e38c UIKitCore!__dispatchPreprocessedEventFromEventQueue
+	0x1d79d3d58 UIKitCore!__processEventQueue
+	0x1d7cb40d4 UIKitCore!__eventFetcherSourceCallback
+
+[*] Class Name: PHPhotoLibrary
+[*] Method Name: requestAuthorization:
+	Backtrace:
+	0x102808760 /private/var/containers/Bundle/Application/70319494-6F1C-4070-B9B1-769E4C7C5295/Reading.app/Reading!+[SSAuthenticationManager checkAuthorizationForPhotoLibraryParams:completion:]
+	0x10763a944 Reading!0x554e944 (0x10554e944)
+	0x102739020 /private/var/containers/Bundle/Application/70319494-6F1C-4070-B9B1-769E4C7C5295/Reading.app/Reading!-[SSNewKCAlertView actionBtnClick:]
+	0x1d7ad1764 UIKitCore!-[UIApplication sendAction:to:from:forEvent:]
+	0x1d7ad1484 UIKitCore!-[UIControl sendAction:to:forEvent:]
+	0x103c23b70 /private/var/containers/Bundle/Application/70319494-6F1C-4070-B9B1-769E4C7C5295/Reading.app/Reading!-[UIControl sendAction:to:forEvent:]
+	0x1d7ad0e8c UIKitCore!-[UIControl _sendActionsForEvents:withEvent:]
+	0x1d7ad0d68 UIKitCore!-[UIButton _sendActionsForEvents:withEvent:]
+	0x1d7ad0944 UIKitCore!-[UIControl touchesEnded:withEvent:]
+	0x10a769370 /private/var/containers/Bundle/Application/70319494-6F1C-4070-B9B1-769E4C7C5295/Reading.app/Reading!-[UIButton touchesEnded:withEvent:]
+	0x1d7991b18 UIKitCore!-[UIWindow _sendTouchesForEvent:]
+	0x1d7990e2c UIKitCore!-[UIWindow sendEvent:]
+	0x1d7990118 UIKitCore!-[UIApplication sendEvent:]
+	0x1d798e38c UIKitCore!__dispatchPreprocessedEventFromEventQueue
+	0x1d79d3d58 UIKitCore!__processEventQueue
+	0x1d7cb40d4 UIKitCore!__eventFetcherSourceCallback
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: authorizationStatusForMediaType:
+	Backtrace:
+	0x10763aa0c Reading!0x554ea0c (0x10554ea0c)
+	0x102739020 /private/var/containers/Bundle/Application/70319494-6F1C-4070-B9B1-769E4C7C5295/Reading.app/Reading!-[SSNewKCAlertView actionBtnClick:]
+	0x1d7ad1764 UIKitCore!-[UIApplication sendAction:to:from:forEvent:]
+	0x1d7ad1484 UIKitCore!-[UIControl sendAction:to:forEvent:]
+	0x103c23b70 /private/var/containers/Bundle/Application/70319494-6F1C-4070-B9B1-769E4C7C5295/Reading.app/Reading!-[UIControl sendAction:to:forEvent:]
+	0x1d7ad0e8c UIKitCore!-[UIControl _sendActionsForEvents:withEvent:]
+	0x1d7ad0d68 UIKitCore!-[UIButton _sendActionsForEvents:withEvent:]
+	0x1d7ad0944 UIKitCore!-[UIControl touchesEnded:withEvent:]
+	0x10a769370 /private/var/containers/Bundle/Application/70319494-6F1C-4070-B9B1-769E4C7C5295/Reading.app/Reading!-[UIButton touchesEnded:withEvent:]
+	0x1d7991b18 UIKitCore!-[UIWindow _sendTouchesForEvent:]
+	0x1d7990e2c UIKitCore!-[UIWindow sendEvent:]
+	0x1d7990118 UIKitCore!-[UIApplication sendEvent:]
+	0x1d798e38c UIKitCore!__dispatchPreprocessedEventFromEventQueue
+	0x1d79d3d58 UIKitCore!__processEventQueue
+	0x1d7cb40d4 UIKitCore!__eventFetcherSourceCallback
+	0x1d59d10e8 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: authorizationStatusForMediaType:
+	Backtrace:
+	0x102808380 /private/var/containers/Bundle/Application/70319494-6F1C-4070-B9B1-769E4C7C5295/Reading.app/Reading!+[SSAuthenticationManager checkAuthorizationForMediaType:params:completion:]
+	0x10763aa6c Reading!0x554ea6c (0x10554ea6c)
+	0x102739020 /private/var/containers/Bundle/Application/70319494-6F1C-4070-B9B1-769E4C7C5295/Reading.app/Reading!-[SSNewKCAlertView actionBtnClick:]
+	0x1d7ad1764 UIKitCore!-[UIApplication sendAction:to:from:forEvent:]
+	0x1d7ad1484 UIKitCore!-[UIControl sendAction:to:forEvent:]
+	0x103c23b70 /private/var/containers/Bundle/Application/70319494-6F1C-4070-B9B1-769E4C7C5295/Reading.app/Reading!-[UIControl sendAction:to:forEvent:]
+	0x1d7ad0e8c UIKitCore!-[UIControl _sendActionsForEvents:withEvent:]
+	0x1d7ad0d68 UIKitCore!-[UIButton _sendActionsForEvents:withEvent:]
+	0x1d7ad0944 UIKitCore!-[UIControl touchesEnded:withEvent:]
+	0x10a769370 /private/var/containers/Bundle/Application/70319494-6F1C-4070-B9B1-769E4C7C5295/Reading.app/Reading!-[UIButton touchesEnded:withEvent:]
+	0x1d7991b18 UIKitCore!-[UIWindow _sendTouchesForEvent:]
+	0x1d7990e2c UIKitCore!-[UIWindow sendEvent:]
+	0x1d7990118 UIKitCore!-[UIApplication sendEvent:]
+	0x1d798e38c UIKitCore!__dispatchPreprocessedEventFromEventQueue
+	0x1d79d3d58 UIKitCore!__processEventQueue
+	0x1d7cb40d4 UIKitCore!__eventFetcherSourceCallback
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: requestAccessForMediaType:completionHandler:
+	Backtrace:
+	0x102808408 /private/var/containers/Bundle/Application/70319494-6F1C-4070-B9B1-769E4C7C5295/Reading.app/Reading!+[SSAuthenticationManager checkAuthorizationForMediaType:params:completion:]
+	0x10763aa6c Reading!0x554ea6c (0x10554ea6c)
+	0x102739020 /private/var/containers/Bundle/Application/70319494-6F1C-4070-B9B1-769E4C7C5295/Reading.app/Reading!-[SSNewKCAlertView actionBtnClick:]
+	0x1d7ad1764 UIKitCore!-[UIApplication sendAction:to:from:forEvent:]
+	0x1d7ad1484 UIKitCore!-[UIControl sendAction:to:forEvent:]
+	0x103c23b70 /private/var/containers/Bundle/Application/70319494-6F1C-4070-B9B1-769E4C7C5295/Reading.app/Reading!-[UIControl sendAction:to:forEvent:]
+	0x1d7ad0e8c UIKitCore!-[UIControl _sendActionsForEvents:withEvent:]
+	0x1d7ad0d68 UIKitCore!-[UIButton _sendActionsForEvents:withEvent:]
+	0x1d7ad0944 UIKitCore!-[UIControl touchesEnded:withEvent:]
+	0x10a769370 /private/var/containers/Bundle/Application/70319494-6F1C-4070-B9B1-769E4C7C5295/Reading.app/Reading!-[UIButton touchesEnded:withEvent:]
+	0x1d7991b18 UIKitCore!-[UIWindow _sendTouchesForEvent:]
+	0x1d7990e2c UIKitCore!-[UIWindow sendEvent:]
+	0x1d7990118 UIKitCore!-[UIApplication sendEvent:]
+	0x1d798e38c UIKitCore!__dispatchPreprocessedEventFromEventQueue
+	0x1d79d3d58 UIKitCore!__processEventQueue
+	0x1d7cb40d4 UIKitCore!__eventFetcherSourceCallback
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: authorizationStatusForMediaType:
+	Backtrace:
+	0x1edbc6a94 AVFCapture!-[AVCaptureDeviceInput _authorizedToUseDeviceAndRequestIfNecessary:]
+	0x1edbc6848 AVFCapture!-[AVCaptureDeviceInput initWithDevice:error:]
+	0x1edbc67bc AVFCapture!+[AVCaptureDeviceInput deviceInputWithDevice:error:]
+	0x21d54a184 CameraUI!___prewarmAudioVideoDevices_block_invoke
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc686ddc libdispatch.dylib!_dispatch_once_callout
+	0x21d552c80 CameraUI!-[CAMCaptureEngine prewarmedVideoDeviceInput:position:device:]
+	0x21d552ae8 CameraUI!-[CAMCaptureEngineDevice captureDeviceInput]
+	0x21d552a0c CameraUI!-[CAMModeAndDeviceCommand _desiredInputsWithContext:]
+	0x21d551ccc CameraUI!-[CAMModeAndDeviceCommand executeWithContext:]
+	0x21d551704 CameraUI!-[CAMCaptureEngine _executeCommand:withContext:]
+	0x21d551794 CameraUI!-[CAMCaptureEngine _executeCommand:withContext:]
+	0x21d551794 CameraUI!-[CAMCaptureEngine _executeCommand:withContext:]
+	0x21d5512d0 CameraUI!__35-[CAMCaptureEngine enqueueCommand:]_block_invoke
+	0x1e9ca6c18 PhotoLibraryServicesCore!__pl_dispatch_async_block_invoke
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: authorizationStatusForMediaType:
+	Backtrace:
+	0x108516afc /private/var/containers/Bundle/Application/70319494-6F1C-4070-B9B1-769E4C7C5295/Reading.app/Reading!+[TTScanQrCodeAuthUtil checkCameraAuthWithViewController:complete:]
+	0x108517374 /private/var/containers/Bundle/Application/70319494-6F1C-4070-B9B1-769E4C7C5295/Reading.app/Reading!-[TTScanQrCodeCameraHandler startCameraWithScanning:]
+	0x107752898 /private/var/containers/Bundle/Application/70319494-6F1C-4070-B9B1-769E4C7C5295/Reading.app/Reading!-[SSScanQrCodeLoginViewController handleViewStateWithAppear:]
+	0x1077525f4 /private/var/containers/Bundle/Application/70319494-6F1C-4070-B9B1-769E4C7C5295/Reading.app/Reading!-[SSScanQrCodeLoginViewController viewDidAppear:]
+	0x103c26094 Reading!0x1b3a094 (0x101b3a094)
+	0x1d78afa84 UIKitCore!-[UIViewController _setViewAppearState:isAnimating:]
+	0x1d7aaa8ac UIKitCore!-[UIViewController __viewDidAppear:]
+	0x1d7aaa758 UIKitCore!-[UIViewController _endAppearanceTransition:]
+	0x1d79e19bc UIKitCore!-[UINavigationController navigationTransitionView:didEndTransition:fromView:toView:]
+	0x1d7a88dbc UIKitCore!__49-[UINavigationController _startCustomTransition:]_block_invoke
+	0x1d7b3500c UIKitCore!-[_UIViewControllerTransitionContext completeTransition:]
+	0x1028c8e58 Reading!0x7dce58 (0x1007dce58)
+	0x1d8800fcc UIKitCore!__UIVIEW_IS_EXECUTING_ANIMATION_COMPLETION_BLOCK__
+	0x1d796870c UIKitCore!-[UIViewAnimationBlockDelegate _didEndBlockAnimation:finished:context:]
+	0x1d79676c0 UIKitCore!-[UIViewAnimationState sendDelegateAnimationDidStop:finished:]
+	0x1d7966ecc UIKitCore!-[UIViewAnimationState animationDidStop:finished:]
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: authorizationStatusForMediaType:
+	Backtrace:
+	0x1edbc6a94 AVFCapture!-[AVCaptureDeviceInput _authorizedToUseDeviceAndRequestIfNecessary:]
+	0x1edbc6848 AVFCapture!-[AVCaptureDeviceInput initWithDevice:error:]
+	0x1edbc67bc AVFCapture!+[AVCaptureDeviceInput deviceInputWithDevice:error:]
+	0x108517904 /private/var/containers/Bundle/Application/70319494-6F1C-4070-B9B1-769E4C7C5295/Reading.app/Reading!-[TTScanQrCodeCameraHandler configCamera]
+	0x108517440 Reading!0x642b440 (0x10642b440)
+	0x108516c00 /private/var/containers/Bundle/Application/70319494-6F1C-4070-B9B1-769E4C7C5295/Reading.app/Reading!+[TTScanQrCodeAuthUtil checkCameraAuthWithViewController:complete:]
+	0x108517374 /private/var/containers/Bundle/Application/70319494-6F1C-4070-B9B1-769E4C7C5295/Reading.app/Reading!-[TTScanQrCodeCameraHandler startCameraWithScanning:]
+	0x107752898 /private/var/containers/Bundle/Application/70319494-6F1C-4070-B9B1-769E4C7C5295/Reading.app/Reading!-[SSScanQrCodeLoginViewController handleViewStateWithAppear:]
+	0x1077525f4 /private/var/containers/Bundle/Application/70319494-6F1C-4070-B9B1-769E4C7C5295/Reading.app/Reading!-[SSScanQrCodeLoginViewController viewDidAppear:]
+	0x103c26094 Reading!0x1b3a094 (0x101b3a094)
+	0x1d78afa84 UIKitCore!-[UIViewController _setViewAppearState:isAnimating:]
+	0x1d7aaa8ac UIKitCore!-[UIViewController __viewDidAppear:]
+	0x1d7aaa758 UIKitCore!-[UIViewController _endAppearanceTransition:]
+	0x1d79e19bc UIKitCore!-[UINavigationController navigationTransitionView:didEndTransition:fromView:toView:]
+	0x1d7a88dbc UIKitCore!__49-[UINavigationController _startCustomTransition:]_block_invoke
+	0x1d7b3500c UIKitCore!-[_UIViewControllerTransitionContext completeTransition:]
+
+[*] Class Name: PHPhotoLibrary
+[*] Method Name: authorizationStatus
+	Backtrace:
+	0x1028086f8 /private/var/containers/Bundle/Application/70319494-6F1C-4070-B9B1-769E4C7C5295/Reading.app/Reading!+[SSAuthenticationManager checkAuthorizationForPhotoLibraryParams:completion:]
+	0x1028320a8 Reading!0x7460a8 (0x1007460a8)
+	0x10390bd84 /private/var/containers/Bundle/Application/70319494-6F1C-4070-B9B1-769E4C7C5295/Reading.app/Reading!-[FQRPhotoBrowser tryToSaveImage]
+	0x102739020 /private/var/containers/Bundle/Application/70319494-6F1C-4070-B9B1-769E4C7C5295/Reading.app/Reading!-[SSNewKCAlertView actionBtnClick:]
+	0x1d7ad1764 UIKitCore!-[UIApplication sendAction:to:from:forEvent:]
+	0x1d7ad1484 UIKitCore!-[UIControl sendAction:to:forEvent:]
+	0x103c23b70 /private/var/containers/Bundle/Application/70319494-6F1C-4070-B9B1-769E4C7C5295/Reading.app/Reading!-[UIControl sendAction:to:forEvent:]
+	0x1d7ad0e8c UIKitCore!-[UIControl _sendActionsForEvents:withEvent:]
+	0x1d7ad0d68 UIKitCore!-[UIButton _sendActionsForEvents:withEvent:]
+	0x1d7ad0944 UIKitCore!-[UIControl touchesEnded:withEvent:]
+	0x10a769370 /private/var/containers/Bundle/Application/70319494-6F1C-4070-B9B1-769E4C7C5295/Reading.app/Reading!-[UIButton touchesEnded:withEvent:]
+	0x1d7991b18 UIKitCore!-[UIWindow _sendTouchesForEvent:]
+	0x1d7990e2c UIKitCore!-[UIWindow sendEvent:]
+	0x1d7990118 UIKitCore!-[UIApplication sendEvent:]
+	0x1d798e38c UIKitCore!__dispatchPreprocessedEventFromEventQueue
+	0x1d79d3d58 UIKitCore!__processEventQueue
+

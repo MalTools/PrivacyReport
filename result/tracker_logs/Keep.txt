@@ -1,0 +1,1849 @@
+(base) mac@macdeMacBook-Pro autoTestiOS % frida -U -F -l hook_sensitive_api.js
+     ____
+    / _  |   Frida 16.2.1 - A world-class dynamic instrumentation toolkit
+   | (_| |
+    > _  |   Commands:
+   /_/ |_|       help      -> Displays the help system
+   . . . .       object?   -> Display information about 'object'
+   . . . .       exit/quit -> Exit
+   . . . .
+   . . . .   More info at https://frida.re/docs/home/
+   . . . .
+   . . . .   Connected to iPhone (id=02f66296483099a1e80d262c998b9f8feb885523)
+[*] Started: Modify Return Value
+funcName_arg namePrefix
+[!] funcName_arg Exception: 
+funcName_arg givenName
+[!] funcName_arg Exception: 
+funcName_arg middleName
+[!] funcName_arg Exception: 
+funcName_arg familyName
+[!] funcName_arg Exception: 
+funcName_arg previousFamilyName
+[!] funcName_arg Exception: 
+funcName_arg nickname
+[!] funcName_arg Exception: 
+funcName_arg phoneticGivenName
+[!] funcName_arg Exception: 
+funcName_arg phoneticMiddleName
+[!] funcName_arg Exception: 
+funcName_arg phoneticFamilyName
+[!] funcName_arg Exception: 
+funcName_arg jobTitle
+[!] funcName_arg Exception: 
+funcName_arg departmentName
+[!] funcName_arg Exception: 
+funcName_arg organizationName
+[!] funcName_arg Exception: 
+funcName_arg phoneticOrganizationName
+[!] funcName_arg Exception: 
+funcName_arg postalAddresses
+[!] funcName_arg Exception: 
+funcName_arg urlAddresses
+[!] funcName_arg Exception: 
+funcName_arg phoneNumbers
+[!] funcName_arg Exception: 
+funcName_arg socialProfiles
+[!] funcName_arg Exception: 
+funcName_arg emailAddresses
+[!] funcName_arg Exception: 
+funcName_arg birthday
+[!] funcName_arg Exception: 
+funcName_arg dates
+[!] funcName_arg Exception: 
+funcName_arg nonGregorianBirthday
+[!] funcName_arg Exception: 
+funcName_arg note
+[!] funcName_arg Exception: 
+funcName_arg emailAddresses
+[!] funcName_arg Exception: 
+funcName_arg unifiedMeContactWithKeysToFetch:error:
+[!] funcName_arg Exception: 
+funcName_arg rfetchAssetsInAssetCollection:options:
+[!] funcName_arg Exception: 
+message: {'type': 'send', 'payload': '[*] Started: Modify Return Value'} data: None
+[iPhone::Keep ]->
+[*] Class Name: CLLocationManager
+[*] Method Name: locationServicesEnabled
+	Backtrace:
+	0x10885240c Keep!0x7b6240c (0x107b6240c)
+	0x108921b0c Keep!0x7c31b0c (0x107c31b0c)
+	0x108921584 Keep!0x7c31584 (0x107c31584)
+        0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc699cf8 libdispatch.dylib!_dispatch_lane_concurrent_drain
+	0x1dc692220 libdispatch.dylib!_dispatch_lane_invoke$VARIANT$armv81
+        0x1dc68d8d8 libdispatch.dylib!_dispatch_queue_override_invoke
+	0x1dc69ac68 libdispatch.dylib!_dispatch_root_queue_drain
+	0x1dc69b430 libdispatch.dylib!_dispatch_worker_thread2
+	0x2206b1b94 libsystem_pthread.dylib!_pthread_wqthread
+
+[*] Class Name: CLLocationManager
+[*] Method Name: authorizationStatus
+	Backtrace:
+	0x108852428 Keep!0x7b62428 (0x107b62428)
+	0x108921b0c Keep!0x7c31b0c (0x107c31b0c)
+	0x108921584 Keep!0x7c31584 (0x107c31584)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc699cf8 libdispatch.dylib!_dispatch_lane_concurrent_drain
+	0x1dc692220 libdispatch.dylib!_dispatch_lane_invoke$VARIANT$armv81
+	0x1dc68d8d8 libdispatch.dylib!_dispatch_queue_override_invoke
+	0x1dc69ac68 libdispatch.dylib!_dispatch_root_queue_drain
+	0x1dc69b430 libdispatch.dylib!_dispatch_worker_thread2
+	0x2206b1b94 libsystem_pthread.dylib!_pthread_wqthread
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: authorizationStatusForMediaType:
+	Backtrace:
+	0x103f0e5d0 Keep!0x321e5d0 (0x10321e5d0)
+	0x103f0e9a0 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPPermissionModule.KEPCameraPermissionManager requestPermissionWithAuthorizeCallback:skipCallback:]
+	0x109aa76bc /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPTargetSU action_showImagePickerWithCompletion:]
+	0x1034190c8 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPMediator p_safePerformAction:target:params:]
+	0x1034184f0 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPMediator kep_performTarget:action:params:]
+	0x103446254 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPMediator mediator_showImagePickerFromController:withSourceType:entrySource:imageCropSize:animated:completion:finishPickImageBlock:]
+	0x103fa4790 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KMePersonalEventHandler takePhotoWithImageSourceType:isCoverImage:]
+	0x103fa454c Keep!0x32b454c (0x1032b454c)
+	0x105a14a80 Keep!0x4d24a80 (0x104d24a80)
+	0x1d8800fcc UIKitCore!__UIVIEW_IS_EXECUTING_ANIMATION_COMPLETION_BLOCK__
+	0x1d796870c UIKitCore!-[UIViewAnimationBlockDelegate _didEndBlockAnimation:finished:context:]
+	0x1d79676c0 UIKitCore!-[UIViewAnimationState sendDelegateAnimationDidStop:finished:]
+	0x1d7966ecc UIKitCore!-[UIViewAnimationState animationDidStop:finished:]
+	0x1d6db64e8 QuartzCore!CA::Layer::run_animation_callbacks(void*)
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc697e10 libdispatch.dylib!_dispatch_main_queue_drain
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: requestAccessForMediaType:completionHandler:
+	Backtrace:
+	0x103f0e8c4 Keep!0x321e8c4 (0x10321e8c4)
+	0x1015420f8 Keep!0x8520f8 (0x1008520f8)
+	0x100cfae54 Keep!0xae54 (0x10000ae54)
+	0x1d8800fcc UIKitCore!__UIVIEW_IS_EXECUTING_ANIMATION_COMPLETION_BLOCK__
+	0x1d796870c UIKitCore!-[UIViewAnimationBlockDelegate _didEndBlockAnimation:finished:context:]
+	0x1d79676c0 UIKitCore!-[UIViewAnimationState sendDelegateAnimationDidStop:finished:]
+	0x1d7966ecc UIKitCore!-[UIViewAnimationState animationDidStop:finished:]
+	0x1d6db64e8 QuartzCore!CA::Layer::run_animation_callbacks(void*)
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc697e10 libdispatch.dylib!_dispatch_main_queue_drain
+	0x1dc697a88 libdispatch.dylib!_dispatch_main_queue_callback_4CF$VARIANT$armv81
+	0x1d59999ac CoreFoundation!__CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+	0x1d597d648 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: authorizationStatusForMediaType:
+	Backtrace:
+	0x1edbc6a94 AVFCapture!-[AVCaptureDeviceInput _authorizedToUseDeviceAndRequestIfNecessary:]
+	0x1edbc6848 AVFCapture!-[AVCaptureDeviceInput initWithDevice:error:]
+	0x1edbc67bc AVFCapture!+[AVCaptureDeviceInput deviceInputWithDevice:error:]
+	0x21d54a184 CameraUI!___prewarmAudioVideoDevices_block_invoke
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc686ddc libdispatch.dylib!_dispatch_once_callout
+	0x21d552c80 CameraUI!-[CAMCaptureEngine prewarmedVideoDeviceInput:position:device:]
+	0x21d552ae8 CameraUI!-[CAMCaptureEngineDevice captureDeviceInput]
+	0x21d552a0c CameraUI!-[CAMModeAndDeviceCommand _desiredInputsWithContext:]
+	0x21d551ccc CameraUI!-[CAMModeAndDeviceCommand executeWithContext:]
+	0x21d551704 CameraUI!-[CAMCaptureEngine _executeCommand:withContext:]
+	0x21d551794 CameraUI!-[CAMCaptureEngine _executeCommand:withContext:]
+	0x21d551794 CameraUI!-[CAMCaptureEngine _executeCommand:withContext:]
+	0x21d5512d0 CameraUI!__35-[CAMCaptureEngine enqueueCommand:]_block_invoke
+	0x1e9ca6c18 PhotoLibraryServicesCore!__pl_dispatch_async_block_invoke
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+
+[*] Class Name: PHPhotoLibrary
+[*] Method Name: authorizationStatus
+	Backtrace:
+	0x103f1e8c0 Keep!0x322e8c0 (0x10322e8c0)
+	0x103f1ecb4 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPPermissionModule.KEPPhotoPermissionManager requestPermissionWithAuthorizeCallback:skipCallback:]
+	0x109aa76bc /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPTargetSU action_showImagePickerWithCompletion:]
+	0x1034190c8 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPMediator p_safePerformAction:target:params:]
+	0x1034184f0 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPMediator kep_performTarget:action:params:]
+	0x103446254 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPMediator mediator_showImagePickerFromController:withSourceType:entrySource:imageCropSize:animated:completion:finishPickImageBlock:]
+	0x103fa4790 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KMePersonalEventHandler takePhotoWithImageSourceType:isCoverImage:]
+	0x103fa4d18 Keep!0x32b4d18 (0x1032b4d18)
+	0x103fc0974 Keep!0x32d0974 (0x1032d0974)
+	0x103fc20e0 Keep!0x32d20e0 (0x1032d20e0)
+	0x105a14a80 Keep!0x4d24a80 (0x104d24a80)
+	0x1d8800fcc UIKitCore!__UIVIEW_IS_EXECUTING_ANIMATION_COMPLETION_BLOCK__
+	0x1d796870c UIKitCore!-[UIViewAnimationBlockDelegate _didEndBlockAnimation:finished:context:]
+	0x1d79676c0 UIKitCore!-[UIViewAnimationState sendDelegateAnimationDidStop:finished:]
+	0x1d7966ecc UIKitCore!-[UIViewAnimationState animationDidStop:finished:]
+	0x1d6db64e8 QuartzCore!CA::Layer::run_animation_callbacks(void*)
+
+[*] Class Name: PHPhotoLibrary
+[*] Method Name: requestAuthorization:
+	Backtrace:
+	0x103f1eba0 Keep!0x322eba0 (0x10322eba0)
+	0x1015420f8 Keep!0x8520f8 (0x1008520f8)
+	0x100cfae54 Keep!0xae54 (0x10000ae54)
+	0x1d8800fcc UIKitCore!__UIVIEW_IS_EXECUTING_ANIMATION_COMPLETION_BLOCK__
+	0x1d796870c UIKitCore!-[UIViewAnimationBlockDelegate _didEndBlockAnimation:finished:context:]
+	0x1d79676c0 UIKitCore!-[UIViewAnimationState sendDelegateAnimationDidStop:finished:]
+	0x1d7966ecc UIKitCore!-[UIViewAnimationState animationDidStop:finished:]
+	0x1d6db64e8 QuartzCore!CA::Layer::run_animation_callbacks(void*)
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc697e10 libdispatch.dylib!_dispatch_main_queue_drain
+	0x1dc697a88 libdispatch.dylib!_dispatch_main_queue_callback_4CF$VARIANT$armv81
+	0x1d59999ac CoreFoundation!__CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+	0x1d597d648 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+
+[*] Class Name: CLLocationManager
+[*] Method Name: locationServicesEnabled
+	Backtrace:
+	0x103f1672c Keep!0x322672c (0x10322672c)
+	0x1015420f8 Keep!0x8520f8 (0x1008520f8)
+	0x100cfae54 Keep!0xae54 (0x10000ae54)
+	0x1d8800fcc UIKitCore!__UIVIEW_IS_EXECUTING_ANIMATION_COMPLETION_BLOCK__
+	0x1d796870c UIKitCore!-[UIViewAnimationBlockDelegate _didEndBlockAnimation:finished:context:]
+	0x1d79676c0 UIKitCore!-[UIViewAnimationState sendDelegateAnimationDidStop:finished:]
+	0x1d7966ecc UIKitCore!-[UIViewAnimationState animationDidStop:finished:]
+	0x1d6db64e8 QuartzCore!CA::Layer::run_animation_callbacks(void*)
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc697e10 libdispatch.dylib!_dispatch_main_queue_drain
+	0x1dc697a88 libdispatch.dylib!_dispatch_main_queue_callback_4CF$VARIANT$armv81
+	0x1d59999ac CoreFoundation!__CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+	0x1d597d648 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+
+[*] Class Name: CLLocationManager
+[*] Method Name: locationServicesEnabled
+	Backtrace:
+	0x10537d78c Keep!0x468d78c (0x10468d78c)
+	0x10537d860 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPSystemServiceWrapper.KEPLocationService currentLocationWithUpdate]
+	0x105378b48 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPTargetSystemService action_locate]
+	0x1d5975f40 CoreFoundation!__invoking___
+	0x1d59271c8 CoreFoundation!-[NSInvocation invoke]
+	0x103419128 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPMediator p_safePerformAction:target:params:]
+	0x1034184f0 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPMediator kep_performTarget:action:params:]
+	0x10341ea24 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPMediator mediator_locate]
+	0x103f16a74 Keep!0x3226a74 (0x103226a74)
+	0x1015420f8 Keep!0x8520f8 (0x1008520f8)
+	0x103f16da4 Keep!0x3226da4 (0x103226da4)
+	0x100cfae54 Keep!0xae54 (0x10000ae54)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc697e10 libdispatch.dylib!_dispatch_main_queue_drain
+	0x1dc697a88 libdispatch.dylib!_dispatch_main_queue_callback_4CF$VARIANT$armv81
+
+[*] Class Name: CLLocationManager
+[*] Method Name: authorizationStatus
+	Backtrace:
+	0x10537d7a0 Keep!0x468d7a0 (0x10468d7a0)
+	0x10537d860 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPSystemServiceWrapper.KEPLocationService currentLocationWithUpdate]
+	0x105378b48 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPTargetSystemService action_locate]
+	0x1d5975f40 CoreFoundation!__invoking___
+	0x1d59271c8 CoreFoundation!-[NSInvocation invoke]
+	0x103419128 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPMediator p_safePerformAction:target:params:]
+	0x1034184f0 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPMediator kep_performTarget:action:params:]
+	0x10341ea24 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPMediator mediator_locate]
+	0x103f16a74 Keep!0x3226a74 (0x103226a74)
+	0x1015420f8 Keep!0x8520f8 (0x1008520f8)
+	0x103f16da4 Keep!0x3226da4 (0x103226da4)
+	0x100cfae54 Keep!0xae54 (0x10000ae54)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc697e10 libdispatch.dylib!_dispatch_main_queue_drain
+	0x1dc697a88 libdispatch.dylib!_dispatch_main_queue_callback_4CF$VARIANT$armv81
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x105383a40 Keep!0x4693a40 (0x104693a40)
+	0x10537ff44 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPSystemServiceWrapper.KEPLocationService locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d14c CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x100cf81f8 Keep!0x81f8 (0x1000081f8)
+	0x10e8a0344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - altitude
+	Backtrace:
+	0x105383a68 Keep!0x4693a68 (0x104693a68)
+	0x10537ff44 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPSystemServiceWrapper.KEPLocationService locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d14c CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x100cf81f8 Keep!0x81f8 (0x1000081f8)
+	0x10e8a0344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - horizontalAccuracy
+	Backtrace:
+	0x105383a7c Keep!0x4693a7c (0x104693a7c)
+	0x10537ff44 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPSystemServiceWrapper.KEPLocationService locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d14c CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x100cf81f8 Keep!0x81f8 (0x1000081f8)
+	0x10e8a0344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - verticalAccuracy
+	Backtrace:
+	0x105383a90 Keep!0x4693a90 (0x104693a90)
+	0x10537ff44 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPSystemServiceWrapper.KEPLocationService locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d14c CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x100cf81f8 Keep!0x81f8 (0x1000081f8)
+	0x10e8a0344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - timestamp
+	Backtrace:
+	0x105383acc Keep!0x4693acc (0x104693acc)
+	0x10537ff44 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPSystemServiceWrapper.KEPLocationService locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d14c CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x100cf81f8 Keep!0x81f8 (0x1000081f8)
+	0x10e8a0344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - timestamp
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x10537ed78 Keep!0x468ed78 (0x10468ed78)
+	0x100cfae54 Keep!0xae54 (0x10000ae54)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc699cf8 libdispatch.dylib!_dispatch_lane_concurrent_drain
+	0x1dc692220 libdispatch.dylib!_dispatch_lane_invoke$VARIANT$armv81
+	0x1dc68d8d8 libdispatch.dylib!_dispatch_queue_override_invoke
+	0x1dc69ac68 libdispatch.dylib!_dispatch_root_queue_drain
+	0x1dc69b430 libdispatch.dylib!_dispatch_worker_thread2
+	0x2206b1b94 libsystem_pthread.dylib!_pthread_wqthread
+
+[*] Class Name: CLLocation
+[*] Method Name: - altitude
+	Backtrace:
+	0x10537ed90 Keep!0x468ed90 (0x10468ed90)
+	0x100cfae54 Keep!0xae54 (0x10000ae54)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc699cf8 libdispatch.dylib!_dispatch_lane_concurrent_drain
+	0x1dc692220 libdispatch.dylib!_dispatch_lane_invoke$VARIANT$armv81
+	0x1dc68d8d8 libdispatch.dylib!_dispatch_queue_override_invoke
+	0x1dc69ac68 libdispatch.dylib!_dispatch_root_queue_drain
+	0x1dc69b430 libdispatch.dylib!_dispatch_worker_thread2
+	0x2206b1b94 libsystem_pthread.dylib!_pthread_wqthread
+
+[*] Class Name: CLLocation
+[*] Method Name: - horizontalAccuracy
+	Backtrace:
+	0x10537eda4 Keep!0x468eda4 (0x10468eda4)
+	0x100cfae54 Keep!0xae54 (0x10000ae54)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc699cf8 libdispatch.dylib!_dispatch_lane_concurrent_drain
+	0x1dc692220 libdispatch.dylib!_dispatch_lane_invoke$VARIANT$armv81
+	0x1dc68d8d8 libdispatch.dylib!_dispatch_queue_override_invoke
+	0x1dc69ac68 libdispatch.dylib!_dispatch_root_queue_drain
+	0x1dc69b430 libdispatch.dylib!_dispatch_worker_thread2
+	0x2206b1b94 libsystem_pthread.dylib!_pthread_wqthread
+
+[*] Class Name: CLLocation
+[*] Method Name: - verticalAccuracy
+	Backtrace:
+	0x10537eaf4 Keep!0x468eaf4 (0x10468eaf4)
+	0x105383b58 Keep!0x4693b58 (0x104693b58)
+	0x10537ff44 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPSystemServiceWrapper.KEPLocationService locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d14c CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x100cf81f8 Keep!0x81f8 (0x1000081f8)
+	0x10e8a0344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x10537edb8 Keep!0x468edb8 (0x10468edb8)
+	0x100cfae54 Keep!0xae54 (0x10000ae54)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc699cf8 libdispatch.dylib!_dispatch_lane_concurrent_drain
+	0x1dc692220 libdispatch.dylib!_dispatch_lane_invoke$VARIANT$armv81
+	0x1dc68d8d8 libdispatch.dylib!_dispatch_queue_override_invoke
+	0x1dc69ac68 libdispatch.dylib!_dispatch_root_queue_drain
+	0x1dc69b430 libdispatch.dylib!_dispatch_worker_thread2
+	0x2206b1b94 libsystem_pthread.dylib!_pthread_wqthread
+	Backtrace:
+	0x10537ebb8 Keep!0x468ebb8 (0x10468ebb8)
+	0x105383b58 Keep!0x4693b58 (0x104693b58)
+	0x10537ff44 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPSystemServiceWrapper.KEPLocationService locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d14c CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x100cf81f8 Keep!0x81f8 (0x1000081f8)
+	0x10e8a0344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x10537ec34 Keep!0x468ec34 (0x10468ec34)
+	0x105383b58 Keep!0x4693b58 (0x104693b58)
+	0x10537ff44 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPSystemServiceWrapper.KEPLocationService locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d14c CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x100cf81f8 Keep!0x81f8 (0x1000081f8)
+	0x10e8a0344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x105383a40 Keep!0x4693a40 (0x104693a40)
+	0x10537ff44 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPSystemServiceWrapper.KEPLocationService locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d14c CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x100cf81f8 Keep!0x81f8 (0x1000081f8)
+	0x10e8a0344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - altitude
+	Backtrace:
+	0x105383a68 Keep!0x4693a68 (0x104693a68)
+	0x10537ff44 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPSystemServiceWrapper.KEPLocationService locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d14c CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x100cf81f8 Keep!0x81f8 (0x1000081f8)
+	0x10e8a0344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - horizontalAccuracy
+	Backtrace:
+	0x105383a7c Keep!0x4693a7c (0x104693a7c)
+	0x10537ff44 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPSystemServiceWrapper.KEPLocationService locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d14c CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x100cf81f8 Keep!0x81f8 (0x1000081f8)
+	0x10e8a0344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - verticalAccuracy
+	Backtrace:
+	0x105383a90 Keep!0x4693a90 (0x104693a90)
+	0x10537ff44 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPSystemServiceWrapper.KEPLocationService locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d14c CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x100cf81f8 Keep!0x81f8 (0x1000081f8)
+	0x10e8a0344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - timestamp
+	Backtrace:
+	0x105383acc Keep!0x4693acc (0x104693acc)
+	0x10537ff44 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPSystemServiceWrapper.KEPLocationService locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d14c CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x100cf81f8 Keep!0x81f8 (0x1000081f8)
+	0x10e8a0344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - timestamp
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x10537ed78 Keep!0x468ed78 (0x10468ed78)
+	0x100cfae54 Keep!0xae54 (0x10000ae54)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc699cf8 libdispatch.dylib!_dispatch_lane_concurrent_drain
+	0x1dc692220 libdispatch.dylib!_dispatch_lane_invoke$VARIANT$armv81
+	0x1dc68d8d8 libdispatch.dylib!_dispatch_queue_override_invoke
+	0x1dc69ac68 libdispatch.dylib!_dispatch_root_queue_drain
+	0x1dc69b430 libdispatch.dylib!_dispatch_worker_thread2
+	0x2206b1b94 libsystem_pthread.dylib!_pthread_wqthread
+
+[*] Class Name: CLLocation
+[*] Method Name: - altitude
+	Backtrace:
+	0x10537ed90 Keep!0x468ed90 (0x10468ed90)
+	0x100cfae54 Keep!0xae54 (0x10000ae54)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc699cf8 libdispatch.dylib!_dispatch_lane_concurrent_drain
+	0x1dc692220 libdispatch.dylib!_dispatch_lane_invoke$VARIANT$armv81
+	0x1dc68d8d8 libdispatch.dylib!_dispatch_queue_override_invoke
+	0x1dc69ac68 libdispatch.dylib!_dispatch_root_queue_drain
+	0x1dc69b430 libdispatch.dylib!_dispatch_worker_thread2
+	0x2206b1b94 libsystem_pthread.dylib!_pthread_wqthread
+
+[*] Class Name: CLLocation
+[*] Method Name: - horizontalAccuracy
+	Backtrace:
+	0x10537eda4 Keep!0x468eda4 (0x10468eda4)
+	0x100cfae54 Keep!0xae54 (0x10000ae54)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc699cf8 libdispatch.dylib!_dispatch_lane_concurrent_drain
+	0x1dc692220 libdispatch.dylib!_dispatch_lane_invoke$VARIANT$armv81
+	0x1dc68d8d8 libdispatch.dylib!_dispatch_queue_override_invoke
+	0x1dc69ac68 libdispatch.dylib!_dispatch_root_queue_drain
+	0x1dc69b430 libdispatch.dylib!_dispatch_worker_thread2
+	0x2206b1b94 libsystem_pthread.dylib!_pthread_wqthread
+
+[*] Class Name: CLLocation
+[*] Method Name: - verticalAccuracy
+	Backtrace:
+	0x10537eaf4 Keep!0x468eaf4 (0x10468eaf4)
+	0x105383b58 Keep!0x4693b58 (0x104693b58)
+	0x10537ff44 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPSystemServiceWrapper.KEPLocationService locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d14c CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x100cf81f8 Keep!0x81f8 (0x1000081f8)
+	0x10e8a0344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x10537edb8 Keep!0x468edb8 (0x10468edb8)
+	0x100cfae54 Keep!0xae54 (0x10000ae54)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc699cf8 libdispatch.dylib!_dispatch_lane_concurrent_drain
+	0x1dc692220 libdispatch.dylib!_dispatch_lane_invoke$VARIANT$armv81
+	0x1dc68d8d8 libdispatch.dylib!_dispatch_queue_override_invoke
+	0x1dc69ac68 libdispatch.dylib!_dispatch_root_queue_drain
+	0x1dc69b430 libdispatch.dylib!_dispatch_worker_thread2
+	0x2206b1b94 libsystem_pthread.dylib!_pthread_wqthread
+	Backtrace:
+	0x10537ebb8 Keep!0x468ebb8 (0x10468ebb8)
+	0x105383b58 Keep!0x4693b58 (0x104693b58)
+	0x10537ff44 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPSystemServiceWrapper.KEPLocationService locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d14c CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x100cf81f8 Keep!0x81f8 (0x1000081f8)
+	0x10e8a0344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x10537ec34 Keep!0x468ec34 (0x10468ec34)
+	0x105383b58 Keep!0x4693b58 (0x104693b58)
+	0x10537ff44 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPSystemServiceWrapper.KEPLocationService locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d14c CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x100cf81f8 Keep!0x81f8 (0x1000081f8)
+	0x10e8a0344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x105383a40 Keep!0x4693a40 (0x104693a40)
+	0x10537ff44 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPSystemServiceWrapper.KEPLocationService locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d14c CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x100cf81f8 Keep!0x81f8 (0x1000081f8)
+	0x10e8a0344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - altitude
+	Backtrace:
+	0x105383a68 Keep!0x4693a68 (0x104693a68)
+	0x10537ff44 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPSystemServiceWrapper.KEPLocationService locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d14c CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x100cf81f8 Keep!0x81f8 (0x1000081f8)
+	0x10e8a0344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - horizontalAccuracy
+	Backtrace:
+	0x105383a7c Keep!0x4693a7c (0x104693a7c)
+	0x10537ff44 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPSystemServiceWrapper.KEPLocationService locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d14c CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x100cf81f8 Keep!0x81f8 (0x1000081f8)
+	0x10e8a0344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - verticalAccuracy
+	Backtrace:
+	0x105383a90 Keep!0x4693a90 (0x104693a90)
+	0x10537ff44 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPSystemServiceWrapper.KEPLocationService locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d14c CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x100cf81f8 Keep!0x81f8 (0x1000081f8)
+	0x10e8a0344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - timestamp
+	Backtrace:
+	0x105383acc Keep!0x4693acc (0x104693acc)
+	0x10537ff44 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPSystemServiceWrapper.KEPLocationService locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d14c CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x100cf81f8 Keep!0x81f8 (0x1000081f8)
+	0x10e8a0344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - timestamp
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x10537ed78 Keep!0x468ed78 (0x10468ed78)
+	0x100cfae54 Keep!0xae54 (0x10000ae54)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc699cf8 libdispatch.dylib!_dispatch_lane_concurrent_drain
+	0x1dc692220 libdispatch.dylib!_dispatch_lane_invoke$VARIANT$armv81
+	0x1dc68d8d8 libdispatch.dylib!_dispatch_queue_override_invoke
+	0x1dc69ac68 libdispatch.dylib!_dispatch_root_queue_drain
+	0x1dc69b430 libdispatch.dylib!_dispatch_worker_thread2
+	0x2206b1b94 libsystem_pthread.dylib!_pthread_wqthread
+
+[*] Class Name: CLLocation
+[*] Method Name: - altitude
+	Backtrace:
+	0x10537ed90 Keep!0x468ed90 (0x10468ed90)
+	0x100cfae54 Keep!0xae54 (0x10000ae54)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc699cf8 libdispatch.dylib!_dispatch_lane_concurrent_drain
+	0x1dc692220 libdispatch.dylib!_dispatch_lane_invoke$VARIANT$armv81
+	0x1dc68d8d8 libdispatch.dylib!_dispatch_queue_override_invoke
+	0x1dc69ac68 libdispatch.dylib!_dispatch_root_queue_drain
+	0x1dc69b430 libdispatch.dylib!_dispatch_worker_thread2
+	0x2206b1b94 libsystem_pthread.dylib!_pthread_wqthread
+
+[*] Class Name: CLLocation
+[*] Method Name: - horizontalAccuracy
+	Backtrace:
+	0x10537eda4 Keep!0x468eda4 (0x10468eda4)
+	0x100cfae54 Keep!0xae54 (0x10000ae54)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc699cf8 libdispatch.dylib!_dispatch_lane_concurrent_drain
+	0x1dc692220 libdispatch.dylib!_dispatch_lane_invoke$VARIANT$armv81
+	0x1dc68d8d8 libdispatch.dylib!_dispatch_queue_override_invoke
+	0x1dc69ac68 libdispatch.dylib!_dispatch_root_queue_drain
+	0x1dc69b430 libdispatch.dylib!_dispatch_worker_thread2
+	0x2206b1b94 libsystem_pthread.dylib!_pthread_wqthread
+
+[*] Class Name: CLLocation
+[*] Method Name: - verticalAccuracy
+	Backtrace:
+	0x10537edb8 Keep!0x468edb8 (0x10468edb8)
+	0x100cfae54 Keep!0xae54 (0x10000ae54)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc699cf8 libdispatch.dylib!_dispatch_lane_concurrent_drain
+	0x1dc692220 libdispatch.dylib!_dispatch_lane_invoke$VARIANT$armv81
+	0x1dc68d8d8 libdispatch.dylib!_dispatch_queue_override_invoke
+	0x1dc69ac68 libdispatch.dylib!_dispatch_root_queue_drain
+	0x1dc69b430 libdispatch.dylib!_dispatch_worker_thread2
+	0x2206b1b94 libsystem_pthread.dylib!_pthread_wqthread
+	Backtrace:
+	0x10537eaf4 Keep!0x468eaf4 (0x10468eaf4)
+	0x105383b58 Keep!0x4693b58 (0x104693b58)
+	0x10537ff44 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPSystemServiceWrapper.KEPLocationService locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d14c CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x100cf81f8 Keep!0x81f8 (0x1000081f8)
+	0x10e8a0344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x10537ebb8 Keep!0x468ebb8 (0x10468ebb8)
+	0x105383b58 Keep!0x4693b58 (0x104693b58)
+	0x10537ff44 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPSystemServiceWrapper.KEPLocationService locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d14c CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x100cf81f8 Keep!0x81f8 (0x1000081f8)
+	0x10e8a0344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x10537ec34 Keep!0x468ec34 (0x10468ec34)
+	0x105383b58 Keep!0x4693b58 (0x104693b58)
+	0x10537ff44 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPSystemServiceWrapper.KEPLocationService locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d14c CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x100cf81f8 Keep!0x81f8 (0x1000081f8)
+	0x10e8a0344 dyld!start
+
+[*] Class Name: CLLocationManager
+[*] Method Name: locationServicesEnabled
+	Backtrace:
+	0x10537dbe4 Keep!0x468dbe4 (0x10468dbe4)
+	0x10537de14 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPSystemServiceWrapper.KEPLocationService fetchPOILocationWithCompletion:systemDisable:noPermission:]
+	0x1021317b8 Keep!0x14417b8 (0x1014417b8)
+	0x1015420f8 Keep!0x8520f8 (0x1008520f8)
+	0x103f1cf24 Keep!0x322cf24 (0x10322cf24)
+	0x100cfae54 Keep!0xae54 (0x10000ae54)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc697e10 libdispatch.dylib!_dispatch_main_queue_drain
+	0x1dc697a88 libdispatch.dylib!_dispatch_main_queue_callback_4CF$VARIANT$armv81
+	0x1d59999ac CoreFoundation!__CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+	0x1d597d648 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+
+[*] Class Name: CLLocationManager
+[*] Method Name: authorizationStatus
+	Backtrace:
+	0x10537dbf8 Keep!0x468dbf8 (0x10468dbf8)
+	0x10537de14 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPSystemServiceWrapper.KEPLocationService fetchPOILocationWithCompletion:systemDisable:noPermission:]
+	0x1021317b8 Keep!0x14417b8 (0x1014417b8)
+	0x1015420f8 Keep!0x8520f8 (0x1008520f8)
+	0x103f1cf24 Keep!0x322cf24 (0x10322cf24)
+	0x100cfae54 Keep!0xae54 (0x10000ae54)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc697e10 libdispatch.dylib!_dispatch_main_queue_drain
+	0x1dc697a88 libdispatch.dylib!_dispatch_main_queue_callback_4CF$VARIANT$armv81
+	0x1d59999ac CoreFoundation!__CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+	0x1d597d648 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x1096954ec /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KAppDelegate commonHeader]
+	0x1037bb8a8 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPNetConfig configureHTTPHeader:]
+	0x101e12430 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPStatistics uploadKeepLogWithPath:formattedContent:priority:result:]
+	0x101e10660 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPStatistics _kep_uploadHighPriorityContent:source:]
+	0x101e102ec Keep!0x11202ec (0x1011202ec)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc6916fc libdispatch.dylib!_dispatch_lane_serial_drain$VARIANT$armv81
+	0x1dc6921b0 libdispatch.dylib!_dispatch_lane_invoke$VARIANT$armv81
+	0x1dc69bf14 libdispatch.dylib!_dispatch_workloop_worker_thread
+	0x2206b1bd0 libsystem_pthread.dylib!_pthread_wqthread
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x105383a40 Keep!0x4693a40 (0x104693a40)
+	0x10537ff44 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPSystemServiceWrapper.KEPLocationService locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d804 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x100cf81f8 Keep!0x81f8 (0x1000081f8)
+	0x10e8a0344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - altitude
+	Backtrace:
+	0x1096954f8 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KAppDelegate commonHeader]
+	0x1037bb8a8 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPNetConfig configureHTTPHeader:]
+	0x101e12430 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPStatistics uploadKeepLogWithPath:formattedContent:priority:result:]
+	0x101e10660 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPStatistics _kep_uploadHighPriorityContent:source:]
+	0x101e102ec Keep!0x11202ec (0x1011202ec)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc6916fc libdispatch.dylib!_dispatch_lane_serial_drain$VARIANT$armv81
+	0x1dc6921b0 libdispatch.dylib!_dispatch_lane_invoke$VARIANT$armv81
+	0x1dc69bf14 libdispatch.dylib!_dispatch_workloop_worker_thread
+	0x2206b1bd0 libsystem_pthread.dylib!_pthread_wqthread
+	Backtrace:
+	0x105383a68 Keep!0x4693a68 (0x104693a68)
+	0x10537ff44 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPSystemServiceWrapper.KEPLocationService locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d804 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x100cf81f8 Keep!0x81f8 (0x1000081f8)
+	0x10e8a0344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - horizontalAccuracy
+	Backtrace:
+	0x105383a7c Keep!0x4693a7c (0x104693a7c)
+	0x10537ff44 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPSystemServiceWrapper.KEPLocationService locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d804 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x100cf81f8 Keep!0x81f8 (0x1000081f8)
+	0x10e8a0344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - verticalAccuracy
+	Backtrace:
+	0x105383a90 Keep!0x4693a90 (0x104693a90)
+	0x10537ff44 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPSystemServiceWrapper.KEPLocationService locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d804 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x100cf81f8 Keep!0x81f8 (0x1000081f8)
+	0x10e8a0344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - timestamp
+	Backtrace:
+	0x105383acc Keep!0x4693acc (0x104693acc)
+	0x10537ff44 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPSystemServiceWrapper.KEPLocationService locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d804 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x100cf81f8 Keep!0x81f8 (0x1000081f8)
+	0x10e8a0344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - timestamp
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x10537ed78 Keep!0x468ed78 (0x10468ed78)
+	0x100cfae54 Keep!0xae54 (0x10000ae54)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc699cf8 libdispatch.dylib!_dispatch_lane_concurrent_drain
+	0x1dc692220 libdispatch.dylib!_dispatch_lane_invoke$VARIANT$armv81
+	0x1dc68d8d8 libdispatch.dylib!_dispatch_queue_override_invoke
+	0x1dc69ac68 libdispatch.dylib!_dispatch_root_queue_drain
+	0x1dc69b430 libdispatch.dylib!_dispatch_worker_thread2
+	0x2206b1b94 libsystem_pthread.dylib!_pthread_wqthread
+
+[*] Class Name: CLLocation
+[*] Method Name: - altitude
+	Backtrace:
+	0x10537ed90 Keep!0x468ed90 (0x10468ed90)
+	0x100cfae54 Keep!0xae54 (0x10000ae54)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc699cf8 libdispatch.dylib!_dispatch_lane_concurrent_drain
+	0x1dc692220 libdispatch.dylib!_dispatch_lane_invoke$VARIANT$armv81
+	0x1dc68d8d8 libdispatch.dylib!_dispatch_queue_override_invoke
+	0x1dc69ac68 libdispatch.dylib!_dispatch_root_queue_drain
+	0x1dc69b430 libdispatch.dylib!_dispatch_worker_thread2
+	0x2206b1b94 libsystem_pthread.dylib!_pthread_wqthread
+
+[*] Class Name: CLLocation
+[*] Method Name: - horizontalAccuracy
+	Backtrace:
+	0x10537eda4 Keep!0x468eda4 (0x10468eda4)
+	0x100cfae54 Keep!0xae54 (0x10000ae54)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc699cf8 libdispatch.dylib!_dispatch_lane_concurrent_drain
+	0x1dc692220 libdispatch.dylib!_dispatch_lane_invoke$VARIANT$armv81
+	0x1dc68d8d8 libdispatch.dylib!_dispatch_queue_override_invoke
+	0x1dc69ac68 libdispatch.dylib!_dispatch_root_queue_drain
+	0x1dc69b430 libdispatch.dylib!_dispatch_worker_thread2
+	0x2206b1b94 libsystem_pthread.dylib!_pthread_wqthread
+
+[*] Class Name: CLLocation
+[*] Method Name: - verticalAccuracy
+	Backtrace:
+	0x10537eaf4 Keep!0x468eaf4 (0x10468eaf4)
+	0x105383b58 Keep!0x4693b58 (0x104693b58)
+	0x10537ff44 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPSystemServiceWrapper.KEPLocationService locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d804 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x100cf81f8 Keep!0x81f8 (0x1000081f8)
+	0x10e8a0344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x10537edb8 Keep!0x468edb8 (0x10468edb8)
+	0x100cfae54 Keep!0xae54 (0x10000ae54)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc699cf8 libdispatch.dylib!_dispatch_lane_concurrent_drain
+	0x1dc692220 libdispatch.dylib!_dispatch_lane_invoke$VARIANT$armv81
+	0x1dc68d8d8 libdispatch.dylib!_dispatch_queue_override_invoke
+	0x1dc69ac68 libdispatch.dylib!_dispatch_root_queue_drain
+	0x1dc69b430 libdispatch.dylib!_dispatch_worker_thread2
+	0x2206b1b94 libsystem_pthread.dylib!_pthread_wqthread
+	Backtrace:
+	0x10537ebb8 Keep!0x468ebb8 (0x10468ebb8)
+	0x105383b58 Keep!0x4693b58 (0x104693b58)
+	0x10537ff44 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPSystemServiceWrapper.KEPLocationService locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d804 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x100cf81f8 Keep!0x81f8 (0x1000081f8)
+	0x10e8a0344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x10537ec34 Keep!0x468ec34 (0x10468ec34)
+	0x105383b58 Keep!0x4693b58 (0x104693b58)
+	0x10537ff44 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPSystemServiceWrapper.KEPLocationService locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d804 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x100cf81f8 Keep!0x81f8 (0x1000081f8)
+	0x10e8a0344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x105382588 Keep!0x4692588 (0x104692588)
+	0x105382fcc Keep!0x4692fcc (0x104692fcc)
+	0x1037beb14 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPNetworkAgent buildRequestUrl:]
+	0x1037bdfd8 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPNetworkAgent sessionTaskForRequest:error:]
+	0x1037bdc24 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPNetworkAgent addRequest:]
+	0x1037baa98 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPBaseRequest start]
+	0x1037c1fec /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPRequest startWithoutCache]
+	0x1037babc4 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPBaseRequest startWithSuccess:failure:]
+	0x10537e3ec Keep!0x468e3ec (0x10468e3ec)
+	0x10537eff4 Keep!0x468eff4 (0x10468eff4)
+	0x105384fd0 Keep!0x4694fd0 (0x104694fd0)
+	0x105383b94 Keep!0x4693b94 (0x104693b94)
+	0x10537ff44 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPSystemServiceWrapper.KEPLocationService locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x1053825c4 Keep!0x46925c4 (0x1046925c4)
+	0x105382fcc Keep!0x4692fcc (0x104692fcc)
+	0x1037beb14 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPNetworkAgent buildRequestUrl:]
+	0x1037bdfd8 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPNetworkAgent sessionTaskForRequest:error:]
+	0x1037bdc24 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPNetworkAgent addRequest:]
+	0x1037baa98 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPBaseRequest start]
+	0x1037c1fec /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPRequest startWithoutCache]
+	0x1037babc4 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPBaseRequest startWithSuccess:failure:]
+	0x10537e3ec Keep!0x468e3ec (0x10468e3ec)
+	0x10537eff4 Keep!0x468eff4 (0x10468eff4)
+	0x105384fd0 Keep!0x4694fd0 (0x104694fd0)
+	0x105383b94 Keep!0x4693b94 (0x104693b94)
+	0x10537ff44 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPSystemServiceWrapper.KEPLocationService locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x1096954ec /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KAppDelegate commonHeader]
+	0x1037bedb4 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPNetworkAgent requestSerializerForRequest:]
+	0x1037be068 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPNetworkAgent sessionTaskForRequest:error:]
+	0x1037bdc24 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPNetworkAgent addRequest:]
+	0x1037baa98 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPBaseRequest start]
+	0x1037c1fec /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPRequest startWithoutCache]
+	0x1037babc4 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPBaseRequest startWithSuccess:failure:]
+	0x10537e3ec Keep!0x468e3ec (0x10468e3ec)
+	0x10537eff4 Keep!0x468eff4 (0x10468eff4)
+	0x105384fd0 Keep!0x4694fd0 (0x104694fd0)
+	0x105383b94 Keep!0x4693b94 (0x104693b94)
+	0x10537ff44 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPSystemServiceWrapper.KEPLocationService locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x1096954f8 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KAppDelegate commonHeader]
+	0x1037bedb4 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPNetworkAgent requestSerializerForRequest:]
+	0x1037be068 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPNetworkAgent sessionTaskForRequest:error:]
+	0x1037bdc24 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPNetworkAgent addRequest:]
+	0x1037baa98 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPBaseRequest start]
+	0x1037c1fec /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPRequest startWithoutCache]
+	0x1037babc4 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPBaseRequest startWithSuccess:failure:]
+	0x10537e3ec Keep!0x468e3ec (0x10468e3ec)
+	0x10537eff4 Keep!0x468eff4 (0x10468eff4)
+	0x105384fd0 Keep!0x4694fd0 (0x104694fd0)
+	0x105383b94 Keep!0x4693b94 (0x104693b94)
+	0x10537ff44 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPSystemServiceWrapper.KEPLocationService locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x105383a40 Keep!0x4693a40 (0x104693a40)
+	0x10537ff44 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPSystemServiceWrapper.KEPLocationService locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d804 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x100cf81f8 Keep!0x81f8 (0x1000081f8)
+	0x10e8a0344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - altitude
+	Backtrace:
+	0x105383a68 Keep!0x4693a68 (0x104693a68)
+	0x10537ff44 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPSystemServiceWrapper.KEPLocationService locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d804 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x100cf81f8 Keep!0x81f8 (0x1000081f8)
+	0x10e8a0344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - horizontalAccuracy
+	Backtrace:
+	0x105383a7c Keep!0x4693a7c (0x104693a7c)
+	0x10537ff44 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPSystemServiceWrapper.KEPLocationService locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d804 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x100cf81f8 Keep!0x81f8 (0x1000081f8)
+	0x10e8a0344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - verticalAccuracy
+	Backtrace:
+	0x105383a90 Keep!0x4693a90 (0x104693a90)
+	0x10537ff44 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPSystemServiceWrapper.KEPLocationService locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d804 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x100cf81f8 Keep!0x81f8 (0x1000081f8)
+	0x10e8a0344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - timestamp
+	Backtrace:
+	0x105383acc Keep!0x4693acc (0x104693acc)
+	0x10537ff44 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPSystemServiceWrapper.KEPLocationService locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d804 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x100cf81f8 Keep!0x81f8 (0x1000081f8)
+	0x10e8a0344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - timestamp
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x10537ed78 Keep!0x468ed78 (0x10468ed78)
+	0x100cfae54 Keep!0xae54 (0x10000ae54)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc699cf8 libdispatch.dylib!_dispatch_lane_concurrent_drain
+	0x1dc692220 libdispatch.dylib!_dispatch_lane_invoke$VARIANT$armv81
+	0x1dc68d8d8 libdispatch.dylib!_dispatch_queue_override_invoke
+	0x1dc69ac68 libdispatch.dylib!_dispatch_root_queue_drain
+	0x1dc69b430 libdispatch.dylib!_dispatch_worker_thread2
+	0x2206b1b94 libsystem_pthread.dylib!_pthread_wqthread
+
+[*] Class Name: CLLocation
+[*] Method Name: - altitude
+	Backtrace:
+	0x10537ed90 Keep!0x468ed90 (0x10468ed90)
+	0x100cfae54 Keep!0xae54 (0x10000ae54)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc699cf8 libdispatch.dylib!_dispatch_lane_concurrent_drain
+	0x1dc692220 libdispatch.dylib!_dispatch_lane_invoke$VARIANT$armv81
+	0x1dc68d8d8 libdispatch.dylib!_dispatch_queue_override_invoke
+	0x1dc69ac68 libdispatch.dylib!_dispatch_root_queue_drain
+	0x1dc69b430 libdispatch.dylib!_dispatch_worker_thread2
+	0x2206b1b94 libsystem_pthread.dylib!_pthread_wqthread
+
+[*] Class Name: CLLocation
+[*] Method Name: - horizontalAccuracy
+	Backtrace:
+	0x10537eda4 Keep!0x468eda4 (0x10468eda4)
+	0x100cfae54 Keep!0xae54 (0x10000ae54)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc699cf8 libdispatch.dylib!_dispatch_lane_concurrent_drain
+	0x1dc692220 libdispatch.dylib!_dispatch_lane_invoke$VARIANT$armv81
+	0x1dc68d8d8 libdispatch.dylib!_dispatch_queue_override_invoke
+	0x1dc69ac68 libdispatch.dylib!_dispatch_root_queue_drain
+	0x1dc69b430 libdispatch.dylib!_dispatch_worker_thread2
+	0x2206b1b94 libsystem_pthread.dylib!_pthread_wqthread
+
+[*] Class Name: CLLocation
+[*] Method Name: - verticalAccuracy
+	Backtrace:
+	0x10537eaf4 Keep!0x468eaf4 (0x10468eaf4)
+	0x105383b58 Keep!0x4693b58 (0x104693b58)
+	0x10537ff44 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPSystemServiceWrapper.KEPLocationService locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d804 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x100cf81f8 Keep!0x81f8 (0x1000081f8)
+	0x10e8a0344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x10537edb8 Keep!0x468edb8 (0x10468edb8)
+	0x100cfae54 Keep!0xae54 (0x10000ae54)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc699cf8 libdispatch.dylib!_dispatch_lane_concurrent_drain
+	0x1dc692220 libdispatch.dylib!_dispatch_lane_invoke$VARIANT$armv81
+	0x1dc68d8d8 libdispatch.dylib!_dispatch_queue_override_invoke
+	0x1dc69ac68 libdispatch.dylib!_dispatch_root_queue_drain
+	0x1dc69b430 libdispatch.dylib!_dispatch_worker_thread2
+	0x2206b1b94 libsystem_pthread.dylib!_pthread_wqthread
+	Backtrace:
+	0x10537ebb8 Keep!0x468ebb8 (0x10468ebb8)
+	0x105383b58 Keep!0x4693b58 (0x104693b58)
+	0x10537ff44 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPSystemServiceWrapper.KEPLocationService locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d804 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x100cf81f8 Keep!0x81f8 (0x1000081f8)
+	0x10e8a0344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x10537ec34 Keep!0x468ec34 (0x10468ec34)
+	0x105383b58 Keep!0x4693b58 (0x104693b58)
+	0x10537ff44 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPSystemServiceWrapper.KEPLocationService locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d804 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x100cf81f8 Keep!0x81f8 (0x1000081f8)
+	0x10e8a0344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x105383a40 Keep!0x4693a40 (0x104693a40)
+	0x10537ff44 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPSystemServiceWrapper.KEPLocationService locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d804 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x100cf81f8 Keep!0x81f8 (0x1000081f8)
+	0x10e8a0344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - altitude
+	Backtrace:
+	0x105383a68 Keep!0x4693a68 (0x104693a68)
+	0x10537ff44 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPSystemServiceWrapper.KEPLocationService locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d804 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x100cf81f8 Keep!0x81f8 (0x1000081f8)
+	0x10e8a0344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - horizontalAccuracy
+	Backtrace:
+	0x105383a7c Keep!0x4693a7c (0x104693a7c)
+	0x10537ff44 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPSystemServiceWrapper.KEPLocationService locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d804 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x100cf81f8 Keep!0x81f8 (0x1000081f8)
+	0x10e8a0344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - verticalAccuracy
+	Backtrace:
+	0x105383a90 Keep!0x4693a90 (0x104693a90)
+	0x10537ff44 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPSystemServiceWrapper.KEPLocationService locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d804 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x100cf81f8 Keep!0x81f8 (0x1000081f8)
+	0x10e8a0344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - timestamp
+	Backtrace:
+	0x105383acc Keep!0x4693acc (0x104693acc)
+	0x10537ff44 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPSystemServiceWrapper.KEPLocationService locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d804 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x100cf81f8 Keep!0x81f8 (0x1000081f8)
+	0x10e8a0344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - timestamp
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x10537ed78 Keep!0x468ed78 (0x10468ed78)
+	0x100cfae54 Keep!0xae54 (0x10000ae54)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc699cf8 libdispatch.dylib!_dispatch_lane_concurrent_drain
+	0x1dc692220 libdispatch.dylib!_dispatch_lane_invoke$VARIANT$armv81
+	0x1dc68d8d8 libdispatch.dylib!_dispatch_queue_override_invoke
+	0x1dc69ac68 libdispatch.dylib!_dispatch_root_queue_drain
+	0x1dc69b430 libdispatch.dylib!_dispatch_worker_thread2
+	0x2206b1b94 libsystem_pthread.dylib!_pthread_wqthread
+
+[*] Class Name: CLLocation
+[*] Method Name: - altitude
+	Backtrace:
+	0x10537ed90 Keep!0x468ed90 (0x10468ed90)
+	0x100cfae54 Keep!0xae54 (0x10000ae54)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc699cf8 libdispatch.dylib!_dispatch_lane_concurrent_drain
+	0x1dc692220 libdispatch.dylib!_dispatch_lane_invoke$VARIANT$armv81
+	0x1dc68d8d8 libdispatch.dylib!_dispatch_queue_override_invoke
+	0x1dc69ac68 libdispatch.dylib!_dispatch_root_queue_drain
+	0x1dc69b430 libdispatch.dylib!_dispatch_worker_thread2
+	0x2206b1b94 libsystem_pthread.dylib!_pthread_wqthread
+
+[*] Class Name: CLLocation
+[*] Method Name: - horizontalAccuracy
+	Backtrace:
+	0x10537eda4 Keep!0x468eda4 (0x10468eda4)
+	0x100cfae54 Keep!0xae54 (0x10000ae54)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc699cf8 libdispatch.dylib!_dispatch_lane_concurrent_drain
+	0x1dc692220 libdispatch.dylib!_dispatch_lane_invoke$VARIANT$armv81
+	0x1dc68d8d8 libdispatch.dylib!_dispatch_queue_override_invoke
+	0x1dc69ac68 libdispatch.dylib!_dispatch_root_queue_drain
+	0x1dc69b430 libdispatch.dylib!_dispatch_worker_thread2
+	0x2206b1b94 libsystem_pthread.dylib!_pthread_wqthread
+
+[*] Class Name: CLLocation
+[*] Method Name: - verticalAccuracy
+	Backtrace:
+	0x10537eaf4 Keep!0x468eaf4 (0x10468eaf4)
+	0x105383b58 Keep!0x4693b58 (0x104693b58)
+	0x10537ff44 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPSystemServiceWrapper.KEPLocationService locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d804 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x100cf81f8 Keep!0x81f8 (0x1000081f8)
+	0x10e8a0344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x10537edb8 Keep!0x468edb8 (0x10468edb8)
+	0x100cfae54 Keep!0xae54 (0x10000ae54)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc699cf8 libdispatch.dylib!_dispatch_lane_concurrent_drain
+	0x1dc692220 libdispatch.dylib!_dispatch_lane_invoke$VARIANT$armv81
+	0x1dc68d8d8 libdispatch.dylib!_dispatch_queue_override_invoke
+	0x1dc69ac68 libdispatch.dylib!_dispatch_root_queue_drain
+	0x1dc69b430 libdispatch.dylib!_dispatch_worker_thread2
+	0x2206b1b94 libsystem_pthread.dylib!_pthread_wqthread
+	Backtrace:
+	0x10537ebb8 Keep!0x468ebb8 (0x10468ebb8)
+	0x105383b58 Keep!0x4693b58 (0x104693b58)
+	0x10537ff44 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPSystemServiceWrapper.KEPLocationService locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d804 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x100cf81f8 Keep!0x81f8 (0x1000081f8)
+	0x10e8a0344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x10537ec34 Keep!0x468ec34 (0x10468ec34)
+	0x105383b58 Keep!0x4693b58 (0x104693b58)
+	0x10537ff44 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPSystemServiceWrapper.KEPLocationService locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d804 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x100cf81f8 Keep!0x81f8 (0x1000081f8)
+	0x10e8a0344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x105383a40 Keep!0x4693a40 (0x104693a40)
+	0x10537ff44 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPSystemServiceWrapper.KEPLocationService locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d804 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x100cf81f8 Keep!0x81f8 (0x1000081f8)
+	0x10e8a0344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - altitude
+	Backtrace:
+	0x105383a68 Keep!0x4693a68 (0x104693a68)
+	0x10537ff44 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPSystemServiceWrapper.KEPLocationService locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d804 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x100cf81f8 Keep!0x81f8 (0x1000081f8)
+	0x10e8a0344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - horizontalAccuracy
+	Backtrace:
+	0x105383a7c Keep!0x4693a7c (0x104693a7c)
+	0x10537ff44 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPSystemServiceWrapper.KEPLocationService locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d804 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x100cf81f8 Keep!0x81f8 (0x1000081f8)
+	0x10e8a0344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - verticalAccuracy
+	Backtrace:
+	0x105383a90 Keep!0x4693a90 (0x104693a90)
+	0x10537ff44 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPSystemServiceWrapper.KEPLocationService locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d804 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x100cf81f8 Keep!0x81f8 (0x1000081f8)
+	0x10e8a0344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - timestamp
+	Backtrace:
+	0x105383acc Keep!0x4693acc (0x104693acc)
+	0x10537ff44 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPSystemServiceWrapper.KEPLocationService locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d804 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x100cf81f8 Keep!0x81f8 (0x1000081f8)
+	0x10e8a0344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - timestamp
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x10537ed78 Keep!0x468ed78 (0x10468ed78)
+	0x100cfae54 Keep!0xae54 (0x10000ae54)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc699cf8 libdispatch.dylib!_dispatch_lane_concurrent_drain
+	0x1dc692220 libdispatch.dylib!_dispatch_lane_invoke$VARIANT$armv81
+	0x1dc68d8d8 libdispatch.dylib!_dispatch_queue_override_invoke
+	0x1dc69ac68 libdispatch.dylib!_dispatch_root_queue_drain
+	0x1dc69b430 libdispatch.dylib!_dispatch_worker_thread2
+	0x2206b1b94 libsystem_pthread.dylib!_pthread_wqthread
+
+[*] Class Name: CLLocation
+[*] Method Name: - altitude
+[iPhone::Keep ]->                                                                                                                                                                                                                                    
+[iPhone::Keep ]-> 	Backtrace:
+	0x10537ed90 Keep!0x468ed90 (0x10468ed90)
+	0x100cfae54 Keep!0xae54 (0x10000ae54)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc699cf8 libdispatch.dylib!_dispatch_lane_concurrent_drain
+	0x1dc692220 libdispatch.dylib!_dispatch_lane_invoke$VARIANT$armv81
+        0x1dc68d8d8 libdispatch.dylib!_dispatch_queue_override_invoke
+	0x1dc69ac68 libdispatch.dylib!_dispatch_root_queue_drain
+	0x1dc69b430 libdispatch.dylib!_dispatch_worker_thread2
+	0x2206b1b94 libsystem_pthread.dylib!_pthread_wqthread
+
+[*] Class Name: CLLocation
+[*] Method Name: - horizontalAccuracy
+	Backtrace:
+	0x10537eda4 Keep!0x468eda4 (0x10468eda4)
+	0x100cfae54 Keep!0xae54 (0x10000ae54)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc699cf8 libdispatch.dylib!_dispatch_lane_concurrent_drain
+	0x1dc692220 libdispatch.dylib!_dispatch_lane_invoke$VARIANT$armv81
+	0x1dc68d8d8 libdispatch.dylib!_dispatch_queue_override_invoke
+	0x1dc69ac68 libdispatch.dylib!_dispatch_root_queue_drain
+	0x1dc69b430 libdispatch.dylib!_dispatch_worker_thread2
+	0x2206b1b94 libsystem_pthread.dylib!_pthread_wqthread
+
+[*] Class Name: CLLocation
+[*] Method Name: - verticalAccuracy
+	Backtrace:
+	0x10537eaf4 Keep!0x468eaf4 (0x10468eaf4)
+	0x105383b58 Keep!0x4693b58 (0x104693b58)
+	0x10537ff44 /private/var/containers/Bundle/Application/D12706FF-C412-4BE7-88DA-585C666DC57D/Keep.app/Keep!-[KEPSystemServiceWrapper.KEPLocationService locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d804 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x100cf81f8 Keep!0x81f8 (0x1000081f8)
+	0x10e8a0344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x10537edb8 Keep!0x468edb8 (0x10468edb8)
+	0x100cfae54 Keep!0xae54 (0x10000ae54)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc699cf8 libdispatch.dylib!_dispatch_lane_concurrent_drain
+	0x1dc692220 libdispatch.dylib!_dispatch_lane_invoke$VARIANT$armv81
+	0x1dc68d8d8 libdispatch.dylib!_dispatch_queue_override_invoke
+	0x1dc69ac68 libdispatch.dylib!_dispatch_root_queue_drain
+	0x1dc69b430 libdispatch.dylib!_dispatch_worker_thread2
+	0x2206b1b94 libsystem_pthread.dylib!_pthread_wqthread
+[iPhone::Keep ]-> exit
+
+Thank you for using Frida!
+(base) mac@macdeMacBook-Pro autoTestiOS % 

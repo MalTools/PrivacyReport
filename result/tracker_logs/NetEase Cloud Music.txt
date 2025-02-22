@@ -1,0 +1,499 @@
+(base) mac@macdeMacBook-Pro autoTestiOS % frida -U -F -l hook_sensitive_api.js
+     ____
+    / _  |   Frida 16.2.1 - A world-class dynamic instrumentation toolkit
+   | (_| |
+    > _  |   Commands:
+   /_/ |_|       help      -> Displays the help system
+   . . . .       object?   -> Display information about 'object'
+   . . . .       exit/quit -> Exit
+   . . . .
+   . . . .   More info at https://frida.re/docs/home/
+   . . . .
+   . . . .   Connected to iPhone (id=02f66296483099a1e80d262c998b9f8feb885523)
+[*] Started: Modify Return Value
+funcName_arg namePrefix
+[!] funcName_arg Exception: 
+funcName_arg givenName
+[!] funcName_arg Exception: 
+funcName_arg middleName
+[!] funcName_arg Exception: 
+funcName_arg familyName
+[!] funcName_arg Exception: 
+funcName_arg previousFamilyName
+[!] funcName_arg Exception: 
+funcName_arg nickname
+[!] funcName_arg Exception: 
+funcName_arg phoneticGivenName
+[!] funcName_arg Exception: 
+funcName_arg phoneticMiddleName
+[!] funcName_arg Exception: 
+funcName_arg phoneticFamilyName
+[!] funcName_arg Exception: 
+funcName_arg jobTitle
+[!] funcName_arg Exception: 
+funcName_arg departmentName
+[!] funcName_arg Exception: 
+funcName_arg organizationName
+[!] funcName_arg Exception: 
+funcName_arg phoneticOrganizationName
+[!] funcName_arg Exception: 
+funcName_arg postalAddresses
+[!] funcName_arg Exception: 
+funcName_arg urlAddresses
+[!] funcName_arg Exception: 
+funcName_arg phoneNumbers
+[!] funcName_arg Exception: 
+funcName_arg socialProfiles
+[!] funcName_arg Exception: 
+funcName_arg emailAddresses
+[!] funcName_arg Exception: 
+funcName_arg birthday
+[!] funcName_arg Exception: 
+funcName_arg dates
+[!] funcName_arg Exception: 
+funcName_arg nonGregorianBirthday
+[!] funcName_arg Exception: 
+funcName_arg note
+[!] funcName_arg Exception: 
+funcName_arg emailAddresses
+[!] funcName_arg Exception: 
+funcName_arg unifiedMeContactWithKeysToFetch:error:
+[!] funcName_arg Exception: 
+funcName_arg rfetchAssetsInAssetCollection:options:
+[!] funcName_arg Exception: 
+message: {'type': 'send', 'payload': '[*] Started: Modify Return Value'} data: None
+[iPhone::网易云音乐 ]->
+[*] Class Name: CLLocationManager
+[*] Method Name: authorizationStatus
+	Backtrace:
+	0x10268c4b8 /private/var/containers/Bundle/Application/7A049CE8-AB96-4226-9A25-189910C2020F/neteasemusic.app/neteasemusic!+[NELocationManager authorized]
+	0x104771b4c /private/var/containers/Bundle/Application/7A049CE8-AB96-4226-9A25-189910C2020F/neteasemusic.app/neteasemusic!-[NEDeviceUploadManager uploadDeviceInfoWithCompletion:]
+	0x1047711e8 /private/var/containers/Bundle/Application/7A049CE8-AB96-4226-9A25-189910C2020F/neteasemusic.app/neteasemusic!-[NEAdvertisementLinkManager uploadDeviceInfoWithCompletion:]
+        0x10477140c /private/var/containers/Bundle/Application/7A049CE8-AB96-4226-9A25-189910C2020F/neteasemusic.app/neteasemusic!-[NEAdvertisementLinkModule uploadDeviceInfo:]
+	0x104bb562c neteasemusic!0x2ba562c (0x102ba562c)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+        0x1dc697e10 libdispatch.dylib!_dispatch_main_queue_drain
+	0x1dc697a88 libdispatch.dylib!_dispatch_main_queue_callback_4CF$VARIANT$armv81
+	0x1d59999ac CoreFoundation!__CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+	0x1d597d648 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x10266b43c neteasemusic!0x65b43c (0x10065b43c)
+
+[*] Class Name: CLLocationManager
+[*] Method Name: authorizationStatus
+	Backtrace:
+	0x10268c4d0 /private/var/containers/Bundle/Application/7A049CE8-AB96-4226-9A25-189910C2020F/neteasemusic.app/neteasemusic!+[NELocationManager authorized]
+	0x104771b4c /private/var/containers/Bundle/Application/7A049CE8-AB96-4226-9A25-189910C2020F/neteasemusic.app/neteasemusic!-[NEDeviceUploadManager uploadDeviceInfoWithCompletion:]
+	0x1047711e8 /private/var/containers/Bundle/Application/7A049CE8-AB96-4226-9A25-189910C2020F/neteasemusic.app/neteasemusic!-[NEAdvertisementLinkManager uploadDeviceInfoWithCompletion:]
+	0x10477140c /private/var/containers/Bundle/Application/7A049CE8-AB96-4226-9A25-189910C2020F/neteasemusic.app/neteasemusic!-[NEAdvertisementLinkModule uploadDeviceInfo:]
+	0x104bb562c neteasemusic!0x2ba562c (0x102ba562c)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc697e10 libdispatch.dylib!_dispatch_main_queue_drain
+	0x1dc697a88 libdispatch.dylib!_dispatch_main_queue_callback_4CF$VARIANT$armv81
+	0x1d59999ac CoreFoundation!__CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+	0x1d597d648 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x10266b43c neteasemusic!0x65b43c (0x10065b43c)
+
+[*] Class Name: CLLocationManager
+[*] Method Name: authorizationStatus
+	Backtrace:
+	0x10268c4b8 /private/var/containers/Bundle/Application/7A049CE8-AB96-4226-9A25-189910C2020F/neteasemusic.app/neteasemusic!+[NELocationManager authorized]
+	0x104771b4c /private/var/containers/Bundle/Application/7A049CE8-AB96-4226-9A25-189910C2020F/neteasemusic.app/neteasemusic!-[NEDeviceUploadManager uploadDeviceInfoWithCompletion:]
+	0x1047711e8 /private/var/containers/Bundle/Application/7A049CE8-AB96-4226-9A25-189910C2020F/neteasemusic.app/neteasemusic!-[NEAdvertisementLinkManager uploadDeviceInfoWithCompletion:]
+	0x10477140c /private/var/containers/Bundle/Application/7A049CE8-AB96-4226-9A25-189910C2020F/neteasemusic.app/neteasemusic!-[NEAdvertisementLinkModule uploadDeviceInfo:]
+	0x104771804 /private/var/containers/Bundle/Application/7A049CE8-AB96-4226-9A25-189910C2020F/neteasemusic.app/neteasemusic!-[NEAdvertisementLinkModule currentUserDidChange:]
+	0x104bb45c0 /private/var/containers/Bundle/Application/7A049CE8-AB96-4226-9A25-189910C2020F/neteasemusic.app/neteasemusic!-[NEMirrorUser loginWithUserId:]
+	0x107c1219c neteasemusic!0x5c0219c (0x105c0219c)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc697e10 libdispatch.dylib!_dispatch_main_queue_drain
+	0x1dc697a88 libdispatch.dylib!_dispatch_main_queue_callback_4CF$VARIANT$armv81
+	0x1d59999ac CoreFoundation!__CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+	0x1d597d648 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+
+[*] Class Name: CLLocationManager
+[*] Method Name: authorizationStatus
+	Backtrace:
+	0x10268c4d0 /private/var/containers/Bundle/Application/7A049CE8-AB96-4226-9A25-189910C2020F/neteasemusic.app/neteasemusic!+[NELocationManager authorized]
+	0x104771b4c /private/var/containers/Bundle/Application/7A049CE8-AB96-4226-9A25-189910C2020F/neteasemusic.app/neteasemusic!-[NEDeviceUploadManager uploadDeviceInfoWithCompletion:]
+	0x1047711e8 /private/var/containers/Bundle/Application/7A049CE8-AB96-4226-9A25-189910C2020F/neteasemusic.app/neteasemusic!-[NEAdvertisementLinkManager uploadDeviceInfoWithCompletion:]
+	0x10477140c /private/var/containers/Bundle/Application/7A049CE8-AB96-4226-9A25-189910C2020F/neteasemusic.app/neteasemusic!-[NEAdvertisementLinkModule uploadDeviceInfo:]
+	0x104771804 /private/var/containers/Bundle/Application/7A049CE8-AB96-4226-9A25-189910C2020F/neteasemusic.app/neteasemusic!-[NEAdvertisementLinkModule currentUserDidChange:]
+	0x104bb45c0 /private/var/containers/Bundle/Application/7A049CE8-AB96-4226-9A25-189910C2020F/neteasemusic.app/neteasemusic!-[NEMirrorUser loginWithUserId:]
+	0x107c1219c neteasemusic!0x5c0219c (0x105c0219c)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc697e10 libdispatch.dylib!_dispatch_main_queue_drain
+	0x1dc697a88 libdispatch.dylib!_dispatch_main_queue_callback_4CF$VARIANT$armv81
+	0x1d59999ac CoreFoundation!__CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+	0x1d597d648 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: authorizationStatusForMediaType:
+	Backtrace:
+	0x1067540a0 /private/var/containers/Bundle/Application/7A049CE8-AB96-4226-9A25-189910C2020F/neteasemusic.app/neteasemusic!+[AVCaptureDevice accessPermissionDeterminedWithType:]
+	0x107cb2300 /private/var/containers/Bundle/Application/7A049CE8-AB96-4226-9A25-189910C2020F/neteasemusic.app/neteasemusic!+[AVAudioSession checkMicphoneAccessPermission:]
+	0x108323d70 /private/var/containers/Bundle/Application/7A049CE8-AB96-4226-9A25-189910C2020F/neteasemusic.app/neteasemusic!-[NMNewRecognizeSongController startRecognizeIfReadyed:]
+	0x108322960 /private/var/containers/Bundle/Application/7A049CE8-AB96-4226-9A25-189910C2020F/neteasemusic.app/neteasemusic!-[NMNewRecognizeSongController viewWillAppear:]
+	0x1d78af880 UIKitCore!-[UIViewController _setViewAppearState:isAnimating:]
+	0x1d79496a8 UIKitCore!-[UIViewController __viewWillAppear:]
+	0x104edb558 /private/var/containers/Bundle/Application/7A049CE8-AB96-4226-9A25-189910C2020F/neteasemusic.app/neteasemusic!-[NEScrollableViewController _ne_beginAppearanceTransition:isAppearing:animated:]
+	0x104ed9910 /private/var/containers/Bundle/Application/7A049CE8-AB96-4226-9A25-189910C2020F/neteasemusic.app/neteasemusic!-[NEScrollableViewController viewWillAppear:]
+	0x1d78af880 UIKitCore!-[UIViewController _setViewAppearState:isAnimating:]
+	0x1d8021dc4 UIKitCore!__52-[UIViewController _setViewAppearState:isAnimating:]_block_invoke_2
+	0x1d7acda54 UIKitCore!__52-[UIViewController _setViewAppearState:isAnimating:]_block_invoke
+	0x1d59118a8 CoreFoundation!__NSARRAY_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d593c8e4 CoreFoundation!-[__NSSingleObjectArrayI enumerateObjectsWithOptions:usingBlock:]
+	0x1d78afbcc UIKitCore!-[UIViewController _setViewAppearState:isAnimating:]
+	0x1d79496a8 UIKitCore!-[UIViewController __viewWillAppear:]
+	0x1d7a344cc UIKitCore!-[UINavigationController _startTransition:fromViewController:toViewController:]
+
+[*] Class Name: CLLocationManager
+[*] Method Name: authorizationStatus
+	Backtrace:
+	0x104ad4640 /private/var/containers/Bundle/Application/7A049CE8-AB96-4226-9A25-189910C2020F/neteasemusic.app/neteasemusic!+[NELocationManager authorizationDetermind]
+	0x104ad4ad0 /private/var/containers/Bundle/Application/7A049CE8-AB96-4226-9A25-189910C2020F/neteasemusic.app/neteasemusic!-[NELocationManager startUpdate:needRequestAuthorization:]
+	0x1070f8520 /private/var/containers/Bundle/Application/7A049CE8-AB96-4226-9A25-189910C2020F/neteasemusic.app/neteasemusic!-[NMModuleLocation uploadUserLocationIfNeeded]
+	0x1070f8a48 /private/var/containers/Bundle/Application/7A049CE8-AB96-4226-9A25-189910C2020F/neteasemusic.app/neteasemusic!-[NMModuleLocation application:mainScreenDidFirstAppearAndIdle:]
+	0x104bc2b4c neteasemusic!0x2bb2b4c (0x102bb2b4c)
+	0x1d59118a8 CoreFoundation!__NSARRAY_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d592b84c CoreFoundation!-[__NSArrayM enumerateObjectsWithOptions:usingBlock:]
+	0x104bc29c8 /private/var/containers/Bundle/Application/7A049CE8-AB96-4226-9A25-189910C2020F/neteasemusic.app/neteasemusic!-[NEModuleAppDelegate inner_left_applicationMainScreenDidFirstAppearAndIdle:]
+	0x1cfcfe9ec Foundation!__NSFireDelayedPerform
+	0x1d59c9bb0 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_TIMER_CALLBACK_FUNCTION__
+	0x1d598ade4 CoreFoundation!__CFRunLoopDoTimer
+	0x1d59340fc CoreFoundation!__CFRunLoopDoTimers
+	0x1d597d5bc CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+
+[*] Class Name: CLLocationManager
+[*] Method Name: authorizationStatus
+	Backtrace:
+	0x104ad4640 /private/var/containers/Bundle/Application/7A049CE8-AB96-4226-9A25-189910C2020F/neteasemusic.app/neteasemusic!+[NELocationManager authorizationDetermind]
+	0x107507c7c neteasemusic!0x54f7c7c (0x1054f7c7c)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc68d9f8 libdispatch.dylib!_dispatch_queue_override_invoke
+	0x1dc69ac68 libdispatch.dylib!_dispatch_root_queue_drain
+	0x1dc69b430 libdispatch.dylib!_dispatch_worker_thread2
+	0x2206b1b94 libsystem_pthread.dylib!_pthread_wqthread
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: authorizationStatusForMediaType:
+	Backtrace:
+	0x106753ce4 /private/var/containers/Bundle/Application/7A049CE8-AB96-4226-9A25-189910C2020F/neteasemusic.app/neteasemusic!+[AVCaptureDevice checkAccessPermissionWithType:name:]
+	0x1083f4708 /private/var/containers/Bundle/Application/7A049CE8-AB96-4226-9A25-189910C2020F/neteasemusic.app/neteasemusic!-[NMScanViewController viewDidLoad]
+	0x1d7bf6d8c UIKitCore!-[UIViewController _sendViewDidLoadWithAppearanceProxyObjectTaggingEnabled]
+	0x1d78bc5b8 UIKitCore!-[UIViewController loadViewIfRequired]
+	0x1d7b5d088 UIKitCore!-[UINavigationController _updateScrollViewFromViewController:toViewController:]
+	0x1d7a34340 UIKitCore!-[UINavigationController _startTransition:fromViewController:toViewController:]
+	0x1d7a337ec UIKitCore!-[UINavigationController _startDeferredTransitionIfNeeded:]
+	0x1d7a32e78 UIKitCore!-[UINavigationController __viewWillLayoutSubviews]
+	0x1d7a32de0 UIKitCore!-[UILayoutContainerView layoutSubviews]
+	0x1d78a77a8 UIKitCore!-[UIView(CALayerDelegate) layoutSublayersOfLayer:]
+	0x1d6dad60c QuartzCore!CA::Layer::layout_if_needed(CA::Transaction*)
+	0x1d6dbff2c QuartzCore!CA::Layer::layout_and_display_if_needed(CA::Transaction*)
+	0x1d6dd09f0 QuartzCore!CA::Context::commit_transaction(CA::Transaction*, double, double*)
+	0x1d6dfddc0 QuartzCore!CA::Transaction::commit()
+	0x1d6de8dbc QuartzCore!CA::Transaction::flush_as_runloop_observer(bool)
+	0x1d59918e8 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_AN_OBSERVER_CALLBACK_FUNCTION__
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: authorizationStatusForMediaType:
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: authorizationStatusForMediaType:
+	Backtrace:
+	0x106754034 /private/var/containers/Bundle/Application/7A049CE8-AB96-4226-9A25-189910C2020F/neteasemusic.app/neteasemusic!+[AVCaptureDevice accessPermissionWithType:]
+	0x1083f49fc /private/var/containers/Bundle/Application/7A049CE8-AB96-4226-9A25-189910C2020F/neteasemusic.app/neteasemusic!-[NMScanViewController viewWillAppear:]
+	0x1d78af880 UIKitCore!-[UIViewController _setViewAppearState:isAnimating:]
+	0x1d79496a8 UIKitCore!-[UIViewController __viewWillAppear:]
+	0x1d7a344cc UIKitCore!-[UINavigationController _startTransition:fromViewController:toViewController:]
+	0x1d7a337ec UIKitCore!-[UINavigationController _startDeferredTransitionIfNeeded:]
+	0x1d7a32e78 UIKitCore!-[UINavigationController __viewWillLayoutSubviews]
+	0x1d7a32de0 UIKitCore!-[UILayoutContainerView layoutSubviews]
+	0x1d78a77a8 UIKitCore!-[UIView(CALayerDelegate) layoutSublayersOfLayer:]
+	0x1d6dad60c QuartzCore!CA::Layer::layout_if_needed(CA::Transaction*)
+	0x1d6dbff2c QuartzCore!CA::Layer::layout_and_display_if_needed(CA::Transaction*)
+	0x1d6dd09f0 QuartzCore!CA::Context::commit_transaction(CA::Transaction*, double, double*)
+	0x1d6dfddc0 QuartzCore!CA::Transaction::commit()
+	0x1d6de8dbc QuartzCore!CA::Transaction::flush_as_runloop_observer(bool)
+	0x1d59918e8 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_AN_OBSERVER_CALLBACK_FUNCTION__
+	0x1d592151c CoreFoundation!__CFRunLoopDoObservers
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: authorizationStatusForMediaType:
+	Backtrace:
+	0x106754034 /private/var/containers/Bundle/Application/7A049CE8-AB96-4226-9A25-189910C2020F/neteasemusic.app/neteasemusic!+[AVCaptureDevice accessPermissionWithType:]
+	0x1083f4a78 /private/var/containers/Bundle/Application/7A049CE8-AB96-4226-9A25-189910C2020F/neteasemusic.app/neteasemusic!-[NMScanViewController viewDidAppear:]
+	0x1d78afa84 UIKitCore!-[UIViewController _setViewAppearState:isAnimating:]
+	0x1d7aaa8ac UIKitCore!-[UIViewController __viewDidAppear:]
+	0x1d78b12dc UIKitCore!-[UINavigationController viewDidAppear:]
+	0x1d78afa84 UIKitCore!-[UIViewController _setViewAppearState:isAnimating:]
+	0x1d8021dc4 UIKitCore!__52-[UIViewController _setViewAppearState:isAnimating:]_block_invoke_2
+	0x1d7acda54 UIKitCore!__52-[UIViewController _setViewAppearState:isAnimating:]_block_invoke
+	0x1d59118a8 CoreFoundation!__NSARRAY_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d593c8e4 CoreFoundation!-[__NSSingleObjectArrayI enumerateObjectsWithOptions:usingBlock:]
+	0x1d78afbcc UIKitCore!-[UIViewController _setViewAppearState:isAnimating:]
+	0x1d7aaa8ac UIKitCore!-[UIViewController __viewDidAppear:]
+	0x1d7aaa758 UIKitCore!-[UIViewController _endAppearanceTransition:]
+	0x1d79e19bc UIKitCore!-[UINavigationController navigationTransitionView:didEndTransition:fromView:toView:]
+	0x1d7a88dbc UIKitCore!__49-[UINavigationController _startCustomTransition:]_block_invoke
+	0x1d7b3500c UIKitCore!-[_UIViewControllerTransitionContext completeTransition:]
+	Backtrace:
+	0x1edbc6a94 AVFCapture!-[AVCaptureDeviceInput _authorizedToUseDeviceAndRequestIfNecessary:]
+	0x1edbc6848 AVFCapture!-[AVCaptureDeviceInput initWithDevice:error:]
+	0x105d03388 neteasemusic!0x3cf3388 (0x103cf3388)
+	0x105d0298c neteasemusic!0x3cf298c (0x103cf298c)
+	0x103802e28 neteasemusic!0x17f2e28 (0x1017f2e28)
+	0x105d06150 neteasemusic!0x3cf6150 (0x103cf6150)
+	0x103802e28 neteasemusic!0x17f2e28 (0x1017f2e28)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc6916fc libdispatch.dylib!_dispatch_lane_serial_drain$VARIANT$armv81
+	0x1dc6921b0 libdispatch.dylib!_dispatch_lane_invoke$VARIANT$armv81
+	0x1dc69bf14 libdispatch.dylib!_dispatch_workloop_worker_thread
+	0x2206b1bd0 libsystem_pthread.dylib!_pthread_wqthread
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: requestAccessForMediaType:completionHandler:
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: authorizationStatusForMediaType:
+	Backtrace:
+	0x1edbc6ab4 AVFCapture!-[AVCaptureDeviceInput _authorizedToUseDeviceAndRequestIfNecessary:]
+	0x1edbc6848 AVFCapture!-[AVCaptureDeviceInput initWithDevice:error:]
+	0x105d03388 neteasemusic!0x3cf3388 (0x103cf3388)
+	0x105d0298c neteasemusic!0x3cf298c (0x103cf298c)
+	0x103802e28 neteasemusic!0x17f2e28 (0x1017f2e28)
+	0x105d06150 neteasemusic!0x3cf6150 (0x103cf6150)
+	0x103802e28 neteasemusic!0x17f2e28 (0x1017f2e28)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc6916fc libdispatch.dylib!_dispatch_lane_serial_drain$VARIANT$armv81
+	0x1dc6921b0 libdispatch.dylib!_dispatch_lane_invoke$VARIANT$armv81
+	0x1dc69bf14 libdispatch.dylib!_dispatch_workloop_worker_thread
+	0x2206b1bd0 libsystem_pthread.dylib!_pthread_wqthread
+	Backtrace:
+	0x106754034 /private/var/containers/Bundle/Application/7A049CE8-AB96-4226-9A25-189910C2020F/neteasemusic.app/neteasemusic!+[AVCaptureDevice accessPermissionWithType:]
+	0x1083f4bb4 /private/var/containers/Bundle/Application/7A049CE8-AB96-4226-9A25-189910C2020F/neteasemusic.app/neteasemusic!-[NMScanViewController applicationDidBecomeActive:]
+	0x1d593c7d8 CoreFoundation!__CFNOTIFICATIONCENTER_IS_CALLING_OUT_TO_AN_OBSERVER__
+	0x1d59d90c0 CoreFoundation!___CFXRegistrationPost_block_invoke
+	0x1d59bd8a8 CoreFoundation!_CFXRegistrationPost
+	0x1d594feec CoreFoundation!_CFXNotificationPost
+	0x1cfced1c4 Foundation!-[NSNotificationCenter postNotificationName:object:userInfo:]
+	0x1d7b10880 UIKitCore!-[UIApplication _stopDeactivatingForReason:]
+	0x1d7a30dc0 UIKitCore!__101-[_UISceneLifecycleMultiplexer _evalTransitionToSettings:fromSettings:forceExit:withTransitionStore:]_block_invoke_2
+	0x1d79380b8 UIKitCore!_UIScenePerformActionsWithLifecycleActionMask
+	0x1d7c4e08c UIKitCore!__101-[_UISceneLifecycleMultiplexer _evalTransitionToSettings:fromSettings:forceExit:withTransitionStore:]_block_invoke
+	0x1d7b102a4 UIKitCore!-[_UISceneLifecycleMultiplexer _performBlock:withApplicationOfDeactivationReasons:fromReasons:]
+	0x1d7b100d4 UIKitCore!-[_UISceneLifecycleMultiplexer _evalTransitionToSettings:fromSettings:forceExit:withTransitionStore:]
+	0x1d7b0fca4 UIKitCore!-[_UISceneLifecycleMultiplexer uiScene:transitionedFromState:withTransitionContext:]
+	0x1d7b0fb84 UIKitCore!__186-[_UIWindowSceneFBSSceneTransitionContextDrivenLifecycleSettingsDiffAction _performActionsForUIScene:withUpdatedFBSScene:settingsDiff:fromSettings:transitionContext:lifecycleActionType:]_block_invoke
+	0x1d818ef3c UIKitCore!+[BSAnimationSettings(UIKit) tryAnimatingWithSettings:fromCurrentState:actions:completion:]
+
+[*] Class Name: PHPhotoLibrary
+[*] Method Name: authorizationStatus
+	Backtrace:
+	0x107cb81c8 /private/var/containers/Bundle/Application/7A049CE8-AB96-4226-9A25-189910C2020F/neteasemusic.app/neteasemusic!+[NMAssetsLibrary authorizationDetermined]
+	0x107cb8220 /private/var/containers/Bundle/Application/7A049CE8-AB96-4226-9A25-189910C2020F/neteasemusic.app/neteasemusic!+[NMAssetsLibrary checkPhotoAccessPermission]
+	0x106766918 /private/var/containers/Bundle/Application/7A049CE8-AB96-4226-9A25-189910C2020F/neteasemusic.app/neteasemusic!-[NMImagePickerController initWithType:extraParams:]
+	0x106767fa0 /private/var/containers/Bundle/Application/7A049CE8-AB96-4226-9A25-189910C2020F/neteasemusic.app/neteasemusic!+[NMImagePickerController viewControllerWithType:delegate:removeOnCompletion:extraParams:]
+	0x106767f18 /private/var/containers/Bundle/Application/7A049CE8-AB96-4226-9A25-189910C2020F/neteasemusic.app/neteasemusic!+[NMImagePickerController showWithType:delegate:parentController:removeOnCompletion:extraParams:]
+	0x1083f4ca0 /private/var/containers/Bundle/Application/7A049CE8-AB96-4226-9A25-189910C2020F/neteasemusic.app/neteasemusic!-[NMScanViewController imagePickerAction:]
+	0x1d7ad1764 UIKitCore!-[UIApplication sendAction:to:from:forEvent:]
+	0x1d7ad1484 UIKitCore!-[UIControl sendAction:to:forEvent:]
+	0x103640bf8 /private/var/containers/Bundle/Application/7A049CE8-AB96-4226-9A25-189910C2020F/neteasemusic.app/neteasemusic!-[UIControl sendAction:to:forEvent:]
+	0x1d7ad0e8c UIKitCore!-[UIControl _sendActionsForEvents:withEvent:]
+	0x1d7ad0944 UIKitCore!-[UIControl touchesEnded:withEvent:]
+	0x1d7991b18 UIKitCore!-[UIWindow _sendTouchesForEvent:]
+	0x1d7990e2c UIKitCore!-[UIWindow sendEvent:]
+	0x106abd154 /private/var/containers/Bundle/Application/7A049CE8-AB96-4226-9A25-189910C2020F/neteasemusic.app/neteasemusic!-[UIWindow lcp_sendEvent:]
+	0x104abda20 /private/var/containers/Bundle/Application/7A049CE8-AB96-4226-9A25-189910C2020F/neteasemusic.app/neteasemusic!-[UIWindow sendEvent:]
+	0x107708368 /private/var/containers/Bundle/Application/7A049CE8-AB96-4226-9A25-189910C2020F/neteasemusic.app/neteasemusic!-[OTTouchObservingWindow sendEvent:]
+
+[*] Class Name: PHPhotoLibrary
+[*] Method Name: authorizationStatus
+	Backtrace:
+	0x107cb81c8 /private/var/containers/Bundle/Application/7A049CE8-AB96-4226-9A25-189910C2020F/neteasemusic.app/neteasemusic!+[NMAssetsLibrary authorizationDetermined]
+	0x107cb857c /private/var/containers/Bundle/Application/7A049CE8-AB96-4226-9A25-189910C2020F/neteasemusic.app/neteasemusic!+[NMAssetsLibrary requestForAccessPermission:]
+	0x107cb3214 /private/var/containers/Bundle/Application/7A049CE8-AB96-4226-9A25-189910C2020F/neteasemusic.app/neteasemusic!-[NMAssetManager open]
+	0x10675ad04 /private/var/containers/Bundle/Application/7A049CE8-AB96-4226-9A25-189910C2020F/neteasemusic.app/neteasemusic!-[NMAssetMainViewController viewDidLoad]
+	0x1d7bf6d8c UIKitCore!-[UIViewController _sendViewDidLoadWithAppearanceProxyObjectTaggingEnabled]
+	0x1d78bc5b8 UIKitCore!-[UIViewController loadViewIfRequired]
+	0x1d78bc0d4 UIKitCore!-[UICollectionViewController collectionView]
+	0x10675b410 /private/var/containers/Bundle/Application/7A049CE8-AB96-4226-9A25-189910C2020F/neteasemusic.app/neteasemusic!-[NMAssetMainViewController maxCountChanged]
+	0x10676706c /private/var/containers/Bundle/Application/7A049CE8-AB96-4226-9A25-189910C2020F/neteasemusic.app/neteasemusic!-[NMImagePickerController setAssetMainController]
+	0x106766968 /private/var/containers/Bundle/Application/7A049CE8-AB96-4226-9A25-189910C2020F/neteasemusic.app/neteasemusic!-[NMImagePickerController initWithType:extraParams:]
+	0x106767fa0 /private/var/containers/Bundle/Application/7A049CE8-AB96-4226-9A25-189910C2020F/neteasemusic.app/neteasemusic!+[NMImagePickerController viewControllerWithType:delegate:removeOnCompletion:extraParams:]
+	0x106767f18 /private/var/containers/Bundle/Application/7A049CE8-AB96-4226-9A25-189910C2020F/neteasemusic.app/neteasemusic!+[NMImagePickerController showWithType:delegate:parentController:removeOnCompletion:extraParams:]
+	0x1083f4ca0 /private/var/containers/Bundle/Application/7A049CE8-AB96-4226-9A25-189910C2020F/neteasemusic.app/neteasemusic!-[NMScanViewController imagePickerAction:]
+	0x1d7ad1764 UIKitCore!-[UIApplication sendAction:to:from:forEvent:]
+	0x1d7ad1484 UIKitCore!-[UIControl sendAction:to:forEvent:]
+	0x103640bf8 /private/var/containers/Bundle/Application/7A049CE8-AB96-4226-9A25-189910C2020F/neteasemusic.app/neteasemusic!-[UIControl sendAction:to:forEvent:]
+
+[*] Class Name: PHPhotoLibrary
+[*] Method Name: requestAuthorization:
+	Backtrace:
+	0x107cb8644 /private/var/containers/Bundle/Application/7A049CE8-AB96-4226-9A25-189910C2020F/neteasemusic.app/neteasemusic!+[NMAssetsLibrary requestForAccessPermission:]
+	0x107cb3214 /private/var/containers/Bundle/Application/7A049CE8-AB96-4226-9A25-189910C2020F/neteasemusic.app/neteasemusic!-[NMAssetManager open]
+	0x10675ad04 /private/var/containers/Bundle/Application/7A049CE8-AB96-4226-9A25-189910C2020F/neteasemusic.app/neteasemusic!-[NMAssetMainViewController viewDidLoad]
+	0x1d7bf6d8c UIKitCore!-[UIViewController _sendViewDidLoadWithAppearanceProxyObjectTaggingEnabled]
+	0x1d78bc5b8 UIKitCore!-[UIViewController loadViewIfRequired]
+	0x1d78bc0d4 UIKitCore!-[UICollectionViewController collectionView]
+	0x10675b410 /private/var/containers/Bundle/Application/7A049CE8-AB96-4226-9A25-189910C2020F/neteasemusic.app/neteasemusic!-[NMAssetMainViewController maxCountChanged]
+	0x10676706c /private/var/containers/Bundle/Application/7A049CE8-AB96-4226-9A25-189910C2020F/neteasemusic.app/neteasemusic!-[NMImagePickerController setAssetMainController]
+	0x106766968 /private/var/containers/Bundle/Application/7A049CE8-AB96-4226-9A25-189910C2020F/neteasemusic.app/neteasemusic!-[NMImagePickerController initWithType:extraParams:]
+	0x106767fa0 /private/var/containers/Bundle/Application/7A049CE8-AB96-4226-9A25-189910C2020F/neteasemusic.app/neteasemusic!+[NMImagePickerController viewControllerWithType:delegate:removeOnCompletion:extraParams:]
+	0x106767f18 /private/var/containers/Bundle/Application/7A049CE8-AB96-4226-9A25-189910C2020F/neteasemusic.app/neteasemusic!+[NMImagePickerController showWithType:delegate:parentController:removeOnCompletion:extraParams:]
+	0x1083f4ca0 /private/var/containers/Bundle/Application/7A049CE8-AB96-4226-9A25-189910C2020F/neteasemusic.app/neteasemusic!-[NMScanViewController imagePickerAction:]
+	0x1d7ad1764 UIKitCore!-[UIApplication sendAction:to:from:forEvent:]
+	0x1d7ad1484 UIKitCore!-[UIControl sendAction:to:forEvent:]
+	0x103640bf8 /private/var/containers/Bundle/Application/7A049CE8-AB96-4226-9A25-189910C2020F/neteasemusic.app/neteasemusic!-[UIControl sendAction:to:forEvent:]
+	0x1d7ad0e8c UIKitCore!-[UIControl _sendActionsForEvents:withEvent:]
+
+[*] Class Name: PHPhotoLibrary
+[*] Method Name: authorizationStatus
+	Backtrace:
+	0x107cb81c8 /private/var/containers/Bundle/Application/7A049CE8-AB96-4226-9A25-189910C2020F/neteasemusic.app/neteasemusic!+[NMAssetsLibrary authorizationDetermined]
+	0x107cb7d20 /private/var/containers/Bundle/Application/7A049CE8-AB96-4226-9A25-189910C2020F/neteasemusic.app/neteasemusic!+[NMAssetsLibrary library]
+	0x107cb3318 neteasemusic!0x5ca3318 (0x105ca3318)
+	0x1e937ff50 Photos!__78+[PHPhotoLibrary _requestAuthorizationForAccessLevel:supportsLimited:handler:]_block_invoke
+	0x1e9c9fec0 PhotoLibraryServicesCore!-[PLPrivacy _checkAuthStatusForPhotosAccessScope:promptIfUnknown:resultHandler:]
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc6916fc libdispatch.dylib!_dispatch_lane_serial_drain$VARIANT$armv81
+	0x1dc6921e4 libdispatch.dylib!_dispatch_lane_invoke$VARIANT$armv81
+	0x1dc69bf14 libdispatch.dylib!_dispatch_workloop_worker_thread
+	0x2206b1bd0 libsystem_pthread.dylib!_pthread_wqthread
+
+[*] Class Name: PHPhotoLibrary
+[*] Method Name: authorizationStatus
+	Backtrace:
+	0x107cb6224 /private/var/containers/Bundle/Application/7A049CE8-AB96-4226-9A25-189910C2020F/neteasemusic.app/neteasemusic!-[NMPHAssetsLibrary enumerateGroups:usingBlock:failureBlock:]
+	0x107cb3a24 /private/var/containers/Bundle/Application/7A049CE8-AB96-4226-9A25-189910C2020F/neteasemusic.app/neteasemusic!-[NMAssetManager reloadAllGroups:]
+	0x107cb3374 neteasemusic!0x5ca3374 (0x105ca3374)
+	0x1e937ff50 Photos!__78+[PHPhotoLibrary _requestAuthorizationForAccessLevel:supportsLimited:handler:]_block_invoke
+	0x1e9c9fec0 PhotoLibraryServicesCore!-[PLPrivacy _checkAuthStatusForPhotosAccessScope:promptIfUnknown:resultHandler:]
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc6916fc libdispatch.dylib!_dispatch_lane_serial_drain$VARIANT$armv81
+	0x1dc6921e4 libdispatch.dylib!_dispatch_lane_invoke$VARIANT$armv81
+	0x1dc69bf14 libdispatch.dylib!_dispatch_workloop_worker_thread
+	0x2206b1bd0 libsystem_pthread.dylib!_pthread_wqthread
+
+[*] Class Name: PHPhotoLibrary
+[*] Method Name: authorizationStatus
+	Backtrace:
+	0x107cb5e00 /private/var/containers/Bundle/Application/7A049CE8-AB96-4226-9A25-189910C2020F/neteasemusic.app/neteasemusic!-[NMPHAssetsLibrary registerChangeObserver]
+	0x107cb349c neteasemusic!0x5ca349c (0x105ca349c)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc697e10 libdispatch.dylib!_dispatch_main_queue_drain
+	0x1dc697a88 libdispatch.dylib!_dispatch_main_queue_callback_4CF$VARIANT$armv81
+	0x1d59999ac CoreFoundation!__CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+	0x1d597d648 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x10266b43c neteasemusic!0x65b43c (0x10065b43c)
+	0x110d2c344 dyld!start
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: authorizationStatusForMediaType:
+	Backtrace:
+	0x106754034 /private/var/containers/Bundle/Application/7A049CE8-AB96-4226-9A25-189910C2020F/neteasemusic.app/neteasemusic!+[AVCaptureDevice accessPermissionWithType:]
+	0x1083f49fc /private/var/containers/Bundle/Application/7A049CE8-AB96-4226-9A25-189910C2020F/neteasemusic.app/neteasemusic!-[NMScanViewController viewWillAppear:]
+	0x1d78af880 UIKitCore!-[UIViewController _setViewAppearState:isAnimating:]
+	0x1d79496a8 UIKitCore!-[UIViewController __viewWillAppear:]
+	0x1d78b1114 UIKitCore!-[UINavigationController viewWillAppear:]
+	0x1d78af880 UIKitCore!-[UIViewController _setViewAppearState:isAnimating:]
+	0x1d8021dc4 UIKitCore!__52-[UIViewController _setViewAppearState:isAnimating:]_block_invoke_2
+	0x1d7acda54 UIKitCore!__52-[UIViewController _setViewAppearState:isAnimating:]_block_invoke
+	0x1d59118a8 CoreFoundation!__NSARRAY_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d593c8e4 CoreFoundation!-[__NSSingleObjectArrayI enumerateObjectsWithOptions:usingBlock:]
+	0x1d78afbcc UIKitCore!-[UIViewController _setViewAppearState:isAnimating:]
+	0x1d79496a8 UIKitCore!-[UIViewController __viewWillAppear:]
+	0x1d78b1114 UIKitCore!-[UINavigationController viewWillAppear:]
+	0x1d78af880 UIKitCore!-[UIViewController _setViewAppearState:isAnimating:]
+	0x1d79496a8 UIKitCore!-[UIViewController __viewWillAppear:]
+	0x1d78b2374 UIKitCore!-[UITabBarController viewWillAppear:]
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: authorizationStatusForMediaType:
+	Backtrace:
+	0x106754034 /private/var/containers/Bundle/Application/7A049CE8-AB96-4226-9A25-189910C2020F/neteasemusic.app/neteasemusic!+[AVCaptureDevice accessPermissionWithType:]
+	0x1083f4a78 /private/var/containers/Bundle/Application/7A049CE8-AB96-4226-9A25-189910C2020F/neteasemusic.app/neteasemusic!-[NMScanViewController viewDidAppear:]
+	0x1d78afa84 UIKitCore!-[UIViewController _setViewAppearState:isAnimating:]
+	0x1d7aaa8ac UIKitCore!-[UIViewController __viewDidAppear:]
+	0x1d78b12dc UIKitCore!-[UINavigationController viewDidAppear:]
+	0x1d78afa84 UIKitCore!-[UIViewController _setViewAppearState:isAnimating:]
+	0x1d8021dc4 UIKitCore!__52-[UIViewController _setViewAppearState:isAnimating:]_block_invoke_2
+	0x1d7acda54 UIKitCore!__52-[UIViewController _setViewAppearState:isAnimating:]_block_invoke
+	0x1d59118a8 CoreFoundation!__NSARRAY_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d593c8e4 CoreFoundation!-[__NSSingleObjectArrayI enumerateObjectsWithOptions:usingBlock:]
+	0x1d78afbcc UIKitCore!-[UIViewController _setViewAppearState:isAnimating:]
+	0x1d7aaa8ac UIKitCore!-[UIViewController __viewDidAppear:]
+	0x1d78b12dc UIKitCore!-[UINavigationController viewDidAppear:]
+	0x1d78afa84 UIKitCore!-[UIViewController _setViewAppearState:isAnimating:]
+	0x1d7aaa8ac UIKitCore!-[UIViewController __viewDidAppear:]
+	0x1d7a7deec UIKitCore!-[UITabBarController viewDidAppear:]
+
+[*] Class Name: CLLocationManager
+[*] Method Name: authorizationStatus
+	Backtrace:
+	0x10268c4b8 /private/var/containers/Bundle/Application/7A049CE8-AB96-4226-9A25-189910C2020F/neteasemusic.app/neteasemusic!+[NELocationManager authorized]
+	0x107507dac /private/var/containers/Bundle/Application/7A049CE8-AB96-4226-9A25-189910C2020F/neteasemusic.app/neteasemusic!-[NMSocialTabPreloadManager requestTabInfoCompleteBlock:failedBlock:needRequestAuth:]
+	0x10730cda0 /private/var/containers/Bundle/Application/7A049CE8-AB96-4226-9A25-189910C2020F/neteasemusic.app/neteasemusic!-[NMFriendsV2ViewController handleNewStyleData]
+	0x10730bad0 /private/var/containers/Bundle/Application/7A049CE8-AB96-4226-9A25-189910C2020F/neteasemusic.app/neteasemusic!-[NMFriendsV2ViewController viewDidLoad]
+	0x1d7bf6d8c UIKitCore!-[UIViewController _sendViewDidLoadWithAppearanceProxyObjectTaggingEnabled]
+	0x1d78bc5b8 UIKitCore!-[UIViewController loadViewIfRequired]
+	0x1d78bc2e4 UIKitCore!-[UIViewController view]
+	0x107310634 /private/var/containers/Bundle/Application/7A049CE8-AB96-4226-9A25-189910C2020F/neteasemusic.app/neteasemusic!-[NMFriendsV2ViewController scrollableViewController]
+	0x107312788 /private/var/containers/Bundle/Application/7A049CE8-AB96-4226-9A25-189910C2020F/neteasemusic.app/neteasemusic!-[NMFriendsV2ViewController selectedInMainViewController:alreadySelected:]
+	0x10572c450 /private/var/containers/Bundle/Application/7A049CE8-AB96-4226-9A25-189910C2020F/neteasemusic.app/neteasemusic!-[NMMainViewController tabBarController:didSelectViewController:]
+	0x10573ee98 /private/var/containers/Bundle/Application/7A049CE8-AB96-4226-9A25-189910C2020F/neteasemusic.app/neteasemusic!-[NMTabBarController buttonClicked:]
+	0x1d7ad1764 UIKitCore!-[UIApplication sendAction:to:from:forEvent:]
+	0x1d7ad1484 UIKitCore!-[UIControl sendAction:to:forEvent:]
+	0x103640bf8 /private/var/containers/Bundle/Application/7A049CE8-AB96-4226-9A25-189910C2020F/neteasemusic.app/neteasemusic!-[UIControl sendAction:to:forEvent:]
+	0x1d7ad0e8c UIKitCore!-[UIControl _sendActionsForEvents:withEvent:]
+	0x1d7ad0d68 UIKitCore!-[UIButton _sendActionsForEvents:withEvent:]
+
+[*] Class Name: CLLocationManager
+[*] Method Name: authorizationStatus
+	Backtrace:
+	0x10268c4d0 /private/var/containers/Bundle/Application/7A049CE8-AB96-4226-9A25-189910C2020F/neteasemusic.app/neteasemusic!+[NELocationManager authorized]
+	0x107507dac /private/var/containers/Bundle/Application/7A049CE8-AB96-4226-9A25-189910C2020F/neteasemusic.app/neteasemusic!-[NMSocialTabPreloadManager requestTabInfoCompleteBlock:failedBlock:needRequestAuth:]
+	0x10730cda0 /private/var/containers/Bundle/Application/7A049CE8-AB96-4226-9A25-189910C2020F/neteasemusic.app/neteasemusic!-[NMFriendsV2ViewController handleNewStyleData]
+	0x10730bad0 /private/var/containers/Bundle/Application/7A049CE8-AB96-4226-9A25-189910C2020F/neteasemusic.app/neteasemusic!-[NMFriendsV2ViewController viewDidLoad]
+	0x1d7bf6d8c UIKitCore!-[UIViewController _sendViewDidLoadWithAppearanceProxyObjectTaggingEnabled]
+	0x1d78bc5b8 UIKitCore!-[UIViewController loadViewIfRequired]
+	0x1d78bc2e4 UIKitCore!-[UIViewController view]
+	0x107310634 /private/var/containers/Bundle/Application/7A049CE8-AB96-4226-9A25-189910C2020F/neteasemusic.app/neteasemusic!-[NMFriendsV2ViewController scrollableViewController]
+	0x107312788 /private/var/containers/Bundle/Application/7A049CE8-AB96-4226-9A25-189910C2020F/neteasemusic.app/neteasemusic!-[NMFriendsV2ViewController selectedInMainViewController:alreadySelected:]
+	0x10572c450 /private/var/containers/Bundle/Application/7A049CE8-AB96-4226-9A25-189910C2020F/neteasemusic.app/neteasemusic!-[NMMainViewController tabBarController:didSelectViewController:]
+	0x10573ee98 /private/var/containers/Bundle/Application/7A049CE8-AB96-4226-9A25-189910C2020F/neteasemusic.app/neteasemusic!-[NMTabBarController buttonClicked:]
+	0x1d7ad1764 UIKitCore!-[UIApplication sendAction:to:from:forEvent:]
+	0x1d7ad1484 UIKitCore!-[UIControl sendAction:to:forEvent:]
+	0x103640bf8 /private/var/containers/Bundle/Application/7A049CE8-AB96-4226-9A25-189910C2020F/neteasemusic.app/neteasemusic!-[UIControl sendAction:to:forEvent:]
+	0x1d7ad0e8c UIKitCore!-[UIControl _sendActionsForEvents:withEvent:]
+	0x1d7ad0d68 UIKitCore!-[UIButton _sendActionsForEvents:withEvent:]
+

@@ -1,0 +1,269 @@
+(base) mac@macdeMacBook-Pro autoTestiOS % frida -U -F -l hook_sensitive_api.js
+     ____
+    / _  |   Frida 16.2.1 - A world-class dynamic instrumentation toolkit
+   | (_| |
+    > _  |   Commands:
+   /_/ |_|       help      -> Displays the help system
+   . . . .       object?   -> Display information about 'object'
+   . . . .       exit/quit -> Exit
+   . . . .
+   . . . .   More info at https://frida.re/docs/home/
+   . . . .
+   . . . .   Connected to iPhone (id=02f66296483099a1e80d262c998b9f8feb885523)
+[*] Started: Modify Return Value
+funcName_arg namePrefix
+[!] funcName_arg Exception: 
+funcName_arg givenName
+[!] funcName_arg Exception: 
+funcName_arg middleName
+[!] funcName_arg Exception: 
+funcName_arg familyName
+[!] funcName_arg Exception: 
+funcName_arg previousFamilyName
+[!] funcName_arg Exception: 
+funcName_arg nickname
+[!] funcName_arg Exception: 
+funcName_arg phoneticGivenName
+[!] funcName_arg Exception: 
+funcName_arg phoneticMiddleName
+[!] funcName_arg Exception: 
+funcName_arg phoneticFamilyName
+[!] funcName_arg Exception: 
+funcName_arg jobTitle
+[!] funcName_arg Exception: 
+funcName_arg departmentName
+[!] funcName_arg Exception: 
+funcName_arg organizationName
+[!] funcName_arg Exception: 
+funcName_arg phoneticOrganizationName
+[!] funcName_arg Exception: 
+funcName_arg postalAddresses
+[!] funcName_arg Exception: 
+funcName_arg urlAddresses
+[!] funcName_arg Exception: 
+funcName_arg phoneNumbers
+[!] funcName_arg Exception: 
+funcName_arg socialProfiles
+[!] funcName_arg Exception: 
+funcName_arg emailAddresses
+[!] funcName_arg Exception: 
+funcName_arg birthday
+[!] funcName_arg Exception: 
+funcName_arg dates
+[!] funcName_arg Exception: 
+funcName_arg nonGregorianBirthday
+[!] funcName_arg Exception: 
+funcName_arg note
+[!] funcName_arg Exception: 
+funcName_arg emailAddresses
+[!] funcName_arg Exception: 
+funcName_arg unifiedMeContactWithKeysToFetch:error:
+[!] funcName_arg Exception: 
+funcName_arg rfetchAssetsInAssetCollection:options:
+[!] funcName_arg Exception: 
+message: {'type': 'send', 'payload': '[*] Started: Modify Return Value'} data: None
+[iPhone::稿定设计 ]->
+[*] Class Name: PHPhotoLibrary
+[*] Method Name: requestAuthorizationForAccessLevel:handler:
+	Backtrace:
+	0x102598084 /private/var/containers/Bundle/Application/A540F185-9775-4E2B-A7AC-F6C8DB6D6ACB/FireCat.app/FireCat!+[XVPHPhoto requestAuthorizationStatus:]
+	0x10258cf9c /private/var/containers/Bundle/Application/A540F185-9775-4E2B-A7AC-F6C8DB6D6ACB/FireCat.app/FireCat!-[XVAssetHelper requestAuthorizationStatus:]
+	0x101c280ac /private/var/containers/Bundle/Application/A540F185-9775-4E2B-A7AC-F6C8DB6D6ACB/FireCat.app/FireCat!-[GDPhotoPicker viewDidLoad]
+        0x1d7bf6d8c UIKitCore!-[UIViewController _sendViewDidLoadWithAppearanceProxyObjectTaggingEnabled]
+	0x1d78bc5b8 UIKitCore!-[UIViewController loadViewIfRequired]
+	0x1d78bc2e4 UIKitCore!-[UIViewController view]
+	0x1d7b5c690 UIKitCore!-[UINavigationController _startCustomTransition:]
+        0x1d7a3377c UIKitCore!-[UINavigationController _startDeferredTransitionIfNeeded:]
+	0x1d7a32e78 UIKitCore!-[UINavigationController __viewWillLayoutSubviews]
+	0x1d7a32de0 UIKitCore!-[UILayoutContainerView layoutSubviews]
+	0x1d78a77a8 UIKitCore!-[UIView(CALayerDelegate) layoutSublayersOfLayer:]
+	0x1d6dad60c QuartzCore!CA::Layer::layout_if_needed(CA::Transaction*)
+	0x1d6dbff2c QuartzCore!CA::Layer::layout_and_display_if_needed(CA::Transaction*)
+	0x1d6dd09f0 QuartzCore!CA::Context::commit_transaction(CA::Transaction*, double, double*)
+	0x1d6dfddc0 QuartzCore!CA::Transaction::commit()
+	0x1d6de8dbc QuartzCore!CA::Transaction::flush_as_runloop_observer(bool)
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: authorizationStatusForMediaType:
+	Backtrace:
+	0x101c2b104 /private/var/containers/Bundle/Application/A540F185-9775-4E2B-A7AC-F6C8DB6D6ACB/FireCat.app/FireCat!-[GDPhotoPicker openDefaultCamera]
+	0x101c29f98 FireCat!0xdbdf98 (0x100dbdf98)
+	0x1d7956358 UIKitCore!-[UIGestureRecognizerTarget _sendActionWithGestureRecognizer:]
+	0x1d7c96bb8 UIKitCore!_UIGestureRecognizerSendTargetActions
+	0x1d7a32934 UIKitCore!_UIGestureRecognizerSendActions
+	0x1d7921dbc UIKitCore!-[UIGestureRecognizer _updateGestureForActiveEvents]
+	0x1d79c4f8c UIKitCore!_UIGestureEnvironmentUpdate
+	0x1d81cfd54 UIKitCore!-[UIGestureEnvironment _deliverEvent:toGestureRecognizers:usingBlock:]
+	0x1d798c510 UIKitCore!-[UIGestureEnvironment _updateForEvent:window:]
+	0x1d7990e1c UIKitCore!-[UIWindow sendEvent:]
+	0x1d7990118 UIKitCore!-[UIApplication sendEvent:]
+	0x1d798e38c UIKitCore!__dispatchPreprocessedEventFromEventQueue
+	0x1d79d3d58 UIKitCore!__processEventQueue
+	0x1d7cb40d4 UIKitCore!__eventFetcherSourceCallback
+	0x1d59d10e8 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__
+	0x1d59dcd5c CoreFoundation!__CFRunLoopDoSource0
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: authorizationStatusForMediaType:
+	Backtrace:
+	0x101c2b120 /private/var/containers/Bundle/Application/A540F185-9775-4E2B-A7AC-F6C8DB6D6ACB/FireCat.app/FireCat!-[GDPhotoPicker openDefaultCamera]
+	0x101c29f98 FireCat!0xdbdf98 (0x100dbdf98)
+	0x1d7956358 UIKitCore!-[UIGestureRecognizerTarget _sendActionWithGestureRecognizer:]
+	0x1d7c96bb8 UIKitCore!_UIGestureRecognizerSendTargetActions
+	0x1d7a32934 UIKitCore!_UIGestureRecognizerSendActions
+	0x1d7921dbc UIKitCore!-[UIGestureRecognizer _updateGestureForActiveEvents]
+	0x1d79c4f8c UIKitCore!_UIGestureEnvironmentUpdate
+	0x1d81cfd54 UIKitCore!-[UIGestureEnvironment _deliverEvent:toGestureRecognizers:usingBlock:]
+	0x1d798c510 UIKitCore!-[UIGestureEnvironment _updateForEvent:window:]
+	0x1d7990e1c UIKitCore!-[UIWindow sendEvent:]
+	0x1d7990118 UIKitCore!-[UIApplication sendEvent:]
+	0x1d798e38c UIKitCore!__dispatchPreprocessedEventFromEventQueue
+	0x1d79d3d58 UIKitCore!__processEventQueue
+	0x1d7cb40d4 UIKitCore!__eventFetcherSourceCallback
+	0x1d59d10e8 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__
+	0x1d59dcd5c CoreFoundation!__CFRunLoopDoSource0
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: requestAccessForMediaType:completionHandler:
+	Backtrace:
+	0x101c2b1c0 /private/var/containers/Bundle/Application/A540F185-9775-4E2B-A7AC-F6C8DB6D6ACB/FireCat.app/FireCat!-[GDPhotoPicker openDefaultCamera]
+	0x101c29f98 FireCat!0xdbdf98 (0x100dbdf98)
+	0x1d7956358 UIKitCore!-[UIGestureRecognizerTarget _sendActionWithGestureRecognizer:]
+	0x1d7c96bb8 UIKitCore!_UIGestureRecognizerSendTargetActions
+	0x1d7a32934 UIKitCore!_UIGestureRecognizerSendActions
+	0x1d7921dbc UIKitCore!-[UIGestureRecognizer _updateGestureForActiveEvents]
+	0x1d79c4f8c UIKitCore!_UIGestureEnvironmentUpdate
+	0x1d81cfd54 UIKitCore!-[UIGestureEnvironment _deliverEvent:toGestureRecognizers:usingBlock:]
+	0x1d798c510 UIKitCore!-[UIGestureEnvironment _updateForEvent:window:]
+	0x1d7990e1c UIKitCore!-[UIWindow sendEvent:]
+	0x1d7990118 UIKitCore!-[UIApplication sendEvent:]
+	0x1d798e38c UIKitCore!__dispatchPreprocessedEventFromEventQueue
+	0x1d79d3d58 UIKitCore!__processEventQueue
+	0x1d7cb40d4 UIKitCore!__eventFetcherSourceCallback
+	0x1d59d10e8 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__
+	0x1d59dcd5c CoreFoundation!__CFRunLoopDoSource0
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: requestAccessForMediaType:completionHandler:
+	Backtrace:
+	0x101c2b798 FireCat!0xdbf798 (0x100dbf798)
+	0x1f11fa608 TCC!___tcc_server_send_request_authorization_block_invoke.52
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc6916fc libdispatch.dylib!_dispatch_lane_serial_drain$VARIANT$armv81
+	0x1dc6921b0 libdispatch.dylib!_dispatch_lane_invoke$VARIANT$armv81
+	0x1dc69bf14 libdispatch.dylib!_dispatch_workloop_worker_thread
+	0x2206b1bd0 libsystem_pthread.dylib!_pthread_wqthread
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: authorizationStatusForMediaType:
+	Backtrace:
+	0x1edbc6a94 AVFCapture!-[AVCaptureDeviceInput _authorizedToUseDeviceAndRequestIfNecessary:]
+	0x1edbc6848 AVFCapture!-[AVCaptureDeviceInput initWithDevice:error:]
+	0x101dc5904 /private/var/containers/Bundle/Application/A540F185-9775-4E2B-A7AC-F6C8DB6D6ACB/FireCat.app/FireCat!-[GPUImageVideoCamera initWithSessionPreset:cameraPosition:]
+	0x101dbe678 /private/var/containers/Bundle/Application/A540F185-9775-4E2B-A7AC-F6C8DB6D6ACB/FireCat.app/FireCat!-[GPUImageStillCamera initWithSessionPreset:cameraPosition:]
+	0x1025c90c8 /private/var/containers/Bundle/Application/A540F185-9775-4E2B-A7AC-F6C8DB6D6ACB/FireCat.app/FireCat!-[XVCameraViewController setupCamera]
+	0x1025c85d4 /private/var/containers/Bundle/Application/A540F185-9775-4E2B-A7AC-F6C8DB6D6ACB/FireCat.app/FireCat!-[XVCameraViewController setup]
+	0x1025c85b0 /private/var/containers/Bundle/Application/A540F185-9775-4E2B-A7AC-F6C8DB6D6ACB/FireCat.app/FireCat!-[XVCameraViewController viewDidLoad]
+	0x1d7bf6d8c UIKitCore!-[UIViewController _sendViewDidLoadWithAppearanceProxyObjectTaggingEnabled]
+	0x1d78bc5b8 UIKitCore!-[UIViewController loadViewIfRequired]
+	0x1d78bc2e4 UIKitCore!-[UIViewController view]
+	0x1d7a14f60 UIKitCore!-[_UIFullscreenPresentationController _setPresentedViewController:]
+	0x1d7a14c7c UIKitCore!-[UIPresentationController initWithPresentedViewController:presentingViewController:]
+	0x1d7b9f684 UIKitCore!-[UIViewController _presentViewController:withAnimationController:completion:]
+	0x1d7b9eff4 UIKitCore!__63-[UIViewController _presentViewController:animated:completion:]_block_invoke
+	0x1d7b7e2b8 UIKitCore!-[UIViewController _performCoordinatedPresentOrDismiss:animated:]
+	0x1d79698d8 UIKitCore!-[UIViewController _presentViewController:animated:completion:]
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: authorizationStatusForMediaType:
+	Backtrace:
+	0x1edbc6a94 AVFCapture!-[AVCaptureDeviceInput _authorizedToUseDeviceAndRequestIfNecessary:]
+	0x1edbc6848 AVFCapture!-[AVCaptureDeviceInput initWithDevice:error:]
+	0x1edbc67bc AVFCapture!+[AVCaptureDeviceInput deviceInputWithDevice:error:]
+	0x101dc6098 /private/var/containers/Bundle/Application/A540F185-9775-4E2B-A7AC-F6C8DB6D6ACB/FireCat.app/FireCat!-[GPUImageVideoCamera addAudioInputsAndOutputs]
+	0x1025c90e8 /private/var/containers/Bundle/Application/A540F185-9775-4E2B-A7AC-F6C8DB6D6ACB/FireCat.app/FireCat!-[XVCameraViewController setupCamera]
+	0x1025c85d4 /private/var/containers/Bundle/Application/A540F185-9775-4E2B-A7AC-F6C8DB6D6ACB/FireCat.app/FireCat!-[XVCameraViewController setup]
+	0x1025c85b0 /private/var/containers/Bundle/Application/A540F185-9775-4E2B-A7AC-F6C8DB6D6ACB/FireCat.app/FireCat!-[XVCameraViewController viewDidLoad]
+	0x1d7bf6d8c UIKitCore!-[UIViewController _sendViewDidLoadWithAppearanceProxyObjectTaggingEnabled]
+	0x1d78bc5b8 UIKitCore!-[UIViewController loadViewIfRequired]
+	0x1d78bc2e4 UIKitCore!-[UIViewController view]
+	0x1d7a14f60 UIKitCore!-[_UIFullscreenPresentationController _setPresentedViewController:]
+	0x1d7a14c7c UIKitCore!-[UIPresentationController initWithPresentedViewController:presentingViewController:]
+	0x1d7b9f684 UIKitCore!-[UIViewController _presentViewController:withAnimationController:completion:]
+	0x1d7b9eff4 UIKitCore!__63-[UIViewController _presentViewController:animated:completion:]_block_invoke
+	0x1d7b7e2b8 UIKitCore!-[UIViewController _performCoordinatedPresentOrDismiss:animated:]
+	0x1d79698d8 UIKitCore!-[UIViewController _presentViewController:animated:completion:]
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: requestAccessForMediaType:completionHandler:
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: authorizationStatusForMediaType:
+	Backtrace:
+	0x1025dac30 FireCat!0x176ec30 (0x10176ec30)
+	0x1f11fa0ec TCC!___tcc_server_send_request_authorization_block_invoke
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc6916fc libdispatch.dylib!_dispatch_lane_serial_drain$VARIANT$armv81
+	0x1dc6921b0 libdispatch.dylib!_dispatch_lane_invoke$VARIANT$armv81
+	0x1dc69bf14 libdispatch.dylib!_dispatch_workloop_worker_thread
+	0x2206b1bd0 libsystem_pthread.dylib!_pthread_wqthread
+	Backtrace:
+	0x1025dabf8 /private/var/containers/Bundle/Application/A540F185-9775-4E2B-A7AC-F6C8DB6D6ACB/FireCat.app/FireCat!+[XVMediaAuthorizationHelper checkCameraAuthorizationStatusThenRemindUserIfNeeded]
+	0x1025cd74c /private/var/containers/Bundle/Application/A540F185-9775-4E2B-A7AC-F6C8DB6D6ACB/FireCat.app/FireCat!-[XVCameraViewController switchToTakePhotoAnimated:]
+	0x1025c85f4 /private/var/containers/Bundle/Application/A540F185-9775-4E2B-A7AC-F6C8DB6D6ACB/FireCat.app/FireCat!-[XVCameraViewController setup]
+	0x1025c85b0 /private/var/containers/Bundle/Application/A540F185-9775-4E2B-A7AC-F6C8DB6D6ACB/FireCat.app/FireCat!-[XVCameraViewController viewDidLoad]
+	0x1d7bf6d8c UIKitCore!-[UIViewController _sendViewDidLoadWithAppearanceProxyObjectTaggingEnabled]
+	0x1d78bc5b8 UIKitCore!-[UIViewController loadViewIfRequired]
+	0x1d78bc2e4 UIKitCore!-[UIViewController view]
+	0x1d7a14f60 UIKitCore!-[_UIFullscreenPresentationController _setPresentedViewController:]
+	0x1d7a14c7c UIKitCore!-[UIPresentationController initWithPresentedViewController:presentingViewController:]
+	0x1d7b9f684 UIKitCore!-[UIViewController _presentViewController:withAnimationController:completion:]
+	0x1d7b9eff4 UIKitCore!__63-[UIViewController _presentViewController:animated:completion:]_block_invoke
+	0x1d7b7e2b8 UIKitCore!-[UIViewController _performCoordinatedPresentOrDismiss:animated:]
+	0x1d79698d8 UIKitCore!-[UIViewController _presentViewController:animated:completion:]
+	0x1d7969750 UIKitCore!-[UIViewController presentViewController:animated:completion:]
+	0x101ec635c /private/var/containers/Bundle/Application/A540F185-9775-4E2B-A7AC-F6C8DB6D6ACB/FireCat.app/FireCat!-[UIViewController gdw_autotrack_presentViewController:animated:completion:]
+	0x101d85450 /private/var/containers/Bundle/Application/A540F185-9775-4E2B-A7AC-F6C8DB6D6ACB/FireCat.app/FireCat!-[UIViewController presentViewController:animated:completion:]
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: authorizationStatusForMediaType:
+	Backtrace:
+	0x1025c9cd4 /private/var/containers/Bundle/Application/A540F185-9775-4E2B-A7AC-F6C8DB6D6ACB/FireCat.app/FireCat!-[XVCameraViewController takePhotoButtonAction:]
+	0x1d7ad1764 UIKitCore!-[UIApplication sendAction:to:from:forEvent:]
+	0x1d7ad1484 UIKitCore!-[UIControl sendAction:to:forEvent:]
+	0x1d7ad0e8c UIKitCore!-[UIControl _sendActionsForEvents:withEvent:]
+	0x1d7ad0d68 UIKitCore!-[UIButton _sendActionsForEvents:withEvent:]
+	0x1d7ad0944 UIKitCore!-[UIControl touchesEnded:withEvent:]
+	0x1d7991b18 UIKitCore!-[UIWindow _sendTouchesForEvent:]
+	0x1d7990e2c UIKitCore!-[UIWindow sendEvent:]
+	0x1d7990118 UIKitCore!-[UIApplication sendEvent:]
+	0x1d798e38c UIKitCore!__dispatchPreprocessedEventFromEventQueue
+	0x1d79d3d58 UIKitCore!__processEventQueue
+	0x1d7cb40d4 UIKitCore!__eventFetcherSourceCallback
+	0x1d59d10e8 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__
+	0x1d59dcd5c CoreFoundation!__CFRunLoopDoSource0
+	0x1d5967fc4 CoreFoundation!__CFRunLoopDoSources0
+	0x1d597d138 CoreFoundation!__CFRunLoopRun
+
+[*] Class Name: PHPhotoLibrary
+[*] Method Name: authorizationStatus
+	Backtrace:
+	0x1025db390 /private/var/containers/Bundle/Application/A540F185-9775-4E2B-A7AC-F6C8DB6D6ACB/FireCat.app/FireCat!+[XVMediaAuthorizationHelper checkPhotoAuthorizationThenRemindUserIfNeeded]
+	0x1025ccd94 FireCat!0x1760d94 (0x101760d94)
+	0x1d8800fcc UIKitCore!__UIVIEW_IS_EXECUTING_ANIMATION_COMPLETION_BLOCK__
+	0x1d796870c UIKitCore!-[UIViewAnimationBlockDelegate _didEndBlockAnimation:finished:context:]
+	0x1d79676c0 UIKitCore!-[UIViewAnimationState sendDelegateAnimationDidStop:finished:]
+	0x1d7966ecc UIKitCore!-[UIViewAnimationState animationDidStop:finished:]
+	0x1d6db64e8 QuartzCore!CA::Layer::run_animation_callbacks(void*)
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc697e10 libdispatch.dylib!_dispatch_main_queue_drain
+	0x1dc697a88 libdispatch.dylib!_dispatch_main_queue_callback_4CF$VARIANT$armv81
+	0x1d59999ac CoreFoundation!__CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+	0x1d597d648 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+

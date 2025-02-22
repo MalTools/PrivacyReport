@@ -1,0 +1,585 @@
+(base) mac@macdeMacBook-Pro autoTestiOS % frida -U -F -l hook_sensitive_api.js
+     ____
+    / _  |   Frida 16.2.1 - A world-class dynamic instrumentation toolkit
+   | (_| |
+    > _  |   Commands:
+   /_/ |_|       help      -> Displays the help system
+   . . . .       object?   -> Display information about 'object'
+   . . . .       exit/quit -> Exit
+   . . . .
+   . . . .   More info at https://frida.re/docs/home/
+   . . . .
+   . . . .   Connected to iPhone (id=02f66296483099a1e80d262c998b9f8feb885523)
+[*] Started: Modify Return Value
+funcName_arg namePrefix
+[!] funcName_arg Exception: 
+funcName_arg givenName
+[!] funcName_arg Exception: 
+funcName_arg middleName
+[!] funcName_arg Exception: 
+funcName_arg familyName
+[!] funcName_arg Exception: 
+funcName_arg previousFamilyName
+[!] funcName_arg Exception: 
+funcName_arg nickname
+[!] funcName_arg Exception: 
+funcName_arg phoneticGivenName
+[!] funcName_arg Exception: 
+funcName_arg phoneticMiddleName
+[!] funcName_arg Exception: 
+funcName_arg phoneticFamilyName
+[!] funcName_arg Exception: 
+funcName_arg jobTitle
+[!] funcName_arg Exception: 
+funcName_arg departmentName
+[!] funcName_arg Exception: 
+funcName_arg organizationName
+[!] funcName_arg Exception: 
+funcName_arg phoneticOrganizationName
+[!] funcName_arg Exception: 
+funcName_arg postalAddresses
+[!] funcName_arg Exception: 
+funcName_arg urlAddresses
+[!] funcName_arg Exception: 
+funcName_arg phoneNumbers
+[!] funcName_arg Exception: 
+funcName_arg socialProfiles
+[!] funcName_arg Exception: 
+funcName_arg emailAddresses
+[!] funcName_arg Exception: 
+funcName_arg birthday
+[!] funcName_arg Exception: 
+funcName_arg dates
+[!] funcName_arg Exception: 
+funcName_arg nonGregorianBirthday
+[!] funcName_arg Exception: 
+funcName_arg note
+[!] funcName_arg Exception: 
+funcName_arg emailAddresses
+[!] funcName_arg Exception: 
+funcName_arg unifiedMeContactWithKeysToFetch:error:
+[!] funcName_arg Exception: 
+funcName_arg rfetchAssetsInAssetCollection:options:
+[!] funcName_arg Exception: 
+message: {'type': 'send', 'payload': '[*] Started: Modify Return Value'} data: None
+[iPhone::大麦 ]->
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x10416ad2c DMPortal!0x1e62d2c (0x101e62d2c)
+	0x1041672bc DMPortal!0x1e5f2bc (0x101e5f2bc)
+	0x1d5975f40 CoreFoundation!__invoking___
+        0x1d5926088 CoreFoundation!-[NSInvocation invokeUsingIMP:]
+	0x1d5975f40 CoreFoundation!__invoking___
+	0x1d59271c8 CoreFoundation!-[NSInvocation invoke]
+	0x104fbdcbc /private/var/containers/Bundle/Application/1260B905-79BF-4B95-977A-4B089053C8D6/DMPortal.app/DMPortal!-[NSInvocation SA_invokeWithIMP:]
+        0x104fc2a60 DMPortal!0x2cbaa60 (0x102cbaa60)
+	0x104fbc420 /private/var/containers/Bundle/Application/1260B905-79BF-4B95-977A-4B089053C8D6/DMPortal.app/DMPortal!-[SAProxyContext invoke]
+	0x104fc93dc DMPortal!0x2cc13dc (0x102cc13dc)
+	0x104fc2930 DMPortal!0x2cba930 (0x102cba930)
+	0x1d5926680 CoreFoundation!___forwarding___
+	0x1d59888fc CoreFoundation!_CF_forwarding_prep_0
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x10416ad3c DMPortal!0x1e62d3c (0x101e62d3c)
+	0x1041672bc DMPortal!0x1e5f2bc (0x101e5f2bc)
+	0x1d5975f40 CoreFoundation!__invoking___
+	0x1d5926088 CoreFoundation!-[NSInvocation invokeUsingIMP:]
+	0x1d5975f40 CoreFoundation!__invoking___
+	0x1d59271c8 CoreFoundation!-[NSInvocation invoke]
+	0x104fbdcbc /private/var/containers/Bundle/Application/1260B905-79BF-4B95-977A-4B089053C8D6/DMPortal.app/DMPortal!-[NSInvocation SA_invokeWithIMP:]
+	0x104fc2a60 DMPortal!0x2cbaa60 (0x102cbaa60)
+	0x104fbc420 /private/var/containers/Bundle/Application/1260B905-79BF-4B95-977A-4B089053C8D6/DMPortal.app/DMPortal!-[SAProxyContext invoke]
+	0x104fc93dc DMPortal!0x2cc13dc (0x102cc13dc)
+	0x104fc2930 DMPortal!0x2cba930 (0x102cba930)
+	0x1d5926680 CoreFoundation!___forwarding___
+	0x1d59888fc CoreFoundation!_CF_forwarding_prep_0
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+
+[*] Class Name: CLLocation
+[*] Method Name: - altitude
+	Backtrace:
+	0x10416ae30 DMPortal!0x1e62e30 (0x101e62e30)
+	0x1041672bc DMPortal!0x1e5f2bc (0x101e5f2bc)
+	0x1d5975f40 CoreFoundation!__invoking___
+	0x1d5926088 CoreFoundation!-[NSInvocation invokeUsingIMP:]
+	0x1d5975f40 CoreFoundation!__invoking___
+	0x1d59271c8 CoreFoundation!-[NSInvocation invoke]
+	0x104fbdcbc /private/var/containers/Bundle/Application/1260B905-79BF-4B95-977A-4B089053C8D6/DMPortal.app/DMPortal!-[NSInvocation SA_invokeWithIMP:]
+	0x104fc2a60 DMPortal!0x2cbaa60 (0x102cbaa60)
+	0x104fbc420 /private/var/containers/Bundle/Application/1260B905-79BF-4B95-977A-4B089053C8D6/DMPortal.app/DMPortal!-[SAProxyContext invoke]
+	0x104fc93dc DMPortal!0x2cc13dc (0x102cc13dc)
+	0x104fc2930 DMPortal!0x2cba930 (0x102cba930)
+	0x1d5926680 CoreFoundation!___forwarding___
+	0x1d59888fc CoreFoundation!_CF_forwarding_prep_0
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+
+[*] Class Name: CLLocation
+[*] Method Name: - horizontalAccuracy
+	Backtrace:
+	0x10416ae44 DMPortal!0x1e62e44 (0x101e62e44)
+	0x1041672bc DMPortal!0x1e5f2bc (0x101e5f2bc)
+	0x1d5975f40 CoreFoundation!__invoking___
+	0x1d5926088 CoreFoundation!-[NSInvocation invokeUsingIMP:]
+	0x1d5975f40 CoreFoundation!__invoking___
+	0x1d59271c8 CoreFoundation!-[NSInvocation invoke]
+	0x104fbdcbc /private/var/containers/Bundle/Application/1260B905-79BF-4B95-977A-4B089053C8D6/DMPortal.app/DMPortal!-[NSInvocation SA_invokeWithIMP:]
+	0x104fc2a60 DMPortal!0x2cbaa60 (0x102cbaa60)
+	0x104fbc420 /private/var/containers/Bundle/Application/1260B905-79BF-4B95-977A-4B089053C8D6/DMPortal.app/DMPortal!-[SAProxyContext invoke]
+	0x104fc93dc DMPortal!0x2cc13dc (0x102cc13dc)
+	0x104fc2930 DMPortal!0x2cba930 (0x102cba930)
+	0x1d5926680 CoreFoundation!___forwarding___
+	0x1d59888fc CoreFoundation!_CF_forwarding_prep_0
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+
+[*] Class Name: CLLocation
+[*] Method Name: - verticalAccuracy
+	Backtrace:
+	0x10416ae58 DMPortal!0x1e62e58 (0x101e62e58)
+	0x1041672bc DMPortal!0x1e5f2bc (0x101e5f2bc)
+	0x1d5975f40 CoreFoundation!__invoking___
+	0x1d5926088 CoreFoundation!-[NSInvocation invokeUsingIMP:]
+	0x1d5975f40 CoreFoundation!__invoking___
+	0x1d59271c8 CoreFoundation!-[NSInvocation invoke]
+	0x104fbdcbc /private/var/containers/Bundle/Application/1260B905-79BF-4B95-977A-4B089053C8D6/DMPortal.app/DMPortal!-[NSInvocation SA_invokeWithIMP:]
+	0x104fc2a60 DMPortal!0x2cbaa60 (0x102cbaa60)
+	0x104fbc420 /private/var/containers/Bundle/Application/1260B905-79BF-4B95-977A-4B089053C8D6/DMPortal.app/DMPortal!-[SAProxyContext invoke]
+	0x104fc93dc DMPortal!0x2cc13dc (0x102cc13dc)
+	0x104fc2930 DMPortal!0x2cba930 (0x102cba930)
+	0x1d5926680 CoreFoundation!___forwarding___
+	0x1d59888fc CoreFoundation!_CF_forwarding_prep_0
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+
+[*] Class Name: CLLocation
+[*] Method Name: - timestamp
+	Backtrace:
+	0x10416ae6c DMPortal!0x1e62e6c (0x101e62e6c)
+	0x1041672bc DMPortal!0x1e5f2bc (0x101e5f2bc)
+	0x1d5975f40 CoreFoundation!__invoking___
+	0x1d5926088 CoreFoundation!-[NSInvocation invokeUsingIMP:]
+	0x1d5975f40 CoreFoundation!__invoking___
+	0x1d59271c8 CoreFoundation!-[NSInvocation invoke]
+	0x104fbdcbc /private/var/containers/Bundle/Application/1260B905-79BF-4B95-977A-4B089053C8D6/DMPortal.app/DMPortal!-[NSInvocation SA_invokeWithIMP:]
+	0x104fc2a60 DMPortal!0x2cbaa60 (0x102cbaa60)
+	0x104fbc420 /private/var/containers/Bundle/Application/1260B905-79BF-4B95-977A-4B089053C8D6/DMPortal.app/DMPortal!-[SAProxyContext invoke]
+	0x104fc93dc DMPortal!0x2cc13dc (0x102cc13dc)
+	0x104fc2930 DMPortal!0x2cba930 (0x102cba930)
+	0x1d5926680 CoreFoundation!___forwarding___
+	0x1d59888fc CoreFoundation!_CF_forwarding_prep_0
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x1033b9c90 DMPortal!0x10b1c90 (0x1010b1c90)
+	0x1033b8e10 DMPortal!0x10b0e10 (0x1010b0e10)
+	0x1033ba370 DMPortal!0x10b2370 (0x1010b2370)
+	0x10416d338 DMPortal!0x1e65338 (0x101e65338)
+	0x10416c1a4 DMPortal!0x1e641a4 (0x101e641a4)
+	0x10417cb34 DMPortal!0x1e74b34 (0x101e74b34)
+	0x10416b65c DMPortal!0x1e6365c (0x101e6365c)
+	0x1041672bc DMPortal!0x1e5f2bc (0x101e5f2bc)
+	0x1d5975f40 CoreFoundation!__invoking___
+	0x1d5926088 CoreFoundation!-[NSInvocation invokeUsingIMP:]
+	0x1d5975f40 CoreFoundation!__invoking___
+	0x1d59271c8 CoreFoundation!-[NSInvocation invoke]
+	0x104fbdcbc /private/var/containers/Bundle/Application/1260B905-79BF-4B95-977A-4B089053C8D6/DMPortal.app/DMPortal!-[NSInvocation SA_invokeWithIMP:]
+	0x104fc2a60 DMPortal!0x2cbaa60 (0x102cbaa60)
+	0x104fbc420 /private/var/containers/Bundle/Application/1260B905-79BF-4B95-977A-4B089053C8D6/DMPortal.app/DMPortal!-[SAProxyContext invoke]
+	0x104fc93dc DMPortal!0x2cc13dc (0x102cc13dc)
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x1033b9cb0 DMPortal!0x10b1cb0 (0x1010b1cb0)
+	0x1033b8e10 DMPortal!0x10b0e10 (0x1010b0e10)
+	0x1033ba370 DMPortal!0x10b2370 (0x1010b2370)
+	0x10416d338 DMPortal!0x1e65338 (0x101e65338)
+	0x10416c1a4 DMPortal!0x1e641a4 (0x101e641a4)
+	0x10417cb34 DMPortal!0x1e74b34 (0x101e74b34)
+	0x10416b65c DMPortal!0x1e6365c (0x101e6365c)
+	0x1041672bc DMPortal!0x1e5f2bc (0x101e5f2bc)
+	0x1d5975f40 CoreFoundation!__invoking___
+	0x1d5926088 CoreFoundation!-[NSInvocation invokeUsingIMP:]
+	0x1d5975f40 CoreFoundation!__invoking___
+	0x1d59271c8 CoreFoundation!-[NSInvocation invoke]
+	0x104fbdcbc /private/var/containers/Bundle/Application/1260B905-79BF-4B95-977A-4B089053C8D6/DMPortal.app/DMPortal!-[NSInvocation SA_invokeWithIMP:]
+	0x104fc2a60 DMPortal!0x2cbaa60 (0x102cbaa60)
+	0x104fbc420 /private/var/containers/Bundle/Application/1260B905-79BF-4B95-977A-4B089053C8D6/DMPortal.app/DMPortal!-[SAProxyContext invoke]
+	0x104fc93dc DMPortal!0x2cc13dc (0x102cc13dc)
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x1033b9d18 DMPortal!0x10b1d18 (0x1010b1d18)
+	0x1033b8e10 DMPortal!0x10b0e10 (0x1010b0e10)
+	0x1033ba370 DMPortal!0x10b2370 (0x1010b2370)
+	0x10416d338 DMPortal!0x1e65338 (0x101e65338)
+	0x10416c1a4 DMPortal!0x1e641a4 (0x101e641a4)
+	0x10417cb34 DMPortal!0x1e74b34 (0x101e74b34)
+	0x10416b65c DMPortal!0x1e6365c (0x101e6365c)
+	0x1041672bc DMPortal!0x1e5f2bc (0x101e5f2bc)
+	0x1d5975f40 CoreFoundation!__invoking___
+	0x1d5926088 CoreFoundation!-[NSInvocation invokeUsingIMP:]
+	0x1d5975f40 CoreFoundation!__invoking___
+	0x1d59271c8 CoreFoundation!-[NSInvocation invoke]
+	0x104fbdcbc /private/var/containers/Bundle/Application/1260B905-79BF-4B95-977A-4B089053C8D6/DMPortal.app/DMPortal!-[NSInvocation SA_invokeWithIMP:]
+	0x104fc2a60 DMPortal!0x2cbaa60 (0x102cbaa60)
+	0x104fbc420 /private/var/containers/Bundle/Application/1260B905-79BF-4B95-977A-4B089053C8D6/DMPortal.app/DMPortal!-[SAProxyContext invoke]
+	0x104fc93dc DMPortal!0x2cc13dc (0x102cc13dc)
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x1033b9d28 DMPortal!0x10b1d28 (0x1010b1d28)
+	0x1033b8e10 DMPortal!0x10b0e10 (0x1010b0e10)
+	0x1033ba370 DMPortal!0x10b2370 (0x1010b2370)
+	0x10416d338 DMPortal!0x1e65338 (0x101e65338)
+	0x10416c1a4 DMPortal!0x1e641a4 (0x101e641a4)
+	0x10417cb34 DMPortal!0x1e74b34 (0x101e74b34)
+	0x10416b65c DMPortal!0x1e6365c (0x101e6365c)
+	0x1041672bc DMPortal!0x1e5f2bc (0x101e5f2bc)
+	0x1d5975f40 CoreFoundation!__invoking___
+	0x1d5926088 CoreFoundation!-[NSInvocation invokeUsingIMP:]
+	0x1d5975f40 CoreFoundation!__invoking___
+	0x1d59271c8 CoreFoundation!-[NSInvocation invoke]
+	0x104fbdcbc /private/var/containers/Bundle/Application/1260B905-79BF-4B95-977A-4B089053C8D6/DMPortal.app/DMPortal!-[NSInvocation SA_invokeWithIMP:]
+	0x104fc2a60 DMPortal!0x2cbaa60 (0x102cbaa60)
+	0x104fbc420 /private/var/containers/Bundle/Application/1260B905-79BF-4B95-977A-4B089053C8D6/DMPortal.app/DMPortal!-[SAProxyContext invoke]
+	0x104fc93dc DMPortal!0x2cc13dc (0x102cc13dc)
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x103b46748 /private/var/containers/Bundle/Application/1260B905-79BF-4B95-977A-4B089053C8D6/DMPortal.app/DMPortal!-[DMReverseGeocodeLocation requestReGoecode:]
+	0x103b67dc8 DMPortal!0x185fdc8 (0x10185fdc8)
+	0x103b78470 /private/var/containers/Bundle/Application/1260B905-79BF-4B95-977A-4B089053C8D6/DMPortal.app/DMPortal!+[DMUtils runInMain:]
+	0x103b67c00 /private/var/containers/Bundle/Application/1260B905-79BF-4B95-977A-4B089053C8D6/DMPortal.app/DMPortal!-[DMSimpleLocationManager reverseGeocodeRequest:callback:]
+	0x1033b8ec0 DMPortal!0x10b0ec0 (0x1010b0ec0)
+	0x1033ba370 DMPortal!0x10b2370 (0x1010b2370)
+	0x10416d338 DMPortal!0x1e65338 (0x101e65338)
+	0x10416c1a4 DMPortal!0x1e641a4 (0x101e641a4)
+	0x10417cb34 DMPortal!0x1e74b34 (0x101e74b34)
+	0x10416b65c DMPortal!0x1e6365c (0x101e6365c)
+	0x1041672bc DMPortal!0x1e5f2bc (0x101e5f2bc)
+	0x1d5975f40 CoreFoundation!__invoking___
+	0x1d5926088 CoreFoundation!-[NSInvocation invokeUsingIMP:]
+	0x1d5975f40 CoreFoundation!__invoking___
+	0x1d59271c8 CoreFoundation!-[NSInvocation invoke]
+	0x104fbdcbc /private/var/containers/Bundle/Application/1260B905-79BF-4B95-977A-4B089053C8D6/DMPortal.app/DMPortal!-[NSInvocation SA_invokeWithIMP:]
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x103b46758 /private/var/containers/Bundle/Application/1260B905-79BF-4B95-977A-4B089053C8D6/DMPortal.app/DMPortal!-[DMReverseGeocodeLocation requestReGoecode:]
+	0x103b67dc8 DMPortal!0x185fdc8 (0x10185fdc8)
+	0x103b78470 /private/var/containers/Bundle/Application/1260B905-79BF-4B95-977A-4B089053C8D6/DMPortal.app/DMPortal!+[DMUtils runInMain:]
+	0x103b67c00 /private/var/containers/Bundle/Application/1260B905-79BF-4B95-977A-4B089053C8D6/DMPortal.app/DMPortal!-[DMSimpleLocationManager reverseGeocodeRequest:callback:]
+	0x1033b8ec0 DMPortal!0x10b0ec0 (0x1010b0ec0)
+	0x1033ba370 DMPortal!0x10b2370 (0x1010b2370)
+	0x10416d338 DMPortal!0x1e65338 (0x101e65338)
+	0x10416c1a4 DMPortal!0x1e641a4 (0x101e641a4)
+	0x10417cb34 DMPortal!0x1e74b34 (0x101e74b34)
+	0x10416b65c DMPortal!0x1e6365c (0x101e6365c)
+	0x1041672bc DMPortal!0x1e5f2bc (0x101e5f2bc)
+	0x1d5975f40 CoreFoundation!__invoking___
+	0x1d5926088 CoreFoundation!-[NSInvocation invokeUsingIMP:]
+	0x1d5975f40 CoreFoundation!__invoking___
+	0x1d59271c8 CoreFoundation!-[NSInvocation invoke]
+	0x104fbdcbc /private/var/containers/Bundle/Application/1260B905-79BF-4B95-977A-4B089053C8D6/DMPortal.app/DMPortal!-[NSInvocation SA_invokeWithIMP:]
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x1033b9c90 DMPortal!0x10b1c90 (0x1010b1c90)
+	0x1033b8ddc DMPortal!0x10b0ddc (0x1010b0ddc)
+	0x10416d338 DMPortal!0x1e65338 (0x101e65338)
+	0x10416c750 DMPortal!0x1e64750 (0x101e64750)
+	0x10416c730 DMPortal!0x1e64730 (0x101e64730)
+	0x10416b800 DMPortal!0x1e63800 (0x101e63800)
+	0x1041672bc DMPortal!0x1e5f2bc (0x101e5f2bc)
+	0x1d5975f40 CoreFoundation!__invoking___
+	0x1d5926088 CoreFoundation!-[NSInvocation invokeUsingIMP:]
+	0x1d5975f40 CoreFoundation!__invoking___
+	0x1d59271c8 CoreFoundation!-[NSInvocation invoke]
+	0x104fbdcbc /private/var/containers/Bundle/Application/1260B905-79BF-4B95-977A-4B089053C8D6/DMPortal.app/DMPortal!-[NSInvocation SA_invokeWithIMP:]
+	0x104fc2a60 DMPortal!0x2cbaa60 (0x102cbaa60)
+	0x104fbc420 /private/var/containers/Bundle/Application/1260B905-79BF-4B95-977A-4B089053C8D6/DMPortal.app/DMPortal!-[SAProxyContext invoke]
+	0x104fc93dc DMPortal!0x2cc13dc (0x102cc13dc)
+	0x104fc2930 DMPortal!0x2cba930 (0x102cba930)
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x1033b9cb0 DMPortal!0x10b1cb0 (0x1010b1cb0)
+	0x1033b8ddc DMPortal!0x10b0ddc (0x1010b0ddc)
+	0x10416d338 DMPortal!0x1e65338 (0x101e65338)
+	0x10416c750 DMPortal!0x1e64750 (0x101e64750)
+	0x10416c730 DMPortal!0x1e64730 (0x101e64730)
+	0x10416b800 DMPortal!0x1e63800 (0x101e63800)
+	0x1041672bc DMPortal!0x1e5f2bc (0x101e5f2bc)
+	0x1d5975f40 CoreFoundation!__invoking___
+	0x1d5926088 CoreFoundation!-[NSInvocation invokeUsingIMP:]
+	0x1d5975f40 CoreFoundation!__invoking___
+	0x1d59271c8 CoreFoundation!-[NSInvocation invoke]
+	0x104fbdcbc /private/var/containers/Bundle/Application/1260B905-79BF-4B95-977A-4B089053C8D6/DMPortal.app/DMPortal!-[NSInvocation SA_invokeWithIMP:]
+	0x104fc2a60 DMPortal!0x2cbaa60 (0x102cbaa60)
+	0x104fbc420 /private/var/containers/Bundle/Application/1260B905-79BF-4B95-977A-4B089053C8D6/DMPortal.app/DMPortal!-[SAProxyContext invoke]
+	0x104fc93dc DMPortal!0x2cc13dc (0x102cc13dc)
+	0x104fc2930 DMPortal!0x2cba930 (0x102cba930)
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x1033b9d18 DMPortal!0x10b1d18 (0x1010b1d18)
+	0x1033b8ddc DMPortal!0x10b0ddc (0x1010b0ddc)
+	0x10416d338 DMPortal!0x1e65338 (0x101e65338)
+	0x10416c750 DMPortal!0x1e64750 (0x101e64750)
+	0x10416c730 DMPortal!0x1e64730 (0x101e64730)
+	0x10416b800 DMPortal!0x1e63800 (0x101e63800)
+	0x1041672bc DMPortal!0x1e5f2bc (0x101e5f2bc)
+	0x1d5975f40 CoreFoundation!__invoking___
+	0x1d5926088 CoreFoundation!-[NSInvocation invokeUsingIMP:]
+	0x1d5975f40 CoreFoundation!__invoking___
+	0x1d59271c8 CoreFoundation!-[NSInvocation invoke]
+	0x104fbdcbc /private/var/containers/Bundle/Application/1260B905-79BF-4B95-977A-4B089053C8D6/DMPortal.app/DMPortal!-[NSInvocation SA_invokeWithIMP:]
+	0x104fc2a60 DMPortal!0x2cbaa60 (0x102cbaa60)
+	0x104fbc420 /private/var/containers/Bundle/Application/1260B905-79BF-4B95-977A-4B089053C8D6/DMPortal.app/DMPortal!-[SAProxyContext invoke]
+	0x104fc93dc DMPortal!0x2cc13dc (0x102cc13dc)
+	0x104fc2930 DMPortal!0x2cba930 (0x102cba930)
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x1033b9d28 DMPortal!0x10b1d28 (0x1010b1d28)
+	0x1033b8ddc DMPortal!0x10b0ddc (0x1010b0ddc)
+	0x10416d338 DMPortal!0x1e65338 (0x101e65338)
+	0x10416c750 DMPortal!0x1e64750 (0x101e64750)
+	0x10416c730 DMPortal!0x1e64730 (0x101e64730)
+	0x10416b800 DMPortal!0x1e63800 (0x101e63800)
+	0x1041672bc DMPortal!0x1e5f2bc (0x101e5f2bc)
+	0x1d5975f40 CoreFoundation!__invoking___
+	0x1d5926088 CoreFoundation!-[NSInvocation invokeUsingIMP:]
+	0x1d5975f40 CoreFoundation!__invoking___
+	0x1d59271c8 CoreFoundation!-[NSInvocation invoke]
+	0x104fbdcbc /private/var/containers/Bundle/Application/1260B905-79BF-4B95-977A-4B089053C8D6/DMPortal.app/DMPortal!-[NSInvocation SA_invokeWithIMP:]
+	0x104fc2a60 DMPortal!0x2cbaa60 (0x102cbaa60)
+	0x104fbc420 /private/var/containers/Bundle/Application/1260B905-79BF-4B95-977A-4B089053C8D6/DMPortal.app/DMPortal!-[SAProxyContext invoke]
+	0x104fc93dc DMPortal!0x2cc13dc (0x102cc13dc)
+	0x104fc2930 DMPortal!0x2cba930 (0x102cba930)
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x104d83fec DMPortal!0x2a7bfec (0x102a7bfec)
+	0x1d591ad1c CoreFoundation!__NSDICTIONARY_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d599cb48 CoreFoundation!-[__NSDictionaryM enumerateKeysAndObjectsWithOptions:usingBlock:]
+	0x104fc6204 /private/var/containers/Bundle/Application/1260B905-79BF-4B95-977A-4B089053C8D6/DMPortal.app/DMPortal!-[SABizInterceptor invokeInterceptors:withProxyContext:]
+	0x104fc63fc /private/var/containers/Bundle/Application/1260B905-79BF-4B95-977A-4B089053C8D6/DMPortal.app/DMPortal!-[SABizInterceptor invokeAfterInterceptorsWithProxyContext:]
+	0x104fc9740 DMPortal!0x2cc1740 (0x102cc1740)
+	0x104fc2930 DMPortal!0x2cba930 (0x102cba930)
+	0x1d5926680 CoreFoundation!___forwarding___
+	0x1d59888fc CoreFoundation!_CF_forwarding_prep_0
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d804 CoreFoundation!__CFRunLoopRun
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: authorizationStatusForMediaType:
+	Backtrace:
+	0x10415fca4 DMPortal!0x1e57ca4 (0x101e57ca4)
+	0x1041722dc DMPortal!0x1e6a2dc (0x101e6a2dc)
+	0x10415f618 DMPortal!0x1e57618 (0x101e57618)
+	0x1039106a8 /private/var/containers/Bundle/Application/1260B905-79BF-4B95-977A-4B089053C8D6/DMPortal.app/DMPortal!-[DMAccountEditPictureController actionSheet:clickedButtonAtIndex:]
+	0x1d7de6cd0 UIKitCore!-[UIActionSheet _prepareToDismissForTappedIndex:]
+	0x1d7de6c38 UIKitCore!__37-[UIActionSheet _prepareAlertActions]_block_invoke_2
+	0x1d7e0cfa4 UIKitCore!-[UIAlertController _dismissAnimated:triggeringAction:triggeredByPopoverDimmingView:dismissCompletion:]
+	0x1d80dc2e8 UIKitCore!-[_UIAlertControllerPhoneTVMacView interfaceAction:invokeActionHandler:completion:]
+	0x1d7df41d4 UIKitCore!-[UIInterfaceActionGroupView interfaceAction:invokeActionHandler:completion:]
+	0x1d7df20a0 UIKitCore!-[UIInterfaceAction _invokeHandlerWithCompletionBlock:]
+	0x1d7959408 UIKitCore!-[UIInterfaceActionSelectionTrackingController _handleActionSelectionGestureRecognizer:]
+	0x1d7956358 UIKitCore!-[UIGestureRecognizerTarget _sendActionWithGestureRecognizer:]
+	0x1d7c96bb8 UIKitCore!_UIGestureRecognizerSendTargetActions
+	0x1d7a32934 UIKitCore!_UIGestureRecognizerSendActions
+	0x1d7921dbc UIKitCore!-[UIGestureRecognizer _updateGestureForActiveEvents]
+	0x1d79c4f8c UIKitCore!_UIGestureEnvironmentUpdate
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: authorizationStatusForMediaType:
+	Backtrace:
+	0x10415e830 DMPortal!0x1e56830 (0x101e56830)
+	0x10415eec4 DMPortal!0x1e56ec4 (0x101e56ec4)
+	0x10417394c DMPortal!0x1e6b94c (0x101e6b94c)
+	0x10415f650 DMPortal!0x1e57650 (0x101e57650)
+	0x1039106a8 /private/var/containers/Bundle/Application/1260B905-79BF-4B95-977A-4B089053C8D6/DMPortal.app/DMPortal!-[DMAccountEditPictureController actionSheet:clickedButtonAtIndex:]
+	0x1d7de6cd0 UIKitCore!-[UIActionSheet _prepareToDismissForTappedIndex:]
+	0x1d7de6c38 UIKitCore!__37-[UIActionSheet _prepareAlertActions]_block_invoke_2
+	0x1d7e0cfa4 UIKitCore!-[UIAlertController _dismissAnimated:triggeringAction:triggeredByPopoverDimmingView:dismissCompletion:]
+	0x1d80dc2e8 UIKitCore!-[_UIAlertControllerPhoneTVMacView interfaceAction:invokeActionHandler:completion:]
+	0x1d7df41d4 UIKitCore!-[UIInterfaceActionGroupView interfaceAction:invokeActionHandler:completion:]
+	0x1d7df20a0 UIKitCore!-[UIInterfaceAction _invokeHandlerWithCompletionBlock:]
+	0x1d7959408 UIKitCore!-[UIInterfaceActionSelectionTrackingController _handleActionSelectionGestureRecognizer:]
+	0x1d7956358 UIKitCore!-[UIGestureRecognizerTarget _sendActionWithGestureRecognizer:]
+	0x1d7c96bb8 UIKitCore!_UIGestureRecognizerSendTargetActions
+	0x1d7a32934 UIKitCore!_UIGestureRecognizerSendActions
+	0x1d7921dbc UIKitCore!-[UIGestureRecognizer _updateGestureForActiveEvents]
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: requestAccessForMediaType:completionHandler:
+	Backtrace:
+	0x10415ef8c DMPortal!0x1e56f8c (0x101e56f8c)
+	0x104173c3c DMPortal!0x1e6bc3c (0x101e6bc3c)
+	0x10415f81c DMPortal!0x1e5781c (0x101e5781c)
+	0x10415f214 /private/var/containers/Bundle/Application/1260B905-79BF-4B95-977A-4B089053C8D6/DMPortal.app/DMPortal!+[MVPPrivillageCameraPod.MVPPrivillageCameraBridge applyFor:]
+	0x103910a68 /private/var/containers/Bundle/Application/1260B905-79BF-4B95-977A-4B089053C8D6/DMPortal.app/DMPortal!-[DMAccountEditPictureController applyCaptureDeviceAuthorization]
+	0x1d7de6cd0 UIKitCore!-[UIActionSheet _prepareToDismissForTappedIndex:]
+	0x1d7de6c38 UIKitCore!__37-[UIActionSheet _prepareAlertActions]_block_invoke_2
+	0x1d7e0cfa4 UIKitCore!-[UIAlertController _dismissAnimated:triggeringAction:triggeredByPopoverDimmingView:dismissCompletion:]
+	0x1d80dc2e8 UIKitCore!-[_UIAlertControllerPhoneTVMacView interfaceAction:invokeActionHandler:completion:]
+	0x1d7df41d4 UIKitCore!-[UIInterfaceActionGroupView interfaceAction:invokeActionHandler:completion:]
+	0x1d7df20a0 UIKitCore!-[UIInterfaceAction _invokeHandlerWithCompletionBlock:]
+	0x1d7959408 UIKitCore!-[UIInterfaceActionSelectionTrackingController _handleActionSelectionGestureRecognizer:]
+	0x1d7956358 UIKitCore!-[UIGestureRecognizerTarget _sendActionWithGestureRecognizer:]
+	0x1d7c96bb8 UIKitCore!_UIGestureRecognizerSendTargetActions
+	0x1d7a32934 UIKitCore!_UIGestureRecognizerSendActions
+	0x1d7921dbc UIKitCore!-[UIGestureRecognizer _updateGestureForActiveEvents]
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: authorizationStatusForMediaType:
+	Backtrace:
+	0x1edbc6a94 AVFCapture!-[AVCaptureDeviceInput _authorizedToUseDeviceAndRequestIfNecessary:]
+	0x1edbc6848 AVFCapture!-[AVCaptureDeviceInput initWithDevice:error:]
+	0x1edbc67bc AVFCapture!+[AVCaptureDeviceInput deviceInputWithDevice:error:]
+	0x21d54a184 CameraUI!___prewarmAudioVideoDevices_block_invoke
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc686ddc libdispatch.dylib!_dispatch_once_callout
+	0x21d552c80 CameraUI!-[CAMCaptureEngine prewarmedVideoDeviceInput:position:device:]
+	0x21d552ae8 CameraUI!-[CAMCaptureEngineDevice captureDeviceInput]
+	0x21d552a0c CameraUI!-[CAMModeAndDeviceCommand _desiredInputsWithContext:]
+	0x21d551ccc CameraUI!-[CAMModeAndDeviceCommand executeWithContext:]
+	0x21d551704 CameraUI!-[CAMCaptureEngine _executeCommand:withContext:]
+	0x21d551794 CameraUI!-[CAMCaptureEngine _executeCommand:withContext:]
+	0x21d551794 CameraUI!-[CAMCaptureEngine _executeCommand:withContext:]
+	0x21d5512d0 CameraUI!__35-[CAMCaptureEngine enqueueCommand:]_block_invoke
+	0x1e9ca6c18 PhotoLibraryServicesCore!__pl_dispatch_async_block_invoke
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: authorizationStatusForMediaType:
+	Backtrace:
+	0x10415e830 DMPortal!0x1e56830 (0x101e56830)
+	0x10415eec4 DMPortal!0x1e56ec4 (0x101e56ec4)
+	0x10417394c DMPortal!0x1e6b94c (0x101e6b94c)
+	0x10415f650 DMPortal!0x1e57650 (0x101e57650)
+	0x1039106a8 /private/var/containers/Bundle/Application/1260B905-79BF-4B95-977A-4B089053C8D6/DMPortal.app/DMPortal!-[DMAccountEditPictureController actionSheet:clickedButtonAtIndex:]
+	0x1d7de6cd0 UIKitCore!-[UIActionSheet _prepareToDismissForTappedIndex:]
+	0x1d7de6c38 UIKitCore!__37-[UIActionSheet _prepareAlertActions]_block_invoke_2
+	0x1d7e0cfa4 UIKitCore!-[UIAlertController _dismissAnimated:triggeringAction:triggeredByPopoverDimmingView:dismissCompletion:]
+	0x1d80dc2e8 UIKitCore!-[_UIAlertControllerPhoneTVMacView interfaceAction:invokeActionHandler:completion:]
+	0x1d7df41d4 UIKitCore!-[UIInterfaceActionGroupView interfaceAction:invokeActionHandler:completion:]
+	0x1d7df20a0 UIKitCore!-[UIInterfaceAction _invokeHandlerWithCompletionBlock:]
+	0x1d7959408 UIKitCore!-[UIInterfaceActionSelectionTrackingController _handleActionSelectionGestureRecognizer:]
+	0x1d7956358 UIKitCore!-[UIGestureRecognizerTarget _sendActionWithGestureRecognizer:]
+	0x1d7c96bb8 UIKitCore!_UIGestureRecognizerSendTargetActions
+	0x1d7a32934 UIKitCore!_UIGestureRecognizerSendActions
+	0x1d7921dbc UIKitCore!-[UIGestureRecognizer _updateGestureForActiveEvents]
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: authorizationStatusForMediaType:
+	Backtrace:
+	0x10415e830 DMPortal!0x1e56830 (0x101e56830)
+	0x10415eec4 DMPortal!0x1e56ec4 (0x101e56ec4)
+	0x10417394c DMPortal!0x1e6b94c (0x101e6b94c)
+	0x10415f650 DMPortal!0x1e57650 (0x101e57650)
+	0x1033be924 DMPortal!0x10b6924 (0x1010b6924)
+	0x104575b4c DMPortal!0x226db4c (0x10226db4c)
+	0x104575b98 /private/var/containers/Bundle/Application/1260B905-79BF-4B95-977A-4B089053C8D6/DMPortal.app/DMPortal!-[MVPSharedBusiness.MVPDmHomeNavigationView scannerAction]
+	0x10459d1c8 DMPortal!0x22951c8 (0x1022951c8)
+	0x10292507c DMPortal!0x61d07c (0x10061d07c)
+	0x103ff69b4 DMPortal!0x1cee9b4 (0x101cee9b4)
+	0x104cd84a8 DMPortal!0x29d04a8 (0x1029d04a8)
+	0x104cd857c DMPortal!0x29d057c (0x1029d057c)
+	0x1d7956358 UIKitCore!-[UIGestureRecognizerTarget _sendActionWithGestureRecognizer:]
+	0x1d7c96bb8 UIKitCore!_UIGestureRecognizerSendTargetActions
+	0x1d7a32934 UIKitCore!_UIGestureRecognizerSendActions
+	0x1d7921dbc UIKitCore!-[UIGestureRecognizer _updateGestureForActiveEvents]
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: authorizationStatusForMediaType:
+	Backtrace:
+	0x105373254 /private/var/containers/Bundle/Application/1260B905-79BF-4B95-977A-4B089053C8D6/DMPortal.app/DMPortal!-[TBScanCamCaptureManager setupCameraWithComplete:]
+	0x105378780 /private/var/containers/Bundle/Application/1260B905-79BF-4B95-977A-4B089053C8D6/DMPortal.app/DMPortal!-[TBScanViewController setupCamera]
+	0x1053781c4 /private/var/containers/Bundle/Application/1260B905-79BF-4B95-977A-4B089053C8D6/DMPortal.app/DMPortal!-[TBScanViewController initCritical]
+	0x1053779a4 /private/var/containers/Bundle/Application/1260B905-79BF-4B95-977A-4B089053C8D6/DMPortal.app/DMPortal!-[TBScanViewController initWithConfig:]
+	0x104a46b88 /private/var/containers/Bundle/Application/1260B905-79BF-4B95-977A-4B089053C8D6/DMPortal.app/DMPortal!-[MVPTBScanBaseViewController init]
+	0x102f4dbbc /private/var/containers/Bundle/Application/1260B905-79BF-4B95-977A-4B089053C8D6/DMPortal.app/DMPortal!-[DMQRCodeViewController init]
+	0x10352ee68 /private/var/containers/Bundle/Application/1260B905-79BF-4B95-977A-4B089053C8D6/DMPortal.app/DMPortal!+[TBURLObjectManager objectForClass:singleton:frameworkName:nativeParams:]
+	0x103523038 /private/var/containers/Bundle/Application/1260B905-79BF-4B95-977A-4B089053C8D6/DMPortal.app/DMPortal!-[TBURLRouterItem handlerForRequest:]
+	0x103535914 /private/var/containers/Bundle/Application/1260B905-79BF-4B95-977A-4B089053C8D6/DMPortal.app/DMPortal!-[TBURLRouter processURLActionRequest:]
+	0x103525b3c /private/var/containers/Bundle/Application/1260B905-79BF-4B95-977A-4B089053C8D6/DMPortal.app/DMPortal!-[TBNavigator openURLAction:extraInfo:]
+	0x1035258b8 DMPortal!0x121d8b8 (0x10121d8b8)
+	0x103530d04 /private/var/containers/Bundle/Application/1260B905-79BF-4B95-977A-4B089053C8D6/DMPortal.app/DMPortal!-[UIViewController goToPage:command:navigationType:params:callbackCommand:fromURL:needNavigation:]
+	0x10352f690 /private/var/containers/Bundle/Application/1260B905-79BF-4B95-977A-4B089053C8D6/DMPortal.app/DMPortal!-[UIViewController goToPage:command:navigationType:params:callbackCommand:]
+	0x1035218e4 /private/var/containers/Bundle/Application/1260B905-79BF-4B95-977A-4B089053C8D6/DMPortal.app/DMPortal!-[JFRouter openIntentDic:currentViewController:]
+	0x10352118c /private/var/containers/Bundle/Application/1260B905-79BF-4B95-977A-4B089053C8D6/DMPortal.app/DMPortal!-[JFRouter inside_openUrl:params:fromController:checkWhiteList:]
+	0x103574218 DMPortal!0x126c218 (0x10126c218)
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: authorizationStatusForMediaType:
+	Backtrace:
+	0x1edbc6a94 AVFCapture!-[AVCaptureDeviceInput _authorizedToUseDeviceAndRequestIfNecessary:]
+	0x1edbc6848 AVFCapture!-[AVCaptureDeviceInput initWithDevice:error:]
+	0x1edbc67bc AVFCapture!+[AVCaptureDeviceInput deviceInputWithDevice:error:]
+	0x105375824 /private/var/containers/Bundle/Application/1260B905-79BF-4B95-977A-4B089053C8D6/DMPortal.app/DMPortal!-[TBScanCamCaptureManager configureSessionWithDevice:]
+	0x1053736b8 DMPortal!0x306b6b8 (0x10306b6b8)
+	0x1cfd32ee8 Foundation!__NSBLOCKOPERATION_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1cfd09bbc Foundation!-[NSBlockOperation main]
+	0x1cfd09b50 Foundation!__NSOPERATION_IS_INVOKING_MAIN__
+	0x1cfccec10 Foundation!-[NSOperation start]
+	0x1cfcce95c Foundation!__NSOPERATIONQUEUE_IS_STARTING_AN_OPERATION__
+	0x1cfcd39fc Foundation!__NSOQSchedule_f
+	0x1dc698630 libdispatch.dylib!_dispatch_block_async_invoke2
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc6916fc libdispatch.dylib!_dispatch_lane_serial_drain$VARIANT$armv81
+	0x1dc6921b0 libdispatch.dylib!_dispatch_lane_invoke$VARIANT$armv81
+	0x1dc69bf14 libdispatch.dylib!_dispatch_workloop_worker_thread
+
+[*] Class Name: PHPhotoLibrary
+[*] Method Name: requestAuthorizationForAccessLevel:handler:
+	Backtrace:
+	0x104170500 DMPortal!0x1e68500 (0x101e68500)
+	0x104170da4 DMPortal!0x1e68da4 (0x101e68da4)
+	0x104173c3c DMPortal!0x1e6bc3c (0x101e6bc3c)
+	0x10416f3e4 DMPortal!0x1e673e4 (0x101e673e4)
+	0x10416eee8 /private/var/containers/Bundle/Application/1260B905-79BF-4B95-977A-4B089053C8D6/DMPortal.app/DMPortal!+[MVPPrivillagePhotoPod.MVPPrivillagePhotoBridge applyFor:]
+	0x102f4f184 /private/var/containers/Bundle/Application/1260B905-79BF-4B95-977A-4B089053C8D6/DMPortal.app/DMPortal!-[DMQRCodeViewController applyPhotoLibraryAuthorization]
+	0x1d7ad1764 UIKitCore!-[UIApplication sendAction:to:from:forEvent:]
+	0x1d7ad1484 UIKitCore!-[UIControl sendAction:to:forEvent:]
+	0x1d7ad0e8c UIKitCore!-[UIControl _sendActionsForEvents:withEvent:]
+	0x1d7ad0d68 UIKitCore!-[UIButton _sendActionsForEvents:withEvent:]
+	0x1d7ad0944 UIKitCore!-[UIControl touchesEnded:withEvent:]
+	0x1d79c5cc8 UIKitCore!_UIGestureEnvironmentUpdate
+	0x1d59918e8 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_AN_OBSERVER_CALLBACK_FUNCTION__
+	0x1d592151c CoreFoundation!__CFRunLoopDoObservers
+	0x1d597d214 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+

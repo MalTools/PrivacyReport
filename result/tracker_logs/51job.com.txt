@@ -1,0 +1,1068 @@
+(base) mac@macdeMacBook-Pro autoTestiOS % frida -U -F -l hook_sensitive_api.js
+     ____
+    / _  |   Frida 16.2.1 - A world-class dynamic instrumentation toolkit
+   | (_| |
+    > _  |   Commands:
+   /_/ |_|       help      -> Displays the help system
+   . . . .       object?   -> Display information about 'object'
+   . . . .       exit/quit -> Exit
+   . . . .
+   . . . .   More info at https://frida.re/docs/home/
+   . . . .
+   . . . .   Connected to iPhone (id=02f66296483099a1e80d262c998b9f8feb885523)
+[*] Started: Modify Return Value
+funcName_arg namePrefix
+[!] funcName_arg Exception: 
+funcName_arg givenName
+[!] funcName_arg Exception: 
+funcName_arg middleName
+[!] funcName_arg Exception: 
+funcName_arg familyName
+[!] funcName_arg Exception: 
+funcName_arg previousFamilyName
+[!] funcName_arg Exception: 
+funcName_arg nickname
+[!] funcName_arg Exception: 
+funcName_arg phoneticGivenName
+[!] funcName_arg Exception: 
+funcName_arg phoneticMiddleName
+[!] funcName_arg Exception: 
+funcName_arg phoneticFamilyName
+[!] funcName_arg Exception: 
+funcName_arg jobTitle
+[!] funcName_arg Exception: 
+funcName_arg departmentName
+[!] funcName_arg Exception: 
+funcName_arg organizationName
+[!] funcName_arg Exception: 
+funcName_arg phoneticOrganizationName
+[!] funcName_arg Exception: 
+funcName_arg postalAddresses
+[!] funcName_arg Exception: 
+funcName_arg urlAddresses
+[!] funcName_arg Exception: 
+funcName_arg phoneNumbers
+[!] funcName_arg Exception: 
+funcName_arg socialProfiles
+[!] funcName_arg Exception: 
+funcName_arg emailAddresses
+[!] funcName_arg Exception: 
+funcName_arg birthday
+[!] funcName_arg Exception: 
+funcName_arg dates
+[!] funcName_arg Exception: 
+funcName_arg nonGregorianBirthday
+[!] funcName_arg Exception: 
+funcName_arg note
+[!] funcName_arg Exception: 
+funcName_arg emailAddresses
+[!] funcName_arg Exception: 
+funcName_arg unifiedMeContactWithKeysToFetch:error:
+[!] funcName_arg Exception: 
+funcName_arg rfetchAssetsInAssetCollection:options:
+[!] funcName_arg Exception: 
+message: {'type': 'send', 'payload': '[*] Started: Modify Return Value'} data: None
+[iPhone::前程无忧51Job ]->
+[*] Class Name: CLLocationManager
+[*] Method Name: authorizationStatus
+	Backtrace:
+	0x1cfccb2c8 Foundation!_NSGetIntValueWithMethod
+	0x1cfc9a77c Foundation!-[NSObject(NSKeyValueCoding) valueForKey:]
+	0x105c4e3d0 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!+[GTCCommonUtil wifiInfo]
+        0x105d19e84 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!+[GXLoginDataModel infoData]
+	0x105d19ca0 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!+[GXLoginDataModel requestDataByCid:]
+	0x105d3a2ec /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!-[NetworkConnectModule loginChannel]
+	0x105d39b24 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!-[NetworkConnectModule handleCmd:]
+        0x105d40940 ios_51job!0x33f8940 (0x1033f8940)
+	0x1efc5540c libswiftNetwork.dylib!closure #1 in NWConnection.receive(minimumIncompleteLength:maximumLength:completion:)
+	0x1efc58088 libswiftNetwork.dylib!partial apply for closure #1 in NWConnection.receiveMessage(completion:)
+	0x1efc55224 libswiftNetwork.dylib!thunk for @escaping @callee_guaranteed (@guaranteed OS_dispatch_data?, @guaranteed OS_nw_content_context?, @unowned Bool, @guaranteed OS_nw_error?) -> ()
+	0x1dc698630 libdispatch.dylib!_dispatch_block_async_invoke2
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc6916fc libdispatch.dylib!_dispatch_lane_serial_drain$VARIANT$armv81
+	0x1dc6921b0 libdispatch.dylib!_dispatch_lane_invoke$VARIANT$armv81
+	0x1dc69bf14 libdispatch.dylib!_dispatch_workloop_worker_thread
+
+[*] Class Name: CLLocationManager
+[*] Method Name: authorizationStatus
+	Backtrace:
+	0x1cfccb2c8 Foundation!_NSGetIntValueWithMethod
+	0x1cfc9a77c Foundation!-[NSObject(NSKeyValueCoding) valueForKey:]
+	0x105c4e3d0 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!+[GTCCommonUtil wifiInfo]
+	0x105ca79e0 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!-[GTCGbdT11Task fetchData]
+	0x105c86800 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!-[GTCGbdBaseTask tryFetchData]
+	0x105c866e0 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!-[GTCGbdBaseTask fetchAndSend]
+	0x105ca98e8 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!-[GTCGbdT11Task GTCGbdLServiceFinished:]
+	0x105c9410c /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!-[GTCGbdLService saveLocation:provider:]
+	0x105c93374 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!-[GTCGbdLService startService]
+	0x105ca78f8 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!-[GTCGbdT11Task fetchAndSend]
+	0x105c866a8 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!-[GTCGbdBaseTask runTask]
+	0x105cb1670 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!-[GTCGbdTaskService runTaskByType:]
+	0x105cb1754 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!-[GTCGbdTaskService startTaskSerial]
+	0x105cb1140 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!-[GTCGbdTaskService startService]
+	0x105c95dec /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!-[GTCGbdMainManager startTaskManager]
+	0x1cfcfe9ec Foundation!__NSFireDelayedPerform
+
+[*] Class Name: CLLocationManager
+[*] Method Name: authorizationStatus
+	Backtrace:
+	0x105c918ec /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!+[GTCGbdLInfoUtil authorizationStatus]
+	0x105cad590 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!-[GTCGbdT31Task fetchData]
+	0x105c86800 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!-[GTCGbdBaseTask tryFetchData]
+	0x105c866e0 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!-[GTCGbdBaseTask fetchAndSend]
+	0x105c866a8 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!-[GTCGbdBaseTask runTask]
+	0x105cb1670 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!-[GTCGbdTaskService runTaskByType:]
+	0x105cb1754 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!-[GTCGbdTaskService startTaskSerial]
+	0x1cfcfe9ec Foundation!__NSFireDelayedPerform
+	0x1d59c9bb0 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_TIMER_CALLBACK_FUNCTION__
+	0x1d598ade4 CoreFoundation!__CFRunLoopDoTimer
+	0x1d59340fc CoreFoundation!__CFRunLoopDoTimers
+	0x1d597d5bc CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x1cfcd40e8 Foundation!-[NSRunLoop(NSRunLoop) runMode:beforeDate:]
+	0x105cd5a80 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!-[GTCThread main]
+	0x1cfcebc4c Foundation!__NSThread__start__
+
+[*] Class Name: CLLocationManager
+[*] Method Name: authorizationStatus
+	Backtrace:
+	0x105c918ec /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!+[GTCGbdLInfoUtil authorizationStatus]
+	0x105cae1f0 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!-[GTCGbdT32Task fetchData]
+	0x105c86800 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!-[GTCGbdBaseTask tryFetchData]
+	0x105c866e0 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!-[GTCGbdBaseTask fetchAndSend]
+	0x105cad8c4 ios_51job!0x33658c4 (0x1033658c4)
+	0x105cb7140 ios_51job!0x336f140 (0x10336f140)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc6916fc libdispatch.dylib!_dispatch_lane_serial_drain$VARIANT$armv81
+	0x1dc6921e4 libdispatch.dylib!_dispatch_lane_invoke$VARIANT$armv81
+	0x1dc69bf14 libdispatch.dylib!_dispatch_workloop_worker_thread
+	0x2206b1bd0 libsystem_pthread.dylib!_pthread_wqthread
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: authorizationStatusForMediaType:
+	Backtrace:
+	0x104cc33b8 ios_51job!0x237b3b8 (0x10237b3b8)
+	0x104cd3f54 ios_51job!0x238bf54 (0x10238bf54)
+	0x104cd42d8 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!+[QJNPermissionManager.QJNPermissionManager statusOf:location:completion:]
+	0x104f3c04c ios_51job!0x25f404c (0x1025f404c)
+	0x104f3d904 ios_51job!0x25f5904 (0x1025f5904)
+	0x1029cdab4 ios_51job!0x85ab4 (0x100085ab4)
+	0x1d7afd700 UIKitCore!-[UIPresentationController transitionDidFinish:]
+	0x1d7fa211c UIKitCore!__56-[UIPresentationController runTransitionForCurrentState]_block_invoke.88
+	0x1d7b3500c UIKitCore!-[_UIViewControllerTransitionContext completeTransition:]
+	0x1d8800fcc UIKitCore!__UIVIEW_IS_EXECUTING_ANIMATION_COMPLETION_BLOCK__
+	0x1d796870c UIKitCore!-[UIViewAnimationBlockDelegate _didEndBlockAnimation:finished:context:]
+	0x1d79676c0 UIKitCore!-[UIViewAnimationState sendDelegateAnimationDidStop:finished:]
+	0x1d7966ecc UIKitCore!-[UIViewAnimationState animationDidStop:finished:]
+	0x1d7966fcc UIKitCore!-[UIViewAnimationState animationDidStop:finished:]
+	0x1d6db64e8 QuartzCore!CA::Layer::run_animation_callbacks(void*)
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: authorizationStatusForMediaType:
+	Backtrace:
+	0x104cc3404 ios_51job!0x237b404 (0x10237b404)
+	0x104cd4004 ios_51job!0x238c004 (0x10238c004)
+	0x104cd42d8 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!+[QJNPermissionManager.QJNPermissionManager statusOf:location:completion:]
+	0x104f3c04c ios_51job!0x25f404c (0x1025f404c)
+	0x104f3d904 ios_51job!0x25f5904 (0x1025f5904)
+	0x1029cdab4 ios_51job!0x85ab4 (0x100085ab4)
+	0x1d7afd700 UIKitCore!-[UIPresentationController transitionDidFinish:]
+	0x1d7fa211c UIKitCore!__56-[UIPresentationController runTransitionForCurrentState]_block_invoke.88
+	0x1d7b3500c UIKitCore!-[_UIViewControllerTransitionContext completeTransition:]
+	0x1d8800fcc UIKitCore!__UIVIEW_IS_EXECUTING_ANIMATION_COMPLETION_BLOCK__
+	0x1d796870c UIKitCore!-[UIViewAnimationBlockDelegate _didEndBlockAnimation:finished:context:]
+	0x1d79676c0 UIKitCore!-[UIViewAnimationState sendDelegateAnimationDidStop:finished:]
+	0x1d7966ecc UIKitCore!-[UIViewAnimationState animationDidStop:finished:]
+	0x1d7966fcc UIKitCore!-[UIViewAnimationState animationDidStop:finished:]
+	0x1d6db64e8 QuartzCore!CA::Layer::run_animation_callbacks(void*)
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: requestAccessForMediaType:completionHandler:
+	Backtrace:
+	0x104cc34f8 ios_51job!0x237b4f8 (0x10237b4f8)
+	0x104cd403c ios_51job!0x238c03c (0x10238c03c)
+	0x104cd42d8 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!+[QJNPermissionManager.QJNPermissionManager statusOf:location:completion:]
+	0x104f3c04c ios_51job!0x25f404c (0x1025f404c)
+	0x104f3d904 ios_51job!0x25f5904 (0x1025f5904)
+	0x1029cdab4 ios_51job!0x85ab4 (0x100085ab4)
+	0x1d7afd700 UIKitCore!-[UIPresentationController transitionDidFinish:]
+	0x1d7fa211c UIKitCore!__56-[UIPresentationController runTransitionForCurrentState]_block_invoke.88
+	0x1d7b3500c UIKitCore!-[_UIViewControllerTransitionContext completeTransition:]
+	0x1d8800fcc UIKitCore!__UIVIEW_IS_EXECUTING_ANIMATION_COMPLETION_BLOCK__
+	0x1d796870c UIKitCore!-[UIViewAnimationBlockDelegate _didEndBlockAnimation:finished:context:]
+	0x1d79676c0 UIKitCore!-[UIViewAnimationState sendDelegateAnimationDidStop:finished:]
+	0x1d7966ecc UIKitCore!-[UIViewAnimationState animationDidStop:finished:]
+	0x1d7966fcc UIKitCore!-[UIViewAnimationState animationDidStop:finished:]
+	0x1d6db64e8 QuartzCore!CA::Layer::run_animation_callbacks(void*)
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: authorizationStatusForMediaType:
+	Backtrace:
+	0x1045c44a4 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!-[QJNImagePickerUtil cameraAction:]
+	0x1045c4044 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!-[QJNImagePickerUtil pickerImage:parentController:imagePickerModel:imagePickerDelegate:]
+	0x104e22a70 ios_51job!0x24daa70 (0x1024daa70)
+	0x104e226a8 ios_51job!0x24da6a8 (0x1024da6a8)
+	0x102e0a5d8 ios_51job!0x4c25d8 (0x1004c25d8)
+	0x104cd52ac ios_51job!0x238d2ac (0x10238d2ac)
+	0x104cc3858 ios_51job!0x237b858 (0x10237b858)
+	0x1029cdab4 ios_51job!0x85ab4 (0x100085ab4)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc697e10 libdispatch.dylib!_dispatch_main_queue_drain
+	0x1dc697a88 libdispatch.dylib!_dispatch_main_queue_callback_4CF$VARIANT$armv81
+	0x1d59999ac CoreFoundation!__CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+	0x1d597d648 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: authorizationStatusForMediaType:
+	Backtrace:
+	0x1edbc6a94 AVFCapture!-[AVCaptureDeviceInput _authorizedToUseDeviceAndRequestIfNecessary:]
+	0x1edbc6848 AVFCapture!-[AVCaptureDeviceInput initWithDevice:error:]
+	0x1edbc67bc AVFCapture!+[AVCaptureDeviceInput deviceInputWithDevice:error:]
+	0x21d54a184 CameraUI!___prewarmAudioVideoDevices_block_invoke
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc686ddc libdispatch.dylib!_dispatch_once_callout
+	0x21d552c80 CameraUI!-[CAMCaptureEngine prewarmedVideoDeviceInput:position:device:]
+	0x21d552ae8 CameraUI!-[CAMCaptureEngineDevice captureDeviceInput]
+	0x21d552a0c CameraUI!-[CAMModeAndDeviceCommand _desiredInputsWithContext:]
+	0x21d551ccc CameraUI!-[CAMModeAndDeviceCommand executeWithContext:]
+	0x21d551704 CameraUI!-[CAMCaptureEngine _executeCommand:withContext:]
+	0x21d551794 CameraUI!-[CAMCaptureEngine _executeCommand:withContext:]
+	0x21d551794 CameraUI!-[CAMCaptureEngine _executeCommand:withContext:]
+	0x21d5512d0 CameraUI!__35-[CAMCaptureEngine enqueueCommand:]_block_invoke
+	0x1e9ca6c18 PhotoLibraryServicesCore!__pl_dispatch_async_block_invoke
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+
+[*] Class Name: PHPhotoLibrary
+[*] Method Name: requestAuthorizationForAccessLevel:handler:
+	Backtrace:
+	0x104cc2418 ios_51job!0x237a418 (0x10237a418)
+	0x104cd41ec ios_51job!0x238c1ec (0x10238c1ec)
+	0x104cd42d8 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!+[QJNPermissionManager.QJNPermissionManager statusOf:location:completion:]
+	0x104f3c04c ios_51job!0x25f404c (0x1025f404c)
+	0x104f3d958 ios_51job!0x25f5958 (0x1025f5958)
+	0x1029cdab4 ios_51job!0x85ab4 (0x100085ab4)
+	0x1d7afd700 UIKitCore!-[UIPresentationController transitionDidFinish:]
+	0x1d7fa211c UIKitCore!__56-[UIPresentationController runTransitionForCurrentState]_block_invoke.88
+	0x1d7b3500c UIKitCore!-[_UIViewControllerTransitionContext completeTransition:]
+	0x1d8800fcc UIKitCore!__UIVIEW_IS_EXECUTING_ANIMATION_COMPLETION_BLOCK__
+	0x1d796870c UIKitCore!-[UIViewAnimationBlockDelegate _didEndBlockAnimation:finished:context:]
+	0x1d79676c0 UIKitCore!-[UIViewAnimationState sendDelegateAnimationDidStop:finished:]
+	0x1d7966ecc UIKitCore!-[UIViewAnimationState animationDidStop:finished:]
+	0x1d7966fcc UIKitCore!-[UIViewAnimationState animationDidStop:finished:]
+	0x1d6db64e8 QuartzCore!CA::Layer::run_animation_callbacks(void*)
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+
+[*] Class Name: PHPhotoLibrary
+[*] Method Name: authorizationStatus
+	Backtrace:
+	0x1052c8504 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!-[TZImageManager authorizationStatusAuthorized]
+	0x1052ceaa4 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!-[TZImagePickerController initWithMaxImagesCount:columnNumber:delegate:pushPhotoPickerVc:]
+	0x1045c47c0 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!-[QJNImagePickerUtil albumAction:]
+	0x1045c4034 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!-[QJNImagePickerUtil pickerImage:parentController:imagePickerModel:imagePickerDelegate:]
+	0x104e22a70 ios_51job!0x24daa70 (0x1024daa70)
+	0x104e2283c ios_51job!0x24da83c (0x1024da83c)
+	0x102e0a5d8 ios_51job!0x4c25d8 (0x1004c25d8)
+	0x104cd52f0 ios_51job!0x238d2f0 (0x10238d2f0)
+	0x104cc32dc ios_51job!0x237b2dc (0x10237b2dc)
+	0x104cc32b0 ios_51job!0x237b2b0 (0x10237b2b0)
+	0x102c4f7f4 ios_51job!0x3077f4 (0x1003077f4)
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc698b24 libdispatch.dylib!_dispatch_async_and_wait_invoke
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc697e10 libdispatch.dylib!_dispatch_main_queue_drain
+	0x1dc697a88 libdispatch.dylib!_dispatch_main_queue_callback_4CF$VARIANT$armv81
+
+[*] Class Name: PHPhotoLibrary
+[*] Method Name: authorizationStatus
+	Backtrace:
+	0x1052c8504 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!-[TZImageManager authorizationStatusAuthorized]
+	0x1052d566c /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!-[TZPhotoPickerController viewDidLoad]
+	0x1d7bf6d8c UIKitCore!-[UIViewController _sendViewDidLoadWithAppearanceProxyObjectTaggingEnabled]
+	0x1d78bc5b8 UIKitCore!-[UIViewController loadViewIfRequired]
+	0x1d78bc2e4 UIKitCore!-[UIViewController view]
+	0x1d7a58e5c UIKitCore!-[UINavigationController _preferredContentSizeForcingLoad:]
+	0x1d7b5eda4 UIKitCore!-[UIPresentationController preferredContentSizeDidChangeForChildContentContainer:]
+	0x1d7fa1630 UIKitCore!__56-[UIPresentationController runTransitionForCurrentState]_block_invoke_3
+	0x1d7a3091c UIKitCore!-[_UIAfterCACommitBlock run]
+	0x1d7a30858 UIKitCore!-[_UIAfterCACommitQueue flush]
+	0x1d7a3075c UIKitCore!_runAfterCACommitDeferredBlocks
+	0x1d78ded68 UIKitCore!_cleanUpAfterCAFlushAndRunDeferredBlocks
+	0x1d7cb2b04 UIKitCore!_afterCACommitHandler
+	0x1d59918e8 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_AN_OBSERVER_CALLBACK_FUNCTION__
+	0x1d592151c CoreFoundation!__CFRunLoopDoObservers
+	0x1d597d214 CoreFoundation!__CFRunLoopRun
+
+[*] Class Name: CLLocationManager
+[*] Method Name: authorizationStatus
+	Backtrace:
+	0x10562a250 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!-[BMKLocationManager startUpdatingLocationInMainThread]
+	0x105628128 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!-[BMKLocationManager requestLocationWithReGeocode:withNetworkState:completionBlock:]
+	0x104c21ddc ios_51job!0x22d9ddc (0x1022d9ddc)
+	0x104aca568 ios_51job!0x2182568 (0x102182568)
+	0x104ac5bf8 ios_51job!0x217dbf8 (0x10217dbf8)
+	0x102e09f58 ios_51job!0x4c1f58 (0x1004c1f58)
+	0x104cd4484 ios_51job!0x238c484 (0x10238c484)
+	0x102e0a5d8 ios_51job!0x4c25d8 (0x1004c25d8)
+	0x104cd422c ios_51job!0x238c22c (0x10238c22c)
+	0x104cd42d8 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!+[QJNPermissionManager.QJNPermissionManager statusOf:location:completion:]
+	0x104cd43c8 ios_51job!0x238c3c8 (0x10238c3c8)
+	0x104cd4540 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!+[QJNPermissionManager.QJNPermissionManager changeTo:type:location:completion:]
+	0x104ac5b70 ios_51job!0x217db70 (0x10217db70)
+	0x1029cdab4 ios_51job!0x85ab4 (0x100085ab4)
+	0x1d7c96aec UIKitCore!-[UIAlertController _invokeHandlersForAction:]
+	0x1d7e0d128 UIKitCore!__103-[UIAlertController _dismissAnimated:triggeringAction:triggeredByPopoverDimmingView:dismissCompletion:]_block_invoke_2
+
+[*] Class Name: CLLocationManager
+[*] Method Name: locationServicesEnabled
+	Backtrace:
+	0x105629e40 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!-[BMKLocationManager isLocationServiceAvalable]
+	0x10562a394 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!-[BMKLocationManager startUpdatingLocationInMainThread]
+	0x105628128 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!-[BMKLocationManager requestLocationWithReGeocode:withNetworkState:completionBlock:]
+	0x104c21ddc ios_51job!0x22d9ddc (0x1022d9ddc)
+	0x104aca568 ios_51job!0x2182568 (0x102182568)
+	0x104ac5bf8 ios_51job!0x217dbf8 (0x10217dbf8)
+	0x102e09f58 ios_51job!0x4c1f58 (0x1004c1f58)
+	0x104cd4484 ios_51job!0x238c484 (0x10238c484)
+	0x102e0a5d8 ios_51job!0x4c25d8 (0x1004c25d8)
+	0x104cd422c ios_51job!0x238c22c (0x10238c22c)
+	0x104cd42d8 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!+[QJNPermissionManager.QJNPermissionManager statusOf:location:completion:]
+	0x104cd43c8 ios_51job!0x238c3c8 (0x10238c3c8)
+	0x104cd4540 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!+[QJNPermissionManager.QJNPermissionManager changeTo:type:location:completion:]
+	0x104ac5b70 ios_51job!0x217db70 (0x10217db70)
+	0x1029cdab4 ios_51job!0x85ab4 (0x100085ab4)
+	0x1d7c96aec UIKitCore!-[UIAlertController _invokeHandlersForAction:]
+
+[*] Class Name: CLLocationManager
+[*] Method Name: authorizationStatus
+	Backtrace:
+	0x105629e58 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!-[BMKLocationManager isLocationServiceAvalable]
+	0x10562a394 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!-[BMKLocationManager startUpdatingLocationInMainThread]
+	0x105628128 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!-[BMKLocationManager requestLocationWithReGeocode:withNetworkState:completionBlock:]
+	0x104c21ddc ios_51job!0x22d9ddc (0x1022d9ddc)
+	0x104aca568 ios_51job!0x2182568 (0x102182568)
+	0x104ac5bf8 ios_51job!0x217dbf8 (0x10217dbf8)
+	0x102e09f58 ios_51job!0x4c1f58 (0x1004c1f58)
+	0x104cd4484 ios_51job!0x238c484 (0x10238c484)
+	0x102e0a5d8 ios_51job!0x4c25d8 (0x1004c25d8)
+	0x104cd422c ios_51job!0x238c22c (0x10238c22c)
+	0x104cd42d8 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!+[QJNPermissionManager.QJNPermissionManager statusOf:location:completion:]
+	0x104cd43c8 ios_51job!0x238c3c8 (0x10238c3c8)
+	0x104cd4540 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!+[QJNPermissionManager.QJNPermissionManager changeTo:type:location:completion:]
+	0x104ac5b70 ios_51job!0x217db70 (0x10217db70)
+	0x1029cdab4 ios_51job!0x85ab4 (0x100085ab4)
+	0x1d7c96aec UIKitCore!-[UIAlertController _invokeHandlersForAction:]
+
+[*] Class Name: CLLocation
+[*] Method Name: - timestamp
+	Backtrace:
+	0x1e092fc50 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocation description]
+	0x1cfcae5ec Foundation!_NSDescriptionWithLocaleFunc
+	0x1d59556e8 CoreFoundation!__CFStringAppendFormatCore
+	0x1d598655c CoreFoundation!_CFStringCreateWithFormatAndArgumentsReturningMetadata
+	0x1d5983130 CoreFoundation!_CFStringCreateWithFormatAndArgumentsAux2
+	0x1cfcaf1fc Foundation!+[NSString stringWithFormat:]
+	0x10562bb90 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!-[BMKLocationManager fkdisfwef:pgewk:]
+	0x1d5975f40 CoreFoundation!__invoking___
+	0x1d59271c8 CoreFoundation!-[NSInvocation invoke]
+	0x1cfd11550 Foundation!__NSFireTimer
+	0x1d59c9bb0 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_TIMER_CALLBACK_FUNCTION__
+	0x1d598ade4 CoreFoundation!__CFRunLoopDoTimer
+	0x1d59340fc CoreFoundation!__CFRunLoopDoTimers
+	0x1d597d5bc CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+
+[*] Class Name: CLLocation
+[*] Method Name: - horizontalAccuracy
+	Backtrace:
+	0x10562b990 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!-[BMKLocationManager isOnceLocationAvalible:]
+	0x10562bbe0 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!-[BMKLocationManager fkdisfwef:pgewk:]
+	0x1d5975f40 CoreFoundation!__invoking___
+	0x1d59271c8 CoreFoundation!-[NSInvocation invoke]
+	0x1cfd11550 Foundation!__NSFireTimer
+	0x1d59c9bb0 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_TIMER_CALLBACK_FUNCTION__
+	0x1d598ade4 CoreFoundation!__CFRunLoopDoTimer
+	0x1d59340fc CoreFoundation!__CFRunLoopDoTimers
+	0x1d597d5bc CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x102950434 ios_51job!0x8434 (0x100008434)
+	0x1088e8344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - timestamp
+	Backtrace:
+	0x10562b9b8 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!-[BMKLocationManager isOnceLocationAvalible:]
+	0x10562bbe0 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!-[BMKLocationManager fkdisfwef:pgewk:]
+	0x1d5975f40 CoreFoundation!__invoking___
+	0x1d59271c8 CoreFoundation!-[NSInvocation invoke]
+	0x1cfd11550 Foundation!__NSFireTimer
+	0x1d59c9bb0 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_TIMER_CALLBACK_FUNCTION__
+	0x1d598ade4 CoreFoundation!__CFRunLoopDoTimer
+	0x1d59340fc CoreFoundation!__CFRunLoopDoTimers
+	0x1d597d5bc CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x102950434 ios_51job!0x8434 (0x100008434)
+	0x1088e8344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x1056261c8 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!+[BMKLocationUtil getEncodedRequestStringForNetworkStateFromCuid:andLocation:withRgc:withnetState:withNewVersionRgc:]
+	0x10562d224 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!-[BMKLocationManager excuteNetLoc]
+	0x10562df78 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!-[BMKLocationManager sendSemanticRequestWithLocation:]
+	0x10562bc14 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!-[BMKLocationManager fkdisfwef:pgewk:]
+	0x1d5975f40 CoreFoundation!__invoking___
+	0x1d59271c8 CoreFoundation!-[NSInvocation invoke]
+	0x1cfd11550 Foundation!__NSFireTimer
+	0x1d59c9bb0 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_TIMER_CALLBACK_FUNCTION__
+	0x1d598ade4 CoreFoundation!__CFRunLoopDoTimer
+	0x1d59340fc CoreFoundation!__CFRunLoopDoTimers
+	0x1d597d5bc CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x102950434 ios_51job!0x8434 (0x100008434)
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x1056261d8 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!+[BMKLocationUtil getEncodedRequestStringForNetworkStateFromCuid:andLocation:withRgc:withnetState:withNewVersionRgc:]
+	0x10562d224 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!-[BMKLocationManager excuteNetLoc]
+	0x10562df78 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!-[BMKLocationManager sendSemanticRequestWithLocation:]
+	0x10562bc14 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!-[BMKLocationManager fkdisfwef:pgewk:]
+	0x1d5975f40 CoreFoundation!__invoking___
+	0x1d59271c8 CoreFoundation!-[NSInvocation invoke]
+	0x1cfd11550 Foundation!__NSFireTimer
+	0x1d59c9bb0 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_TIMER_CALLBACK_FUNCTION__
+	0x1d598ade4 CoreFoundation!__CFRunLoopDoTimer
+	0x1d59340fc CoreFoundation!__CFRunLoopDoTimers
+	0x1d597d5bc CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x102950434 ios_51job!0x8434 (0x100008434)
+
+[*] Class Name: CLLocation
+[*] Method Name: - horizontalAccuracy
+	Backtrace:
+	0x1056261ec /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!+[BMKLocationUtil getEncodedRequestStringForNetworkStateFromCuid:andLocation:withRgc:withnetState:withNewVersionRgc:]
+	0x10562d224 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!-[BMKLocationManager excuteNetLoc]
+	0x10562df78 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!-[BMKLocationManager sendSemanticRequestWithLocation:]
+	0x10562bc14 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!-[BMKLocationManager fkdisfwef:pgewk:]
+	0x1d5975f40 CoreFoundation!__invoking___
+	0x1d59271c8 CoreFoundation!-[NSInvocation invoke]
+	0x1cfd11550 Foundation!__NSFireTimer
+	0x1d59c9bb0 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_TIMER_CALLBACK_FUNCTION__
+	0x1d598ade4 CoreFoundation!__CFRunLoopDoTimer
+	0x1d59340fc CoreFoundation!__CFRunLoopDoTimers
+	0x1d597d5bc CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x102950434 ios_51job!0x8434 (0x100008434)
+
+[*] Class Name: CLLocation
+[*] Method Name: - timestamp
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x1e092fc50 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocation description]
+	0x1cfcae5ec Foundation!_NSDescriptionWithLocaleFunc
+	0x1d59556e8 CoreFoundation!__CFStringAppendFormatCore
+	0x1d598655c CoreFoundation!_CFStringCreateWithFormatAndArgumentsReturningMetadata
+	0x1d5983130 CoreFoundation!_CFStringCreateWithFormatAndArgumentsAux2
+	0x1cfcaf1fc Foundation!+[NSString stringWithFormat:]
+	0x10562bb90 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!-[BMKLocationManager fkdisfwef:pgewk:]
+	0x1d5975f40 CoreFoundation!__invoking___
+	0x1d59271c8 CoreFoundation!-[NSInvocation invoke]
+	0x1cfd11550 Foundation!__NSFireTimer
+	0x1d59c9bb0 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_TIMER_CALLBACK_FUNCTION__
+	0x1d598ade4 CoreFoundation!__CFRunLoopDoTimer
+	0x1d59340fc CoreFoundation!__CFRunLoopDoTimers
+	0x1d597d5bc CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+
+[*] Class Name: CLLocation
+[*] Method Name: - horizontalAccuracy
+	Backtrace:
+	0x10562b990 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!-[BMKLocationManager isOnceLocationAvalible:]
+	0x10562bbe0 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!-[BMKLocationManager fkdisfwef:pgewk:]
+	0x1d5975f40 CoreFoundation!__invoking___
+	0x1d59271c8 CoreFoundation!-[NSInvocation invoke]
+	0x1cfd11550 Foundation!__NSFireTimer
+	0x1d59c9bb0 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_TIMER_CALLBACK_FUNCTION__
+	0x1d598ade4 CoreFoundation!__CFRunLoopDoTimer
+	0x1d59340fc CoreFoundation!__CFRunLoopDoTimers
+	0x1d597d5bc CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x102950434 ios_51job!0x8434 (0x100008434)
+	0x1088e8344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - timestamp
+	Backtrace:
+	0x10562cf50 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!-[BMKLocationManager getLocationFromLocation:withcoor:]
+	0x10562d864 ios_51job!0x2ce5864 (0x102ce5864)
+	0x1d68f5b50 CFNetwork!0x1db50 (0x187dd1b50)
+	0x1d6904a98 CFNetwork!0x2ca98 (0x187de0a98)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc6916fc libdispatch.dylib!_dispatch_lane_serial_drain$VARIANT$armv81
+	0x1dc6921e4 libdispatch.dylib!_dispatch_lane_invoke$VARIANT$armv81
+	0x1dc69bf14 libdispatch.dylib!_dispatch_workloop_worker_thread
+	0x2206b1bd0 libsystem_pthread.dylib!_pthread_wqthread
+
+[*] Class Name: CLLocation
+[*] Method Name: - altitude
+	Backtrace:
+	0x10562b9b8 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!-[BMKLocationManager isOnceLocationAvalible:]
+	0x10562bbe0 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!-[BMKLocationManager fkdisfwef:pgewk:]
+	0x1d5975f40 CoreFoundation!__invoking___
+	0x1d59271c8 CoreFoundation!-[NSInvocation invoke]
+	0x1cfd11550 Foundation!__NSFireTimer
+	0x1d59c9bb0 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_TIMER_CALLBACK_FUNCTION__
+	0x1d598ade4 CoreFoundation!__CFRunLoopDoTimer
+	0x1d59340fc CoreFoundation!__CFRunLoopDoTimers
+	0x1d597d5bc CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x102950434 ios_51job!0x8434 (0x100008434)
+	0x1088e8344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+
+[*] Class Name: CLLocation
+[*] Method Name: - timestamp
+	Backtrace:
+	0x1e092fc50 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocation description]
+	0x1cfcae5ec Foundation!_NSDescriptionWithLocaleFunc
+	0x1d59556e8 CoreFoundation!__CFStringAppendFormatCore
+	0x1d598655c CoreFoundation!_CFStringCreateWithFormatAndArgumentsReturningMetadata
+	0x1d5983130 CoreFoundation!_CFStringCreateWithFormatAndArgumentsAux2
+	0x1cfcaf1fc Foundation!+[NSString stringWithFormat:]
+	0x10562bb90 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!-[BMKLocationManager fkdisfwef:pgewk:]
+	0x1d5975f40 CoreFoundation!__invoking___
+	0x1d59271c8 CoreFoundation!-[NSInvocation invoke]
+	0x1cfd11550 Foundation!__NSFireTimer
+	0x1d59c9bb0 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_TIMER_CALLBACK_FUNCTION__
+	0x1d598ade4 CoreFoundation!__CFRunLoopDoTimer
+	0x1d59340fc CoreFoundation!__CFRunLoopDoTimers
+	0x1d597d5bc CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+
+[*] Class Name: CLLocation
+[*] Method Name: - horizontalAccuracy
+	Backtrace:
+	0x105c9375c /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!+[GTCGbdLService saveLocation:type:]
+	0x1cfccdfa8 Foundation!__NSThreadPerformPerform
+	0x1d59d10e8 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__
+	0x1d59dcd5c CoreFoundation!__CFRunLoopDoSource0
+	0x1d5967fc4 CoreFoundation!__CFRunLoopDoSources0
+	0x1d597d138 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x1cfcd40e8 Foundation!-[NSRunLoop(NSRunLoop) runMode:beforeDate:]
+	0x105cd5a80 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!-[GTCThread main]
+	0x1cfcebc4c Foundation!__NSThread__start__
+	0x2206b30ec libsystem_pthread.dylib!_pthread_start
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x10562cfd0 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!-[BMKLocationManager getLocationFromLocation:withcoor:]
+	0x10562d864 ios_51job!0x2ce5864 (0x102ce5864)
+	0x1d68f5b50 CFNetwork!0x1db50 (0x187dd1b50)
+	0x1d6904a98 CFNetwork!0x2ca98 (0x187de0a98)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc6916fc libdispatch.dylib!_dispatch_lane_serial_drain$VARIANT$armv81
+	0x1dc6921e4 libdispatch.dylib!_dispatch_lane_invoke$VARIANT$armv81
+	0x1dc69bf14 libdispatch.dylib!_dispatch_workloop_worker_thread
+	0x2206b1bd0 libsystem_pthread.dylib!_pthread_wqthread
+
+[*] Class Name: CLLocation
+[*] Method Name: - horizontalAccuracy
+	Backtrace:
+	0x105c937e0 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!+[GTCGbdLService saveLocation:type:]
+	0x1cfccdfa8 Foundation!__NSThreadPerformPerform
+	0x1d59d10e8 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__
+	0x1d59dcd5c CoreFoundation!__CFRunLoopDoSource0
+	0x1d5967fc4 CoreFoundation!__CFRunLoopDoSources0
+	0x1d597d138 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x1cfcd40e8 Foundation!-[NSRunLoop(NSRunLoop) runMode:beforeDate:]
+	0x105cd5a80 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!-[GTCThread main]
+	0x1cfcebc4c Foundation!__NSThread__start__
+	0x2206b30ec libsystem_pthread.dylib!_pthread_start
+
+[*] Class Name: CLLocation
+[*] Method Name: - altitude
+	Backtrace:
+	0x10562b990 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!-[BMKLocationManager isOnceLocationAvalible:]
+	0x10562bbe0 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!-[BMKLocationManager fkdisfwef:pgewk:]
+	0x1d5975f40 CoreFoundation!__invoking___
+	0x1d59271c8 CoreFoundation!-[NSInvocation invoke]
+	0x1cfd11550 Foundation!__NSFireTimer
+	0x1d59c9bb0 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_TIMER_CALLBACK_FUNCTION__
+	0x1d598ade4 CoreFoundation!__CFRunLoopDoTimer
+	0x1d59340fc CoreFoundation!__CFRunLoopDoTimers
+	0x1d597d5bc CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x102950434 ios_51job!0x8434 (0x100008434)
+	0x1088e8344 dyld!start
+	Backtrace:
+	0x10562cfe4 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!-[BMKLocationManager getLocationFromLocation:withcoor:]
+	0x10562d864 ios_51job!0x2ce5864 (0x102ce5864)
+	0x1d68f5b50 CFNetwork!0x1db50 (0x187dd1b50)
+	0x1d6904a98 CFNetwork!0x2ca98 (0x187de0a98)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc6916fc libdispatch.dylib!_dispatch_lane_serial_drain$VARIANT$armv81
+	0x1dc6921e4 libdispatch.dylib!_dispatch_lane_invoke$VARIANT$armv81
+	0x1dc69bf14 libdispatch.dylib!_dispatch_workloop_worker_thread
+	0x2206b1bd0 libsystem_pthread.dylib!_pthread_wqthread
+
+[*] Class Name: CLLocation
+[*] Method Name: - verticalAccuracy
+	Backtrace:
+	0x1cfcc1f4c Foundation!_NSGetDoubleValueWithMethod
+	0x1cfc9a77c Foundation!-[NSObject(NSKeyValueCoding) valueForKey:]
+	0x105c91b1c /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!+[GTCGbdLInfoUtil loc:valueForKey:]
+	0x105c9385c /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!+[GTCGbdLService saveLocation:type:]
+	0x1cfccdfa8 Foundation!__NSThreadPerformPerform
+	0x1d59d10e8 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__
+	0x1d59dcd5c CoreFoundation!__CFRunLoopDoSource0
+	0x1d5967fc4 CoreFoundation!__CFRunLoopDoSources0
+	0x1d597d138 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x1cfcd40e8 Foundation!-[NSRunLoop(NSRunLoop) runMode:beforeDate:]
+	0x105cd5a80 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!-[GTCThread main]
+	0x1cfcebc4c Foundation!__NSThread__start__
+	0x2206b30ec libsystem_pthread.dylib!_pthread_start
+
+[*] Class Name: CLLocation
+[*] Method Name: - verticalAccuracy
+	Backtrace:
+	0x1cfcc1f4c Foundation!_NSGetDoubleValueWithMethod
+	0x1cfc9a77c Foundation!-[NSObject(NSKeyValueCoding) valueForKey:]
+	0x105c91b1c /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!+[GTCGbdLInfoUtil loc:valueForKey:]
+	0x105c93a74 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!+[GTCGbdLService saveLocation:type:]
+	0x1cfccdfa8 Foundation!__NSThreadPerformPerform
+	0x1d59d10e8 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__
+	0x1d59dcd5c CoreFoundation!__CFRunLoopDoSource0
+	0x1d5967fc4 CoreFoundation!__CFRunLoopDoSources0
+	0x1d597d138 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x1cfcd40e8 Foundation!-[NSRunLoop(NSRunLoop) runMode:beforeDate:]
+	0x105cd5a80 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!-[GTCThread main]
+	0x1cfcebc4c Foundation!__NSThread__start__
+	0x2206b30ec libsystem_pthread.dylib!_pthread_start
+
+[*] Class Name: CLLocation
+[*] Method Name: - horizontalAccuracy
+	Backtrace:
+	0x10562cff8 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!-[BMKLocationManager getLocationFromLocation:withcoor:]
+	0x10562d864 ios_51job!0x2ce5864 (0x102ce5864)
+	0x1d68f5b50 CFNetwork!0x1db50 (0x187dd1b50)
+	0x1d6904a98 CFNetwork!0x2ca98 (0x187de0a98)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc6916fc libdispatch.dylib!_dispatch_lane_serial_drain$VARIANT$armv81
+	0x1dc6921e4 libdispatch.dylib!_dispatch_lane_invoke$VARIANT$armv81
+	0x1dc69bf14 libdispatch.dylib!_dispatch_workloop_worker_thread
+	0x2206b1bd0 libsystem_pthread.dylib!_pthread_wqthread
+
+[*] Class Name: CLLocation
+[*] Method Name: - timestamp
+	Backtrace:
+	0x1cfcc1f4c Foundation!_NSGetDoubleValueWithMethod
+	0x1cfc9a77c Foundation!-[NSObject(NSKeyValueCoding) valueForKey:]
+	0x105c91b1c /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!+[GTCGbdLInfoUtil loc:valueForKey:]
+	0x105c93ad0 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!+[GTCGbdLService saveLocation:type:]
+	0x1cfccdfa8 Foundation!__NSThreadPerformPerform
+	0x1d59d10e8 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__
+	0x1d59dcd5c CoreFoundation!__CFRunLoopDoSource0
+	0x1d5967fc4 CoreFoundation!__CFRunLoopDoSources0
+	0x1d597d138 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x1cfcd40e8 Foundation!-[NSRunLoop(NSRunLoop) runMode:beforeDate:]
+	0x105cd5a80 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!-[GTCThread main]
+	0x1cfcebc4c Foundation!__NSThread__start__
+	0x2206b30ec libsystem_pthread.dylib!_pthread_start
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x10562d034 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!-[BMKLocationManager getLocationFromLocation:withcoor:]
+	0x10562d864 ios_51job!0x2ce5864 (0x102ce5864)
+	0x1d68f5b50 CFNetwork!0x1db50 (0x187dd1b50)
+	0x1d6904a98 CFNetwork!0x2ca98 (0x187de0a98)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc6916fc libdispatch.dylib!_dispatch_lane_serial_drain$VARIANT$armv81
+	0x1dc6921e4 libdispatch.dylib!_dispatch_lane_invoke$VARIANT$armv81
+	0x1dc69bf14 libdispatch.dylib!_dispatch_workloop_worker_thread
+	0x2206b1bd0 libsystem_pthread.dylib!_pthread_wqthread
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x105c9375c /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!+[GTCGbdLService saveLocation:type:]
+	0x1cfccdfa8 Foundation!__NSThreadPerformPerform
+	0x1d59d10e8 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__
+	0x1d59dcd5c CoreFoundation!__CFRunLoopDoSource0
+	0x1d5967fc4 CoreFoundation!__CFRunLoopDoSources0
+	0x1d597d138 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x1cfcd40e8 Foundation!-[NSRunLoop(NSRunLoop) runMode:beforeDate:]
+	0x105cd5a80 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!-[GTCThread main]
+	0x1cfcebc4c Foundation!__NSThread__start__
+	0x2206b30ec libsystem_pthread.dylib!_pthread_start
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x105c937e0 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!+[GTCGbdLService saveLocation:type:]
+	0x1cfccdfa8 Foundation!__NSThreadPerformPerform
+	0x1d59d10e8 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__
+	0x1d59dcd5c CoreFoundation!__CFRunLoopDoSource0
+	0x1d5967fc4 CoreFoundation!__CFRunLoopDoSources0
+	0x1d597d138 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x1cfcd40e8 Foundation!-[NSRunLoop(NSRunLoop) runMode:beforeDate:]
+	0x105cd5a80 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!-[GTCThread main]
+	0x1cfcebc4c Foundation!__NSThread__start__
+	0x2206b30ec libsystem_pthread.dylib!_pthread_start
+
+[*] Class Name: CLLocation
+[*] Method Name: - altitude
+	Backtrace:
+	0x10562cee0 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!-[BMKLocationManager getLocationFromLocation:withcoor:]
+	0x10562dce8 ios_51job!0x2ce5ce8 (0x102ce5ce8)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc697e10 libdispatch.dylib!_dispatch_main_queue_drain
+	0x1dc697a88 libdispatch.dylib!_dispatch_main_queue_callback_4CF$VARIANT$armv81
+	0x1d59999ac CoreFoundation!__CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+	0x1d597d648 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x102950434 ios_51job!0x8434 (0x100008434)
+	0x1088e8344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - altitude
+	Backtrace:
+	0x1cfcc1f4c Foundation!_NSGetDoubleValueWithMethod
+	0x1cfc9a77c Foundation!-[NSObject(NSKeyValueCoding) valueForKey:]
+	0x105c91b1c /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!+[GTCGbdLInfoUtil loc:valueForKey:]
+	0x105c9385c /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!+[GTCGbdLService saveLocation:type:]
+	0x1cfccdfa8 Foundation!__NSThreadPerformPerform
+	0x1d59d10e8 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__
+	0x1d59dcd5c CoreFoundation!__CFRunLoopDoSource0
+	0x1d5967fc4 CoreFoundation!__CFRunLoopDoSources0
+	0x1d597d138 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x1cfcd40e8 Foundation!-[NSRunLoop(NSRunLoop) runMode:beforeDate:]
+	0x105cd5a80 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!-[GTCThread main]
+	0x1cfcebc4c Foundation!__NSThread__start__
+	0x2206b30ec libsystem_pthread.dylib!_pthread_start
+
+[*] Class Name: CLLocation
+[*] Method Name: - verticalAccuracy
+	Backtrace:
+	0x10562cfd0 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!-[BMKLocationManager getLocationFromLocation:withcoor:]
+	0x10562dce8 ios_51job!0x2ce5ce8 (0x102ce5ce8)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc697e10 libdispatch.dylib!_dispatch_main_queue_drain
+	0x1dc697a88 libdispatch.dylib!_dispatch_main_queue_callback_4CF$VARIANT$armv81
+	0x1d59999ac CoreFoundation!__CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+	0x1d597d648 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x102950434 ios_51job!0x8434 (0x100008434)
+	0x1088e8344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - horizontalAccuracy
+	Backtrace:
+	0x1cfcc1f4c Foundation!_NSGetDoubleValueWithMethod
+	0x1cfc9a77c Foundation!-[NSObject(NSKeyValueCoding) valueForKey:]
+	0x105c91b1c /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!+[GTCGbdLInfoUtil loc:valueForKey:]
+	0x105c93a74 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!+[GTCGbdLService saveLocation:type:]
+	0x1cfccdfa8 Foundation!__NSThreadPerformPerform
+	0x1d59d10e8 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__
+	0x1d59dcd5c CoreFoundation!__CFRunLoopDoSource0
+	0x1d5967fc4 CoreFoundation!__CFRunLoopDoSources0
+	0x1d597d138 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x1cfcd40e8 Foundation!-[NSRunLoop(NSRunLoop) runMode:beforeDate:]
+	0x105cd5a80 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!-[GTCThread main]
+	0x1cfcebc4c Foundation!__NSThread__start__
+	0x2206b30ec libsystem_pthread.dylib!_pthread_start
+
+[*] Class Name: CLLocation
+[*] Method Name: - horizontalAccuracy
+	Backtrace:
+	0x10562cfe4 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!-[BMKLocationManager getLocationFromLocation:withcoor:]
+	0x10562dce8 ios_51job!0x2ce5ce8 (0x102ce5ce8)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc697e10 libdispatch.dylib!_dispatch_main_queue_drain
+	0x1dc697a88 libdispatch.dylib!_dispatch_main_queue_callback_4CF$VARIANT$armv81
+	0x1d59999ac CoreFoundation!__CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+	0x1d597d648 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x102950434 ios_51job!0x8434 (0x100008434)
+	0x1088e8344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - verticalAccuracy
+	Backtrace:
+	0x1cfcc1f4c Foundation!_NSGetDoubleValueWithMethod
+	0x1cfc9a77c Foundation!-[NSObject(NSKeyValueCoding) valueForKey:]
+	0x105c91b1c /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!+[GTCGbdLInfoUtil loc:valueForKey:]
+	0x105c93ad0 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!+[GTCGbdLService saveLocation:type:]
+	0x1cfccdfa8 Foundation!__NSThreadPerformPerform
+	0x1d59d10e8 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__
+	0x1d59dcd5c CoreFoundation!__CFRunLoopDoSource0
+	0x1d5967fc4 CoreFoundation!__CFRunLoopDoSources0
+	0x1d597d138 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x1cfcd40e8 Foundation!-[NSRunLoop(NSRunLoop) runMode:beforeDate:]
+	0x105cd5a80 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!-[GTCThread main]
+	0x1cfcebc4c Foundation!__NSThread__start__
+	0x2206b30ec libsystem_pthread.dylib!_pthread_start
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x10562cff8 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!-[BMKLocationManager getLocationFromLocation:withcoor:]
+	0x10562dce8 ios_51job!0x2ce5ce8 (0x102ce5ce8)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc697e10 libdispatch.dylib!_dispatch_main_queue_drain
+	0x1dc697a88 libdispatch.dylib!_dispatch_main_queue_callback_4CF$VARIANT$armv81
+	0x1d59999ac CoreFoundation!__CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+	0x1d597d648 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x102950434 ios_51job!0x8434 (0x100008434)
+	0x1088e8344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - timestamp
+	Backtrace:
+	0x105c9375c /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!+[GTCGbdLService saveLocation:type:]
+	0x1cfccdfa8 Foundation!__NSThreadPerformPerform
+	0x1d59d10e8 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__
+	0x1d59dcd5c CoreFoundation!__CFRunLoopDoSource0
+	0x1d5967fc4 CoreFoundation!__CFRunLoopDoSources0
+	0x1d597d138 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x1cfcd40e8 Foundation!-[NSRunLoop(NSRunLoop) runMode:beforeDate:]
+	0x105cd5a80 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!-[GTCThread main]
+	0x1cfcebc4c Foundation!__NSThread__start__
+	0x2206b30ec libsystem_pthread.dylib!_pthread_start
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x10562d034 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!-[BMKLocationManager getLocationFromLocation:withcoor:]
+	0x10562dce8 ios_51job!0x2ce5ce8 (0x102ce5ce8)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc697e10 libdispatch.dylib!_dispatch_main_queue_drain
+	0x1dc697a88 libdispatch.dylib!_dispatch_main_queue_callback_4CF$VARIANT$armv81
+	0x1d59999ac CoreFoundation!__CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+	0x1d597d648 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x102950434 ios_51job!0x8434 (0x100008434)
+	0x1088e8344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x105c937e0 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!+[GTCGbdLService saveLocation:type:]
+	0x1cfccdfa8 Foundation!__NSThreadPerformPerform
+	0x1d59d10e8 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__
+	0x1d59dcd5c CoreFoundation!__CFRunLoopDoSource0
+	0x1d5967fc4 CoreFoundation!__CFRunLoopDoSources0
+	0x1d597d138 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x1cfcd40e8 Foundation!-[NSRunLoop(NSRunLoop) runMode:beforeDate:]
+	0x105cd5a80 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!-[GTCThread main]
+	0x1cfcebc4c Foundation!__NSThread__start__
+	0x2206b30ec libsystem_pthread.dylib!_pthread_start
+
+[*] Class Name: CLLocation
+[*] Method Name: - altitude
+	Backtrace:
+	0x1cfcc1f4c Foundation!_NSGetDoubleValueWithMethod
+	0x1cfc9a77c Foundation!-[NSObject(NSKeyValueCoding) valueForKey:]
+	0x105c91b1c /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!+[GTCGbdLInfoUtil loc:valueForKey:]
+	0x105c9385c /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!+[GTCGbdLService saveLocation:type:]
+	0x1cfccdfa8 Foundation!__NSThreadPerformPerform
+	0x1d59d10e8 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__
+	0x1d59dcd5c CoreFoundation!__CFRunLoopDoSource0
+	0x1d5967fc4 CoreFoundation!__CFRunLoopDoSources0
+	0x1d597d138 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x1cfcd40e8 Foundation!-[NSRunLoop(NSRunLoop) runMode:beforeDate:]
+	0x105cd5a80 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!-[GTCThread main]
+	0x1cfcebc4c Foundation!__NSThread__start__
+	0x2206b30ec libsystem_pthread.dylib!_pthread_start
+
+[*] Class Name: CLLocation
+[*] Method Name: - verticalAccuracy
+	Backtrace:
+	0x104c2212c ios_51job!0x22da12c (0x1022da12c)
+	0x104c2209c ios_51job!0x22da09c (0x1022da09c)
+	0x104c2228c ios_51job!0x22da28c (0x1022da28c)
+	0x10562de3c ios_51job!0x2ce5e3c (0x102ce5e3c)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc697e10 libdispatch.dylib!_dispatch_main_queue_drain
+	0x1dc697a88 libdispatch.dylib!_dispatch_main_queue_callback_4CF$VARIANT$armv81
+	0x1d59999ac CoreFoundation!__CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+	0x1d597d648 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x102950434 ios_51job!0x8434 (0x100008434)
+	0x1088e8344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x1cfcc1f4c Foundation!_NSGetDoubleValueWithMethod
+	0x1cfc9a77c Foundation!-[NSObject(NSKeyValueCoding) valueForKey:]
+	0x105c91b1c /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!+[GTCGbdLInfoUtil loc:valueForKey:]
+	0x105c93a74 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!+[GTCGbdLService saveLocation:type:]
+	0x1cfccdfa8 Foundation!__NSThreadPerformPerform
+	0x1d59d10e8 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__
+	0x1d59dcd5c CoreFoundation!__CFRunLoopDoSource0
+	0x1d5967fc4 CoreFoundation!__CFRunLoopDoSources0
+	0x1d597d138 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x1cfcd40e8 Foundation!-[NSRunLoop(NSRunLoop) runMode:beforeDate:]
+	0x105cd5a80 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!-[GTCThread main]
+	0x1cfcebc4c Foundation!__NSThread__start__
+	0x2206b30ec libsystem_pthread.dylib!_pthread_start
+
+[*] Class Name: CLLocation
+[*] Method Name: - horizontalAccuracy
+	Backtrace:
+	0x1cfcc1f4c Foundation!_NSGetDoubleValueWithMethod
+	0x1cfc9a77c Foundation!-[NSObject(NSKeyValueCoding) valueForKey:]
+	0x105c91b1c /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!+[GTCGbdLInfoUtil loc:valueForKey:]
+	0x105c93ad0 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!+[GTCGbdLService saveLocation:type:]
+	0x1cfccdfa8 Foundation!__NSThreadPerformPerform
+	0x1d59d10e8 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__
+	0x1d59dcd5c CoreFoundation!__CFRunLoopDoSource0
+	0x1d5967fc4 CoreFoundation!__CFRunLoopDoSources0
+	0x1d597d138 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x1cfcd40e8 Foundation!-[NSRunLoop(NSRunLoop) runMode:beforeDate:]
+	0x105cd5a80 /private/var/containers/Bundle/Application/7CEE8EC0-F8AB-42BC-B814-E623975975C1/ios_51job.app/ios_51job!-[GTCThread main]
+	0x1cfcebc4c Foundation!__NSThread__start__
+	0x2206b30ec libsystem_pthread.dylib!_pthread_start
+	Backtrace:
+	0x104c222fc ios_51job!0x22da2fc (0x1022da2fc)
+	0x104c22150 ios_51job!0x22da150 (0x1022da150)
+	0x104c2209c ios_51job!0x22da09c (0x1022da09c)
+	0x104c2228c ios_51job!0x22da28c (0x1022da28c)
+	0x10562de3c ios_51job!0x2ce5e3c (0x102ce5e3c)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc697e10 libdispatch.dylib!_dispatch_main_queue_drain
+	0x1dc697a88 libdispatch.dylib!_dispatch_main_queue_callback_4CF$VARIANT$armv81
+	0x1d59999ac CoreFoundation!__CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+	0x1d597d648 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x102950434 ios_51job!0x8434 (0x100008434)
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x104c22318 ios_51job!0x22da318 (0x1022da318)
+	0x104c22150 ios_51job!0x22da150 (0x1022da150)
+	0x104c2209c ios_51job!0x22da09c (0x1022da09c)
+	0x104c2228c ios_51job!0x22da28c (0x1022da28c)
+	0x10562de3c ios_51job!0x2ce5e3c (0x102ce5e3c)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc697e10 libdispatch.dylib!_dispatch_main_queue_drain
+	0x1dc697a88 libdispatch.dylib!_dispatch_main_queue_callback_4CF$VARIANT$armv81
+	0x1d59999ac CoreFoundation!__CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+	0x1d597d648 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x102950434 ios_51job!0x8434 (0x100008434)
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x104c2259c ios_51job!0x22da59c (0x1022da59c)
+	0x104c23180 ios_51job!0x22db180 (0x1022db180)
+	0x102a98088 ios_51job!0x150088 (0x100150088)
+	0x102ae8120 ios_51job!0x1a0120 (0x1001a0120)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc697e10 libdispatch.dylib!_dispatch_main_queue_drain
+	0x1dc697a88 libdispatch.dylib!_dispatch_main_queue_callback_4CF$VARIANT$armv81
+	0x1d59999ac CoreFoundation!__CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+	0x1d597d648 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x102950434 ios_51job!0x8434 (0x100008434)
+	0x1088e8344 dyld!start
+

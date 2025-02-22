@@ -1,0 +1,756 @@
+(base) mac@macdeMacBook-Pro autoTestiOS % frida -U -F -l hook_sensitive_api.js
+     ____
+    / _  |   Frida 16.2.1 - A world-class dynamic instrumentation toolkit
+   | (_| |
+    > _  |   Commands:
+   /_/ |_|       help      -> Displays the help system
+   . . . .       object?   -> Display information about 'object'
+   . . . .       exit/quit -> Exit
+   . . . .
+   . . . .   More info at https://frida.re/docs/home/
+   . . . .
+   . . . .   Connected to iPhone (id=02f66296483099a1e80d262c998b9f8feb885523)
+[*] Started: Modify Return Value
+funcName_arg namePrefix
+[!] funcName_arg Exception: 
+funcName_arg givenName
+[!] funcName_arg Exception: 
+funcName_arg middleName
+[!] funcName_arg Exception: 
+funcName_arg familyName
+[!] funcName_arg Exception: 
+funcName_arg previousFamilyName
+[!] funcName_arg Exception: 
+funcName_arg nickname
+[!] funcName_arg Exception: 
+funcName_arg phoneticGivenName
+[!] funcName_arg Exception: 
+funcName_arg phoneticMiddleName
+[!] funcName_arg Exception: 
+funcName_arg phoneticFamilyName
+[!] funcName_arg Exception: 
+funcName_arg jobTitle
+[!] funcName_arg Exception: 
+funcName_arg departmentName
+[!] funcName_arg Exception: 
+funcName_arg organizationName
+[!] funcName_arg Exception: 
+funcName_arg phoneticOrganizationName
+[!] funcName_arg Exception: 
+funcName_arg postalAddresses
+[!] funcName_arg Exception: 
+funcName_arg urlAddresses
+[!] funcName_arg Exception: 
+funcName_arg phoneNumbers
+[!] funcName_arg Exception: 
+funcName_arg socialProfiles
+[!] funcName_arg Exception: 
+funcName_arg emailAddresses
+[!] funcName_arg Exception: 
+funcName_arg birthday
+[!] funcName_arg Exception: 
+funcName_arg dates
+[!] funcName_arg Exception: 
+funcName_arg nonGregorianBirthday
+[!] funcName_arg Exception: 
+funcName_arg note
+[!] funcName_arg Exception: 
+funcName_arg emailAddresses
+[!] funcName_arg Exception: 
+funcName_arg unifiedMeContactWithKeysToFetch:error:
+[!] funcName_arg Exception: 
+funcName_arg rfetchAssetsInAssetCollection:options:
+[!] funcName_arg Exception: 
+message: {'type': 'send', 'payload': '[*] Started: Modify Return Value'} data: None
+[iPhone::小豆苗 ]->
+[*] Class Name: CLLocationManager
+[*] Method Name: locationServicesEnabled
+
+[*] Class Name: CLLocationManager
+[*] Method Name: locationServicesEnabled
+	Backtrace:
+        0x101e0c7f0 yeemiao!0x1a947f0 (0x101a947f0)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc6916fc libdispatch.dylib!_dispatch_lane_serial_drain$VARIANT$armv81
+        0x1dc6921b0 libdispatch.dylib!_dispatch_lane_invoke$VARIANT$armv81
+	0x1dc69bf14 libdispatch.dylib!_dispatch_workloop_worker_thread
+	0x2206b1bd0 libsystem_pthread.dylib!_pthread_wqthread
+
+[*] Class Name: CLLocationManager
+[*] Method Name: authorizationStatus
+	Backtrace:
+	0x101e0c7f0 yeemiao!0x1a947f0 (0x101a947f0)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc6916fc libdispatch.dylib!_dispatch_lane_serial_drain$VARIANT$armv81
+	0x1dc6921b0 libdispatch.dylib!_dispatch_lane_invoke$VARIANT$armv81
+	0x1dc69bf14 libdispatch.dylib!_dispatch_workloop_worker_thread
+	0x2206b1bd0 libsystem_pthread.dylib!_pthread_wqthread
+
+[*] Class Name: CLLocationManager
+[*] Method Name: authorizationStatus
+	Backtrace:
+	0x101e0c804 yeemiao!0x1a94804 (0x101a94804)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc6916fc libdispatch.dylib!_dispatch_lane_serial_drain$VARIANT$armv81
+	0x1dc6921b0 libdispatch.dylib!_dispatch_lane_invoke$VARIANT$armv81
+	0x1dc69bf14 libdispatch.dylib!_dispatch_workloop_worker_thread
+	0x2206b1bd0 libsystem_pthread.dylib!_pthread_wqthread
+
+[*] Class Name: CLLocationManager
+[*] Method Name: authorizationStatus
+	Backtrace:
+	0x101e0c804 yeemiao!0x1a94804 (0x101a94804)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc6916fc libdispatch.dylib!_dispatch_lane_serial_drain$VARIANT$armv81
+	0x1dc6921b0 libdispatch.dylib!_dispatch_lane_invoke$VARIANT$armv81
+	0x1dc69bf14 libdispatch.dylib!_dispatch_workloop_worker_thread
+	0x2206b1bd0 libsystem_pthread.dylib!_pthread_wqthread
+	Backtrace:
+	0x1008e3fb4 /private/var/containers/Bundle/Application/3B6BB203-411C-4582-BE8F-B436E0A61345/yeemiao.app/yeemiao!-[JPUSHGeofenceManager authorized]
+	0x1008e4ff8 /private/var/containers/Bundle/Application/3B6BB203-411C-4582-BE8F-B436E0A61345/yeemiao.app/yeemiao!-[JPUSHGeofenceManager checkInsideGeofence]
+	0x1008eb2b8 /private/var/containers/Bundle/Application/3B6BB203-411C-4582-BE8F-B436E0A61345/yeemiao.app/yeemiao!-[JPUSHClientController setup]
+	0x1cfccdfa8 Foundation!__NSThreadPerformPerform
+	0x1d59d10e8 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__
+	0x1d59dcd5c CoreFoundation!__CFRunLoopDoSource0
+	0x1d5967fc4 CoreFoundation!__CFRunLoopDoSources0
+	0x1d597d138 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x1cfcd40e8 Foundation!-[NSRunLoop(NSRunLoop) runMode:beforeDate:]
+	0x1cfcd3f94 Foundation!-[NSRunLoop(NSRunLoop) run]
+	0x10044efb8 /private/var/containers/Bundle/Application/3B6BB203-411C-4582-BE8F-B436E0A61345/yeemiao.app/yeemiao!+[JCOREQueueManager threadEntryPoint:]
+	0x1cfcebc4c Foundation!__NSThread__start__
+	0x2206b30ec libsystem_pthread.dylib!_pthread_start
+
+[*] Class Name: CLLocationManager
+[*] Method Name: locationServicesEnabled
+	Backtrace:
+	0x1008e3fcc /private/var/containers/Bundle/Application/3B6BB203-411C-4582-BE8F-B436E0A61345/yeemiao.app/yeemiao!-[JPUSHGeofenceManager authorized]
+	0x1008e4ff8 /private/var/containers/Bundle/Application/3B6BB203-411C-4582-BE8F-B436E0A61345/yeemiao.app/yeemiao!-[JPUSHGeofenceManager checkInsideGeofence]
+	0x1008eb2b8 /private/var/containers/Bundle/Application/3B6BB203-411C-4582-BE8F-B436E0A61345/yeemiao.app/yeemiao!-[JPUSHClientController setup]
+	0x1cfccdfa8 Foundation!__NSThreadPerformPerform
+	0x1d59d10e8 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__
+	0x1d59dcd5c CoreFoundation!__CFRunLoopDoSource0
+	0x1d5967fc4 CoreFoundation!__CFRunLoopDoSources0
+	0x1d597d138 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x1cfcd40e8 Foundation!-[NSRunLoop(NSRunLoop) runMode:beforeDate:]
+	0x1cfcd3f94 Foundation!-[NSRunLoop(NSRunLoop) run]
+	0x10044efb8 /private/var/containers/Bundle/Application/3B6BB203-411C-4582-BE8F-B436E0A61345/yeemiao.app/yeemiao!+[JCOREQueueManager threadEntryPoint:]
+	0x1cfcebc4c Foundation!__NSThread__start__
+	0x2206b30ec libsystem_pthread.dylib!_pthread_start
+
+[*] Class Name: CLLocationManager
+[*] Method Name: locationServicesEnabled
+	Backtrace:
+	0x101e0c7f0 yeemiao!0x1a947f0 (0x101a947f0)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc6916fc libdispatch.dylib!_dispatch_lane_serial_drain$VARIANT$armv81
+	0x1dc6921b0 libdispatch.dylib!_dispatch_lane_invoke$VARIANT$armv81
+	0x1dc69bf14 libdispatch.dylib!_dispatch_workloop_worker_thread
+	0x2206b1bd0 libsystem_pthread.dylib!_pthread_wqthread
+
+[*] Class Name: CLLocationManager
+[*] Method Name: authorizationStatus
+	Backtrace:
+	0x101e0c804 yeemiao!0x1a94804 (0x101a94804)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc6916fc libdispatch.dylib!_dispatch_lane_serial_drain$VARIANT$armv81
+	0x1dc6921b0 libdispatch.dylib!_dispatch_lane_invoke$VARIANT$armv81
+	0x1dc69bf14 libdispatch.dylib!_dispatch_workloop_worker_thread
+	0x2206b1bd0 libsystem_pthread.dylib!_pthread_wqthread
+
+[*] Class Name: CLLocationManager
+[*] Method Name: locationServicesEnabled
+	Backtrace:
+	0x101e0c7f0 yeemiao!0x1a947f0 (0x101a947f0)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc6916fc libdispatch.dylib!_dispatch_lane_serial_drain$VARIANT$armv81
+	0x1dc6921b0 libdispatch.dylib!_dispatch_lane_invoke$VARIANT$armv81
+	0x1dc69bf14 libdispatch.dylib!_dispatch_workloop_worker_thread
+	0x2206b1bd0 libsystem_pthread.dylib!_pthread_wqthread
+
+[*] Class Name: CLLocationManager
+[*] Method Name: authorizationStatus
+	Backtrace:
+	0x101e0c804 yeemiao!0x1a94804 (0x101a94804)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc6916fc libdispatch.dylib!_dispatch_lane_serial_drain$VARIANT$armv81
+	0x1dc6921b0 libdispatch.dylib!_dispatch_lane_invoke$VARIANT$armv81
+	0x1dc69bf14 libdispatch.dylib!_dispatch_workloop_worker_thread
+	0x2206b1bd0 libsystem_pthread.dylib!_pthread_wqthread
+
+[*] Class Name: PHPhotoLibrary
+[*] Method Name: requestAuthorizationForAccessLevel:handler:
+	Backtrace:
+	0x10071b180 /private/var/containers/Bundle/Application/3B6BB203-411C-4582-BE8F-B436E0A61345/yeemiao.app/yeemiao!+[HXPhotoTools requestAuthorization:handler:]
+	0x100685c8c /private/var/containers/Bundle/Application/3B6BB203-411C-4582-BE8F-B436E0A61345/yeemiao.app/yeemiao!-[HXCustomNavigationController requestAuthorization]
+	0x100685a70 /private/var/containers/Bundle/Application/3B6BB203-411C-4582-BE8F-B436E0A61345/yeemiao.app/yeemiao!-[HXCustomNavigationController initWithManager:delegate:doneBlock:cancelBlock:]
+	0x10077e5d8 /private/var/containers/Bundle/Application/3B6BB203-411C-4582-BE8F-B436E0A61345/yeemiao.app/yeemiao!-[UIViewController hx_presentSelectPhotoControllerWithManager:delegate:]
+	0x100776478 /private/var/containers/Bundle/Application/3B6BB203-411C-4582-BE8F-B436E0A61345/yeemiao.app/yeemiao!-[SDRPhotoPickerHelper sdr_showPhotoPickerWithVc:]
+	0x1019c9098 /private/var/containers/Bundle/Application/3B6BB203-411C-4582-BE8F-B436E0A61345/yeemiao.app/yeemiao!-[ModifyBabyPortraitHelper modifyBabyPortraitWithParentVC:needClipImage:completion:]
+	0x101ce3640 /private/var/containers/Bundle/Application/3B6BB203-411C-4582-BE8F-B436E0A61345/yeemiao.app/yeemiao!-[UserSettingTableVC tableView:didSelectRowAtIndexPath:]
+	0x101e5cebc /private/var/containers/Bundle/Application/3B6BB203-411C-4582-BE8F-B436E0A61345/yeemiao.app/yeemiao!+[SADelegateProxy invokeWithTarget:selector:]
+	0x101ea046c /private/var/containers/Bundle/Application/3B6BB203-411C-4582-BE8F-B436E0A61345/yeemiao.app/yeemiao!-[SAScrollViewDelegateProxy tableView:didSelectRowAtIndexPath:]
+	0x1d8653cc8 UIKitCore!-[UITableView _selectRowAtIndexPath:animated:scrollPosition:notifyDelegate:isCellMultiSelect:deselectPrevious:performCustomSelectionAction:]
+	0x1d8653fd8 UIKitCore!-[UITableView _userSelectRowAtPendingSelectionIndexPath:]
+	0x1d7a3091c UIKitCore!-[_UIAfterCACommitBlock run]
+	0x1d7a30858 UIKitCore!-[_UIAfterCACommitQueue flush]
+	0x1d7a3075c UIKitCore!_runAfterCACommitDeferredBlocks
+	0x1d78ded68 UIKitCore!_cleanUpAfterCAFlushAndRunDeferredBlocks
+	0x1d7cb2b04 UIKitCore!_afterCACommitHandler
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: authorizationStatusForMediaType:
+	Backtrace:
+	0x10073f164 /private/var/containers/Bundle/Application/3B6BB203-411C-4582-BE8F-B436E0A61345/yeemiao.app/yeemiao!-[HXPhotoCameraViewCell setCameraImage:]
+	0x100734928 /private/var/containers/Bundle/Application/3B6BB203-411C-4582-BE8F-B436E0A61345/yeemiao.app/yeemiao!-[HXPhotoViewController collectionView:cellForItemAtIndexPath:]
+	0x1d79ddf14 UIKitCore!-[UICollectionView _createPreparedCellForItemAtIndexPath:withLayoutAttributes:applyAttributes:isFocused:notify:]
+	0x1d7f3d3a4 UIKitCore!-[UICollectionView _createVisibleViewsForSingleCategoryAttributes:limitCreation:fadeForBoundsChange:]
+	0x1d7f3d670 UIKitCore!-[UICollectionView _createVisibleViewsForAttributes:fadeForBoundsChange:notifyLayoutForVisibleCellsPass:]
+	0x1d78ca7a0 UIKitCore!-[UICollectionView _updateVisibleCellsNow:]
+	0x1d78ca03c UIKitCore!-[UICollectionView layoutSubviews]
+	0x1d78a77a8 UIKitCore!-[UIView(CALayerDelegate) layoutSublayersOfLayer:]
+	0x1d6dad60c QuartzCore!CA::Layer::layout_if_needed(CA::Transaction*)
+	0x1d6dbff2c QuartzCore!CA::Layer::layout_and_display_if_needed(CA::Transaction*)
+	0x1d6dd09f0 QuartzCore!CA::Context::commit_transaction(CA::Transaction*, double, double*)
+	0x1d6dfddc0 QuartzCore!CA::Transaction::commit()
+	0x1d6de8dbc QuartzCore!CA::Transaction::flush_as_runloop_observer(bool)
+	0x1d59918e8 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_AN_OBSERVER_CALLBACK_FUNCTION__
+	0x1d592151c CoreFoundation!__CFRunLoopDoObservers
+	0x1d597d214 CoreFoundation!__CFRunLoopRun
+
+[*] Class Name: CLLocationManager
+[*] Method Name: locationServicesEnabled
+	Backtrace:
+	0x101e0c7f0 yeemiao!0x1a947f0 (0x101a947f0)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc6916fc libdispatch.dylib!_dispatch_lane_serial_drain$VARIANT$armv81
+	0x1dc6921b0 libdispatch.dylib!_dispatch_lane_invoke$VARIANT$armv81
+	0x1dc69bf14 libdispatch.dylib!_dispatch_workloop_worker_thread
+	0x2206b1bd0 libsystem_pthread.dylib!_pthread_wqthread
+
+[*] Class Name: CLLocationManager
+[*] Method Name: authorizationStatus
+	Backtrace:
+	0x101e0c804 yeemiao!0x1a94804 (0x101a94804)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc6916fc libdispatch.dylib!_dispatch_lane_serial_drain$VARIANT$armv81
+	0x1dc6921b0 libdispatch.dylib!_dispatch_lane_invoke$VARIANT$armv81
+	0x1dc69bf14 libdispatch.dylib!_dispatch_workloop_worker_thread
+	0x2206b1bd0 libsystem_pthread.dylib!_pthread_wqthread
+
+[*] Class Name: CLLocationManager
+[*] Method Name: locationServicesEnabled
+	Backtrace:
+	0x10095cf88 /private/var/containers/Bundle/Application/3B6BB203-411C-4582-BE8F-B436E0A61345/yeemiao.app/yeemiao!+[AUHardwareInfo isSupportGPS]
+	0x10095cc20 /private/var/containers/Bundle/Application/3B6BB203-411C-4582-BE8F-B436E0A61345/yeemiao.app/yeemiao!+[AUHardwareInfo hardwareInfo]
+	0x100959dac /private/var/containers/Bundle/Application/3B6BB203-411C-4582-BE8F-B436E0A61345/yeemiao.app/yeemiao!+[AUDeviceInfo deviceInfo]
+	0x100959074 /private/var/containers/Bundle/Application/3B6BB203-411C-4582-BE8F-B436E0A61345/yeemiao.app/yeemiao!+[AUDeviceInfo deviceInfoWithoutAsyncData]
+	0x100958d3c yeemiao!0x5e0d3c (0x1005e0d3c)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc68d9f8 libdispatch.dylib!_dispatch_queue_override_invoke
+	0x1dc69ac68 libdispatch.dylib!_dispatch_root_queue_drain
+	0x1dc69b430 libdispatch.dylib!_dispatch_worker_thread2
+	0x2206b1b94 libsystem_pthread.dylib!_pthread_wqthread
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: authorizationStatusForMediaType:
+	Backtrace:
+	0x10073faa4 /private/var/containers/Bundle/Application/3B6BB203-411C-4582-BE8F-B436E0A61345/yeemiao.app/yeemiao!-[HXPhotoCameraViewCell stopRunning]
+	0x10073fea8 /private/var/containers/Bundle/Application/3B6BB203-411C-4582-BE8F-B436E0A61345/yeemiao.app/yeemiao!-[HXPhotoCameraViewCell dealloc]
+	0x1d592feb4 CoreFoundation!cow_cleanup
+	0x1d5965e54 CoreFoundation!-[__NSDictionaryM dealloc]
+	0x1cebddc98 libobjc.A.dylib!object_cxxDestructFromClass(objc_object*, objc_class*)
+	0x1cebe20ec libobjc.A.dylib!objc_destructInstance
+	0x1cebea608 libobjc.A.dylib!_objc_rootDealloc
+	0x1d7d1c6b0 UIKitCore!-[UICollectionView .cxx_destruct]
+	0x1cebddc98 libobjc.A.dylib!object_cxxDestructFromClass(objc_object*, objc_class*)
+	0x1cebe20ec libobjc.A.dylib!objc_destructInstance
+	0x1cebea608 libobjc.A.dylib!_objc_rootDealloc
+	0x1d7a8b924 UIKitCore!-[UIResponder dealloc]
+	0x1d7927d7c UIKitCore!-[UIView dealloc]
+	0x1d7b46800 UIKitCore!-[UIScrollView dealloc]
+	0x1d7ac2634 UIKitCore!-[UICollectionView dealloc]
+	0x10073e760 /private/var/containers/Bundle/Application/3B6BB203-411C-4582-BE8F-B436E0A61345/yeemiao.app/yeemiao!-[HXPhotoViewController .cxx_destruct]
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: authorizationStatusForMediaType:
+	Backtrace:
+	0x10073f164 /private/var/containers/Bundle/Application/3B6BB203-411C-4582-BE8F-B436E0A61345/yeemiao.app/yeemiao!-[HXPhotoCameraViewCell setCameraImage:]
+	0x100734928 /private/var/containers/Bundle/Application/3B6BB203-411C-4582-BE8F-B436E0A61345/yeemiao.app/yeemiao!-[HXPhotoViewController collectionView:cellForItemAtIndexPath:]
+	0x1d79ddf14 UIKitCore!-[UICollectionView _createPreparedCellForItemAtIndexPath:withLayoutAttributes:applyAttributes:isFocused:notify:]
+	0x1d7f3d3a4 UIKitCore!-[UICollectionView _createVisibleViewsForSingleCategoryAttributes:limitCreation:fadeForBoundsChange:]
+	0x1d7f3d670 UIKitCore!-[UICollectionView _createVisibleViewsForAttributes:fadeForBoundsChange:notifyLayoutForVisibleCellsPass:]
+	0x1d78ca7a0 UIKitCore!-[UICollectionView _updateVisibleCellsNow:]
+	0x1d78ca03c UIKitCore!-[UICollectionView layoutSubviews]
+	0x1d78a77a8 UIKitCore!-[UIView(CALayerDelegate) layoutSublayersOfLayer:]
+	0x1d6dad60c QuartzCore!CA::Layer::layout_if_needed(CA::Transaction*)
+	0x1d6dbff2c QuartzCore!CA::Layer::layout_and_display_if_needed(CA::Transaction*)
+	0x1d6dd09f0 QuartzCore!CA::Context::commit_transaction(CA::Transaction*, double, double*)
+	0x1d6dfddc0 QuartzCore!CA::Transaction::commit()
+	0x1d6de8dbc QuartzCore!CA::Transaction::flush_as_runloop_observer(bool)
+	0x1d59918e8 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_AN_OBSERVER_CALLBACK_FUNCTION__
+	0x1d592151c CoreFoundation!__CFRunLoopDoObservers
+	0x1d597d214 CoreFoundation!__CFRunLoopRun
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: requestAccessForMediaType:completionHandler:
+	Backtrace:
+	0x1007350c0 /private/var/containers/Bundle/Application/3B6BB203-411C-4582-BE8F-B436E0A61345/yeemiao.app/yeemiao!-[HXPhotoViewController collectionView:didSelectItemAtIndexPath:]
+	0x101e5cebc /private/var/containers/Bundle/Application/3B6BB203-411C-4582-BE8F-B436E0A61345/yeemiao.app/yeemiao!+[SADelegateProxy invokeWithTarget:selector:]
+	0x101ea0500 /private/var/containers/Bundle/Application/3B6BB203-411C-4582-BE8F-B436E0A61345/yeemiao.app/yeemiao!-[SAScrollViewDelegateProxy collectionView:didSelectItemAtIndexPath:]
+	0x1d7b7a3b8 UIKitCore!-[UICollectionView _selectItemAtIndexPath:animated:scrollPosition:notifyDelegate:deselectPrevious:performCustomSelectionAction:]
+	0x1d7da55a0 UIKitCore!-[UICollectionView touchesEnded:withEvent:]
+	0x1d7a88a60 UIKitCore!forwardTouchMethod
+	0x1d7a88a60 UIKitCore!forwardTouchMethod
+	0x1d7a88a60 UIKitCore!forwardTouchMethod
+	0x1d79c5cc8 UIKitCore!_UIGestureEnvironmentUpdate
+	0x1d81cfd54 UIKitCore!-[UIGestureEnvironment _deliverEvent:toGestureRecognizers:usingBlock:]
+	0x1d798c510 UIKitCore!-[UIGestureEnvironment _updateForEvent:window:]
+	0x1d7990e1c UIKitCore!-[UIWindow sendEvent:]
+	0x1d7990118 UIKitCore!-[UIApplication sendEvent:]
+	0x1d798e38c UIKitCore!__dispatchPreprocessedEventFromEventQueue
+	0x1d79d3d58 UIKitCore!__processEventQueue
+	0x1d7cb40d4 UIKitCore!__eventFetcherSourceCallback
+
+[*] Class Name: CLLocationManager
+[*] Method Name: authorizationStatus
+	Backtrace:
+	0x10067c944 /private/var/containers/Bundle/Application/3B6BB203-411C-4582-BE8F-B436E0A61345/yeemiao.app/yeemiao!-[HXCustomCameraViewController viewDidLoad]
+	0x1d7bf6d8c UIKitCore!-[UIViewController _sendViewDidLoadWithAppearanceProxyObjectTaggingEnabled]
+	0x1d78bc5b8 UIKitCore!-[UIViewController loadViewIfRequired]
+	0x1d78bc2e4 UIKitCore!-[UIViewController view]
+	0x1d7a58e5c UIKitCore!-[UINavigationController _preferredContentSizeForcingLoad:]
+	0x1d7b5eda4 UIKitCore!-[UIPresentationController preferredContentSizeDidChangeForChildContentContainer:]
+	0x1d7fa1630 UIKitCore!__56-[UIPresentationController runTransitionForCurrentState]_block_invoke_3
+	0x1d7a3091c UIKitCore!-[_UIAfterCACommitBlock run]
+	0x1d7a30858 UIKitCore!-[_UIAfterCACommitQueue flush]
+	0x1d7a3075c UIKitCore!_runAfterCACommitDeferredBlocks
+	0x1d78ded68 UIKitCore!_cleanUpAfterCAFlushAndRunDeferredBlocks
+	0x1d7cb2b04 UIKitCore!_afterCACommitHandler
+	0x1d59918e8 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_AN_OBSERVER_CALLBACK_FUNCTION__
+	0x1d592151c CoreFoundation!__CFRunLoopDoObservers
+	0x1d597d214 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: authorizationStatusForMediaType:
+	Backtrace:
+	0x1edbc6a94 AVFCapture!-[AVCaptureDeviceInput _authorizedToUseDeviceAndRequestIfNecessary:]
+	0x1edbc6848 AVFCapture!-[AVCaptureDeviceInput initWithDevice:error:]
+	0x1edbc67bc AVFCapture!+[AVCaptureDeviceInput deviceInputWithDevice:error:]
+	0x10067a1e0 /private/var/containers/Bundle/Application/3B6BB203-411C-4582-BE8F-B436E0A61345/yeemiao.app/yeemiao!-[HXCustomCameraController setupPreviewLayer:startSessionCompletion:]
+	0x10067d428 yeemiao!0x305428 (0x100305428)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc68d9f8 libdispatch.dylib!_dispatch_queue_override_invoke
+	0x1dc69ac68 libdispatch.dylib!_dispatch_root_queue_drain
+	0x1dc69b430 libdispatch.dylib!_dispatch_worker_thread2
+	0x2206b1b94 libsystem_pthread.dylib!_pthread_wqthread
+
+[*] Class Name: CLLocationManager
+[*] Method Name: locationServicesEnabled
+	Backtrace:
+	0x101e0c7f0 yeemiao!0x1a947f0 (0x101a947f0)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc6916fc libdispatch.dylib!_dispatch_lane_serial_drain$VARIANT$armv81
+	0x1dc6921b0 libdispatch.dylib!_dispatch_lane_invoke$VARIANT$armv81
+	0x1dc69bf14 libdispatch.dylib!_dispatch_workloop_worker_thread
+	0x2206b1bd0 libsystem_pthread.dylib!_pthread_wqthread
+
+[*] Class Name: CLLocationManager
+[*] Method Name: authorizationStatus
+	Backtrace:
+	0x101e0c804 yeemiao!0x1a94804 (0x101a94804)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc6916fc libdispatch.dylib!_dispatch_lane_serial_drain$VARIANT$armv81
+	0x1dc6921b0 libdispatch.dylib!_dispatch_lane_invoke$VARIANT$armv81
+	0x1dc69bf14 libdispatch.dylib!_dispatch_workloop_worker_thread
+	0x2206b1bd0 libsystem_pthread.dylib!_pthread_wqthread
+
+[*] Class Name: CLLocationManager
+[*] Method Name: locationServicesEnabled
+	Backtrace:
+	0x101e0c7f0 yeemiao!0x1a947f0 (0x101a947f0)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc6916fc libdispatch.dylib!_dispatch_lane_serial_drain$VARIANT$armv81
+	0x1dc6921b0 libdispatch.dylib!_dispatch_lane_invoke$VARIANT$armv81
+	0x1dc69bf14 libdispatch.dylib!_dispatch_workloop_worker_thread
+	0x2206b1bd0 libsystem_pthread.dylib!_pthread_wqthread
+
+[*] Class Name: CLLocationManager
+[*] Method Name: authorizationStatus
+	Backtrace:
+	0x101e0c804 yeemiao!0x1a94804 (0x101a94804)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc6916fc libdispatch.dylib!_dispatch_lane_serial_drain$VARIANT$armv81
+	0x1dc6921b0 libdispatch.dylib!_dispatch_lane_invoke$VARIANT$armv81
+	0x1dc69bf14 libdispatch.dylib!_dispatch_workloop_worker_thread
+	0x2206b1bd0 libsystem_pthread.dylib!_pthread_wqthread
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: authorizationStatusForMediaType:
+	Backtrace:
+	0x10073faa4 /private/var/containers/Bundle/Application/3B6BB203-411C-4582-BE8F-B436E0A61345/yeemiao.app/yeemiao!-[HXPhotoCameraViewCell stopRunning]
+	0x10073fea8 /private/var/containers/Bundle/Application/3B6BB203-411C-4582-BE8F-B436E0A61345/yeemiao.app/yeemiao!-[HXPhotoCameraViewCell dealloc]
+	0x1d592feb4 CoreFoundation!cow_cleanup
+	0x1d5965e54 CoreFoundation!-[__NSDictionaryM dealloc]
+	0x1cebddc98 libobjc.A.dylib!object_cxxDestructFromClass(objc_object*, objc_class*)
+	0x1cebe20ec libobjc.A.dylib!objc_destructInstance
+	0x1cebea608 libobjc.A.dylib!_objc_rootDealloc
+	0x1d7d1c6b0 UIKitCore!-[UICollectionView .cxx_destruct]
+	0x1cebddc98 libobjc.A.dylib!object_cxxDestructFromClass(objc_object*, objc_class*)
+	0x1cebe20ec libobjc.A.dylib!objc_destructInstance
+	0x1cebea608 libobjc.A.dylib!_objc_rootDealloc
+	0x1d7a8b924 UIKitCore!-[UIResponder dealloc]
+	0x1d7927d7c UIKitCore!-[UIView dealloc]
+	0x1d7b46800 UIKitCore!-[UIScrollView dealloc]
+	0x1d7ac2634 UIKitCore!-[UICollectionView dealloc]
+	0x2206aef70 libsystem_blocks.dylib!bool HelperBase<GenericInline>::disposeCapture<(HelperBase<GenericInline>::BlockCaptureKind)3>(unsigned int, unsigned char*)
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: authorizationStatusForMediaType:
+	Backtrace:
+	0x10073f164 /private/var/containers/Bundle/Application/3B6BB203-411C-4582-BE8F-B436E0A61345/yeemiao.app/yeemiao!-[HXPhotoCameraViewCell setCameraImage:]
+	0x100734928 /private/var/containers/Bundle/Application/3B6BB203-411C-4582-BE8F-B436E0A61345/yeemiao.app/yeemiao!-[HXPhotoViewController collectionView:cellForItemAtIndexPath:]
+	0x1d79ddf14 UIKitCore!-[UICollectionView _createPreparedCellForItemAtIndexPath:withLayoutAttributes:applyAttributes:isFocused:notify:]
+	0x1d7f3d3a4 UIKitCore!-[UICollectionView _createVisibleViewsForSingleCategoryAttributes:limitCreation:fadeForBoundsChange:]
+	0x1d7f3d670 UIKitCore!-[UICollectionView _createVisibleViewsForAttributes:fadeForBoundsChange:notifyLayoutForVisibleCellsPass:]
+	0x1d78ca7a0 UIKitCore!-[UICollectionView _updateVisibleCellsNow:]
+	0x1d78ca03c UIKitCore!-[UICollectionView layoutSubviews]
+	0x1d78a77a8 UIKitCore!-[UIView(CALayerDelegate) layoutSublayersOfLayer:]
+	0x1d6dad60c QuartzCore!CA::Layer::layout_if_needed(CA::Transaction*)
+	0x1d6dbff2c QuartzCore!CA::Layer::layout_and_display_if_needed(CA::Transaction*)
+	0x1d6dd09f0 QuartzCore!CA::Context::commit_transaction(CA::Transaction*, double, double*)
+	0x1d6dfddc0 QuartzCore!CA::Transaction::commit()
+	0x1d6de8dbc QuartzCore!CA::Transaction::flush_as_runloop_observer(bool)
+	0x1d59918e8 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_AN_OBSERVER_CALLBACK_FUNCTION__
+	0x1d592151c CoreFoundation!__CFRunLoopDoObservers
+	0x1d597d214 CoreFoundation!__CFRunLoopRun
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: requestAccessForMediaType:completionHandler:
+	Backtrace:
+	0x1007350c0 /private/var/containers/Bundle/Application/3B6BB203-411C-4582-BE8F-B436E0A61345/yeemiao.app/yeemiao!-[HXPhotoViewController collectionView:didSelectItemAtIndexPath:]
+	0x101e5cebc /private/var/containers/Bundle/Application/3B6BB203-411C-4582-BE8F-B436E0A61345/yeemiao.app/yeemiao!+[SADelegateProxy invokeWithTarget:selector:]
+	0x101ea0500 /private/var/containers/Bundle/Application/3B6BB203-411C-4582-BE8F-B436E0A61345/yeemiao.app/yeemiao!-[SAScrollViewDelegateProxy collectionView:didSelectItemAtIndexPath:]
+	0x1d7b7a3b8 UIKitCore!-[UICollectionView _selectItemAtIndexPath:animated:scrollPosition:notifyDelegate:deselectPrevious:performCustomSelectionAction:]
+	0x1d7da55a0 UIKitCore!-[UICollectionView touchesEnded:withEvent:]
+	0x1d7a88a60 UIKitCore!forwardTouchMethod
+	0x1d7a88a60 UIKitCore!forwardTouchMethod
+	0x1d7a88a60 UIKitCore!forwardTouchMethod
+	0x1d79c5cc8 UIKitCore!_UIGestureEnvironmentUpdate
+	0x1d81cfd54 UIKitCore!-[UIGestureEnvironment _deliverEvent:toGestureRecognizers:usingBlock:]
+	0x1d798c510 UIKitCore!-[UIGestureEnvironment _updateForEvent:window:]
+	0x1d7990e1c UIKitCore!-[UIWindow sendEvent:]
+	0x1d7990118 UIKitCore!-[UIApplication sendEvent:]
+	0x1d798e38c UIKitCore!__dispatchPreprocessedEventFromEventQueue
+	0x1d79d3d58 UIKitCore!__processEventQueue
+	0x1d7cb40d4 UIKitCore!__eventFetcherSourceCallback
+
+[*] Class Name: CLLocationManager
+[*] Method Name: authorizationStatus
+	Backtrace:
+	0x10067c944 /private/var/containers/Bundle/Application/3B6BB203-411C-4582-BE8F-B436E0A61345/yeemiao.app/yeemiao!-[HXCustomCameraViewController viewDidLoad]
+	0x1d7bf6d8c UIKitCore!-[UIViewController _sendViewDidLoadWithAppearanceProxyObjectTaggingEnabled]
+	0x1d78bc5b8 UIKitCore!-[UIViewController loadViewIfRequired]
+	0x1d78bc2e4 UIKitCore!-[UIViewController view]
+	0x1d7a58e5c UIKitCore!-[UINavigationController _preferredContentSizeForcingLoad:]
+	0x1d7b5eda4 UIKitCore!-[UIPresentationController preferredContentSizeDidChangeForChildContentContainer:]
+	0x1d7fa1630 UIKitCore!__56-[UIPresentationController runTransitionForCurrentState]_block_invoke_3
+	0x1d7a3091c UIKitCore!-[_UIAfterCACommitBlock run]
+	0x1d7a30858 UIKitCore!-[_UIAfterCACommitQueue flush]
+	0x1d7a3075c UIKitCore!_runAfterCACommitDeferredBlocks
+	0x1d78ded68 UIKitCore!_cleanUpAfterCAFlushAndRunDeferredBlocks
+	0x1d7cb2b04 UIKitCore!_afterCACommitHandler
+	0x1d59918e8 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_AN_OBSERVER_CALLBACK_FUNCTION__
+	0x1d592151c CoreFoundation!__CFRunLoopDoObservers
+	0x1d597d214 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: authorizationStatusForMediaType:
+	Backtrace:
+	0x1edbc6a94 AVFCapture!-[AVCaptureDeviceInput _authorizedToUseDeviceAndRequestIfNecessary:]
+	0x1edbc6848 AVFCapture!-[AVCaptureDeviceInput initWithDevice:error:]
+	0x1edbc67bc AVFCapture!+[AVCaptureDeviceInput deviceInputWithDevice:error:]
+	0x10067a1e0 /private/var/containers/Bundle/Application/3B6BB203-411C-4582-BE8F-B436E0A61345/yeemiao.app/yeemiao!-[HXCustomCameraController setupPreviewLayer:startSessionCompletion:]
+	0x10067d428 yeemiao!0x305428 (0x100305428)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc68d9f8 libdispatch.dylib!_dispatch_queue_override_invoke
+	0x1dc69ac68 libdispatch.dylib!_dispatch_root_queue_drain
+	0x1dc69b430 libdispatch.dylib!_dispatch_worker_thread2
+	0x2206b1b94 libsystem_pthread.dylib!_pthread_wqthread
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: authorizationStatusForMediaType:
+	Backtrace:
+	0x10073faa4 /private/var/containers/Bundle/Application/3B6BB203-411C-4582-BE8F-B436E0A61345/yeemiao.app/yeemiao!-[HXPhotoCameraViewCell stopRunning]
+	0x10073fea8 /private/var/containers/Bundle/Application/3B6BB203-411C-4582-BE8F-B436E0A61345/yeemiao.app/yeemiao!-[HXPhotoCameraViewCell dealloc]
+	0x1d592feb4 CoreFoundation!cow_cleanup
+	0x1d5965e54 CoreFoundation!-[__NSDictionaryM dealloc]
+	0x1cebddc98 libobjc.A.dylib!object_cxxDestructFromClass(objc_object*, objc_class*)
+	0x1cebe20ec libobjc.A.dylib!objc_destructInstance
+	0x1cebea608 libobjc.A.dylib!_objc_rootDealloc
+	0x1d7d1c6b0 UIKitCore!-[UICollectionView .cxx_destruct]
+	0x1cebddc98 libobjc.A.dylib!object_cxxDestructFromClass(objc_object*, objc_class*)
+	0x1cebe20ec libobjc.A.dylib!objc_destructInstance
+	0x1cebea608 libobjc.A.dylib!_objc_rootDealloc
+	0x1d7a8b924 UIKitCore!-[UIResponder dealloc]
+	0x1d7927d7c UIKitCore!-[UIView dealloc]
+	0x1d7b46800 UIKitCore!-[UIScrollView dealloc]
+	0x1d7ac2634 UIKitCore!-[UICollectionView dealloc]
+	0x10073e760 /private/var/containers/Bundle/Application/3B6BB203-411C-4582-BE8F-B436E0A61345/yeemiao.app/yeemiao!-[HXPhotoViewController .cxx_destruct]
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x101e0d480 /private/var/containers/Bundle/Application/3B6BB203-411C-4582-BE8F-B436E0A61345/yeemiao.app/yeemiao!-[YMGlobalLocationRecorder locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d804 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x100396c6c yeemiao!0x1ec6c (0x10001ec6c)
+	0x1032c0344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x101e0d480 /private/var/containers/Bundle/Application/3B6BB203-411C-4582-BE8F-B436E0A61345/yeemiao.app/yeemiao!-[YMGlobalLocationRecorder locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d804 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x100396c6c yeemiao!0x1ec6c (0x10001ec6c)
+	0x1032c0344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x101e0d480 /private/var/containers/Bundle/Application/3B6BB203-411C-4582-BE8F-B436E0A61345/yeemiao.app/yeemiao!-[YMGlobalLocationRecorder locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d128 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x100396c6c yeemiao!0x1ec6c (0x10001ec6c)
+	0x1032c0344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x101e0d480 /private/var/containers/Bundle/Application/3B6BB203-411C-4582-BE8F-B436E0A61345/yeemiao.app/yeemiao!-[YMGlobalLocationRecorder locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d804 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x100396c6c yeemiao!0x1ec6c (0x10001ec6c)
+	0x1032c0344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x1e08b70bc CoreLocation!0x130bc (0x191d930bc)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc6916fc libdispatch.dylib!_dispatch_lane_serial_drain$VARIANT$armv81
+	0x1dc6921b0 libdispatch.dylib!_dispatch_lane_invoke$VARIANT$armv81
+	0x1dc69bf14 libdispatch.dylib!_dispatch_workloop_worker_thread
+	0x2206b1bd0 libsystem_pthread.dylib!_pthread_wqthread
+
+[*] Class Name: CLLocation
+[*] Method Name: - horizontalAccuracy
+	Backtrace:
+	0x1e08b70bc CoreLocation!0x130bc (0x191d930bc)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc6916fc libdispatch.dylib!_dispatch_lane_serial_drain$VARIANT$armv81
+	0x1dc6921b0 libdispatch.dylib!_dispatch_lane_invoke$VARIANT$armv81
+	0x1dc69bf14 libdispatch.dylib!_dispatch_workloop_worker_thread
+	0x2206b1bd0 libsystem_pthread.dylib!_pthread_wqthread
+
+[*] Class Name: CLLocation
+[*] Method Name: - horizontalAccuracy
+	Backtrace:
+	0x1e08b7320 CoreLocation!0x13320 (0x191d93320)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc6916fc libdispatch.dylib!_dispatch_lane_serial_drain$VARIANT$armv81
+	0x1dc6921b0 libdispatch.dylib!_dispatch_lane_invoke$VARIANT$armv81
+	0x1dc69bf14 libdispatch.dylib!_dispatch_workloop_worker_thread
+	0x2206b1bd0 libsystem_pthread.dylib!_pthread_wqthread
+	Backtrace:
+	0x1e08b7320 CoreLocation!0x13320 (0x191d93320)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc6916fc libdispatch.dylib!_dispatch_lane_serial_drain$VARIANT$armv81
+	0x1dc6921b0 libdispatch.dylib!_dispatch_lane_invoke$VARIANT$armv81
+	0x1dc69bf14 libdispatch.dylib!_dispatch_workloop_worker_thread
+	0x2206b1bd0 libsystem_pthread.dylib!_pthread_wqthread
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: authorizationStatusForMediaType:
+	Backtrace:
+	0x10073f164 /private/var/containers/Bundle/Application/3B6BB203-411C-4582-BE8F-B436E0A61345/yeemiao.app/yeemiao!-[HXPhotoCameraViewCell setCameraImage:]
+	0x100734928 /private/var/containers/Bundle/Application/3B6BB203-411C-4582-BE8F-B436E0A61345/yeemiao.app/yeemiao!-[HXPhotoViewController collectionView:cellForItemAtIndexPath:]
+	0x1d79ddf14 UIKitCore!-[UICollectionView _createPreparedCellForItemAtIndexPath:withLayoutAttributes:applyAttributes:isFocused:notify:]
+	0x1d7f3d3a4 UIKitCore!-[UICollectionView _createVisibleViewsForSingleCategoryAttributes:limitCreation:fadeForBoundsChange:]
+	0x1d7f3d670 UIKitCore!-[UICollectionView _createVisibleViewsForAttributes:fadeForBoundsChange:notifyLayoutForVisibleCellsPass:]
+	0x1d78ca7a0 UIKitCore!-[UICollectionView _updateVisibleCellsNow:]
+	0x1d78ca03c UIKitCore!-[UICollectionView layoutSubviews]
+	0x1d78a77a8 UIKitCore!-[UIView(CALayerDelegate) layoutSublayersOfLayer:]
+	0x1d6dad60c QuartzCore!CA::Layer::layout_if_needed(CA::Transaction*)
+	0x1d6dbff2c QuartzCore!CA::Layer::layout_and_display_if_needed(CA::Transaction*)
+	0x1d6dd09f0 QuartzCore!CA::Context::commit_transaction(CA::Transaction*, double, double*)
+	0x1d6dfddc0 QuartzCore!CA::Transaction::commit()
+	0x1d7cb2b18 UIKitCore!_afterCACommitHandler
+	0x1d59918e8 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_AN_OBSERVER_CALLBACK_FUNCTION__
+	0x1d592151c CoreFoundation!__CFRunLoopDoObservers
+	0x1d597d214 CoreFoundation!__CFRunLoopRun
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: authorizationStatusForMediaType:
+	Backtrace:
+	0x10073faa4 /private/var/containers/Bundle/Application/3B6BB203-411C-4582-BE8F-B436E0A61345/yeemiao.app/yeemiao!-[HXPhotoCameraViewCell stopRunning]
+	0x10073fea8 /private/var/containers/Bundle/Application/3B6BB203-411C-4582-BE8F-B436E0A61345/yeemiao.app/yeemiao!-[HXPhotoCameraViewCell dealloc]
+	0x1d592feb4 CoreFoundation!cow_cleanup
+	0x1d5965e6c CoreFoundation!-[__NSDictionaryM dealloc]
+	0x1cebddc98 libobjc.A.dylib!object_cxxDestructFromClass(objc_object*, objc_class*)
+	0x1cebe20ec libobjc.A.dylib!objc_destructInstance
+	0x1cebea608 libobjc.A.dylib!_objc_rootDealloc
+	0x1d7d1c6b0 UIKitCore!-[UICollectionView .cxx_destruct]
+	0x1cebddc98 libobjc.A.dylib!object_cxxDestructFromClass(objc_object*, objc_class*)
+	0x1cebe20ec libobjc.A.dylib!objc_destructInstance
+	0x1cebea608 libobjc.A.dylib!_objc_rootDealloc
+	0x1d7a8b924 UIKitCore!-[UIResponder dealloc]
+	0x1d7927d7c UIKitCore!-[UIView dealloc]
+	0x1d7b46800 UIKitCore!-[UIScrollView dealloc]
+	0x1d7ac2634 UIKitCore!-[UICollectionView dealloc]
+	0x10073e760 /private/var/containers/Bundle/Application/3B6BB203-411C-4582-BE8F-B436E0A61345/yeemiao.app/yeemiao!-[HXPhotoViewController .cxx_destruct]
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: authorizationStatusForMediaType:
+	Backtrace:
+	0x10073f164 /private/var/containers/Bundle/Application/3B6BB203-411C-4582-BE8F-B436E0A61345/yeemiao.app/yeemiao!-[HXPhotoCameraViewCell setCameraImage:]
+	0x100734928 /private/var/containers/Bundle/Application/3B6BB203-411C-4582-BE8F-B436E0A61345/yeemiao.app/yeemiao!-[HXPhotoViewController collectionView:cellForItemAtIndexPath:]
+	0x1d79ddf14 UIKitCore!-[UICollectionView _createPreparedCellForItemAtIndexPath:withLayoutAttributes:applyAttributes:isFocused:notify:]
+	0x1d7f3d3a4 UIKitCore!-[UICollectionView _createVisibleViewsForSingleCategoryAttributes:limitCreation:fadeForBoundsChange:]
+	0x1d7f3d670 UIKitCore!-[UICollectionView _createVisibleViewsForAttributes:fadeForBoundsChange:notifyLayoutForVisibleCellsPass:]
+	0x1d78ca7a0 UIKitCore!-[UICollectionView _updateVisibleCellsNow:]
+	0x1d78ca03c UIKitCore!-[UICollectionView layoutSubviews]
+	0x1d78a77a8 UIKitCore!-[UIView(CALayerDelegate) layoutSublayersOfLayer:]
+	0x1d6dad60c QuartzCore!CA::Layer::layout_if_needed(CA::Transaction*)
+	0x1d6dbff2c QuartzCore!CA::Layer::layout_and_display_if_needed(CA::Transaction*)
+	0x1d6dd09f0 QuartzCore!CA::Context::commit_transaction(CA::Transaction*, double, double*)
+	0x1d6dfddc0 QuartzCore!CA::Transaction::commit()
+	0x1d6de8dbc QuartzCore!CA::Transaction::flush_as_runloop_observer(bool)
+	0x1d59918e8 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_AN_OBSERVER_CALLBACK_FUNCTION__
+	0x1d592151c CoreFoundation!__CFRunLoopDoObservers
+	0x1d597d214 CoreFoundation!__CFRunLoopRun
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: authorizationStatusForMediaType:
+	Backtrace:
+	0x10073faa4 /private/var/containers/Bundle/Application/3B6BB203-411C-4582-BE8F-B436E0A61345/yeemiao.app/yeemiao!-[HXPhotoCameraViewCell stopRunning]
+	0x10073fea8 /private/var/containers/Bundle/Application/3B6BB203-411C-4582-BE8F-B436E0A61345/yeemiao.app/yeemiao!-[HXPhotoCameraViewCell dealloc]
+	0x1d592feb4 CoreFoundation!cow_cleanup
+	0x1d5965e6c CoreFoundation!-[__NSDictionaryM dealloc]
+	0x1cebddc98 libobjc.A.dylib!object_cxxDestructFromClass(objc_object*, objc_class*)
+	0x1cebe20ec libobjc.A.dylib!objc_destructInstance
+	0x1cebea608 libobjc.A.dylib!_objc_rootDealloc
+	0x1d7d1c6b0 UIKitCore!-[UICollectionView .cxx_destruct]
+	0x1cebddc98 libobjc.A.dylib!object_cxxDestructFromClass(objc_object*, objc_class*)
+	0x1cebe20ec libobjc.A.dylib!objc_destructInstance
+	0x1cebea608 libobjc.A.dylib!_objc_rootDealloc
+	0x1d7a8b924 UIKitCore!-[UIResponder dealloc]
+	0x1d7927d7c UIKitCore!-[UIView dealloc]
+	0x1d7b46800 UIKitCore!-[UIScrollView dealloc]
+	0x1d7ac2634 UIKitCore!-[UICollectionView dealloc]
+	0x2206aef70 libsystem_blocks.dylib!bool HelperBase<GenericInline>::disposeCapture<(HelperBase<GenericInline>::BlockCaptureKind)3>(unsigned int, unsigned char*)
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: authorizationStatusForMediaType:
+	Backtrace:
+	0x10073f164 /private/var/containers/Bundle/Application/3B6BB203-411C-4582-BE8F-B436E0A61345/yeemiao.app/yeemiao!-[HXPhotoCameraViewCell setCameraImage:]
+	0x100734928 /private/var/containers/Bundle/Application/3B6BB203-411C-4582-BE8F-B436E0A61345/yeemiao.app/yeemiao!-[HXPhotoViewController collectionView:cellForItemAtIndexPath:]
+	0x1d79ddf14 UIKitCore!-[UICollectionView _createPreparedCellForItemAtIndexPath:withLayoutAttributes:applyAttributes:isFocused:notify:]
+	0x1d7f3d3a4 UIKitCore!-[UICollectionView _createVisibleViewsForSingleCategoryAttributes:limitCreation:fadeForBoundsChange:]
+	0x1d7f3d670 UIKitCore!-[UICollectionView _createVisibleViewsForAttributes:fadeForBoundsChange:notifyLayoutForVisibleCellsPass:]
+	0x1d78ca7a0 UIKitCore!-[UICollectionView _updateVisibleCellsNow:]
+	0x1d78ca03c UIKitCore!-[UICollectionView layoutSubviews]
+	0x1d78a77a8 UIKitCore!-[UIView(CALayerDelegate) layoutSublayersOfLayer:]
+	0x1d6dad60c QuartzCore!CA::Layer::layout_if_needed(CA::Transaction*)
+	0x1d6dbff2c QuartzCore!CA::Layer::layout_and_display_if_needed(CA::Transaction*)
+	0x1d6dd09f0 QuartzCore!CA::Context::commit_transaction(CA::Transaction*, double, double*)
+	0x1d6dfddc0 QuartzCore!CA::Transaction::commit()
+	0x1d6de8dbc QuartzCore!CA::Transaction::flush_as_runloop_observer(bool)
+	0x1d59918e8 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_AN_OBSERVER_CALLBACK_FUNCTION__
+	0x1d592151c CoreFoundation!__CFRunLoopDoObservers
+	0x1d597d214 CoreFoundation!__CFRunLoopRun
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: authorizationStatusForMediaType:
+	Backtrace:
+	0x10073faa4 /private/var/containers/Bundle/Application/3B6BB203-411C-4582-BE8F-B436E0A61345/yeemiao.app/yeemiao!-[HXPhotoCameraViewCell stopRunning]
+	0x10073fea8 /private/var/containers/Bundle/Application/3B6BB203-411C-4582-BE8F-B436E0A61345/yeemiao.app/yeemiao!-[HXPhotoCameraViewCell dealloc]
+	0x1d592feb4 CoreFoundation!cow_cleanup
+	0x1d5965e54 CoreFoundation!-[__NSDictionaryM dealloc]
+	0x1cebddc98 libobjc.A.dylib!object_cxxDestructFromClass(objc_object*, objc_class*)
+	0x1cebe20ec libobjc.A.dylib!objc_destructInstance
+	0x1cebea608 libobjc.A.dylib!_objc_rootDealloc
+	0x1d7d1c6b0 UIKitCore!-[UICollectionView .cxx_destruct]
+	0x1cebddc98 libobjc.A.dylib!object_cxxDestructFromClass(objc_object*, objc_class*)
+	0x1cebe20ec libobjc.A.dylib!objc_destructInstance
+	0x1cebea608 libobjc.A.dylib!_objc_rootDealloc
+	0x1d7a8b924 UIKitCore!-[UIResponder dealloc]
+	0x1d7927d7c UIKitCore!-[UIView dealloc]
+	0x1d7b46800 UIKitCore!-[UIScrollView dealloc]
+	0x1d7ac2634 UIKitCore!-[UICollectionView dealloc]
+	0x10073e760 /private/var/containers/Bundle/Application/3B6BB203-411C-4582-BE8F-B436E0A61345/yeemiao.app/yeemiao!-[HXPhotoViewController .cxx_destruct]
+

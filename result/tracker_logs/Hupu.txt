@@ -1,0 +1,288 @@
+(base) mac@macdeMacBook-Pro autoTestiOS % frida -U -F -l hook_sensitive_api.js
+     ____
+    / _  |   Frida 16.2.1 - A world-class dynamic instrumentation toolkit
+   | (_| |
+    > _  |   Commands:
+   /_/ |_|       help      -> Displays the help system
+   . . . .       object?   -> Display information about 'object'
+   . . . .       exit/quit -> Exit
+   . . . .
+   . . . .   More info at https://frida.re/docs/home/
+   . . . .
+   . . . .   Connected to iPhone (id=02f66296483099a1e80d262c998b9f8feb885523)
+[*] Started: Modify Return Value
+funcName_arg namePrefix
+[!] funcName_arg Exception: 
+funcName_arg givenName
+[!] funcName_arg Exception: 
+funcName_arg middleName
+[!] funcName_arg Exception: 
+funcName_arg familyName
+[!] funcName_arg Exception: 
+funcName_arg previousFamilyName
+[!] funcName_arg Exception: 
+funcName_arg nickname
+[!] funcName_arg Exception: 
+funcName_arg phoneticGivenName
+[!] funcName_arg Exception: 
+funcName_arg phoneticMiddleName
+[!] funcName_arg Exception: 
+funcName_arg phoneticFamilyName
+[!] funcName_arg Exception: 
+funcName_arg jobTitle
+[!] funcName_arg Exception: 
+funcName_arg departmentName
+[!] funcName_arg Exception: 
+funcName_arg organizationName
+[!] funcName_arg Exception: 
+funcName_arg phoneticOrganizationName
+[!] funcName_arg Exception: 
+funcName_arg postalAddresses
+[!] funcName_arg Exception: 
+funcName_arg urlAddresses
+[!] funcName_arg Exception: 
+funcName_arg phoneNumbers
+[!] funcName_arg Exception: 
+funcName_arg socialProfiles
+[!] funcName_arg Exception: 
+funcName_arg emailAddresses
+[!] funcName_arg Exception: 
+funcName_arg birthday
+[!] funcName_arg Exception: 
+funcName_arg dates
+[!] funcName_arg Exception: 
+funcName_arg nonGregorianBirthday
+[!] funcName_arg Exception: 
+funcName_arg note
+[!] funcName_arg Exception: 
+funcName_arg emailAddresses
+[!] funcName_arg Exception: 
+funcName_arg unifiedMeContactWithKeysToFetch:error:
+[!] funcName_arg Exception: 
+funcName_arg rfetchAssetsInAssetCollection:options:
+[!] funcName_arg Exception: 
+message: {'type': 'send', 'payload': '[*] Started: Modify Return Value'} data: None
+[iPhone::虎扑 ]->
+[*] Class Name: CLLocationManager
+[*] Method Name: locationServicesEnabled
+
+[*] Class Name: CLLocationManager
+[*] Method Name: authorizationStatus
+	Backtrace:
+        0x105ccf4e4 /private/var/containers/Bundle/Application/C110F403-ABDA-4C9C-AC26-A959E67BCD64/hupu.app/hupu!-[CSJSDKLocation Int_HasDate]
+	0x105ccf160 hupu!0x2e17160 (0x102e17160)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+        0x1dc68d9f8 libdispatch.dylib!_dispatch_queue_override_invoke
+	0x1dc69ac68 libdispatch.dylib!_dispatch_root_queue_drain
+	0x1dc69b430 libdispatch.dylib!_dispatch_worker_thread2
+	0x2206b1b94 libsystem_pthread.dylib!_pthread_wqthread
+
+[*] Class Name: CLLocationManager
+[*] Method Name: authorizationStatus
+	Backtrace:
+	0x105ccf55c /private/var/containers/Bundle/Application/C110F403-ABDA-4C9C-AC26-A959E67BCD64/hupu.app/hupu!-[CSJSDKLocation Int_HasDate]
+	0x105ccf160 hupu!0x2e17160 (0x102e17160)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc68d9f8 libdispatch.dylib!_dispatch_queue_override_invoke
+	0x1dc69ac68 libdispatch.dylib!_dispatch_root_queue_drain
+	0x1dc69b430 libdispatch.dylib!_dispatch_worker_thread2
+	0x2206b1b94 libsystem_pthread.dylib!_pthread_wqthread
+	Backtrace:
+	0x105f2fb2c hupu!0x3077b2c (0x103077b2c)
+	0x105f324a8 hupu!0x307a4a8 (0x10307a4a8)
+	0x105f5d8e8 hupu!0x30a58e8 (0x1030a58e8)
+	0x105f6b678 hupu!0x30b3678 (0x1030b3678)
+	0x105f70808 hupu!0x30b8808 (0x1030b8808)
+	0x105f257f4 hupu!0x306d7f4 (0x10306d7f4)
+	0x105f695b8 hupu!0x30b15b8 (0x1030b15b8)
+	0x105f1c718 hupu!0x3064718 (0x103064718)
+	0x2206b30ec libsystem_pthread.dylib!_pthread_start
+
+[*] Class Name: CLLocationManager
+[*] Method Name: authorizationStatus
+	Backtrace:
+	0x105f2fb2c hupu!0x3077b2c (0x103077b2c)
+	0x105f324a8 hupu!0x307a4a8 (0x10307a4a8)
+	0x105f5d8e8 hupu!0x30a58e8 (0x1030a58e8)
+	0x105f6b678 hupu!0x30b3678 (0x1030b3678)
+	0x105f70808 hupu!0x30b8808 (0x1030b8808)
+	0x105f257f4 hupu!0x306d7f4 (0x10306d7f4)
+	0x105f695b8 hupu!0x30b15b8 (0x1030b15b8)
+	0x105f1c718 hupu!0x3064718 (0x103064718)
+	0x2206b30ec libsystem_pthread.dylib!_pthread_start
+
+[*] Class Name: CLLocationManager
+[*] Method Name: authorizationStatus
+	Backtrace:
+	0x105f2fb2c hupu!0x3077b2c (0x103077b2c)
+	0x105f324a8 hupu!0x307a4a8 (0x10307a4a8)
+	0x105f5d8e8 hupu!0x30a58e8 (0x1030a58e8)
+	0x105f6b678 hupu!0x30b3678 (0x1030b3678)
+	0x105f70808 hupu!0x30b8808 (0x1030b8808)
+	0x105f257f4 hupu!0x306d7f4 (0x10306d7f4)
+	0x105f695b8 hupu!0x30b15b8 (0x1030b15b8)
+	0x105f1c718 hupu!0x3064718 (0x103064718)
+	0x2206b30ec libsystem_pthread.dylib!_pthread_start
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: authorizationStatusForMediaType:
+	Backtrace:
+	0x1edbc6a94 AVFCapture!-[AVCaptureDeviceInput _authorizedToUseDeviceAndRequestIfNecessary:]
+	0x1edbc6848 AVFCapture!-[AVCaptureDeviceInput initWithDevice:error:]
+	0x1edbc67bc AVFCapture!+[AVCaptureDeviceInput deviceInputWithDevice:error:]
+	0x21d54a184 CameraUI!___prewarmAudioVideoDevices_block_invoke
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc686ddc libdispatch.dylib!_dispatch_once_callout
+	0x21d552c80 CameraUI!-[CAMCaptureEngine prewarmedVideoDeviceInput:position:device:]
+	0x21d552ae8 CameraUI!-[CAMCaptureEngineDevice captureDeviceInput]
+	0x21d552a0c CameraUI!-[CAMModeAndDeviceCommand _desiredInputsWithContext:]
+	0x21d551ccc CameraUI!-[CAMModeAndDeviceCommand executeWithContext:]
+	0x21d551704 CameraUI!-[CAMCaptureEngine _executeCommand:withContext:]
+	0x21d551794 CameraUI!-[CAMCaptureEngine _executeCommand:withContext:]
+	0x21d551794 CameraUI!-[CAMCaptureEngine _executeCommand:withContext:]
+	0x21d5512d0 CameraUI!__35-[CAMCaptureEngine enqueueCommand:]_block_invoke
+	0x1e9ca6c18 PhotoLibraryServicesCore!__pl_dispatch_async_block_invoke
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: requestAccessForMediaType:completionHandler:
+	Backtrace:
+	0x1edbc6ab4 AVFCapture!-[AVCaptureDeviceInput _authorizedToUseDeviceAndRequestIfNecessary:]
+	0x1edbc6848 AVFCapture!-[AVCaptureDeviceInput initWithDevice:error:]
+	0x1edbc67bc AVFCapture!+[AVCaptureDeviceInput deviceInputWithDevice:error:]
+	0x21d54a184 CameraUI!___prewarmAudioVideoDevices_block_invoke
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc686ddc libdispatch.dylib!_dispatch_once_callout
+	0x21d552c80 CameraUI!-[CAMCaptureEngine prewarmedVideoDeviceInput:position:device:]
+	0x21d552ae8 CameraUI!-[CAMCaptureEngineDevice captureDeviceInput]
+	0x21d552a0c CameraUI!-[CAMModeAndDeviceCommand _desiredInputsWithContext:]
+	0x21d551ccc CameraUI!-[CAMModeAndDeviceCommand executeWithContext:]
+	0x21d551704 CameraUI!-[CAMCaptureEngine _executeCommand:withContext:]
+	0x21d551794 CameraUI!-[CAMCaptureEngine _executeCommand:withContext:]
+	0x21d551794 CameraUI!-[CAMCaptureEngine _executeCommand:withContext:]
+	0x21d5512d0 CameraUI!__35-[CAMCaptureEngine enqueueCommand:]_block_invoke
+	0x1e9ca6c18 PhotoLibraryServicesCore!__pl_dispatch_async_block_invoke
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+
+[*] Class Name: PHPhotoLibrary
+[*] Method Name: authorizationStatus
+	Backtrace:
+	0x104740b9c /private/var/containers/Bundle/Application/C110F403-ABDA-4C9C-AC26-A959E67BCD64/hupu.app/hupu!+[BBSCameraTool requestPhotoLibraryAuthorization:]
+	0x103ddcc3c /private/var/containers/Bundle/Application/C110F403-ABDA-4C9C-AC26-A959E67BCD64/hupu.app/hupu!-[HCPersonPage.HCPersonHeaderEditPresenter checkPhotoPermission]
+	0x103d9b39c hupu!0xee339c (0x100ee339c)
+	0x103d9cb78 hupu!0xee4b78 (0x100ee4b78)
+	0x1038687e0 hupu!0x9b07e0 (0x1009b07e0)
+	0x10390f208 hupu!0xa57208 (0x100a57208)
+	0x10390ec30 hupu!0xa56c30 (0x100a56c30)
+	0x104b5b1c0 hupu!0x1ca31c0 (0x101ca31c0)
+	0x104b5b2b0 hupu!0x1ca32b0 (0x101ca32b0)
+	0x104b5b2b0 hupu!0x1ca32b0 (0x101ca32b0)
+	0x103906c24 hupu!0xa4ec24 (0x100a4ec24)
+	0x103906cb8 /private/var/containers/Bundle/Application/C110F403-ABDA-4C9C-AC26-A959E67BCD64/hupu.app/hupu!-[HCBusinessViews.HCActionSheetNormalContentView itemTapActionWithGesture:]
+	0x1d7956358 UIKitCore!-[UIGestureRecognizerTarget _sendActionWithGestureRecognizer:]
+	0x1d7c96bb8 UIKitCore!_UIGestureRecognizerSendTargetActions
+	0x1d7a32934 UIKitCore!_UIGestureRecognizerSendActions
+	0x1d7921dbc UIKitCore!-[UIGestureRecognizer _updateGestureForActiveEvents]
+
+[*] Class Name: PHPhotoLibrary
+[*] Method Name: requestAuthorization:
+	Backtrace:
+	0x104740c04 /private/var/containers/Bundle/Application/C110F403-ABDA-4C9C-AC26-A959E67BCD64/hupu.app/hupu!+[BBSCameraTool requestPhotoLibraryAuthorization:]
+	0x103ddcc3c /private/var/containers/Bundle/Application/C110F403-ABDA-4C9C-AC26-A959E67BCD64/hupu.app/hupu!-[HCPersonPage.HCPersonHeaderEditPresenter checkPhotoPermission]
+	0x103d9b39c hupu!0xee339c (0x100ee339c)
+	0x103d9cb78 hupu!0xee4b78 (0x100ee4b78)
+	0x1038687e0 hupu!0x9b07e0 (0x1009b07e0)
+	0x10390f208 hupu!0xa57208 (0x100a57208)
+	0x10390ec30 hupu!0xa56c30 (0x100a56c30)
+	0x104b5b1c0 hupu!0x1ca31c0 (0x101ca31c0)
+	0x104b5b2b0 hupu!0x1ca32b0 (0x101ca32b0)
+	0x104b5b2b0 hupu!0x1ca32b0 (0x101ca32b0)
+	0x103906c24 hupu!0xa4ec24 (0x100a4ec24)
+	0x103906cb8 /private/var/containers/Bundle/Application/C110F403-ABDA-4C9C-AC26-A959E67BCD64/hupu.app/hupu!-[HCBusinessViews.HCActionSheetNormalContentView itemTapActionWithGesture:]
+	0x1d7956358 UIKitCore!-[UIGestureRecognizerTarget _sendActionWithGestureRecognizer:]
+	0x1d7c96bb8 UIKitCore!_UIGestureRecognizerSendTargetActions
+	0x1d7a32934 UIKitCore!_UIGestureRecognizerSendActions
+	0x1d7921dbc UIKitCore!-[UIGestureRecognizer _updateGestureForActiveEvents]
+
+[*] Class Name: PHPhotoLibrary
+[*] Method Name: requestAuthorizationForAccessLevel:handler:
+	Backtrace:
+	0x103ebe668 hupu!0x1006668 (0x101006668)
+	0x103ec4738 /private/var/containers/Bundle/Application/C110F403-ABDA-4C9C-AC26-A959E67BCD64/hupu.app/hupu!-[HCPhotoKit.HCPhotoPickerViewController viewDidLoad]
+	0x1d7bf6d8c UIKitCore!-[UIViewController _sendViewDidLoadWithAppearanceProxyObjectTaggingEnabled]
+	0x1d78bc5b8 UIKitCore!-[UIViewController loadViewIfRequired]
+	0x1d78bc2e4 UIKitCore!-[UIViewController view]
+	0x1d7a58e5c UIKitCore!-[UINavigationController _preferredContentSizeForcingLoad:]
+	0x1d7b5eda4 UIKitCore!-[UIPresentationController preferredContentSizeDidChangeForChildContentContainer:]
+	0x1d7fa1630 UIKitCore!__56-[UIPresentationController runTransitionForCurrentState]_block_invoke_3
+	0x1d7a3091c UIKitCore!-[_UIAfterCACommitBlock run]
+	0x1d7a30858 UIKitCore!-[_UIAfterCACommitQueue flush]
+	0x1d7a3075c UIKitCore!_runAfterCACommitDeferredBlocks
+	0x1d78ded68 UIKitCore!_cleanUpAfterCAFlushAndRunDeferredBlocks
+	0x1d7cb2b04 UIKitCore!_afterCACommitHandler
+	0x1d59918e8 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_AN_OBSERVER_CALLBACK_FUNCTION__
+	0x1d592151c CoreFoundation!__CFRunLoopDoObservers
+	0x1d597d214 CoreFoundation!__CFRunLoopRun
+
+[*] Class Name: PHPhotoLibrary
+[*] Method Name: requestAuthorizationForAccessLevel:handler:
+	Backtrace:
+	0x103eb4854 hupu!0xffc854 (0x100ffc854)
+	0x103e952b0 hupu!0xfdd2b0 (0x100fdd2b0)
+	0x103e95374 /private/var/containers/Bundle/Application/C110F403-ABDA-4C9C-AC26-A959E67BCD64/hupu.app/hupu!-[HCPhotoKit.HCFashionPhotoPickerViewController viewDidLoad]
+	0x1d7bf6d8c UIKitCore!-[UIViewController _sendViewDidLoadWithAppearanceProxyObjectTaggingEnabled]
+	0x1d78bc5b8 UIKitCore!-[UIViewController loadViewIfRequired]
+	0x1d78bc2e4 UIKitCore!-[UIViewController view]
+	0x1d7a58e5c UIKitCore!-[UINavigationController _preferredContentSizeForcingLoad:]
+	0x1d7b5eda4 UIKitCore!-[UIPresentationController preferredContentSizeDidChangeForChildContentContainer:]
+	0x1d7fa1630 UIKitCore!__56-[UIPresentationController runTransitionForCurrentState]_block_invoke_3
+	0x1d7a3091c UIKitCore!-[_UIAfterCACommitBlock run]
+	0x1d7a30858 UIKitCore!-[_UIAfterCACommitQueue flush]
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc697e10 libdispatch.dylib!_dispatch_main_queue_drain
+	0x1dc697a88 libdispatch.dylib!_dispatch_main_queue_callback_4CF$VARIANT$armv81
+	0x1d59999ac CoreFoundation!__CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+
+[*] Class Name: PHPhotoLibrary
+[*] Method Name: requestAuthorizationForAccessLevel:handler:
+	Backtrace:
+	0x103ebe668 hupu!0x1006668 (0x101006668)
+	0x103ec4738 /private/var/containers/Bundle/Application/C110F403-ABDA-4C9C-AC26-A959E67BCD64/hupu.app/hupu!-[HCPhotoKit.HCPhotoPickerViewController viewDidLoad]
+	0x1d7bf6d8c UIKitCore!-[UIViewController _sendViewDidLoadWithAppearanceProxyObjectTaggingEnabled]
+	0x1d78bc5b8 UIKitCore!-[UIViewController loadViewIfRequired]
+	0x1d78bc2e4 UIKitCore!-[UIViewController view]
+	0x1d7a58e5c UIKitCore!-[UINavigationController _preferredContentSizeForcingLoad:]
+	0x1d7b5eda4 UIKitCore!-[UIPresentationController preferredContentSizeDidChangeForChildContentContainer:]
+	0x1d7fa1630 UIKitCore!__56-[UIPresentationController runTransitionForCurrentState]_block_invoke_3
+	0x1d7a3091c UIKitCore!-[_UIAfterCACommitBlock run]
+	0x1d7a30858 UIKitCore!-[_UIAfterCACommitQueue flush]
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc697e10 libdispatch.dylib!_dispatch_main_queue_drain
+	0x1dc697a88 libdispatch.dylib!_dispatch_main_queue_callback_4CF$VARIANT$armv81
+	0x1d59999ac CoreFoundation!__CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+	0x1d597d648 CoreFoundation!__CFRunLoopRun
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: authorizationStatusForMediaType:
+	Backtrace:
+	0x1edbc6a94 AVFCapture!-[AVCaptureDeviceInput _authorizedToUseDeviceAndRequestIfNecessary:]
+	0x1edbc6848 AVFCapture!-[AVCaptureDeviceInput initWithDevice:error:]
+	0x1edbc67bc AVFCapture!+[AVCaptureDeviceInput deviceInputWithDevice:error:]
+	0x21d552b20 CameraUI!-[CAMCaptureEngineDevice captureDeviceInput]
+	0x21d552a0c CameraUI!-[CAMModeAndDeviceCommand _desiredInputsWithContext:]
+	0x21d551ccc CameraUI!-[CAMModeAndDeviceCommand executeWithContext:]
+	0x21d551704 CameraUI!-[CAMCaptureEngine _executeCommand:withContext:]
+	0x21d551794 CameraUI!-[CAMCaptureEngine _executeCommand:withContext:]
+	0x21d551794 CameraUI!-[CAMCaptureEngine _executeCommand:withContext:]
+	0x21d5512d0 CameraUI!__35-[CAMCaptureEngine enqueueCommand:]_block_invoke
+	0x1e9ca6c18 PhotoLibraryServicesCore!__pl_dispatch_async_block_invoke
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc6916fc libdispatch.dylib!_dispatch_lane_serial_drain$VARIANT$armv81
+	0x1dc6921b0 libdispatch.dylib!_dispatch_lane_invoke$VARIANT$armv81
+	0x1dc69bf14 libdispatch.dylib!_dispatch_workloop_worker_thread
+

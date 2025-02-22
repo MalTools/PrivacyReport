@@ -1,0 +1,305 @@
+(base) mac@macdeMacBook-Pro autoTestiOS % frida -U -F -l hook_sensitive_api.js
+     ____
+    / _  |   Frida 16.2.1 - A world-class dynamic instrumentation toolkit
+   | (_| |
+    > _  |   Commands:
+   /_/ |_|       help      -> Displays the help system
+   . . . .       object?   -> Display information about 'object'
+   . . . .       exit/quit -> Exit
+   . . . .
+   . . . .   More info at https://frida.re/docs/home/
+   . . . .
+   . . . .   Connected to iPhone (id=02f66296483099a1e80d262c998b9f8feb885523)
+[*] Started: Modify Return Value
+funcName_arg namePrefix
+[!] funcName_arg Exception: 
+funcName_arg givenName
+[!] funcName_arg Exception: 
+funcName_arg middleName
+[!] funcName_arg Exception: 
+funcName_arg familyName
+[!] funcName_arg Exception: 
+funcName_arg previousFamilyName
+[!] funcName_arg Exception: 
+funcName_arg nickname
+[!] funcName_arg Exception: 
+funcName_arg phoneticGivenName
+[!] funcName_arg Exception: 
+funcName_arg phoneticMiddleName
+[!] funcName_arg Exception: 
+funcName_arg phoneticFamilyName
+[!] funcName_arg Exception: 
+funcName_arg jobTitle
+[!] funcName_arg Exception: 
+funcName_arg departmentName
+[!] funcName_arg Exception: 
+funcName_arg organizationName
+[!] funcName_arg Exception: 
+funcName_arg phoneticOrganizationName
+[!] funcName_arg Exception: 
+funcName_arg postalAddresses
+[!] funcName_arg Exception: 
+funcName_arg urlAddresses
+[!] funcName_arg Exception: 
+funcName_arg phoneNumbers
+[!] funcName_arg Exception: 
+funcName_arg socialProfiles
+[!] funcName_arg Exception: 
+funcName_arg emailAddresses
+[!] funcName_arg Exception: 
+funcName_arg birthday
+[!] funcName_arg Exception: 
+funcName_arg dates
+[!] funcName_arg Exception: 
+funcName_arg nonGregorianBirthday
+[!] funcName_arg Exception: 
+funcName_arg note
+[!] funcName_arg Exception: 
+funcName_arg emailAddresses
+[!] funcName_arg Exception: 
+funcName_arg unifiedMeContactWithKeysToFetch:error:
+[!] funcName_arg Exception: 
+funcName_arg rfetchAssetsInAssetCollection:options:
+[!] funcName_arg Exception: 
+message: {'type': 'send', 'payload': '[*] Started: Modify Return Value'} data: None
+[iPhone::斑马 ]->
+[*] Class Name: AVCaptureDevice
+[*] Method Name: authorizationStatusForMediaType:
+	Backtrace:
+	0x1063d8cac /private/var/containers/Bundle/Application/6C511E8F-A408-455B-B3F2-99F58016EE41/Zebstrika.app/Zebstrika!+[ZBECameraPermissionManager hasDenied]
+	0x106130af4 /private/var/containers/Bundle/Application/6C511E8F-A408-455B-B3F2-99F58016EE41/Zebstrika.app/Zebstrika!-[ZBEEyeCareAgent checkSwitchStatus]
+	0x1045955f4 /private/var/containers/Bundle/Application/6C511E8F-A408-455B-B3F2-99F58016EE41/Zebstrika.app/Zebstrika!-[ZBEBaseTabViewControllerDIImp viewWillAppear:]
+        0x1052b60ac /private/var/containers/Bundle/Application/6C511E8F-A408-455B-B3F2-99F58016EE41/Zebstrika.app/Zebstrika!-[ZBEBaseViewController viewWillAppear:]
+	0x1065307d0 /private/var/containers/Bundle/Application/6C511E8F-A408-455B-B3F2-99F58016EE41/Zebstrika.app/Zebstrika!-[ZBEBaseTabViewController viewWillAppear:]
+	0x10657ff28 /private/var/containers/Bundle/Application/6C511E8F-A408-455B-B3F2-99F58016EE41/Zebstrika.app/Zebstrika!-[ZBEMeVC viewWillAppear:]
+	0x1d78af880 UIKitCore!-[UIViewController _setViewAppearState:isAnimating:]
+        0x1d79496a8 UIKitCore!-[UIViewController __viewWillAppear:]
+	0x1d7a344cc UIKitCore!-[UINavigationController _startTransition:fromViewController:toViewController:]
+	0x1d7a337ec UIKitCore!-[UINavigationController _startDeferredTransitionIfNeeded:]
+	0x1d7a32e78 UIKitCore!-[UINavigationController __viewWillLayoutSubviews]
+	0x1d7a32de0 UIKitCore!-[UILayoutContainerView layoutSubviews]
+	0x1d78a77a8 UIKitCore!-[UIView(CALayerDelegate) layoutSublayersOfLayer:]
+	0x1d6dad60c QuartzCore!CA::Layer::layout_if_needed(CA::Transaction*)
+	0x1d6dbff2c QuartzCore!CA::Layer::layout_and_display_if_needed(CA::Transaction*)
+	0x1d6dd09f0 QuartzCore!CA::Context::commit_transaction(CA::Transaction*, double, double*)
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: authorizationStatusForMediaType:
+	Backtrace:
+	0x1edbc6a94 AVFCapture!-[AVCaptureDeviceInput _authorizedToUseDeviceAndRequestIfNecessary:]
+	0x1edbc6848 AVFCapture!-[AVCaptureDeviceInput initWithDevice:error:]
+	0x1edbc67bc AVFCapture!+[AVCaptureDeviceInput deviceInputWithDevice:error:]
+	0x21d54a184 CameraUI!___prewarmAudioVideoDevices_block_invoke
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc686ddc libdispatch.dylib!_dispatch_once_callout
+	0x21d552c80 CameraUI!-[CAMCaptureEngine prewarmedVideoDeviceInput:position:device:]
+	0x21d552ae8 CameraUI!-[CAMCaptureEngineDevice captureDeviceInput]
+	0x21d552a0c CameraUI!-[CAMModeAndDeviceCommand _desiredInputsWithContext:]
+	0x21d551ccc CameraUI!-[CAMModeAndDeviceCommand executeWithContext:]
+	0x21d551704 CameraUI!-[CAMCaptureEngine _executeCommand:withContext:]
+	0x21d551794 CameraUI!-[CAMCaptureEngine _executeCommand:withContext:]
+	0x21d551794 CameraUI!-[CAMCaptureEngine _executeCommand:withContext:]
+	0x21d5512d0 CameraUI!__35-[CAMCaptureEngine enqueueCommand:]_block_invoke
+	0x1e9ca6c18 PhotoLibraryServicesCore!__pl_dispatch_async_block_invoke
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: requestAccessForMediaType:completionHandler:
+	Backtrace:
+	0x1edbc6ab4 AVFCapture!-[AVCaptureDeviceInput _authorizedToUseDeviceAndRequestIfNecessary:]
+	0x1edbc6848 AVFCapture!-[AVCaptureDeviceInput initWithDevice:error:]
+	0x1edbc67bc AVFCapture!+[AVCaptureDeviceInput deviceInputWithDevice:error:]
+	0x21d54a184 CameraUI!___prewarmAudioVideoDevices_block_invoke
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc686ddc libdispatch.dylib!_dispatch_once_callout
+	0x21d552c80 CameraUI!-[CAMCaptureEngine prewarmedVideoDeviceInput:position:device:]
+	0x21d552ae8 CameraUI!-[CAMCaptureEngineDevice captureDeviceInput]
+	0x21d552a0c CameraUI!-[CAMModeAndDeviceCommand _desiredInputsWithContext:]
+	0x21d551ccc CameraUI!-[CAMModeAndDeviceCommand executeWithContext:]
+	0x21d551704 CameraUI!-[CAMCaptureEngine _executeCommand:withContext:]
+	0x21d551794 CameraUI!-[CAMCaptureEngine _executeCommand:withContext:]
+	0x21d551794 CameraUI!-[CAMCaptureEngine _executeCommand:withContext:]
+	0x21d5512d0 CameraUI!__35-[CAMCaptureEngine enqueueCommand:]_block_invoke
+	0x1e9ca6c18 PhotoLibraryServicesCore!__pl_dispatch_async_block_invoke
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: authorizationStatusForMediaType:
+	Backtrace:
+	0x1063d8cac /private/var/containers/Bundle/Application/6C511E8F-A408-455B-B3F2-99F58016EE41/Zebstrika.app/Zebstrika!+[ZBECameraPermissionManager hasDenied]
+	0x106130af4 /private/var/containers/Bundle/Application/6C511E8F-A408-455B-B3F2-99F58016EE41/Zebstrika.app/Zebstrika!-[ZBEEyeCareAgent checkSwitchStatus]
+	0x1045955f4 /private/var/containers/Bundle/Application/6C511E8F-A408-455B-B3F2-99F58016EE41/Zebstrika.app/Zebstrika!-[ZBEBaseTabViewControllerDIImp viewWillAppear:]
+	0x1052b60ac /private/var/containers/Bundle/Application/6C511E8F-A408-455B-B3F2-99F58016EE41/Zebstrika.app/Zebstrika!-[ZBEBaseViewController viewWillAppear:]
+	0x1065307d0 /private/var/containers/Bundle/Application/6C511E8F-A408-455B-B3F2-99F58016EE41/Zebstrika.app/Zebstrika!-[ZBEBaseTabViewController viewWillAppear:]
+	0x10657ff28 /private/var/containers/Bundle/Application/6C511E8F-A408-455B-B3F2-99F58016EE41/Zebstrika.app/Zebstrika!-[ZBEMeVC viewWillAppear:]
+	0x1d78af880 UIKitCore!-[UIViewController _setViewAppearState:isAnimating:]
+	0x1d79496a8 UIKitCore!-[UIViewController __viewWillAppear:]
+	0x1d7b5c714 UIKitCore!-[UINavigationController _startCustomTransition:]
+	0x1d7a3377c UIKitCore!-[UINavigationController _startDeferredTransitionIfNeeded:]
+	0x1d7a32e78 UIKitCore!-[UINavigationController __viewWillLayoutSubviews]
+	0x1d7a32de0 UIKitCore!-[UILayoutContainerView layoutSubviews]
+	0x1d78a77a8 UIKitCore!-[UIView(CALayerDelegate) layoutSublayersOfLayer:]
+	0x1d6dad60c QuartzCore!CA::Layer::layout_if_needed(CA::Transaction*)
+	0x1d6dbff2c QuartzCore!CA::Layer::layout_and_display_if_needed(CA::Transaction*)
+	0x1d6dd09f0 QuartzCore!CA::Context::commit_transaction(CA::Transaction*, double, double*)
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: authorizationStatusForMediaType:
+	Backtrace:
+	0x1063d8cac /private/var/containers/Bundle/Application/6C511E8F-A408-455B-B3F2-99F58016EE41/Zebstrika.app/Zebstrika!+[ZBECameraPermissionManager hasDenied]
+	0x106130af4 /private/var/containers/Bundle/Application/6C511E8F-A408-455B-B3F2-99F58016EE41/Zebstrika.app/Zebstrika!-[ZBEEyeCareAgent checkSwitchStatus]
+	0x1045955f4 /private/var/containers/Bundle/Application/6C511E8F-A408-455B-B3F2-99F58016EE41/Zebstrika.app/Zebstrika!-[ZBEBaseTabViewControllerDIImp viewWillAppear:]
+	0x1052b60ac /private/var/containers/Bundle/Application/6C511E8F-A408-455B-B3F2-99F58016EE41/Zebstrika.app/Zebstrika!-[ZBEBaseViewController viewWillAppear:]
+	0x1065307d0 /private/var/containers/Bundle/Application/6C511E8F-A408-455B-B3F2-99F58016EE41/Zebstrika.app/Zebstrika!-[ZBEBaseTabViewController viewWillAppear:]
+	0x10657ff28 /private/var/containers/Bundle/Application/6C511E8F-A408-455B-B3F2-99F58016EE41/Zebstrika.app/Zebstrika!-[ZBEMeVC viewWillAppear:]
+	0x1d78af880 UIKitCore!-[UIViewController _setViewAppearState:isAnimating:]
+	0x1d79496a8 UIKitCore!-[UIViewController __viewWillAppear:]
+	0x1d7b5c714 UIKitCore!-[UINavigationController _startCustomTransition:]
+	0x1d7a3377c UIKitCore!-[UINavigationController _startDeferredTransitionIfNeeded:]
+	0x1d7a32e78 UIKitCore!-[UINavigationController __viewWillLayoutSubviews]
+	0x1d7a32de0 UIKitCore!-[UILayoutContainerView layoutSubviews]
+	0x1d78a77a8 UIKitCore!-[UIView(CALayerDelegate) layoutSublayersOfLayer:]
+	0x1d6dad60c QuartzCore!CA::Layer::layout_if_needed(CA::Transaction*)
+	0x1d6dbff2c QuartzCore!CA::Layer::layout_and_display_if_needed(CA::Transaction*)
+	0x1d6dd09f0 QuartzCore!CA::Context::commit_transaction(CA::Transaction*, double, double*)
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: authorizationStatusForMediaType:
+	Backtrace:
+	0x1063d8cac /private/var/containers/Bundle/Application/6C511E8F-A408-455B-B3F2-99F58016EE41/Zebstrika.app/Zebstrika!+[ZBECameraPermissionManager hasDenied]
+	0x106130af4 /private/var/containers/Bundle/Application/6C511E8F-A408-455B-B3F2-99F58016EE41/Zebstrika.app/Zebstrika!-[ZBEEyeCareAgent checkSwitchStatus]
+	0x1045955f4 /private/var/containers/Bundle/Application/6C511E8F-A408-455B-B3F2-99F58016EE41/Zebstrika.app/Zebstrika!-[ZBEBaseTabViewControllerDIImp viewWillAppear:]
+	0x1052b60ac /private/var/containers/Bundle/Application/6C511E8F-A408-455B-B3F2-99F58016EE41/Zebstrika.app/Zebstrika!-[ZBEBaseViewController viewWillAppear:]
+	0x1065307d0 /private/var/containers/Bundle/Application/6C511E8F-A408-455B-B3F2-99F58016EE41/Zebstrika.app/Zebstrika!-[ZBEBaseTabViewController viewWillAppear:]
+	0x105d33234 Zebstrika!0x17a7234 (0x1017a7234)
+	0x105d33560 /private/var/containers/Bundle/Application/6C511E8F-A408-455B-B3F2-99F58016EE41/Zebstrika.app/Zebstrika!-[ZBECoursePagingViewController viewWillAppear:]
+	0x1d78af880 UIKitCore!-[UIViewController _setViewAppearState:isAnimating:]
+	0x1d79496a8 UIKitCore!-[UIViewController __viewWillAppear:]
+	0x1d78b1114 UIKitCore!-[UINavigationController viewWillAppear:]
+	0x1d78af880 UIKitCore!-[UIViewController _setViewAppearState:isAnimating:]
+	0x1d79496a8 UIKitCore!-[UIViewController __viewWillAppear:]
+	0x1d7a8e0ac UIKitCore!-[UITabBarController transitionFromViewController:toViewController:transition:shouldSetSelected:]
+	0x1d7a8db98 UIKitCore!-[UITabBarController _setSelectedViewController:]
+	0x1d78d392c UIKitCore!-[UITabBarController setSelectedViewController:]
+	0x1d7fad514 UIKitCore!-[UITabBarController _setSelectedViewControllerAndNotify:]
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: authorizationStatusForMediaType:
+	Backtrace:
+	0x1063d8cac /private/var/containers/Bundle/Application/6C511E8F-A408-455B-B3F2-99F58016EE41/Zebstrika.app/Zebstrika!+[ZBECameraPermissionManager hasDenied]
+	0x106130af4 /private/var/containers/Bundle/Application/6C511E8F-A408-455B-B3F2-99F58016EE41/Zebstrika.app/Zebstrika!-[ZBEEyeCareAgent checkSwitchStatus]
+	0x1045955f4 /private/var/containers/Bundle/Application/6C511E8F-A408-455B-B3F2-99F58016EE41/Zebstrika.app/Zebstrika!-[ZBEBaseTabViewControllerDIImp viewWillAppear:]
+	0x1052b60ac /private/var/containers/Bundle/Application/6C511E8F-A408-455B-B3F2-99F58016EE41/Zebstrika.app/Zebstrika!-[ZBEBaseViewController viewWillAppear:]
+	0x1065307d0 /private/var/containers/Bundle/Application/6C511E8F-A408-455B-B3F2-99F58016EE41/Zebstrika.app/Zebstrika!-[ZBEBaseTabViewController viewWillAppear:]
+	0x10620d2a8 /private/var/containers/Bundle/Application/6C511E8F-A408-455B-B3F2-99F58016EE41/Zebstrika.app/Zebstrika!-[ZBEMissionTabViewController viewWillAppear:]
+	0x1d78af880 UIKitCore!-[UIViewController _setViewAppearState:isAnimating:]
+	0x1d79496a8 UIKitCore!-[UIViewController __viewWillAppear:]
+	0x1d7a344cc UIKitCore!-[UINavigationController _startTransition:fromViewController:toViewController:]
+	0x1d7a337ec UIKitCore!-[UINavigationController _startDeferredTransitionIfNeeded:]
+	0x1d7a32e78 UIKitCore!-[UINavigationController __viewWillLayoutSubviews]
+	0x1d7a32de0 UIKitCore!-[UILayoutContainerView layoutSubviews]
+	0x1d78a77a8 UIKitCore!-[UIView(CALayerDelegate) layoutSublayersOfLayer:]
+	0x1d6dad60c QuartzCore!CA::Layer::layout_if_needed(CA::Transaction*)
+	0x1d6dbff2c QuartzCore!CA::Layer::layout_and_display_if_needed(CA::Transaction*)
+	0x1d6dd09f0 QuartzCore!CA::Context::commit_transaction(CA::Transaction*, double, double*)
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: authorizationStatusForMediaType:
+	Backtrace:
+	0x1063d8cac /private/var/containers/Bundle/Application/6C511E8F-A408-455B-B3F2-99F58016EE41/Zebstrika.app/Zebstrika!+[ZBECameraPermissionManager hasDenied]
+	0x106130af4 /private/var/containers/Bundle/Application/6C511E8F-A408-455B-B3F2-99F58016EE41/Zebstrika.app/Zebstrika!-[ZBEEyeCareAgent checkSwitchStatus]
+	0x1045955f4 /private/var/containers/Bundle/Application/6C511E8F-A408-455B-B3F2-99F58016EE41/Zebstrika.app/Zebstrika!-[ZBEBaseTabViewControllerDIImp viewWillAppear:]
+	0x1052b60ac /private/var/containers/Bundle/Application/6C511E8F-A408-455B-B3F2-99F58016EE41/Zebstrika.app/Zebstrika!-[ZBEBaseViewController viewWillAppear:]
+	0x1065307d0 /private/var/containers/Bundle/Application/6C511E8F-A408-455B-B3F2-99F58016EE41/Zebstrika.app/Zebstrika!-[ZBEBaseTabViewController viewWillAppear:]
+	0x105f2fb44 Zebstrika!0x19a3b44 (0x1019a3b44)
+	0x105f30164 /private/var/containers/Bundle/Application/6C511E8F-A408-455B-B3F2-99F58016EE41/Zebstrika.app/Zebstrika!-[ZBEExpandTabViewController viewWillAppear:]
+	0x1d78af880 UIKitCore!-[UIViewController _setViewAppearState:isAnimating:]
+	0x1d79496a8 UIKitCore!-[UIViewController __viewWillAppear:]
+	0x1d7a344cc UIKitCore!-[UINavigationController _startTransition:fromViewController:toViewController:]
+	0x1d7a337ec UIKitCore!-[UINavigationController _startDeferredTransitionIfNeeded:]
+	0x1d7a32e78 UIKitCore!-[UINavigationController __viewWillLayoutSubviews]
+	0x1d7a32de0 UIKitCore!-[UILayoutContainerView layoutSubviews]
+	0x1d78a77a8 UIKitCore!-[UIView(CALayerDelegate) layoutSublayersOfLayer:]
+	0x1d6dad60c QuartzCore!CA::Layer::layout_if_needed(CA::Transaction*)
+	0x1d6dbff2c QuartzCore!CA::Layer::layout_and_display_if_needed(CA::Transaction*)
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: authorizationStatusForMediaType:
+	Backtrace:
+	0x1063d8cac /private/var/containers/Bundle/Application/6C511E8F-A408-455B-B3F2-99F58016EE41/Zebstrika.app/Zebstrika!+[ZBECameraPermissionManager hasDenied]
+	0x106130af4 /private/var/containers/Bundle/Application/6C511E8F-A408-455B-B3F2-99F58016EE41/Zebstrika.app/Zebstrika!-[ZBEEyeCareAgent checkSwitchStatus]
+	0x1045955f4 /private/var/containers/Bundle/Application/6C511E8F-A408-455B-B3F2-99F58016EE41/Zebstrika.app/Zebstrika!-[ZBEBaseTabViewControllerDIImp viewWillAppear:]
+	0x1052b60ac /private/var/containers/Bundle/Application/6C511E8F-A408-455B-B3F2-99F58016EE41/Zebstrika.app/Zebstrika!-[ZBEBaseViewController viewWillAppear:]
+	0x1065307d0 /private/var/containers/Bundle/Application/6C511E8F-A408-455B-B3F2-99F58016EE41/Zebstrika.app/Zebstrika!-[ZBEBaseTabViewController viewWillAppear:]
+	0x10657ff28 /private/var/containers/Bundle/Application/6C511E8F-A408-455B-B3F2-99F58016EE41/Zebstrika.app/Zebstrika!-[ZBEMeVC viewWillAppear:]
+	0x1d78af880 UIKitCore!-[UIViewController _setViewAppearState:isAnimating:]
+	0x1d79496a8 UIKitCore!-[UIViewController __viewWillAppear:]
+	0x1d78b1114 UIKitCore!-[UINavigationController viewWillAppear:]
+	0x1d78af880 UIKitCore!-[UIViewController _setViewAppearState:isAnimating:]
+	0x1d79496a8 UIKitCore!-[UIViewController __viewWillAppear:]
+	0x1d7a8e0ac UIKitCore!-[UITabBarController transitionFromViewController:toViewController:transition:shouldSetSelected:]
+	0x1d7a8db98 UIKitCore!-[UITabBarController _setSelectedViewController:]
+	0x1d78d392c UIKitCore!-[UITabBarController setSelectedViewController:]
+	0x1d7fad514 UIKitCore!-[UITabBarController _setSelectedViewControllerAndNotify:]
+	0x1d7fad358 UIKitCore!-[UITabBarController _tabBarItemClicked:]
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: authorizationStatusForMediaType:
+	Backtrace:
+	0x1063d8cac /private/var/containers/Bundle/Application/6C511E8F-A408-455B-B3F2-99F58016EE41/Zebstrika.app/Zebstrika!+[ZBECameraPermissionManager hasDenied]
+	0x106130af4 /private/var/containers/Bundle/Application/6C511E8F-A408-455B-B3F2-99F58016EE41/Zebstrika.app/Zebstrika!-[ZBEEyeCareAgent checkSwitchStatus]
+	0x1045955f4 /private/var/containers/Bundle/Application/6C511E8F-A408-455B-B3F2-99F58016EE41/Zebstrika.app/Zebstrika!-[ZBEBaseTabViewControllerDIImp viewWillAppear:]
+	0x1052b60ac /private/var/containers/Bundle/Application/6C511E8F-A408-455B-B3F2-99F58016EE41/Zebstrika.app/Zebstrika!-[ZBEBaseViewController viewWillAppear:]
+	0x1065307d0 /private/var/containers/Bundle/Application/6C511E8F-A408-455B-B3F2-99F58016EE41/Zebstrika.app/Zebstrika!-[ZBEBaseTabViewController viewWillAppear:]
+	0x10620d2a8 /private/var/containers/Bundle/Application/6C511E8F-A408-455B-B3F2-99F58016EE41/Zebstrika.app/Zebstrika!-[ZBEMissionTabViewController viewWillAppear:]
+	0x1d78af880 UIKitCore!-[UIViewController _setViewAppearState:isAnimating:]
+	0x1d79496a8 UIKitCore!-[UIViewController __viewWillAppear:]
+	0x1d78b1114 UIKitCore!-[UINavigationController viewWillAppear:]
+	0x1d78af880 UIKitCore!-[UIViewController _setViewAppearState:isAnimating:]
+	0x1d79496a8 UIKitCore!-[UIViewController __viewWillAppear:]
+	0x1d7a8e0ac UIKitCore!-[UITabBarController transitionFromViewController:toViewController:transition:shouldSetSelected:]
+	0x1d7a8db98 UIKitCore!-[UITabBarController _setSelectedViewController:]
+	0x1d78d392c UIKitCore!-[UITabBarController setSelectedViewController:]
+	0x1d7fad514 UIKitCore!-[UITabBarController _setSelectedViewControllerAndNotify:]
+	0x1d7fad358 UIKitCore!-[UITabBarController _tabBarItemClicked:]
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: authorizationStatusForMediaType:
+	Backtrace:
+	0x1063d8cac /private/var/containers/Bundle/Application/6C511E8F-A408-455B-B3F2-99F58016EE41/Zebstrika.app/Zebstrika!+[ZBECameraPermissionManager hasDenied]
+	0x106130af4 /private/var/containers/Bundle/Application/6C511E8F-A408-455B-B3F2-99F58016EE41/Zebstrika.app/Zebstrika!-[ZBEEyeCareAgent checkSwitchStatus]
+	0x1045955f4 /private/var/containers/Bundle/Application/6C511E8F-A408-455B-B3F2-99F58016EE41/Zebstrika.app/Zebstrika!-[ZBEBaseTabViewControllerDIImp viewWillAppear:]
+	0x1052b60ac /private/var/containers/Bundle/Application/6C511E8F-A408-455B-B3F2-99F58016EE41/Zebstrika.app/Zebstrika!-[ZBEBaseViewController viewWillAppear:]
+	0x1065307d0 /private/var/containers/Bundle/Application/6C511E8F-A408-455B-B3F2-99F58016EE41/Zebstrika.app/Zebstrika!-[ZBEBaseTabViewController viewWillAppear:]
+	0x105f2fb44 Zebstrika!0x19a3b44 (0x1019a3b44)
+	0x105f30164 /private/var/containers/Bundle/Application/6C511E8F-A408-455B-B3F2-99F58016EE41/Zebstrika.app/Zebstrika!-[ZBEExpandTabViewController viewWillAppear:]
+	0x1d78af880 UIKitCore!-[UIViewController _setViewAppearState:isAnimating:]
+	0x1d79496a8 UIKitCore!-[UIViewController __viewWillAppear:]
+	0x1d78b1114 UIKitCore!-[UINavigationController viewWillAppear:]
+	0x1d78af880 UIKitCore!-[UIViewController _setViewAppearState:isAnimating:]
+	0x1d79496a8 UIKitCore!-[UIViewController __viewWillAppear:]
+	0x1d7a8e0ac UIKitCore!-[UITabBarController transitionFromViewController:toViewController:transition:shouldSetSelected:]
+	0x1d7a8db98 UIKitCore!-[UITabBarController _setSelectedViewController:]
+	0x1d78d392c UIKitCore!-[UITabBarController setSelectedViewController:]
+	0x1d7fad514 UIKitCore!-[UITabBarController _setSelectedViewControllerAndNotify:]
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: authorizationStatusForMediaType:
+	Backtrace:
+	0x1063d8cac /private/var/containers/Bundle/Application/6C511E8F-A408-455B-B3F2-99F58016EE41/Zebstrika.app/Zebstrika!+[ZBECameraPermissionManager hasDenied]
+	0x106130af4 /private/var/containers/Bundle/Application/6C511E8F-A408-455B-B3F2-99F58016EE41/Zebstrika.app/Zebstrika!-[ZBEEyeCareAgent checkSwitchStatus]
+	0x1045955f4 /private/var/containers/Bundle/Application/6C511E8F-A408-455B-B3F2-99F58016EE41/Zebstrika.app/Zebstrika!-[ZBEBaseTabViewControllerDIImp viewWillAppear:]
+	0x1052b60ac /private/var/containers/Bundle/Application/6C511E8F-A408-455B-B3F2-99F58016EE41/Zebstrika.app/Zebstrika!-[ZBEBaseViewController viewWillAppear:]
+	0x1065307d0 /private/var/containers/Bundle/Application/6C511E8F-A408-455B-B3F2-99F58016EE41/Zebstrika.app/Zebstrika!-[ZBEBaseTabViewController viewWillAppear:]
+	0x105d33234 Zebstrika!0x17a7234 (0x1017a7234)
+	0x105d33560 /private/var/containers/Bundle/Application/6C511E8F-A408-455B-B3F2-99F58016EE41/Zebstrika.app/Zebstrika!-[ZBECoursePagingViewController viewWillAppear:]
+	0x1d78af880 UIKitCore!-[UIViewController _setViewAppearState:isAnimating:]
+	0x1d79496a8 UIKitCore!-[UIViewController __viewWillAppear:]
+	0x1d78b1114 UIKitCore!-[UINavigationController viewWillAppear:]
+	0x1d78af880 UIKitCore!-[UIViewController _setViewAppearState:isAnimating:]
+	0x1d79496a8 UIKitCore!-[UIViewController __viewWillAppear:]
+	0x1d7a8e0ac UIKitCore!-[UITabBarController transitionFromViewController:toViewController:transition:shouldSetSelected:]
+	0x1d7a8db98 UIKitCore!-[UITabBarController _setSelectedViewController:]
+	0x1d78d392c UIKitCore!-[UITabBarController setSelectedViewController:]
+	0x1d7fad514 UIKitCore!-[UITabBarController _setSelectedViewControllerAndNotify:]
+

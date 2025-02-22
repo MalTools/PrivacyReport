@@ -1,0 +1,278 @@
+(base) mac@macdeMacBook-Pro autoTestiOS % frida -U -F -l hook_sensitive_api.js
+     ____
+    / _  |   Frida 16.2.1 - A world-class dynamic instrumentation toolkit
+   | (_| |
+    > _  |   Commands:
+   /_/ |_|       help      -> Displays the help system
+   . . . .       object?   -> Display information about 'object'
+   . . . .       exit/quit -> Exit
+   . . . .
+   . . . .   More info at https://frida.re/docs/home/
+   . . . .
+   . . . .   Connected to iPhone (id=02f66296483099a1e80d262c998b9f8feb885523)
+[*] Started: Modify Return Value
+funcName_arg namePrefix
+[!] funcName_arg Exception: 
+funcName_arg givenName
+[!] funcName_arg Exception: 
+funcName_arg middleName
+[!] funcName_arg Exception: 
+funcName_arg familyName
+[!] funcName_arg Exception: 
+funcName_arg previousFamilyName
+[!] funcName_arg Exception: 
+funcName_arg nickname
+[!] funcName_arg Exception: 
+funcName_arg phoneticGivenName
+[!] funcName_arg Exception: 
+funcName_arg phoneticMiddleName
+[!] funcName_arg Exception: 
+funcName_arg phoneticFamilyName
+[!] funcName_arg Exception: 
+funcName_arg jobTitle
+[!] funcName_arg Exception: 
+funcName_arg departmentName
+[!] funcName_arg Exception: 
+funcName_arg organizationName
+[!] funcName_arg Exception: 
+funcName_arg phoneticOrganizationName
+[!] funcName_arg Exception: 
+funcName_arg postalAddresses
+[!] funcName_arg Exception: 
+funcName_arg urlAddresses
+[!] funcName_arg Exception: 
+funcName_arg phoneNumbers
+[!] funcName_arg Exception: 
+funcName_arg socialProfiles
+[!] funcName_arg Exception: 
+funcName_arg emailAddresses
+[!] funcName_arg Exception: 
+funcName_arg birthday
+[!] funcName_arg Exception: 
+funcName_arg dates
+[!] funcName_arg Exception: 
+funcName_arg nonGregorianBirthday
+[!] funcName_arg Exception: 
+funcName_arg note
+[!] funcName_arg Exception: 
+funcName_arg emailAddresses
+[!] funcName_arg Exception: 
+funcName_arg unifiedMeContactWithKeysToFetch:error:
+[!] funcName_arg Exception: 
+funcName_arg rfetchAssetsInAssetCollection:options:
+[!] funcName_arg Exception: 
+message: {'type': 'send', 'payload': '[*] Started: Modify Return Value'} data: None
+[iPhone::滴滴出行 ]->
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x1014febf8 /private/var/containers/Bundle/Application/F42380B3-31E4-42FD-87A9-5373F2155D15/OneTravel.app/OneTravel!-[DMKLocationManager locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+        0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+        0x1d597d804 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x10587b180 OneTravel!0x506f180 (0x10506f180)
+	0x109080344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x101500eb0 /private/var/containers/Bundle/Application/F42380B3-31E4-42FD-87A9-5373F2155D15/OneTravel.app/OneTravel!+[DMKLocationUtils wgs84toChina:chinaLng:chinaLat:dbl:]
+	0x101500d4c /private/var/containers/Bundle/Application/F42380B3-31E4-42FD-87A9-5373F2155D15/OneTravel.app/OneTravel!+[DMKLocationUtils coordinateToChina:]
+	0x1014fec10 /private/var/containers/Bundle/Application/F42380B3-31E4-42FD-87A9-5373F2155D15/OneTravel.app/OneTravel!-[DMKLocationManager locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d804 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x10587b180 OneTravel!0x506f180 (0x10506f180)
+	0x109080344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x101500ec0 /private/var/containers/Bundle/Application/F42380B3-31E4-42FD-87A9-5373F2155D15/OneTravel.app/OneTravel!+[DMKLocationUtils wgs84toChina:chinaLng:chinaLat:dbl:]
+	0x101500d4c /private/var/containers/Bundle/Application/F42380B3-31E4-42FD-87A9-5373F2155D15/OneTravel.app/OneTravel!+[DMKLocationUtils coordinateToChina:]
+	0x1014fec10 /private/var/containers/Bundle/Application/F42380B3-31E4-42FD-87A9-5373F2155D15/OneTravel.app/OneTravel!-[DMKLocationManager locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d804 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x10587b180 OneTravel!0x506f180 (0x10506f180)
+	0x109080344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - altitude
+	Backtrace:
+	0x1014fec40 /private/var/containers/Bundle/Application/F42380B3-31E4-42FD-87A9-5373F2155D15/OneTravel.app/OneTravel!-[DMKLocationManager locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d804 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x10587b180 OneTravel!0x506f180 (0x10506f180)
+	0x109080344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - horizontalAccuracy
+	Backtrace:
+	0x1014fec4c /private/var/containers/Bundle/Application/F42380B3-31E4-42FD-87A9-5373F2155D15/OneTravel.app/OneTravel!-[DMKLocationManager locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d804 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x10587b180 OneTravel!0x506f180 (0x10506f180)
+	0x109080344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - verticalAccuracy
+	Backtrace:
+	0x1014fec50 /private/var/containers/Bundle/Application/F42380B3-31E4-42FD-87A9-5373F2155D15/OneTravel.app/OneTravel!-[DMKLocationManager locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d804 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x10587b180 OneTravel!0x506f180 (0x10506f180)
+	0x109080344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - timestamp
+	Backtrace:
+	0x1014fec84 /private/var/containers/Bundle/Application/F42380B3-31E4-42FD-87A9-5373F2155D15/OneTravel.app/OneTravel!-[DMKLocationManager locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d804 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x10587b180 OneTravel!0x506f180 (0x10506f180)
+	0x109080344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - timestamp
+	Backtrace:
+	0x1e092fc50 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocation description]
+	0x1cfcae5ec Foundation!_NSDescriptionWithLocaleFunc
+	0x1d59556e8 CoreFoundation!__CFStringAppendFormatCore
+	0x1d598655c CoreFoundation!_CFStringCreateWithFormatAndArgumentsReturningMetadata
+	0x1d5983130 CoreFoundation!_CFStringCreateWithFormatAndArgumentsAux2
+	0x1cfcaf1fc Foundation!+[NSString stringWithFormat:]
+	0x1014faa64 /private/var/containers/Bundle/Application/F42380B3-31E4-42FD-87A9-5373F2155D15/OneTravel.app/OneTravel!-[DMKLocationAdapter locationManagerDidUpdateLocation:]
+	0x1014fee00 /private/var/containers/Bundle/Application/F42380B3-31E4-42FD-87A9-5373F2155D15/OneTravel.app/OneTravel!-[DMKLocationManager locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d804 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+
+[*] Class Name: CLLocation
+[*] Method Name: - timestamp
+	Backtrace:
+	0x1e092fc50 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocation description]
+	0x1cfcae5ec Foundation!_NSDescriptionWithLocaleFunc
+	0x1d59556e8 CoreFoundation!__CFStringAppendFormatCore
+	0x1d598655c CoreFoundation!_CFStringCreateWithFormatAndArgumentsReturningMetadata
+	0x1d5983130 CoreFoundation!_CFStringCreateWithFormatAndArgumentsAux2
+	0x1cfcaf1fc Foundation!+[NSString stringWithFormat:]
+	0x1014fab20 /private/var/containers/Bundle/Application/F42380B3-31E4-42FD-87A9-5373F2155D15/OneTravel.app/OneTravel!-[DMKLocationAdapter locationManagerDidUpdateLocation:]
+	0x1014fee00 /private/var/containers/Bundle/Application/F42380B3-31E4-42FD-87A9-5373F2155D15/OneTravel.app/OneTravel!-[DMKLocationManager locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d804 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+
+[*] Class Name: CLLocation
+[*] Method Name: - horizontalAccuracy
+	Backtrace:
+	0x1014f8828 /private/var/containers/Bundle/Application/F42380B3-31E4-42FD-87A9-5373F2155D15/OneTravel.app/OneTravel!-[DMKLocation setLocation:]
+	0x1014f85b4 /private/var/containers/Bundle/Application/F42380B3-31E4-42FD-87A9-5373F2155D15/OneTravel.app/OneTravel!-[DMKLocation initWithLocation:andTag:providerType:]
+	0x1014fa550 /private/var/containers/Bundle/Application/F42380B3-31E4-42FD-87A9-5373F2155D15/OneTravel.app/OneTravel!-[DMKLocationAdapter createLocationModelWithLocation:andTag:providerType:]
+	0x1014fb184 /private/var/containers/Bundle/Application/F42380B3-31E4-42FD-87A9-5373F2155D15/OneTravel.app/OneTravel!-[DMKLocationAdapter cacheLatestLocation:]
+	0x1014fab70 /private/var/containers/Bundle/Application/F42380B3-31E4-42FD-87A9-5373F2155D15/OneTravel.app/OneTravel!-[DMKLocationAdapter locationManagerDidUpdateLocation:]
+	0x1014fee00 /private/var/containers/Bundle/Application/F42380B3-31E4-42FD-87A9-5373F2155D15/OneTravel.app/OneTravel!-[DMKLocationManager locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d804 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+
+[*] Class Name: CLLocation
+[*] Method Name: - horizontalAccuracy
+	Backtrace:
+	0x1014f8828 /private/var/containers/Bundle/Application/F42380B3-31E4-42FD-87A9-5373F2155D15/OneTravel.app/OneTravel!-[DMKLocation setLocation:]
+	0x1014f85b4 /private/var/containers/Bundle/Application/F42380B3-31E4-42FD-87A9-5373F2155D15/OneTravel.app/OneTravel!-[DMKLocation initWithLocation:andTag:providerType:]
+	0x1014fa550 /private/var/containers/Bundle/Application/F42380B3-31E4-42FD-87A9-5373F2155D15/OneTravel.app/OneTravel!-[DMKLocationAdapter createLocationModelWithLocation:andTag:providerType:]
+	0x1014fade8 OneTravel!0xceede8 (0x100ceede8)
+	0x1d59118a8 CoreFoundation!__NSARRAY_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d5993634 CoreFoundation!-[__NSArrayI_Transfer enumerateObjectsWithOptions:usingBlock:]
+	0x1014fac4c /private/var/containers/Bundle/Application/F42380B3-31E4-42FD-87A9-5373F2155D15/OneTravel.app/OneTravel!-[DMKLocationAdapter locationDidUpdatePublish:]
+	0x1014fabb8 /private/var/containers/Bundle/Application/F42380B3-31E4-42FD-87A9-5373F2155D15/OneTravel.app/OneTravel!-[DMKLocationAdapter locationManagerDidUpdateLocation:]
+	0x1014fee00 /private/var/containers/Bundle/Application/F42380B3-31E4-42FD-87A9-5373F2155D15/OneTravel.app/OneTravel!-[DMKLocationManager locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d804 CoreFoundation!__CFRunLoopRun
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+

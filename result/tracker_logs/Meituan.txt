@@ -1,0 +1,561 @@
+Last login: Fri May 17 19:49:24 on ttys000
+(base) mac@macdeMacBook-Pro autoTestiOS % frida -U -F -l hook_sensitive_api.js
+     ____
+    / _  |   Frida 16.2.1 - A world-class dynamic instrumentation toolkit
+   | (_| |
+    > _  |   Commands:
+   /_/ |_|       help      -> Displays the help system
+   . . . .       object?   -> Display information about 'object'
+   . . . .       exit/quit -> Exit
+   . . . .
+   . . . .   More info at https://frida.re/docs/home/
+   . . . .
+   . . . .   Connected to iPhone (id=02f66296483099a1e80d262c998b9f8feb885523)
+[*] Started: Modify Return Value
+funcName_arg namePrefix
+[!] funcName_arg Exception: 
+funcName_arg givenName
+[!] funcName_arg Exception: 
+funcName_arg middleName
+[!] funcName_arg Exception: 
+funcName_arg familyName
+[!] funcName_arg Exception: 
+funcName_arg previousFamilyName
+[!] funcName_arg Exception: 
+funcName_arg nickname
+[!] funcName_arg Exception: 
+funcName_arg phoneticGivenName
+[!] funcName_arg Exception: 
+funcName_arg phoneticMiddleName
+[!] funcName_arg Exception: 
+funcName_arg phoneticFamilyName
+[!] funcName_arg Exception: 
+funcName_arg jobTitle
+[!] funcName_arg Exception: 
+funcName_arg departmentName
+[!] funcName_arg Exception: 
+funcName_arg organizationName
+[!] funcName_arg Exception: 
+funcName_arg phoneticOrganizationName
+[!] funcName_arg Exception: 
+funcName_arg postalAddresses
+[!] funcName_arg Exception: 
+funcName_arg urlAddresses
+[!] funcName_arg Exception: 
+funcName_arg phoneNumbers
+[!] funcName_arg Exception: 
+funcName_arg socialProfiles
+[!] funcName_arg Exception: 
+funcName_arg emailAddresses
+[!] funcName_arg Exception: 
+funcName_arg birthday
+[!] funcName_arg Exception: 
+funcName_arg dates
+[!] funcName_arg Exception: 
+funcName_arg nonGregorianBirthday
+[!] funcName_arg Exception: 
+funcName_arg note
+[!] funcName_arg Exception: 
+funcName_arg emailAddresses
+[!] funcName_arg Exception: 
+funcName_arg unifiedMeContactWithKeysToFetch:error:
+[!] funcName_arg Exception: 
+funcName_arg rfetchAssetsInAssetCollection:options:
+[!] funcName_arg Exception: 
+message: {'type': 'send', 'payload': '[*] Started: Modify Return Value'} data: None
+[iPhone::美团 ]->
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+
+[*] Class Name: CLLocationManager
+[*] Method Name: authorizationStatus
+
+[*] Class Name: CLLocationManager
+[*] Method Name: locationServicesEnabled
+
+[*] Class Name: CLLocationManager
+[*] Method Name: locationServicesEnabled
+
+[*] Class Name: CLLocationManager
+[*] Method Name: locationServicesEnabled
+	Backtrace:
+	0x106e50ffc imeituan!0x4784ffc (0x104784ffc)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc68d9f8 libdispatch.dylib!_dispatch_queue_override_invoke
+	0x1dc69ac68 libdispatch.dylib!_dispatch_root_queue_drain
+	0x1dc69b430 libdispatch.dylib!_dispatch_worker_thread2
+	0x2206b1b94 libsystem_pthread.dylib!_pthread_wqthread
+	Backtrace:
+	0x106e50ffc imeituan!0x4784ffc (0x104784ffc)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc68d9f8 libdispatch.dylib!_dispatch_queue_override_invoke
+	0x1dc69ac68 libdispatch.dylib!_dispatch_root_queue_drain
+	0x1dc69b430 libdispatch.dylib!_dispatch_worker_thread2
+	0x2206b1b94 libsystem_pthread.dylib!_pthread_wqthread
+	Backtrace:
+	0x106e50ffc imeituan!0x4784ffc (0x104784ffc)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc68d9f8 libdispatch.dylib!_dispatch_queue_override_invoke
+	0x1dc69ac68 libdispatch.dylib!_dispatch_root_queue_drain
+	0x1dc69b430 libdispatch.dylib!_dispatch_worker_thread2
+	0x2206b1b94 libsystem_pthread.dylib!_pthread_wqthread
+	Backtrace:
+	0x1027dcc2c /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[MeridianLocationManager mrdAuthorizationStatus]
+	0x102816450 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[MRDLocationManager meridianlocationManagerDidChangeAuthorization:]
+	0x102815d1c imeituan!0x149d1c (0x100149d1c)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc6916fc libdispatch.dylib!_dispatch_lane_serial_drain$VARIANT$armv81
+	0x1dc6921b0 libdispatch.dylib!_dispatch_lane_invoke$VARIANT$armv81
+	0x1dc69bf14 libdispatch.dylib!_dispatch_workloop_worker_thread
+	0x2206b1bd0 libsystem_pthread.dylib!_pthread_wqthread
+	Backtrace:
+	0x102793f0c /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[CLLocation wm_isLegalLocation]
+	0x102793ee8 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!+[CLLocation wm_isLegalCoordinate:]
+	0x10273c8c8 imeituan!0x708c8 (0x1000708c8)
+	0x10273c86c imeituan!0x7086c (0x10007086c)
+	0x10273c800 imeituan!0x70800 (0x100070800)
+	0x10273c6b4 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[RACSubscriber sendNext:]
+	0x10273c7b4 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[RACPassthroughSubscriber sendNext:]
+	0x10273c6b4 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[RACSubscriber sendNext:]
+	0x10273c58c imeituan!0x7058c (0x10007058c)
+	0x102730aa4 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[RACSubscriptionScheduler schedule:]
+	0x10273c53c /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[RACReturnSignal subscribe:]
+	0x10273b41c /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[RACSignal subscribeNext:error:completed:]
+	0x10273ca60 imeituan!0x70a60 (0x100070a60)
+	0x10273c820 imeituan!0x70820 (0x100070820)
+	0x10273c6b4 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[RACSubscriber sendNext:]
+	0x10273c7b4 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[RACPassthroughSubscriber sendNext:]
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: authorizationStatusForMediaType:
+	Backtrace:
+	0x1027b4c7c /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[METPrivacyMonitor isPermissionGrantedBySystem:permission:]
+	0x10278a3f8 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[METPrivacyMonitor _checkPermission:businessID:]
+	0x10278a270 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[METPrivacyMonitor checkPermission:businessID:internal:ignoreMonitor:]
+	0x107038fac /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[PFBPermissionManager getCameraPermission:]
+	0x107038af4 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[PFBPermissionManager startCollectPermission]
+	0x1070396b4 imeituan!0x496d6b4 (0x10496d6b4)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc68d9f8 libdispatch.dylib!_dispatch_queue_override_invoke
+	0x1dc69ac68 libdispatch.dylib!_dispatch_root_queue_drain
+	0x1dc69b430 libdispatch.dylib!_dispatch_worker_thread2
+	0x2206b1b94 libsystem_pthread.dylib!_pthread_wqthread
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: authorizationStatusForMediaType:
+	Backtrace:
+	0x1027b4c7c /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[METPrivacyMonitor isPermissionGrantedBySystem:permission:]
+	0x10278a3f8 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[METPrivacyMonitor _checkPermission:businessID:]
+	0x10278a270 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[METPrivacyMonitor checkPermission:businessID:internal:ignoreMonitor:]
+	0x1070393ac /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[PFBPermissionManager getMicroPermission:]
+	0x107038bd4 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[PFBPermissionManager startCollectPermission]
+	0x1070396b4 imeituan!0x496d6b4 (0x10496d6b4)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc68d9f8 libdispatch.dylib!_dispatch_queue_override_invoke
+	0x1dc69ac68 libdispatch.dylib!_dispatch_root_queue_drain
+	0x1dc69b430 libdispatch.dylib!_dispatch_worker_thread2
+	0x2206b1b94 libsystem_pthread.dylib!_pthread_wqthread
+
+[*] Class Name: CLLocationManager
+[*] Method Name: locationServicesEnabled
+	Backtrace:
+	0x102c0f620 imeituan!0x543620 (0x100543620)
+	0x102c0a064 imeituan!0x53e064 (0x10053e064)
+	0x102c6404c imeituan!0x59804c (0x10059804c)
+	0x102b6d474 imeituan!0x4a1474 (0x1004a1474)
+	0x102c7da14 imeituan!0x5b1a14 (0x1005b1a14)
+	0x102c7352c imeituan!0x5a752c (0x1005a752c)
+	0x102c71130 imeituan!0x5a5130 (0x1005a5130)
+	0x102c099c4 imeituan!0x53d9c4 (0x10053d9c4)
+	0x102bfd6e0 imeituan!0x5316e0 (0x1005316e0)
+	0x102bc0a6c imeituan!0x4f4a6c (0x1004f4a6c)
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc68dd48 libdispatch.dylib!_dispatch_continuation_pop$VARIANT$armv81
+	0x1dc69f780 libdispatch.dylib!_dispatch_source_invoke$VARIANT$armv81
+	0x1dc68d8d8 libdispatch.dylib!_dispatch_queue_override_invoke
+	0x1dc69ac68 libdispatch.dylib!_dispatch_root_queue_drain
+	0x1dc69b430 libdispatch.dylib!_dispatch_worker_thread2
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: authorizationStatusForMediaType:
+	Backtrace:
+	0x1027b4c7c /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[METPrivacyMonitor isPermissionGrantedBySystem:permission:]
+	0x10278a4a0 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[METPrivacyMonitor _checkPermission:businessID:]
+	0x10278a270 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[METPrivacyMonitor checkPermission:businessID:internal:ignoreMonitor:]
+	0x105217ea0 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!+[EdfuCameraAuthority authorizationStatusWithPrivacyToken:]
+	0x108103b34 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[METQRCodeScanViewController p_checkCameraAvailable]
+	0x108103304 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[METQRCodeScanViewController viewDidLoad]
+	0x1d7bf6d8c UIKitCore!-[UIViewController _sendViewDidLoadWithAppearanceProxyObjectTaggingEnabled]
+	0x1d78bc5b8 UIKitCore!-[UIViewController loadViewIfRequired]
+	0x1d78bc2e4 UIKitCore!-[UIViewController view]
+	0x1d7a58e5c UIKitCore!-[UINavigationController _preferredContentSizeForcingLoad:]
+	0x1d7b5eda4 UIKitCore!-[UIPresentationController preferredContentSizeDidChangeForChildContentContainer:]
+	0x1d7fa1630 UIKitCore!__56-[UIPresentationController runTransitionForCurrentState]_block_invoke_3
+	0x1d7a3091c UIKitCore!-[_UIAfterCACommitBlock run]
+	0x1d7a30858 UIKitCore!-[_UIAfterCACommitQueue flush]
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: authorizationStatusForMediaType:
+	Backtrace:
+	0x1027b4c7c /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[METPrivacyMonitor isPermissionGrantedBySystem:permission:]
+	0x10278a4a0 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[METPrivacyMonitor _checkPermission:businessID:]
+	0x10278a270 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[METPrivacyMonitor checkPermission:businessID:internal:ignoreMonitor:]
+	0x105217ea0 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!+[EdfuCameraAuthority authorizationStatusWithPrivacyToken:]
+	0x105217f00 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!+[EdfuCameraAuthority requestAccessAuthorityWithPrivacyToken:completeBlock:]
+	0x108103ba8 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[METQRCodeScanViewController p_checkCameraAvailable]
+	0x108103304 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[METQRCodeScanViewController viewDidLoad]
+	0x1d7bf6d8c UIKitCore!-[UIViewController _sendViewDidLoadWithAppearanceProxyObjectTaggingEnabled]
+	0x1d78bc5b8 UIKitCore!-[UIViewController loadViewIfRequired]
+	0x1d78bc2e4 UIKitCore!-[UIViewController view]
+	0x1d7a58e5c UIKitCore!-[UINavigationController _preferredContentSizeForcingLoad:]
+	0x1d7b5eda4 UIKitCore!-[UIPresentationController preferredContentSizeDidChangeForChildContentContainer:]
+	0x1d7fa1630 UIKitCore!__56-[UIPresentationController runTransitionForCurrentState]_block_invoke_3
+	0x1d7a3091c UIKitCore!-[_UIAfterCACommitBlock run]
+	0x1d7a30858 UIKitCore!-[_UIAfterCACommitQueue flush]
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: authorizationStatusForMediaType:
+	Backtrace:
+	0x1027b4c7c /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[METPrivacyMonitor isPermissionGrantedBySystem:permission:]
+	0x104fca9a0 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[METPrivacyMonitor checkSystemPermission:completion:]
+	0x104fca6c0 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[METPrivacyMonitor _requestPermission:businessID:completion:]
+	0x104fc9760 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[METPrivacyMonitor requestPermission:businessID:completion:]
+	0x105217f74 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!+[EdfuCameraAuthority requestAccessAuthorityWithPrivacyToken:completeBlock:]
+	0x108103ba8 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[METQRCodeScanViewController p_checkCameraAvailable]
+	0x108103304 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[METQRCodeScanViewController viewDidLoad]
+	0x1d7bf6d8c UIKitCore!-[UIViewController _sendViewDidLoadWithAppearanceProxyObjectTaggingEnabled]
+	0x1d78bc5b8 UIKitCore!-[UIViewController loadViewIfRequired]
+	0x1d78bc2e4 UIKitCore!-[UIViewController view]
+	0x1d7a58e5c UIKitCore!-[UINavigationController _preferredContentSizeForcingLoad:]
+	0x1d7b5eda4 UIKitCore!-[UIPresentationController preferredContentSizeDidChangeForChildContentContainer:]
+	0x1d7fa1630 UIKitCore!__56-[UIPresentationController runTransitionForCurrentState]_block_invoke_3
+	0x1d7a3091c UIKitCore!-[_UIAfterCACommitBlock run]
+	0x1d7a30858 UIKitCore!-[_UIAfterCACommitQueue flush]
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: authorizationStatusForMediaType:
+	Backtrace:
+	0x104fcadc8 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[METPrivacyMonitor shouldShowSystemPermissionAlert:]
+	0x104fcaa0c /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[METPrivacyMonitor checkSystemPermission:completion:]
+	0x104fca6c0 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[METPrivacyMonitor _requestPermission:businessID:completion:]
+	0x104fc9760 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[METPrivacyMonitor requestPermission:businessID:completion:]
+	0x105217f74 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!+[EdfuCameraAuthority requestAccessAuthorityWithPrivacyToken:completeBlock:]
+	0x108103ba8 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[METQRCodeScanViewController p_checkCameraAvailable]
+	0x108103304 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[METQRCodeScanViewController viewDidLoad]
+	0x1d7bf6d8c UIKitCore!-[UIViewController _sendViewDidLoadWithAppearanceProxyObjectTaggingEnabled]
+	0x1d78bc5b8 UIKitCore!-[UIViewController loadViewIfRequired]
+	0x1d78bc2e4 UIKitCore!-[UIViewController view]
+	0x1d7a58e5c UIKitCore!-[UINavigationController _preferredContentSizeForcingLoad:]
+	0x1d7b5eda4 UIKitCore!-[UIPresentationController preferredContentSizeDidChangeForChildContentContainer:]
+	0x1d7fa1630 UIKitCore!__56-[UIPresentationController runTransitionForCurrentState]_block_invoke_3
+	0x1d7a3091c UIKitCore!-[_UIAfterCACommitBlock run]
+	0x1d7a30858 UIKitCore!-[_UIAfterCACommitQueue flush]
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: requestAccessForMediaType:completionHandler:
+	Backtrace:
+	0x104fcb158 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[METPrivacyMonitor showSystemPermissionAlert:]
+	0x104fccf50 imeituan!0x2900f50 (0x102900f50)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc697e10 libdispatch.dylib!_dispatch_main_queue_drain
+	0x1dc697a88 libdispatch.dylib!_dispatch_main_queue_callback_4CF$VARIANT$armv81
+	0x1d59999ac CoreFoundation!__CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+	0x1d597d648 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x1026d0884 imeituan!0x4884 (0x100004884)
+	0x10e858344 dyld!start
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: authorizationStatusForMediaType:
+	Backtrace:
+	0x1027b4c7c /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[METPrivacyMonitor isPermissionGrantedBySystem:permission:]
+	0x10278a4a0 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[METPrivacyMonitor _checkPermission:businessID:]
+	0x10278a270 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[METPrivacyMonitor checkPermission:businessID:internal:ignoreMonitor:]
+	0x102789e7c /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[CIPPSPrivacySniffer canAuthorize:isSkipFrequencyLimitControl:]
+	0x104fc4c0c /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[CIPPSPrivacySniffer checkPermission:functionDesc:isSkipFrequencyLimitControl:paramBlock:statusBlock:]
+	0x104fc4a78 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[CIPPSPrivacySniffer checkAuthAndExcute:functionDesc:isSkipFrequencyLimitControl:paramBlock:statusBlock:]
+	0x104fb5584 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!+[AVCaptureDeviceDiscoverySession discoverySessionWithDeviceTypes:mediaType:position:setParam:statusBlock:]
+	0x105219f78 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[EdfuCoreCameraDevice captureDeviceWithCameraPostion_:]
+	0x10521a6dc /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[EdfuCoreCameraDevice initWithMode:cameraPosition:privacyToken:captureSession:]
+	0x10521f804 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[EdfuCoreCameraView initializeWithDeviceMode_:cameraPosition:cameraPrivacyToken:microphonePrivacyToken:previewVideoGravity:]
+	0x10521fffc /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[EdfuCoreCameraView initWithFrame:mode:deviceMode:cameraPosition:privacyToken:renderDelegate:]
+	0x105225674 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[EdfuCoreScameraPreView newCameraView]
+	0x105224e1c /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[EdfuCoreScameraPreView setPreviewAndConfigWithDefaultAlgorithm:]
+	0x105253960 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[EdfuCameraPreView scameraPreViewInitializeAlgorithm:]
+	0x1052549f0 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[EdfuCommonScanController configDefaultScanAlgorithm:]
+	0x1080fa860 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[METCommonScanChildViewController initCommonScanAlgorithmsAndSubViews]
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: authorizationStatusForMediaType:
+	Backtrace:
+	0x1027b4c7c /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[METPrivacyMonitor isPermissionGrantedBySystem:permission:]
+	0x10278a4a0 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[METPrivacyMonitor _checkPermission:businessID:]
+	0x10278a270 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[METPrivacyMonitor checkPermission:businessID:internal:ignoreMonitor:]
+	0x102789e7c /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[CIPPSPrivacySniffer canAuthorize:isSkipFrequencyLimitControl:]
+	0x104fc4c0c /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[CIPPSPrivacySniffer checkPermission:functionDesc:isSkipFrequencyLimitControl:paramBlock:statusBlock:]
+	0x104fc4a78 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[CIPPSPrivacySniffer checkAuthAndExcute:functionDesc:isSkipFrequencyLimitControl:paramBlock:statusBlock:]
+	0x104fb52e0 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[AVCaptureDeviceDiscoverySession devicesWithSetParam:statusBlock:]
+	0x105219fb0 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[EdfuCoreCameraDevice captureDeviceWithCameraPostion_:]
+	0x10521a6dc /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[EdfuCoreCameraDevice initWithMode:cameraPosition:privacyToken:captureSession:]
+	0x10521f804 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[EdfuCoreCameraView initializeWithDeviceMode_:cameraPosition:cameraPrivacyToken:microphonePrivacyToken:previewVideoGravity:]
+	0x10521fffc /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[EdfuCoreCameraView initWithFrame:mode:deviceMode:cameraPosition:privacyToken:renderDelegate:]
+	0x105225674 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[EdfuCoreScameraPreView newCameraView]
+	0x105224e1c /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[EdfuCoreScameraPreView setPreviewAndConfigWithDefaultAlgorithm:]
+	0x105253960 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[EdfuCameraPreView scameraPreViewInitializeAlgorithm:]
+	0x1052549f0 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[EdfuCommonScanController configDefaultScanAlgorithm:]
+	0x1080fa860 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[METCommonScanChildViewController initCommonScanAlgorithmsAndSubViews]
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: authorizationStatusForMediaType:
+	Backtrace:
+	0x1027b4c7c /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[METPrivacyMonitor isPermissionGrantedBySystem:permission:]
+	0x10278a4a0 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[METPrivacyMonitor _checkPermission:businessID:]
+	0x10278a270 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[METPrivacyMonitor checkPermission:businessID:internal:ignoreMonitor:]
+	0x102789e7c /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[CIPPSPrivacySniffer canAuthorize:isSkipFrequencyLimitControl:]
+	0x104fc4c0c /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[CIPPSPrivacySniffer checkPermission:functionDesc:isSkipFrequencyLimitControl:paramBlock:statusBlock:]
+	0x104fc4a78 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[CIPPSPrivacySniffer checkAuthAndExcute:functionDesc:isSkipFrequencyLimitControl:paramBlock:statusBlock:]
+	0x104fb58d4 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!+[AVCaptureDeviceInput captureInputWithWithDevice:error:setParam:statusBlock:]
+	0x10521a74c /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[EdfuCoreCameraDevice initWithMode:cameraPosition:privacyToken:captureSession:]
+	0x10521f804 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[EdfuCoreCameraView initializeWithDeviceMode_:cameraPosition:cameraPrivacyToken:microphonePrivacyToken:previewVideoGravity:]
+	0x10521fffc /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[EdfuCoreCameraView initWithFrame:mode:deviceMode:cameraPosition:privacyToken:renderDelegate:]
+	0x105225674 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[EdfuCoreScameraPreView newCameraView]
+	0x105224e1c /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[EdfuCoreScameraPreView setPreviewAndConfigWithDefaultAlgorithm:]
+	0x105253960 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[EdfuCameraPreView scameraPreViewInitializeAlgorithm:]
+	0x1052549f0 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[EdfuCommonScanController configDefaultScanAlgorithm:]
+	0x1080fa860 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[METCommonScanChildViewController initCommonScanAlgorithmsAndSubViews]
+	0x1080fa66c /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[METCommonScanChildViewController viewDidLoad]
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: authorizationStatusForMediaType:
+	Backtrace:
+	0x1edbc6a94 AVFCapture!-[AVCaptureDeviceInput _authorizedToUseDeviceAndRequestIfNecessary:]
+	0x1edbc6848 AVFCapture!-[AVCaptureDeviceInput initWithDevice:error:]
+	0x104fb58f8 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!+[AVCaptureDeviceInput captureInputWithWithDevice:error:setParam:statusBlock:]
+	0x10521a74c /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[EdfuCoreCameraDevice initWithMode:cameraPosition:privacyToken:captureSession:]
+	0x10521f804 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[EdfuCoreCameraView initializeWithDeviceMode_:cameraPosition:cameraPrivacyToken:microphonePrivacyToken:previewVideoGravity:]
+	0x10521fffc /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[EdfuCoreCameraView initWithFrame:mode:deviceMode:cameraPosition:privacyToken:renderDelegate:]
+	0x105225674 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[EdfuCoreScameraPreView newCameraView]
+	0x105224e1c /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[EdfuCoreScameraPreView setPreviewAndConfigWithDefaultAlgorithm:]
+	0x105253960 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[EdfuCameraPreView scameraPreViewInitializeAlgorithm:]
+	0x1052549f0 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[EdfuCommonScanController configDefaultScanAlgorithm:]
+	0x1080fa860 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[METCommonScanChildViewController initCommonScanAlgorithmsAndSubViews]
+	0x1080fa66c /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[METCommonScanChildViewController viewDidLoad]
+	0x1d7bf6d8c UIKitCore!-[UIViewController _sendViewDidLoadWithAppearanceProxyObjectTaggingEnabled]
+	0x1d78bc5b8 UIKitCore!-[UIViewController loadViewIfRequired]
+	0x1d78bc2e4 UIKitCore!-[UIViewController view]
+	0x1080fa5ec /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[METCommonScanChildViewController initWithScannerType:selectInfo:]
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: authorizationStatusForMediaType:
+	Backtrace:
+	0x1027b4c7c /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[METPrivacyMonitor isPermissionGrantedBySystem:permission:]
+	0x10278a4a0 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[METPrivacyMonitor _checkPermission:businessID:]
+	0x10278a270 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[METPrivacyMonitor checkPermission:businessID:internal:ignoreMonitor:]
+	0x102789e7c /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[CIPPSPrivacySniffer canAuthorize:isSkipFrequencyLimitControl:]
+	0x104fc4c0c /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[CIPPSPrivacySniffer checkPermission:functionDesc:isSkipFrequencyLimitControl:paramBlock:statusBlock:]
+	0x104fc4a78 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[CIPPSPrivacySniffer checkAuthAndExcute:functionDesc:isSkipFrequencyLimitControl:paramBlock:statusBlock:]
+	0x104fb5b78 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[AVCaptureSession addInput:setParam:statusBlock:]
+	0x10521901c /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[EdfuCoreCameraDevice addIntputAndOutPut_]
+	0x10521a870 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[EdfuCoreCameraDevice initWithMode:cameraPosition:privacyToken:captureSession:]
+	0x10521f804 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[EdfuCoreCameraView initializeWithDeviceMode_:cameraPosition:cameraPrivacyToken:microphonePrivacyToken:previewVideoGravity:]
+	0x10521fffc /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[EdfuCoreCameraView initWithFrame:mode:deviceMode:cameraPosition:privacyToken:renderDelegate:]
+	0x105225674 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[EdfuCoreScameraPreView newCameraView]
+	0x105224e1c /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[EdfuCoreScameraPreView setPreviewAndConfigWithDefaultAlgorithm:]
+	0x105253960 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[EdfuCameraPreView scameraPreViewInitializeAlgorithm:]
+	0x1052549f0 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[EdfuCommonScanController configDefaultScanAlgorithm:]
+	0x1080fa860 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[METCommonScanChildViewController initCommonScanAlgorithmsAndSubViews]
+
+[*] Class Name: CLLocationManager
+[*] Method Name: locationServicesEnabled
+	Backtrace:
+	0x106e50ffc imeituan!0x4784ffc (0x104784ffc)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc68d9f8 libdispatch.dylib!_dispatch_queue_override_invoke
+	0x1dc69ac68 libdispatch.dylib!_dispatch_root_queue_drain
+	0x1dc69b430 libdispatch.dylib!_dispatch_worker_thread2
+	0x2206b1b94 libsystem_pthread.dylib!_pthread_wqthread
+
+[*] Class Name: PHPhotoLibrary
+[*] Method Name: requestAuthorizationForAccessLevel:handler:
+	Backtrace:
+	0x104fcb1c4 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[METPrivacyMonitor showSystemPermissionAlert:]
+	0x104fccf50 imeituan!0x2900f50 (0x102900f50)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc697e10 libdispatch.dylib!_dispatch_main_queue_drain
+	0x1dc697a88 libdispatch.dylib!_dispatch_main_queue_callback_4CF$VARIANT$armv81
+	0x1d59999ac CoreFoundation!__CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+	0x1d597d648 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x1026d0884 imeituan!0x4884 (0x100004884)
+	0x10e858344 dyld!start
+
+[*] Class Name: CLLocationManager
+[*] Method Name: locationServicesEnabled
+	Backtrace:
+	0x106e50ffc imeituan!0x4784ffc (0x104784ffc)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc68d9f8 libdispatch.dylib!_dispatch_queue_override_invoke
+	0x1dc69ac68 libdispatch.dylib!_dispatch_root_queue_drain
+	0x1dc69b430 libdispatch.dylib!_dispatch_worker_thread2
+	0x2206b1b94 libsystem_pthread.dylib!_pthread_wqthread
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: authorizationStatusForMediaType:
+	Backtrace:
+	0x1027b4c7c /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[METPrivacyMonitor isPermissionGrantedBySystem:permission:]
+	0x10278a4a0 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[METPrivacyMonitor _checkPermission:businessID:]
+	0x10278a270 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[METPrivacyMonitor checkPermission:businessID:internal:ignoreMonitor:]
+	0x105217ea0 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!+[EdfuCameraAuthority authorizationStatusWithPrivacyToken:]
+	0x108103b34 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[METQRCodeScanViewController p_checkCameraAvailable]
+	0x108103304 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[METQRCodeScanViewController viewDidLoad]
+	0x1d7bf6d8c UIKitCore!-[UIViewController _sendViewDidLoadWithAppearanceProxyObjectTaggingEnabled]
+	0x1d78bc5b8 UIKitCore!-[UIViewController loadViewIfRequired]
+	0x1d78bc2e4 UIKitCore!-[UIViewController view]
+	0x1d7a58e5c UIKitCore!-[UINavigationController _preferredContentSizeForcingLoad:]
+	0x1d7b5eda4 UIKitCore!-[UIPresentationController preferredContentSizeDidChangeForChildContentContainer:]
+	0x1d7fa1630 UIKitCore!__56-[UIPresentationController runTransitionForCurrentState]_block_invoke_3
+	0x1d7a3091c UIKitCore!-[_UIAfterCACommitBlock run]
+	0x1d7a30858 UIKitCore!-[_UIAfterCACommitQueue flush]
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: authorizationStatusForMediaType:
+	Backtrace:
+	0x1027b4c7c /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[METPrivacyMonitor isPermissionGrantedBySystem:permission:]
+	0x10278a4a0 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[METPrivacyMonitor _checkPermission:businessID:]
+	0x10278a270 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[METPrivacyMonitor checkPermission:businessID:internal:ignoreMonitor:]
+	0x102789e7c /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[CIPPSPrivacySniffer canAuthorize:isSkipFrequencyLimitControl:]
+	0x104fc4c0c /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[CIPPSPrivacySniffer checkPermission:functionDesc:isSkipFrequencyLimitControl:paramBlock:statusBlock:]
+	0x104fc4a78 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[CIPPSPrivacySniffer checkAuthAndExcute:functionDesc:isSkipFrequencyLimitControl:paramBlock:statusBlock:]
+	0x104fb5584 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!+[AVCaptureDeviceDiscoverySession discoverySessionWithDeviceTypes:mediaType:position:setParam:statusBlock:]
+	0x105219f78 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[EdfuCoreCameraDevice captureDeviceWithCameraPostion_:]
+	0x10521a6dc /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[EdfuCoreCameraDevice initWithMode:cameraPosition:privacyToken:captureSession:]
+	0x10521f804 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[EdfuCoreCameraView initializeWithDeviceMode_:cameraPosition:cameraPrivacyToken:microphonePrivacyToken:previewVideoGravity:]
+	0x10521fffc /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[EdfuCoreCameraView initWithFrame:mode:deviceMode:cameraPosition:privacyToken:renderDelegate:]
+	0x105225674 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[EdfuCoreScameraPreView newCameraView]
+	0x105224e1c /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[EdfuCoreScameraPreView setPreviewAndConfigWithDefaultAlgorithm:]
+	0x105253960 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[EdfuCameraPreView scameraPreViewInitializeAlgorithm:]
+	0x1052549f0 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[EdfuCommonScanController configDefaultScanAlgorithm:]
+	0x1080fa860 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[METCommonScanChildViewController initCommonScanAlgorithmsAndSubViews]
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: authorizationStatusForMediaType:
+	Backtrace:
+	0x1027b4c7c /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[METPrivacyMonitor isPermissionGrantedBySystem:permission:]
+	0x10278a4a0 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[METPrivacyMonitor _checkPermission:businessID:]
+	0x10278a270 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[METPrivacyMonitor checkPermission:businessID:internal:ignoreMonitor:]
+	0x102789e7c /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[CIPPSPrivacySniffer canAuthorize:isSkipFrequencyLimitControl:]
+	0x104fc4c0c /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[CIPPSPrivacySniffer checkPermission:functionDesc:isSkipFrequencyLimitControl:paramBlock:statusBlock:]
+	0x104fc4a78 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[CIPPSPrivacySniffer checkAuthAndExcute:functionDesc:isSkipFrequencyLimitControl:paramBlock:statusBlock:]
+	0x104fb52e0 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[AVCaptureDeviceDiscoverySession devicesWithSetParam:statusBlock:]
+	0x105219fb0 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[EdfuCoreCameraDevice captureDeviceWithCameraPostion_:]
+	0x10521a6dc /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[EdfuCoreCameraDevice initWithMode:cameraPosition:privacyToken:captureSession:]
+	0x10521f804 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[EdfuCoreCameraView initializeWithDeviceMode_:cameraPosition:cameraPrivacyToken:microphonePrivacyToken:previewVideoGravity:]
+	0x10521fffc /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[EdfuCoreCameraView initWithFrame:mode:deviceMode:cameraPosition:privacyToken:renderDelegate:]
+	0x105225674 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[EdfuCoreScameraPreView newCameraView]
+	0x105224e1c /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[EdfuCoreScameraPreView setPreviewAndConfigWithDefaultAlgorithm:]
+	0x105253960 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[EdfuCameraPreView scameraPreViewInitializeAlgorithm:]
+	0x1052549f0 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[EdfuCommonScanController configDefaultScanAlgorithm:]
+	0x1080fa860 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[METCommonScanChildViewController initCommonScanAlgorithmsAndSubViews]
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: authorizationStatusForMediaType:
+	Backtrace:
+	0x1027b4c7c /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[METPrivacyMonitor isPermissionGrantedBySystem:permission:]
+	0x10278a4a0 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[METPrivacyMonitor _checkPermission:businessID:]
+	0x10278a270 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[METPrivacyMonitor checkPermission:businessID:internal:ignoreMonitor:]
+	0x102789e7c /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[CIPPSPrivacySniffer canAuthorize:isSkipFrequencyLimitControl:]
+	0x104fc4c0c /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[CIPPSPrivacySniffer checkPermission:functionDesc:isSkipFrequencyLimitControl:paramBlock:statusBlock:]
+	0x104fc4a78 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[CIPPSPrivacySniffer checkAuthAndExcute:functionDesc:isSkipFrequencyLimitControl:paramBlock:statusBlock:]
+	0x104fb58d4 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!+[AVCaptureDeviceInput captureInputWithWithDevice:error:setParam:statusBlock:]
+	0x10521a74c /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[EdfuCoreCameraDevice initWithMode:cameraPosition:privacyToken:captureSession:]
+	0x10521f804 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[EdfuCoreCameraView initializeWithDeviceMode_:cameraPosition:cameraPrivacyToken:microphonePrivacyToken:previewVideoGravity:]
+	0x10521fffc /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[EdfuCoreCameraView initWithFrame:mode:deviceMode:cameraPosition:privacyToken:renderDelegate:]
+	0x105225674 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[EdfuCoreScameraPreView newCameraView]
+	0x105224e1c /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[EdfuCoreScameraPreView setPreviewAndConfigWithDefaultAlgorithm:]
+	0x105253960 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[EdfuCameraPreView scameraPreViewInitializeAlgorithm:]
+	0x1052549f0 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[EdfuCommonScanController configDefaultScanAlgorithm:]
+	0x1080fa860 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[METCommonScanChildViewController initCommonScanAlgorithmsAndSubViews]
+	0x1080fa66c /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[METCommonScanChildViewController viewDidLoad]
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: authorizationStatusForMediaType:
+	Backtrace:
+	0x1edbc6a94 AVFCapture!-[AVCaptureDeviceInput _authorizedToUseDeviceAndRequestIfNecessary:]
+	0x1edbc6848 AVFCapture!-[AVCaptureDeviceInput initWithDevice:error:]
+	0x104fb58f8 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!+[AVCaptureDeviceInput captureInputWithWithDevice:error:setParam:statusBlock:]
+	0x10521a74c /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[EdfuCoreCameraDevice initWithMode:cameraPosition:privacyToken:captureSession:]
+	0x10521f804 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[EdfuCoreCameraView initializeWithDeviceMode_:cameraPosition:cameraPrivacyToken:microphonePrivacyToken:previewVideoGravity:]
+	0x10521fffc /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[EdfuCoreCameraView initWithFrame:mode:deviceMode:cameraPosition:privacyToken:renderDelegate:]
+	0x105225674 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[EdfuCoreScameraPreView newCameraView]
+	0x105224e1c /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[EdfuCoreScameraPreView setPreviewAndConfigWithDefaultAlgorithm:]
+	0x105253960 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[EdfuCameraPreView scameraPreViewInitializeAlgorithm:]
+	0x1052549f0 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[EdfuCommonScanController configDefaultScanAlgorithm:]
+	0x1080fa860 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[METCommonScanChildViewController initCommonScanAlgorithmsAndSubViews]
+	0x1080fa66c /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[METCommonScanChildViewController viewDidLoad]
+	0x1d7bf6d8c UIKitCore!-[UIViewController _sendViewDidLoadWithAppearanceProxyObjectTaggingEnabled]
+	0x1d78bc5b8 UIKitCore!-[UIViewController loadViewIfRequired]
+	0x1d78bc2e4 UIKitCore!-[UIViewController view]
+	0x1080fa5ec /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[METCommonScanChildViewController initWithScannerType:selectInfo:]
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: authorizationStatusForMediaType:
+	Backtrace:
+	0x1027b4c7c /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[METPrivacyMonitor isPermissionGrantedBySystem:permission:]
+	0x10278a4a0 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[METPrivacyMonitor _checkPermission:businessID:]
+	0x10278a270 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[METPrivacyMonitor checkPermission:businessID:internal:ignoreMonitor:]
+	0x102789e7c /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[CIPPSPrivacySniffer canAuthorize:isSkipFrequencyLimitControl:]
+	0x104fc4c0c /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[CIPPSPrivacySniffer checkPermission:functionDesc:isSkipFrequencyLimitControl:paramBlock:statusBlock:]
+	0x104fc4a78 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[CIPPSPrivacySniffer checkAuthAndExcute:functionDesc:isSkipFrequencyLimitControl:paramBlock:statusBlock:]
+	0x104fb5b78 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[AVCaptureSession addInput:setParam:statusBlock:]
+	0x10521901c /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[EdfuCoreCameraDevice addIntputAndOutPut_]
+	0x10521a870 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[EdfuCoreCameraDevice initWithMode:cameraPosition:privacyToken:captureSession:]
+	0x10521f804 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[EdfuCoreCameraView initializeWithDeviceMode_:cameraPosition:cameraPrivacyToken:microphonePrivacyToken:previewVideoGravity:]
+	0x10521fffc /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[EdfuCoreCameraView initWithFrame:mode:deviceMode:cameraPosition:privacyToken:renderDelegate:]
+	0x105225674 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[EdfuCoreScameraPreView newCameraView]
+	0x105224e1c /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[EdfuCoreScameraPreView setPreviewAndConfigWithDefaultAlgorithm:]
+	0x105253960 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[EdfuCameraPreView scameraPreViewInitializeAlgorithm:]
+	0x1052549f0 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[EdfuCommonScanController configDefaultScanAlgorithm:]
+	0x1080fa860 /private/var/containers/Bundle/Application/081DD018-4017-4429-A4BC-2AE48A16EFF9/imeituan.app/imeituan!-[METCommonScanChildViewController initCommonScanAlgorithmsAndSubViews]exit
+
+
+
+[iPhone::美团 ]->                                                                                                                                                                                                                                    
+[iPhone::美团 ]->
+
+Exit
+Exit
+
+
+
+Exit exit
+exit
+
+
+
+
+
+
+ 

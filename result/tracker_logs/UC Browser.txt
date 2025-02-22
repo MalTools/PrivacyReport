@@ -1,0 +1,1003 @@
+(base) mac@macdeMacBook-Pro autoTestiOS % frida -U -F -l hook_sensitive_api.js
+     ____
+    / _  |   Frida 16.2.1 - A world-class dynamic instrumentation toolkit
+   | (_| |
+    > _  |   Commands:
+   /_/ |_|       help      -> Displays the help system
+   . . . .       object?   -> Display information about 'object'
+   . . . .       exit/quit -> Exit
+   . . . .
+   . . . .   More info at https://frida.re/docs/home/
+   . . . .
+   . . . .   Connected to iPhone (id=02f66296483099a1e80d262c998b9f8feb885523)
+[*] Started: Modify Return Value
+funcName_arg namePrefix
+[!] funcName_arg Exception: 
+funcName_arg givenName
+[!] funcName_arg Exception: 
+funcName_arg middleName
+[!] funcName_arg Exception: 
+funcName_arg familyName
+[!] funcName_arg Exception: 
+funcName_arg previousFamilyName
+[!] funcName_arg Exception: 
+funcName_arg nickname
+[!] funcName_arg Exception: 
+funcName_arg phoneticGivenName
+[!] funcName_arg Exception: 
+funcName_arg phoneticMiddleName
+[!] funcName_arg Exception: 
+funcName_arg phoneticFamilyName
+[!] funcName_arg Exception: 
+funcName_arg jobTitle
+[!] funcName_arg Exception: 
+funcName_arg departmentName
+[!] funcName_arg Exception: 
+funcName_arg organizationName
+[!] funcName_arg Exception: 
+funcName_arg phoneticOrganizationName
+[!] funcName_arg Exception: 
+funcName_arg postalAddresses
+[!] funcName_arg Exception: 
+funcName_arg urlAddresses
+[!] funcName_arg Exception: 
+funcName_arg phoneNumbers
+[!] funcName_arg Exception: 
+funcName_arg socialProfiles
+[!] funcName_arg Exception: 
+funcName_arg emailAddresses
+[!] funcName_arg Exception: 
+funcName_arg birthday
+[!] funcName_arg Exception: 
+funcName_arg dates
+[!] funcName_arg Exception: 
+funcName_arg nonGregorianBirthday
+[!] funcName_arg Exception: 
+funcName_arg note
+[!] funcName_arg Exception: 
+funcName_arg emailAddresses
+[!] funcName_arg Exception: 
+funcName_arg unifiedMeContactWithKeysToFetch:error:
+[!] funcName_arg Exception: 
+funcName_arg rfetchAssetsInAssetCollection:options:
+[!] funcName_arg Exception: 
+message: {'type': 'send', 'payload': '[*] Started: Modify Return Value'} data: None
+[iPhone::UC浏览器 ]->
+[*] Class Name: CLLocationManager
+[*] Method Name: authorizationStatus
+	Backtrace:
+	0x10c746e58 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!+[GpsStatisticsDataModel AuthorizationStatusStr]
+	0x10c746dd8 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!+[GpsStatisticsDataModel onAddStatisticsWithMoreKeys:type:]
+	0x10c1de578 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!-[UCGPSLocationServiceLauncher locationStatDidLocateWithError:duration:]
+        0x105733340 UCWEB!0x817340 (0x100817340)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc697e10 libdispatch.dylib!_dispatch_main_queue_drain
+        0x1dc697a88 libdispatch.dylib!_dispatch_main_queue_callback_4CF$VARIANT$armv81
+	0x1d59999ac CoreFoundation!__CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+	0x1d597d648 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x10508e11c UCWEB!0x17211c (0x10017211c)
+	0x111f34344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x1152bfddc /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/NAJADYun.framework/NAJADYun!-[JADLocationManager locationManager:didUpdateLocations:]
+	0x10c6f6658 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!-[UCLocationDelegateProxy locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d14c CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x10508e11c UCWEB!0x17211c (0x10017211c)
+	0x111f34344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x1152bfe1c /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/NAJADYun.framework/NAJADYun!-[JADLocationManager locationManager:didUpdateLocations:]
+	0x10c6f6658 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!-[UCLocationDelegateProxy locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d14c CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x10508e11c UCWEB!0x17211c (0x10017211c)
+	0x111f34344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - altitude
+	Backtrace:
+	0x1152bfe5c /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/NAJADYun.framework/NAJADYun!-[JADLocationManager locationManager:didUpdateLocations:]
+	0x10c6f6658 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!-[UCLocationDelegateProxy locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d14c CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x10508e11c UCWEB!0x17211c (0x10017211c)
+	0x111f34344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x10c6f668c /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!-[UCLocationDelegateProxy locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d14c CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x10508e11c UCWEB!0x17211c (0x10017211c)
+	0x111f34344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x10c6f66b0 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!-[UCLocationDelegateProxy locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d14c CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x10508e11c UCWEB!0x17211c (0x10017211c)
+	0x111f34344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x10c6f668c /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!-[UCLocationDelegateProxy locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d14c CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x10508e11c UCWEB!0x17211c (0x10017211c)
+	0x111f34344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x10c6f66b0 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!-[UCLocationDelegateProxy locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d14c CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x10508e11c UCWEB!0x17211c (0x10017211c)
+	0x111f34344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x10c6f668c /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!-[UCLocationDelegateProxy locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d14c CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x10508e11c UCWEB!0x17211c (0x10017211c)
+	0x111f34344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x10c6f66b0 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!-[UCLocationDelegateProxy locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d14c CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x10508e11c UCWEB!0x17211c (0x10017211c)
+	0x111f34344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x10c6f668c /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!-[UCLocationDelegateProxy locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d14c CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x10508e11c UCWEB!0x17211c (0x10017211c)
+	0x111f34344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x10c6f66b0 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!-[UCLocationDelegateProxy locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d14c CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x10508e11c UCWEB!0x17211c (0x10017211c)
+	0x111f34344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x10c6f668c /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!-[UCLocationDelegateProxy locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d804 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x10508e11c UCWEB!0x17211c (0x10017211c)
+	0x111f34344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x10c6f66b0 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!-[UCLocationDelegateProxy locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d804 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x10508e11c UCWEB!0x17211c (0x10017211c)
+	0x111f34344 dyld!start
+
+[*] Class Name: CLLocationManager
+[*] Method Name: authorizationStatus
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x1061dc69c /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!+[AMapLocationUtility requestLocationAuthorizationIfNeedWithLocationManager:]
+	0x1061e5308 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!-[AMapLocationManager startCLMLocating]
+	0x1cfccdfa8 Foundation!__NSThreadPerformPerform
+	0x1d59d10e8 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__
+	0x1d59dcd5c CoreFoundation!__CFRunLoopDoSource0
+	0x1d5967fc4 CoreFoundation!__CFRunLoopDoSources0
+	0x1d597d138 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x1cfcd40e8 Foundation!-[NSRunLoop(NSRunLoop) runMode:beforeDate:]
+	0x1cfcd3f94 Foundation!-[NSRunLoop(NSRunLoop) run]
+	0x1061dae78 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!+[AMapLocationCLMDelegate threadEntryPoint:]
+	0x1cfcebc4c Foundation!__NSThread__start__
+	0x2206b30ec libsystem_pthread.dylib!_pthread_start
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x1061e99cc /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!-[AMapLocationManager locationManager:didUpdateLocations:]
+	0x1061da9b4 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!-[AMapLocationCLMDelegate locationManager:didUpdateLocations:]
+	0x10c6f6658 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!-[UCLocationDelegateProxy locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d804 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x1cfcd40e8 Foundation!-[NSRunLoop(NSRunLoop) runMode:beforeDate:]
+	0x1cfcd3f94 Foundation!-[NSRunLoop(NSRunLoop) run]
+	0x1061dae78 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!+[AMapLocationCLMDelegate threadEntryPoint:]
+	0x1cfcebc4c Foundation!__NSThread__start__
+	0x2206b30ec libsystem_pthread.dylib!_pthread_start
+
+[*] Class Name: CLLocation
+[*] Method Name: - timestamp
+	Backtrace:
+	0x116f53d6c /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!-[KSAdLocationManager geoInfo]
+	0x1170a1024 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!-[KSAdRequestParams geoInfo]
+	0x1cfc9a77c Foundation!-[NSObject(NSKeyValueCoding) valueForKey:]
+	0x116fbc674 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!-[PodKSAdSDK_MJProperty valueForObject:]
+	0x116fc38c0 KSAdSDK!0x2c38c0 (0x2c38c0)
+	0x116fc347c KSAdSDK!0x2c347c (0x2c347c)
+	0x116fc5bb4 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!+[NSObject PodKSAdSDK_mj_enumerateProperties:]
+	0x116fc3260 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!-[NSObject PodKSAdSDK_mj_keyValuesWithKeys:ignoredKeys:]
+	0x1170a0704 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!-[KSAdRequestParams getRequestParams]
+	0x1170a21ec /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!-[KSAdPOSTHTTPRequest requestBodyWithEncryption]
+	0x1170a20a0 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!-[KSAdPOSTHTTPRequest requestWithURL:]
+	0x11709e0b8 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!-[KSAdHTTPRequest request]
+	0x1170a2560 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!-[KSAdPOSTHTTPRequest request]
+	0x11709b34c /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!-[PodKSAdSDK_AFURLSessionManager dataTaskWithRequest:cancellationToken:sessionTask:]
+	0x11709f7ac /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!-[KSAdHTTPTaskManager dataTaskWithRequest:cancellationToken:]
+	0x11709c404 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!-[KSAdBaseAPI sendRequest:]
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x1061e99e8 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!-[AMapLocationManager locationManager:didUpdateLocations:]
+	0x1061da9b4 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!-[AMapLocationCLMDelegate locationManager:didUpdateLocations:]
+	0x10c6f6658 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!-[UCLocationDelegateProxy locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d804 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x1cfcd40e8 Foundation!-[NSRunLoop(NSRunLoop) runMode:beforeDate:]
+	0x1cfcd3f94 Foundation!-[NSRunLoop(NSRunLoop) run]
+	0x1061dae78 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!+[AMapLocationCLMDelegate threadEntryPoint:]
+	0x1cfcebc4c Foundation!__NSThread__start__
+	0x2206b30ec libsystem_pthread.dylib!_pthread_start
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x1061e9a28 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!-[AMapLocationManager locationManager:didUpdateLocations:]
+	0x1061da9b4 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!-[AMapLocationCLMDelegate locationManager:didUpdateLocations:]
+	0x10c6f6658 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!-[UCLocationDelegateProxy locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d804 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x1cfcd40e8 Foundation!-[NSRunLoop(NSRunLoop) runMode:beforeDate:]
+	0x1cfcd3f94 Foundation!-[NSRunLoop(NSRunLoop) run]
+	0x1061dae78 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!+[AMapLocationCLMDelegate threadEntryPoint:]
+	0x1cfcebc4c Foundation!__NSThread__start__
+	0x2206b30ec libsystem_pthread.dylib!_pthread_start
+
+[*] Class Name: CLLocation
+[*] Method Name: - altitude
+	Backtrace:
+	0x116f53da8 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!-[KSAdLocationManager geoInfo]
+	0x1170a1024 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!-[KSAdRequestParams geoInfo]
+	0x1cfc9a77c Foundation!-[NSObject(NSKeyValueCoding) valueForKey:]
+	0x116fbc674 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!-[PodKSAdSDK_MJProperty valueForObject:]
+	0x116fc38c0 KSAdSDK!0x2c38c0 (0x2c38c0)
+	0x116fc347c KSAdSDK!0x2c347c (0x2c347c)
+	0x116fc5bb4 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!+[NSObject PodKSAdSDK_mj_enumerateProperties:]
+	0x116fc3260 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!-[NSObject PodKSAdSDK_mj_keyValuesWithKeys:ignoredKeys:]
+	0x1170a0704 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!-[KSAdRequestParams getRequestParams]
+	0x1170a21ec /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!-[KSAdPOSTHTTPRequest requestBodyWithEncryption]
+	0x1170a20a0 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!-[KSAdPOSTHTTPRequest requestWithURL:]
+	0x11709e0b8 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!-[KSAdHTTPRequest request]
+	0x1170a2560 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!-[KSAdPOSTHTTPRequest request]
+	0x11709b34c /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!-[PodKSAdSDK_AFURLSessionManager dataTaskWithRequest:cancellationToken:sessionTask:]
+	0x11709f7ac /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!-[KSAdHTTPTaskManager dataTaskWithRequest:cancellationToken:]
+	0x11709c404 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!-[KSAdBaseAPI sendRequest:]
+	Backtrace:
+	0x1061e9a60 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!-[AMapLocationManager locationManager:didUpdateLocations:]
+	0x1061da9b4 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!-[AMapLocationCLMDelegate locationManager:didUpdateLocations:]
+	0x10c6f6658 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!-[UCLocationDelegateProxy locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d804 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x1cfcd40e8 Foundation!-[NSRunLoop(NSRunLoop) runMode:beforeDate:]
+	0x1cfcd3f94 Foundation!-[NSRunLoop(NSRunLoop) run]
+	0x1061dae78 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!+[AMapLocationCLMDelegate threadEntryPoint:]
+	0x1cfcebc4c Foundation!__NSThread__start__
+	0x2206b30ec libsystem_pthread.dylib!_pthread_start
+
+[*] Class Name: CLLocation
+[*] Method Name: - horizontalAccuracy
+	Backtrace:
+	0x1061e9a78 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!-[AMapLocationManager locationManager:didUpdateLocations:]
+	0x1061da9b4 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!-[AMapLocationCLMDelegate locationManager:didUpdateLocations:]
+	0x10c6f6658 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!-[UCLocationDelegateProxy locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d804 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x1cfcd40e8 Foundation!-[NSRunLoop(NSRunLoop) runMode:beforeDate:]
+	0x1cfcd3f94 Foundation!-[NSRunLoop(NSRunLoop) run]
+	0x1061dae78 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!+[AMapLocationCLMDelegate threadEntryPoint:]
+	0x1cfcebc4c Foundation!__NSThread__start__
+	0x2206b30ec libsystem_pthread.dylib!_pthread_start
+
+[*] Class Name: CLLocation
+[*] Method Name: - verticalAccuracy
+	Backtrace:
+	0x1061e9a8c /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!-[AMapLocationManager locationManager:didUpdateLocations:]
+	0x1061da9b4 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!-[AMapLocationCLMDelegate locationManager:didUpdateLocations:]
+	0x10c6f6658 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!-[UCLocationDelegateProxy locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d804 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x1cfcd40e8 Foundation!-[NSRunLoop(NSRunLoop) runMode:beforeDate:]
+	0x1cfcd3f94 Foundation!-[NSRunLoop(NSRunLoop) run]
+	0x1061dae78 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!+[AMapLocationCLMDelegate threadEntryPoint:]
+	0x1cfcebc4c Foundation!__NSThread__start__
+	0x2206b30ec libsystem_pthread.dylib!_pthread_start
+
+[*] Class Name: CLLocation
+[*] Method Name: - timestamp
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: authorizationStatusForMediaType:
+	Backtrace:
+	0x1061e9ac4 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!-[AMapLocationManager locationManager:didUpdateLocations:]
+	0x1061da9b4 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!-[AMapLocationCLMDelegate locationManager:didUpdateLocations:]
+	0x10c6f6658 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!-[UCLocationDelegateProxy locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d804 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x1cfcd40e8 Foundation!-[NSRunLoop(NSRunLoop) runMode:beforeDate:]
+	0x1cfcd3f94 Foundation!-[NSRunLoop(NSRunLoop) run]
+	0x1061dae78 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!+[AMapLocationCLMDelegate threadEntryPoint:]
+	0x1cfcebc4c Foundation!__NSThread__start__
+	0x2206b30ec libsystem_pthread.dylib!_pthread_start
+
+[*] Class Name: CLLocation
+[*] Method Name: - horizontalAccuracy
+	Backtrace:
+	0x10c9514c0 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!+[DAPrivacyGuideHelper getAVMediaAuthorizationStatus:]
+	0x10c95140c /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!+[DAPrivacyGuideHelper isDeniedWith:]
+	0x10c51f8e8 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!+[DASettingGuideController showGuidePopView:with:]
+	0x10a9a4bc8 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!-[UCVoiceRecognizeContoller startRecognizeWithEntrance:tag:topBar:userInfo:]
+	0x10c449698 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!-[TopBarInputFieldController startVoice:needResignFirstResponder:]
+	0x10c916414 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!-[iUITopBarView voiceUrlRecognizeButtonClick:]
+	0x1d7ad1764 UIKitCore!-[UIApplication sendAction:to:from:forEvent:]
+	0x1d5975f40 CoreFoundation!__invoking___
+	0x1d59271c8 CoreFoundation!-[NSInvocation invoke]
+	0x1056a3320 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!-[QQArrayPasteboard forwardInvocation:]
+	0x1d5926680 CoreFoundation!___forwarding___
+	0x1d59888fc CoreFoundation!_CF_forwarding_prep_0
+	0x1d7ad1484 UIKitCore!-[UIControl sendAction:to:forEvent:]
+	0x1d7ad0e8c UIKitCore!-[UIControl _sendActionsForEvents:withEvent:]
+	0x1d7ad0d68 UIKitCore!-[UIButton _sendActionsForEvents:withEvent:]
+	0x1d7ad0944 UIKitCore!-[UIControl touchesEnded:withEvent:]
+	Backtrace:
+	0x1061e9e30 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!-[AMapLocationManager locationManager:didUpdateLocations:]
+	0x1061da9b4 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!-[AMapLocationCLMDelegate locationManager:didUpdateLocations:]
+	0x10c6f6658 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!-[UCLocationDelegateProxy locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d804 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x1cfcd40e8 Foundation!-[NSRunLoop(NSRunLoop) runMode:beforeDate:]
+	0x1cfcd3f94 Foundation!-[NSRunLoop(NSRunLoop) run]
+	0x1061dae78 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!+[AMapLocationCLMDelegate threadEntryPoint:]
+	0x1cfcebc4c Foundation!__NSThread__start__
+	0x2206b30ec libsystem_pthread.dylib!_pthread_start
+
+[*] Class Name: CLLocation
+[*] Method Name: - timestamp
+
+[*] Class Name: CLLocation
+[*] Method Name: - horizontalAccuracy
+	Backtrace:
+	0x1061f1968 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!-[AMapLocationRequest setLocation:]
+	0x1061e7000 UCWEB!0x12cb000 (0x1012cb000)
+	0x1d59118a8 CoreFoundation!__NSARRAY_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d592b84c CoreFoundation!-[__NSArrayM enumerateObjectsWithOptions:usingBlock:]
+	0x1061e6f9c UCWEB!0x12caf9c (0x1012caf9c)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc6916fc libdispatch.dylib!_dispatch_lane_serial_drain$VARIANT$armv81
+	0x1dc6921b0 libdispatch.dylib!_dispatch_lane_invoke$VARIANT$armv81
+	0x1dc69bf14 libdispatch.dylib!_dispatch_workloop_worker_thread
+	0x2206b1bd0 libsystem_pthread.dylib!_pthread_wqthread
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x1061e70bc /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!-[AMapLocationManager handleNeedReGeocodeRequest:]
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc6916fc libdispatch.dylib!_dispatch_lane_serial_drain$VARIANT$armv81
+	0x1dc6921b0 libdispatch.dylib!_dispatch_lane_invoke$VARIANT$armv81
+	0x1dc69bf14 libdispatch.dylib!_dispatch_workloop_worker_thread
+	0x2206b1bd0 libsystem_pthread.dylib!_pthread_wqthread
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x1061e79b0 UCWEB!0x12cb9b0 (0x1012cb9b0)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc6916fc libdispatch.dylib!_dispatch_lane_serial_drain$VARIANT$armv81
+	0x1dc6921b0 libdispatch.dylib!_dispatch_lane_invoke$VARIANT$armv81
+	0x1dc69bf14 libdispatch.dylib!_dispatch_workloop_worker_thread
+	0x2206b1bd0 libsystem_pthread.dylib!_pthread_wqthread
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x1061e7a08 UCWEB!0x12cba08 (0x1012cba08)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc6916fc libdispatch.dylib!_dispatch_lane_serial_drain$VARIANT$armv81
+	0x1dc6921b0 libdispatch.dylib!_dispatch_lane_invoke$VARIANT$armv81
+	0x1dc69bf14 libdispatch.dylib!_dispatch_workloop_worker_thread
+	0x2206b1bd0 libsystem_pthread.dylib!_pthread_wqthread
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x1061e94b4 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!-[AMapLocationManager processLocationInfo:]
+	0x1061e9e60 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!-[AMapLocationManager locationManager:didUpdateLocations:]
+	0x1061da9b4 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!-[AMapLocationCLMDelegate locationManager:didUpdateLocations:]
+	0x10c6f6658 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!-[UCLocationDelegateProxy locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d804 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x1cfcd40e8 Foundation!-[NSRunLoop(NSRunLoop) runMode:beforeDate:]
+	0x1cfcd3f94 Foundation!-[NSRunLoop(NSRunLoop) run]
+	0x1061dae78 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!+[AMapLocationCLMDelegate threadEntryPoint:]
+	0x1cfcebc4c Foundation!__NSThread__start__
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x1061e7a2c UCWEB!0x12cba2c (0x1012cba2c)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc6916fc libdispatch.dylib!_dispatch_lane_serial_drain$VARIANT$armv81
+	0x1dc6921b0 libdispatch.dylib!_dispatch_lane_invoke$VARIANT$armv81
+	0x1dc69bf14 libdispatch.dylib!_dispatch_workloop_worker_thread
+	0x2206b1bd0 libsystem_pthread.dylib!_pthread_wqthread
+
+[*] Class Name: CLLocation
+[*] Method Name: - horizontalAccuracy
+	Backtrace:
+	0x10c6f668c /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!-[UCLocationDelegateProxy locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d804 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x1cfcd40e8 Foundation!-[NSRunLoop(NSRunLoop) runMode:beforeDate:]
+	0x1cfcd3f94 Foundation!-[NSRunLoop(NSRunLoop) run]
+	0x1061dae78 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!+[AMapLocationCLMDelegate threadEntryPoint:]
+	0x1cfcebc4c Foundation!__NSThread__start__
+	0x2206b30ec libsystem_pthread.dylib!_pthread_start
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x10573492c /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!+[UCLocationGPSData isLegalWithLocation:]
+	0x105734988 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!+[UCLocationGPSData isLegalWithLocation:reGeocode:]
+	0x105734ab4 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!+[UCLocationGPSData makeInfoWithLocation:reGeocode:]
+	0x10573416c UCWEB!0x81816c (0x10081816c)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc697e10 libdispatch.dylib!_dispatch_main_queue_drain
+	0x1dc697a88 libdispatch.dylib!_dispatch_main_queue_callback_4CF$VARIANT$armv81
+	0x1d59999ac CoreFoundation!__CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+	0x1d597d648 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x10508e11c UCWEB!0x17211c (0x10017211c)
+	0x111f34344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x105734cb0 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!-[UCLocationGPSData setLocation:]
+	0x105734ae4 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!+[UCLocationGPSData makeInfoWithLocation:reGeocode:]
+	0x10573416c UCWEB!0x81816c (0x10081816c)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc697e10 libdispatch.dylib!_dispatch_main_queue_drain
+	0x1dc697a88 libdispatch.dylib!_dispatch_main_queue_callback_4CF$VARIANT$armv81
+	0x1d59999ac CoreFoundation!__CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+	0x1d597d648 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x10508e11c UCWEB!0x17211c (0x10017211c)
+	0x111f34344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x10c6f66b0 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!-[UCLocationDelegateProxy locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d804 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x1cfcd40e8 Foundation!-[NSRunLoop(NSRunLoop) runMode:beforeDate:]
+	0x1cfcd3f94 Foundation!-[NSRunLoop(NSRunLoop) run]
+	0x1061dae78 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!+[AMapLocationCLMDelegate threadEntryPoint:]
+	0x1cfcebc4c Foundation!__NSThread__start__
+	0x2206b30ec libsystem_pthread.dylib!_pthread_start
+	Backtrace:
+	0x1057342c0 UCWEB!0x8182c0 (0x1008182c0)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc697e10 libdispatch.dylib!_dispatch_main_queue_drain
+	0x1dc697a88 libdispatch.dylib!_dispatch_main_queue_callback_4CF$VARIANT$armv81
+	0x1d59999ac CoreFoundation!__CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+	0x1d597d648 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x10508e11c UCWEB!0x17211c (0x10017211c)
+	0x111f34344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x1057342cc UCWEB!0x8182cc (0x1008182cc)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc697e10 libdispatch.dylib!_dispatch_main_queue_drain
+	0x1dc697a88 libdispatch.dylib!_dispatch_main_queue_callback_4CF$VARIANT$armv81
+	0x1d59999ac CoreFoundation!__CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+	0x1d597d648 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x10508e11c UCWEB!0x17211c (0x10017211c)
+	0x111f34344 dyld!start
+
+[*] Class Name: CLLocationManager
+[*] Method Name: authorizationStatus
+	Backtrace:
+	0x10c746e58 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!+[GpsStatisticsDataModel AuthorizationStatusStr]
+	0x10c746dd8 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!+[GpsStatisticsDataModel onAddStatisticsWithMoreKeys:type:]
+	0x10c1de578 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!-[UCGPSLocationServiceLauncher locationStatDidLocateWithError:duration:]
+	0x105733340 UCWEB!0x817340 (0x100817340)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc697e10 libdispatch.dylib!_dispatch_main_queue_drain
+	0x1dc697a88 libdispatch.dylib!_dispatch_main_queue_callback_4CF$VARIANT$armv81
+	0x1d59999ac CoreFoundation!__CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+	0x1d597d648 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x10508e11c UCWEB!0x17211c (0x10017211c)
+	0x111f34344 dyld!start
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: authorizationStatusForMediaType:
+	Backtrace:
+	0x10c9514c0 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!+[DAPrivacyGuideHelper getAVMediaAuthorizationStatus:]
+	0x10c951764 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!+[DAPrivacyGuideHelper onMarkAndAddStatisticsBy:]
+	0x10a9a59a4 UCWEB!0x5a899a4 (0x105a899a4)
+	0x1edca3588 AudioSession!__42-[AVAudioSession requestRecordPermission:]_block_invoke
+	0x1edc9cc94 AudioSession!invocation function for block in makeTCCAccessRequest(bool, tcc_message_option_request_prompt_policy_t, void (tcc_authorization_right_t) block_pointer)
+	0x1f11fa608 TCC!___tcc_server_send_request_authorization_block_invoke.52
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc6916fc libdispatch.dylib!_dispatch_lane_serial_drain$VARIANT$armv81
+	0x1dc6921e4 libdispatch.dylib!_dispatch_lane_invoke$VARIANT$armv81
+	0x1dc69bf14 libdispatch.dylib!_dispatch_workloop_worker_thread
+	0x2206b1bd0 libsystem_pthread.dylib!_pthread_wqthread
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x116f53d6c /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!-[KSAdLocationManager geoInfo]
+	0x1170a1024 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!-[KSAdRequestParams geoInfo]
+	0x1cfc9a77c Foundation!-[NSObject(NSKeyValueCoding) valueForKey:]
+	0x116fbc674 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!-[PodKSAdSDK_MJProperty valueForObject:]
+	0x116fc38c0 KSAdSDK!0x2c38c0 (0x2c38c0)
+	0x116fc347c KSAdSDK!0x2c347c (0x2c347c)
+	0x116fc5bb4 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!+[NSObject PodKSAdSDK_mj_enumerateProperties:]
+	0x116fc3260 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!-[NSObject PodKSAdSDK_mj_keyValuesWithKeys:ignoredKeys:]
+	0x1170a0704 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!-[KSAdRequestParams getRequestParams]
+	0x1170a21ec /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!-[KSAdPOSTHTTPRequest requestBodyWithEncryption]
+	0x1170a20a0 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!-[KSAdPOSTHTTPRequest requestWithURL:]
+	0x11709e0b8 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!-[KSAdHTTPRequest request]
+	0x1170a2560 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!-[KSAdPOSTHTTPRequest request]
+	0x11709b34c /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!-[PodKSAdSDK_AFURLSessionManager dataTaskWithRequest:cancellationToken:sessionTask:]
+	0x11709f7ac /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!-[KSAdHTTPTaskManager dataTaskWithRequest:cancellationToken:]
+	0x11709c404 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!-[KSAdBaseAPI sendRequest:]
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x116f53da8 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!-[KSAdLocationManager geoInfo]
+	0x1170a1024 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!-[KSAdRequestParams geoInfo]
+	0x1cfc9a77c Foundation!-[NSObject(NSKeyValueCoding) valueForKey:]
+	0x116fbc674 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!-[PodKSAdSDK_MJProperty valueForObject:]
+	0x116fc38c0 KSAdSDK!0x2c38c0 (0x2c38c0)
+	0x116fc347c KSAdSDK!0x2c347c (0x2c347c)
+	0x116fc5bb4 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!+[NSObject PodKSAdSDK_mj_enumerateProperties:]
+	0x116fc3260 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!-[NSObject PodKSAdSDK_mj_keyValuesWithKeys:ignoredKeys:]
+	0x1170a0704 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!-[KSAdRequestParams getRequestParams]
+	0x1170a21ec /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!-[KSAdPOSTHTTPRequest requestBodyWithEncryption]
+	0x1170a20a0 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!-[KSAdPOSTHTTPRequest requestWithURL:]
+	0x11709e0b8 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!-[KSAdHTTPRequest request]
+	0x1170a2560 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!-[KSAdPOSTHTTPRequest request]
+	0x11709b34c /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!-[PodKSAdSDK_AFURLSessionManager dataTaskWithRequest:cancellationToken:sessionTask:]
+	0x11709f7ac /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!-[KSAdHTTPTaskManager dataTaskWithRequest:cancellationToken:]
+	0x11709c404 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!-[KSAdBaseAPI sendRequest:]
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x116f53d6c /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!-[KSAdLocationManager geoInfo]
+	0x1170a1024 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!-[KSAdRequestParams geoInfo]
+	0x1cfc9a77c Foundation!-[NSObject(NSKeyValueCoding) valueForKey:]
+	0x116fbc674 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!-[PodKSAdSDK_MJProperty valueForObject:]
+	0x116fc38c0 KSAdSDK!0x2c38c0 (0x2c38c0)
+	0x116fc347c KSAdSDK!0x2c347c (0x2c347c)
+	0x116fc5bb4 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!+[NSObject PodKSAdSDK_mj_enumerateProperties:]
+	0x116fc3260 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!-[NSObject PodKSAdSDK_mj_keyValuesWithKeys:ignoredKeys:]
+	0x1170a0704 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!-[KSAdRequestParams getRequestParams]
+	0x1170a21ec /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!-[KSAdPOSTHTTPRequest requestBodyWithEncryption]
+	0x1170a20a0 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!-[KSAdPOSTHTTPRequest requestWithURL:]
+	0x11709e0b8 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!-[KSAdHTTPRequest request]
+	0x1170a2560 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!-[KSAdPOSTHTTPRequest request]
+	0x11709b34c /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!-[PodKSAdSDK_AFURLSessionManager dataTaskWithRequest:cancellationToken:sessionTask:]
+	0x11709f7ac /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!-[KSAdHTTPTaskManager dataTaskWithRequest:cancellationToken:]
+	0x11709c404 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!-[KSAdBaseAPI sendRequest:]
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x116f53da8 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!-[KSAdLocationManager geoInfo]
+	0x1170a1024 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!-[KSAdRequestParams geoInfo]
+	0x1cfc9a77c Foundation!-[NSObject(NSKeyValueCoding) valueForKey:]
+	0x116fbc674 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!-[PodKSAdSDK_MJProperty valueForObject:]
+	0x116fc38c0 KSAdSDK!0x2c38c0 (0x2c38c0)
+	0x116fc347c KSAdSDK!0x2c347c (0x2c347c)
+	0x116fc5bb4 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!+[NSObject PodKSAdSDK_mj_enumerateProperties:]
+	0x116fc3260 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!-[NSObject PodKSAdSDK_mj_keyValuesWithKeys:ignoredKeys:]
+	0x1170a0704 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!-[KSAdRequestParams getRequestParams]
+	0x1170a21ec /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!-[KSAdPOSTHTTPRequest requestBodyWithEncryption]
+	0x1170a20a0 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!-[KSAdPOSTHTTPRequest requestWithURL:]
+	0x11709e0b8 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!-[KSAdHTTPRequest request]
+	0x1170a2560 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!-[KSAdPOSTHTTPRequest request]
+	0x11709b34c /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!-[PodKSAdSDK_AFURLSessionManager dataTaskWithRequest:cancellationToken:sessionTask:]
+	0x11709f7ac /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!-[KSAdHTTPTaskManager dataTaskWithRequest:cancellationToken:]
+	0x11709c404 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!-[KSAdBaseAPI sendRequest:]
+
+[*] Class Name: ALAssetsLibrary
+[*] Method Name: authorizationStatus
+	Backtrace:
+	0x10c544f58 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!+[UCImageAssetsLibrary isSystemLibraryDenied]
+	0x10c544ddc /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!+[UCImageAssetsLibrary saveToSystemLibrary:completion:]
+	0x10c4b978c UCWEB!0x759d78c (0x10759d78c)
+	0x1054bba08 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!-[SDWebImageManager callCompletionBlockForOperation:completion:image:data:error:cacheType:finished:url:]
+	0x1054baa3c /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!-[SDWebImageManager callDownloadProcessForOperation:url:options:context:cachedImage:cachedData:cacheType:progress:completed:]
+	0x1054ba7ec UCWEB!0x59e7ec (0x10059e7ec)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc697e10 libdispatch.dylib!_dispatch_main_queue_drain
+	0x1dc697a88 libdispatch.dylib!_dispatch_main_queue_callback_4CF$VARIANT$armv81
+	0x1d59999ac CoreFoundation!__CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+	0x1d597d648 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x116f53d6c /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!-[KSAdLocationManager geoInfo]
+	0x1170a1024 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!-[KSAdRequestParams geoInfo]
+	0x1cfc9a77c Foundation!-[NSObject(NSKeyValueCoding) valueForKey:]
+	0x116fbc674 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!-[PodKSAdSDK_MJProperty valueForObject:]
+	0x116fc38c0 KSAdSDK!0x2c38c0 (0x2c38c0)
+	0x116fc347c KSAdSDK!0x2c347c (0x2c347c)
+	0x116fc5bb4 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!+[NSObject PodKSAdSDK_mj_enumerateProperties:]
+	0x116fc3260 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!-[NSObject PodKSAdSDK_mj_keyValuesWithKeys:ignoredKeys:]
+	0x1170a0704 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!-[KSAdRequestParams getRequestParams]
+	0x1170a21ec /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!-[KSAdPOSTHTTPRequest requestBodyWithEncryption]
+	0x1170a20a0 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!-[KSAdPOSTHTTPRequest requestWithURL:]
+	0x11709e0b8 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!-[KSAdHTTPRequest request]
+	0x1170a2560 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!-[KSAdPOSTHTTPRequest request]
+	0x11709b34c /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!-[PodKSAdSDK_AFURLSessionManager dataTaskWithRequest:cancellationToken:sessionTask:]
+	0x11709f7ac /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!-[KSAdHTTPTaskManager dataTaskWithRequest:cancellationToken:]
+	0x11709c404 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!-[KSAdBaseAPI sendRequest:]
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x116f53da8 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!-[KSAdLocationManager geoInfo]
+	0x1170a1024 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!-[KSAdRequestParams geoInfo]
+	0x1cfc9a77c Foundation!-[NSObject(NSKeyValueCoding) valueForKey:]
+	0x116fbc674 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!-[PodKSAdSDK_MJProperty valueForObject:]
+	0x116fc38c0 KSAdSDK!0x2c38c0 (0x2c38c0)
+	0x116fc347c KSAdSDK!0x2c347c (0x2c347c)
+	0x116fc5bb4 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!+[NSObject PodKSAdSDK_mj_enumerateProperties:]
+	0x116fc3260 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!-[NSObject PodKSAdSDK_mj_keyValuesWithKeys:ignoredKeys:]
+	0x1170a0704 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!-[KSAdRequestParams getRequestParams]
+	0x1170a21ec /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!-[KSAdPOSTHTTPRequest requestBodyWithEncryption]
+	0x1170a20a0 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!-[KSAdPOSTHTTPRequest requestWithURL:]
+	0x11709e0b8 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!-[KSAdHTTPRequest request]
+	0x1170a2560 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!-[KSAdPOSTHTTPRequest request]
+	0x11709b34c /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!-[PodKSAdSDK_AFURLSessionManager dataTaskWithRequest:cancellationToken:sessionTask:]
+	0x11709f7ac /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!-[KSAdHTTPTaskManager dataTaskWithRequest:cancellationToken:]
+	0x11709c404 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/Frameworks/KSAdSDK.framework/KSAdSDK!-[KSAdBaseAPI sendRequest:]
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: authorizationStatusForMediaType:
+	Backtrace:
+	0x10c9514c0 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!+[DAPrivacyGuideHelper getAVMediaAuthorizationStatus:]
+	0x10c9513f0 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!+[DAPrivacyGuideHelper isNotDeterminedWith:]
+	0x10c908a74 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!+[DAPrivacyGuideController showGuidePopView:with:]
+	0x10a8e3d44 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!-[UCCameraViewController show]
+	0x10a8e2e8c /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!+[UCCameraViewController showFrom:]
+	0x10c881188 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!-[iUCWEBAppDelegateEx showTwoDCodeView:]
+	0x10c880f28 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!-[iUCWEBAppDelegateEx twoDCodeCmd:param:]
+	0x10c887d1c /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!-[iUCWEBAppDelegateEx dispatchCmd:param:]
+	0x10ae5e14c UCWEB!0x5f4214c (0x105f4214c)
+	0x10adfdef8 UCWEB!0x5ee1ef8 (0x105ee1ef8)
+	0x10c870bd0 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!-[iUCWEBAppDelegateEx onSendCmd:]
+	0x10c25b0f0 UCWEB!0x733f0f0 (0x10733f0f0)
+	0x1d7ad1764 UIKitCore!-[UIApplication sendAction:to:from:forEvent:]
+	0x1d5975f40 CoreFoundation!__invoking___
+	0x1d59271c8 CoreFoundation!-[NSInvocation invoke]
+	0x1056a3320 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!-[QQArrayPasteboard forwardInvocation:]
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: authorizationStatusForMediaType:
+	Backtrace:
+	0x10932dc34 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!-[MPPCameraInputSource initWithAudio:]
+	0x10932cbac /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!-[UPCamera startCaptureWithCompletion:]
+	0x108276850 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!-[WebVisionViewController setUpCamera]
+	0x1082762fc /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!-[WebVisionViewController viewDidLoad]
+	0x1d7bf6d8c UIKitCore!-[UIViewController _sendViewDidLoadWithAppearanceProxyObjectTaggingEnabled]
+	0x1d78bc5b8 UIKitCore!-[UIViewController loadViewIfRequired]
+	0x1d78bc2e4 UIKitCore!-[UIViewController view]
+	0x10a8e3afc /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!-[UCCameraViewController webVisionVC]
+	0x10a8e3610 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!-[UCCameraViewController viewWillAppear:]
+	0x1d78af880 UIKitCore!-[UIViewController _setViewAppearState:isAnimating:]
+	0x1d8021dc4 UIKitCore!__52-[UIViewController _setViewAppearState:isAnimating:]_block_invoke_2
+	0x1d7acda54 UIKitCore!__52-[UIViewController _setViewAppearState:isAnimating:]_block_invoke
+	0x1d59118a8 CoreFoundation!__NSARRAY_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d593c8e4 CoreFoundation!-[__NSSingleObjectArrayI enumerateObjectsWithOptions:usingBlock:]
+	0x1d78afbcc UIKitCore!-[UIViewController _setViewAppearState:isAnimating:]
+	0x1d79496a8 UIKitCore!-[UIViewController __viewWillAppear:]
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: requestAccessForMediaType:completionHandler:
+	Backtrace:
+	0x10932edd0 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!-[MPPCameraInputSource requestCameraAccessWithCompletionHandler:]
+	0x10932cd74 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!-[UPCamera startCaptureWithCompletion:]
+	0x108276850 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!-[WebVisionViewController setUpCamera]
+	0x1082762fc /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!-[WebVisionViewController viewDidLoad]
+	0x1d7bf6d8c UIKitCore!-[UIViewController _sendViewDidLoadWithAppearanceProxyObjectTaggingEnabled]
+	0x1d78bc5b8 UIKitCore!-[UIViewController loadViewIfRequired]
+	0x1d78bc2e4 UIKitCore!-[UIViewController view]
+	0x10a8e3afc /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!-[UCCameraViewController webVisionVC]
+	0x10a8e3610 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!-[UCCameraViewController viewWillAppear:]
+	0x1d78af880 UIKitCore!-[UIViewController _setViewAppearState:isAnimating:]
+	0x1d8021dc4 UIKitCore!__52-[UIViewController _setViewAppearState:isAnimating:]_block_invoke_2
+	0x1d7acda54 UIKitCore!__52-[UIViewController _setViewAppearState:isAnimating:]_block_invoke
+	0x1d59118a8 CoreFoundation!__NSARRAY_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d593c8e4 CoreFoundation!-[__NSSingleObjectArrayI enumerateObjectsWithOptions:usingBlock:]
+	0x1d78afbcc UIKitCore!-[UIViewController _setViewAppearState:isAnimating:]
+	0x1d79496a8 UIKitCore!-[UIViewController __viewWillAppear:]
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: authorizationStatusForMediaType:
+	Backtrace:
+	0x1edbc6a94 AVFCapture!-[AVCaptureDeviceInput _authorizedToUseDeviceAndRequestIfNecessary:]
+	0x1edbc6848 AVFCapture!-[AVCaptureDeviceInput initWithDevice:error:]
+	0x1edbc67bc AVFCapture!+[AVCaptureDeviceInput deviceInputWithDevice:error:]
+	0x10932e70c /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!-[MPPCameraInputSource setupCamera]
+	0x10932dd78 /private/var/containers/Bundle/Application/46F8A9F5-6BD4-4D9F-AAE1-C9C160C3D816/UCWEB.app/UCWEB!-[MPPCameraInputSource start]
+	0x10932d0a0 UCWEB!0x44110a0 (0x1044110a0)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc6916fc libdispatch.dylib!_dispatch_lane_serial_drain$VARIANT$armv81
+	0x1dc6921b0 libdispatch.dylib!_dispatch_lane_invoke$VARIANT$armv81
+	0x1dc69bf14 libdispatch.dylib!_dispatch_workloop_worker_thread
+	0x2206b1bd0 libsystem_pthread.dylib!_pthread_wqthread
+Connection terminated
+[iPhone::UC浏览器 ]->
+
+Thank you for using Frida!
+(base) mac@macdeMacBook-Pro autoTestiOS % 

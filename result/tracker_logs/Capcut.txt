@@ -1,0 +1,796 @@
+Last login: Fri May 17 19:50:49 on ttys000
+(base) mac@macdeMacBook-Pro autoTestiOS % frida -U -F -l hook_sensitive_api.js
+     ____
+    / _  |   Frida 16.2.1 - A world-class dynamic instrumentation toolkit
+   | (_| |
+    > _  |   Commands:
+   /_/ |_|       help      -> Displays the help system
+   . . . .       object?   -> Display information about 'object'
+   . . . .       exit/quit -> Exit
+   . . . .
+   . . . .   More info at https://frida.re/docs/home/
+   . . . .
+   . . . .   Connected to iPhone (id=02f66296483099a1e80d262c998b9f8feb885523)
+[*] Started: Modify Return Value
+funcName_arg namePrefix
+[!] funcName_arg Exception: 
+funcName_arg givenName
+[!] funcName_arg Exception: 
+funcName_arg middleName
+[!] funcName_arg Exception: 
+funcName_arg familyName
+[!] funcName_arg Exception: 
+funcName_arg previousFamilyName
+[!] funcName_arg Exception: 
+funcName_arg nickname
+[!] funcName_arg Exception: 
+funcName_arg phoneticGivenName
+[!] funcName_arg Exception: 
+funcName_arg phoneticMiddleName
+[!] funcName_arg Exception: 
+funcName_arg phoneticFamilyName
+[!] funcName_arg Exception: 
+funcName_arg jobTitle
+[!] funcName_arg Exception: 
+funcName_arg departmentName
+[!] funcName_arg Exception: 
+funcName_arg organizationName
+[!] funcName_arg Exception: 
+funcName_arg phoneticOrganizationName
+[!] funcName_arg Exception: 
+funcName_arg postalAddresses
+[!] funcName_arg Exception: 
+funcName_arg urlAddresses
+[!] funcName_arg Exception: 
+funcName_arg phoneNumbers
+[!] funcName_arg Exception: 
+funcName_arg socialProfiles
+[!] funcName_arg Exception: 
+funcName_arg emailAddresses
+[!] funcName_arg Exception: 
+funcName_arg birthday
+[!] funcName_arg Exception: 
+funcName_arg dates
+[!] funcName_arg Exception: 
+funcName_arg nonGregorianBirthday
+[!] funcName_arg Exception: 
+funcName_arg note
+[!] funcName_arg Exception: 
+funcName_arg emailAddresses
+[!] funcName_arg Exception: 
+funcName_arg unifiedMeContactWithKeysToFetch:error:
+[!] funcName_arg Exception: 
+funcName_arg rfetchAssetsInAssetCollection:options:
+[!] funcName_arg Exception: 
+message: {'type': 'send', 'payload': '[*] Started: Modify Return Value'} data: None
+[iPhone::剪映 ]->
+[*] Class Name: CLLocationManager
+[*] Method Name: locationServicesEnabled
+
+[*] Class Name: CLLocationManager
+[*] Method Name: authorizationStatus
+	Backtrace:
+        0x116b3c2e0 /private/var/containers/Bundle/Application/8BE129F8-84AF-4F87-9D45-86AFEA689E29/VideoFusion.app/VideoFusion!-[ABULocationService _serviceEnable]
+	0x116b3c160 /private/var/containers/Bundle/Application/8BE129F8-84AF-4F87-9D45-86AFEA689E29/VideoFusion.app/VideoFusion!-[ABULocationService _serviceEnable:]
+	0x1cfcebc4c Foundation!__NSThread__start__
+        0x2206b30ec libsystem_pthread.dylib!_pthread_start
+
+[*] Class Name: CLLocationManager
+[*] Method Name: authorizationStatus
+	Backtrace:
+	0x116b3c2f4 /private/var/containers/Bundle/Application/8BE129F8-84AF-4F87-9D45-86AFEA689E29/VideoFusion.app/VideoFusion!-[ABULocationService _serviceEnable]
+	0x116b3c160 /private/var/containers/Bundle/Application/8BE129F8-84AF-4F87-9D45-86AFEA689E29/VideoFusion.app/VideoFusion!-[ABULocationService _serviceEnable:]
+	0x1cfcebc4c Foundation!__NSThread__start__
+	0x2206b30ec libsystem_pthread.dylib!_pthread_start
+	Backtrace:
+	0x117278a40 VideoFusion!0x12e18a40 (0x112e18a40)
+	0x11727b3ec VideoFusion!0x12e1b3ec (0x112e1b3ec)
+	0x1172a6014 VideoFusion!0x12e46014 (0x112e46014)
+	0x1172b3d90 VideoFusion!0x12e53d90 (0x112e53d90)
+	0x1172b902c VideoFusion!0x12e5902c (0x112e5902c)
+	0x11726e70c VideoFusion!0x12e0e70c (0x112e0e70c)
+	0x1172b1d30 VideoFusion!0x12e51d30 (0x112e51d30)
+	0x117265630 VideoFusion!0x12e05630 (0x112e05630)
+	0x2206b30ec libsystem_pthread.dylib!_pthread_start
+
+[*] Class Name: PHPhotoLibrary
+[*] Method Name: authorizationStatus
+	Backtrace:
+	0x10d53ccd0 VideoFusion!0x90dccd0 (0x1090dccd0)
+	0x1044bae84 VideoFusion!0x5ae84 (0x10005ae84)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc68d9f8 libdispatch.dylib!_dispatch_queue_override_invoke
+	0x1dc69ac68 libdispatch.dylib!_dispatch_root_queue_drain
+	0x1dc69b430 libdispatch.dylib!_dispatch_worker_thread2
+	0x2206b1b94 libsystem_pthread.dylib!_pthread_wqthread
+
+[*] Class Name: PHPhotoLibrary
+[*] Method Name: requestAuthorizationForAccessLevel:handler:
+	Backtrace:
+	0x11782dbcc /private/var/containers/Bundle/Application/8BE129F8-84AF-4F87-9D45-86AFEA689E29/VideoFusion.app/VideoFusion!+[PHPhotoLibrary requestAuthorizationForAccessLevel:handler:]
+	0x106eedda8 VideoFusion!0x2a8dda8 (0x102a8dda8)
+	0x11048e198 VideoFusion!0xc02e198 (0x10c02e198)
+	0x1044bae84 VideoFusion!0x5ae84 (0x10005ae84)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc697e10 libdispatch.dylib!_dispatch_main_queue_drain
+	0x1dc697a88 libdispatch.dylib!_dispatch_main_queue_callback_4CF$VARIANT$armv81
+	0x1d59999ac CoreFoundation!__CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+	0x1d597d648 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x1044b68e0 VideoFusion!0x568e0 (0x1000568e0)
+	0x120cfc344 dyld!start
+
+[*] Class Name: PHPhotoLibrary
+[*] Method Name: authorizationStatus
+	Backtrace:
+	0x10489dd94 /private/var/containers/Bundle/Application/8BE129F8-84AF-4F87-9D45-86AFEA689E29/VideoFusion.app/VideoFusion!-[ECLocalPhotoManager verifyingLibraryPermissions:]
+	0x10484fc1c VideoFusion!0x3efc1c (0x1003efc1c)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc6916fc libdispatch.dylib!_dispatch_lane_serial_drain$VARIANT$armv81
+	0x1dc6921b0 libdispatch.dylib!_dispatch_lane_invoke$VARIANT$armv81
+	0x1dc69bf14 libdispatch.dylib!_dispatch_workloop_worker_thread
+	0x2206b1bd0 libsystem_pthread.dylib!_pthread_wqthread
+
+[*] Class Name: PHPhotoLibrary
+[*] Method Name: authorizationStatus
+	Backtrace:
+	0x10d53ccd0 VideoFusion!0x90dccd0 (0x1090dccd0)
+	0x1044bae84 VideoFusion!0x5ae84 (0x10005ae84)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc68d9f8 libdispatch.dylib!_dispatch_queue_override_invoke
+	0x1dc69ac68 libdispatch.dylib!_dispatch_root_queue_drain
+	0x1dc69b430 libdispatch.dylib!_dispatch_worker_thread2
+	0x2206b1b94 libsystem_pthread.dylib!_pthread_wqthread
+
+[*] Class Name: PHPhotoLibrary
+[*] Method Name: authorizationStatus
+	Backtrace:
+	0x10d53ccd0 VideoFusion!0x90dccd0 (0x1090dccd0)
+	0x1044bae84 VideoFusion!0x5ae84 (0x10005ae84)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc68d9f8 libdispatch.dylib!_dispatch_queue_override_invoke
+	0x1dc69ac68 libdispatch.dylib!_dispatch_root_queue_drain
+	0x1dc69b430 libdispatch.dylib!_dispatch_worker_thread2
+	0x2206b1b94 libsystem_pthread.dylib!_pthread_wqthread
+
+Last login: Fri May 17 20:11:39 on ttys000
+(base) mac@macdeMacBook-Pro autoTestiOS % frida -U -F -l hook_sensitive_api.js
+     ____
+    / _  |   Frida 16.2.1 - A world-class dynamic instrumentation toolkit
+   | (_| |
+    > _  |   Commands:
+   /_/ |_|       help      -> Displays the help system
+   . . . .       object?   -> Display information about 'object'
+   . . . .       exit/quit -> Exit
+   . . . .
+   . . . .   More info at https://frida.re/docs/home/
+   . . . .
+   . . . .   Connected to iPhone (id=02f66296483099a1e80d262c998b9f8feb885523)
+[*] Started: Modify Return Value
+funcName_arg namePrefix
+[!] funcName_arg Exception: 
+funcName_arg givenName
+[!] funcName_arg Exception: 
+funcName_arg middleName
+[!] funcName_arg Exception: 
+funcName_arg familyName
+[!] funcName_arg Exception: 
+funcName_arg previousFamilyName
+[!] funcName_arg Exception: 
+funcName_arg nickname
+[!] funcName_arg Exception: 
+funcName_arg phoneticGivenName
+[!] funcName_arg Exception: 
+funcName_arg phoneticMiddleName
+[!] funcName_arg Exception: 
+funcName_arg phoneticFamilyName
+[!] funcName_arg Exception: 
+funcName_arg jobTitle
+[!] funcName_arg Exception: 
+funcName_arg departmentName
+[!] funcName_arg Exception: 
+funcName_arg organizationName
+[!] funcName_arg Exception: 
+funcName_arg phoneticOrganizationName
+[!] funcName_arg Exception: 
+funcName_arg postalAddresses
+[!] funcName_arg Exception: 
+funcName_arg urlAddresses
+[!] funcName_arg Exception: 
+funcName_arg phoneNumbers
+[!] funcName_arg Exception: 
+funcName_arg socialProfiles
+[!] funcName_arg Exception: 
+funcName_arg emailAddresses
+[!] funcName_arg Exception: 
+funcName_arg birthday
+[!] funcName_arg Exception: 
+funcName_arg dates
+[!] funcName_arg Exception: 
+funcName_arg nonGregorianBirthday
+[!] funcName_arg Exception: 
+funcName_arg note
+[!] funcName_arg Exception: 
+funcName_arg emailAddresses
+[!] funcName_arg Exception: 
+funcName_arg unifiedMeContactWithKeysToFetch:error:
+[!] funcName_arg Exception: 
+funcName_arg rfetchAssetsInAssetCollection:options:
+[!] funcName_arg Exception: 
+funcName_arg available
+[!] funcName_arg Exception: 
+funcName_arg recording
+[!] funcName_arg Exception: 
+funcName_arg cameraPreviewView
+[!] funcName_arg Exception: 
+funcName_arg microphoneEnabled
+[!] funcName_arg Exception: 
+funcName_arg cameraEnabled
+[!] funcName_arg Exception: 
+funcName_arg cameraEnabled
+[!] funcName_arg Exception: 
+message: {'type': 'send', 'payload': '[*] Started: Modify Return Value'} data: None
+[iPhone::剪映 ]->
+[*] Class Name: CLLocationManager
+[*] Method Name: authorizationStatus
+
+[*] Class Name: PHPhotoLibrary
+[*] Method Name: authorizationStatus
+	Backtrace:
+        0x113adca40 VideoFusion!0x12e18a40 (0x112e18a40)
+	0x113adf3ec VideoFusion!0x12e1b3ec (0x112e1b3ec)
+	0x113b0a014 VideoFusion!0x12e46014 (0x112e46014)
+	0x113b17d90 VideoFusion!0x12e53d90 (0x112e53d90)
+	0x113b1d02c VideoFusion!0x12e5902c (0x112e5902c)
+	0x113ad270c VideoFusion!0x12e0e70c (0x112e0e70c)
+	0x113b15d30 VideoFusion!0x12e51d30 (0x112e51d30)
+	0x113ac9630 VideoFusion!0x12e05630 (0x112e05630)
+	0x2206b30ec libsystem_pthread.dylib!_pthread_start
+	Backtrace:
+	0x109da0cd0 VideoFusion!0x90dccd0 (0x1090dccd0)
+	0x100d1ee84 VideoFusion!0x5ae84 (0x10005ae84)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc68d9f8 libdispatch.dylib!_dispatch_queue_override_invoke
+	0x1dc69ac68 libdispatch.dylib!_dispatch_root_queue_drain
+	0x1dc69b430 libdispatch.dylib!_dispatch_worker_thread2
+	0x2206b1b94 libsystem_pthread.dylib!_pthread_wqthread
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: authorizationStatusForMediaType:
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: authorizationStatusForMediaType:
+
+[*] Class Name: PHPhotoLibrary
+[*] Method Name: authorizationStatus
+	Backtrace:
+	0x103750ac4 VideoFusion!0x2a8cac4 (0x102a8cac4)
+	0x103753194 VideoFusion!0x2a8f194 (0x102a8f194)
+	0x100d1ee84 VideoFusion!0x5ae84 (0x10005ae84)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc69ad88 libdispatch.dylib!_dispatch_root_queue_drain
+	0x1dc69b430 libdispatch.dylib!_dispatch_worker_thread2
+	0x2206b1b94 libsystem_pthread.dylib!_pthread_wqthread
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: authorizationStatusForMediaType:
+	Backtrace:
+	0x103750ac4 VideoFusion!0x2a8cac4 (0x102a8cac4)
+	0x103753194 VideoFusion!0x2a8f194 (0x102a8f194)
+	0x100d1ee84 VideoFusion!0x5ae84 (0x10005ae84)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc69ad88 libdispatch.dylib!_dispatch_root_queue_drain
+	0x1dc69b430 libdispatch.dylib!_dispatch_worker_thread2
+	0x2206b1b94 libsystem_pthread.dylib!_pthread_wqthread
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: requestAccessForMediaType:completionHandler:
+	Backtrace:
+	0x1edbc6a94 AVFCapture!-[AVCaptureDeviceInput _authorizedToUseDeviceAndRequestIfNecessary:]
+	0x1edbc6848 AVFCapture!-[AVCaptureDeviceInput initWithDevice:error:]
+	0x11025279c /private/var/containers/Bundle/Application/8BE129F8-84AF-4F87-9D45-86AFEA689E29/VideoFusion.app/VideoFusion!-[IESMMCaptureKit p_initCaptureSession]
+	0x1102519b0 VideoFusion!0xf58d9b0 (0x10f58d9b0)
+	0x110a5aed0 VideoFusion!0xfd96ed0 (0x10fd96ed0)
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc698a50 libdispatch.dylib!_dispatch_lane_barrier_sync_invoke_and_complete
+	0x110a5ab78 /private/var/containers/Bundle/Application/8BE129F8-84AF-4F87-9D45-86AFEA689E29/VideoFusion.app/VideoFusion!-[VERunloopObject runSync:]
+	0x1102518b4 /private/var/containers/Bundle/Application/8BE129F8-84AF-4F87-9D45-86AFEA689E29/VideoFusion.app/VideoFusion!-[IESMMCaptureKit initWithCameraConfiguration:]
+	0x1102515e8 VideoFusion!0xf58d5e8 (0x10f58d5e8)
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc686ddc libdispatch.dylib!_dispatch_once_callout
+	0x110251584 /private/var/containers/Bundle/Application/8BE129F8-84AF-4F87-9D45-86AFEA689E29/VideoFusion.app/VideoFusion!+[IESMMCaptureKit sharedInstanceWithConfig:]
+	0x11098d9c8 VideoFusion!0xfcc99c8 (0x10fcc99c8)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: requestAccessForMediaType:completionHandler:
+	Backtrace:
+	0x10ccd6cfc VideoFusion!0xc012cfc (0x10c012cfc)
+	0x1032eca90 VideoFusion!0x2628a90 (0x102628a90)
+	0x109120610 VideoFusion!0x845c610 (0x10845c610)
+	0x10393baec VideoFusion!0x2c77aec (0x102c77aec)
+	0x10cceceec VideoFusion!0xc028eec (0x10c028eec)
+	0x103936e38 VideoFusion!0x2c72e38 (0x102c72e38)
+	0x10393b168 VideoFusion!0x2c77168 (0x102c77168)
+	0x100d1ee84 VideoFusion!0x5ae84 (0x10005ae84)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc68d9f8 libdispatch.dylib!_dispatch_queue_override_invoke
+	0x1dc69ac68 libdispatch.dylib!_dispatch_root_queue_drain
+	0x1dc69b430 libdispatch.dylib!_dispatch_worker_thread2
+	0x2206b1b94 libsystem_pthread.dylib!_pthread_wqthread
+	Backtrace:
+	0x103751da8 VideoFusion!0x2a8dda8 (0x102a8dda8)
+	0x10ccf2198 VideoFusion!0xc02e198 (0x10c02e198)
+	0x100d1ee84 VideoFusion!0x5ae84 (0x10005ae84)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc697e10 libdispatch.dylib!_dispatch_main_queue_drain
+	0x1dc697a88 libdispatch.dylib!_dispatch_main_queue_callback_4CF$VARIANT$armv81
+	0x1d59999ac CoreFoundation!__CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+	0x1d597d648 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x100d1a8e0 VideoFusion!0x568e0 (0x1000568e0)
+	0x11d72c344 dyld!start
+	Backtrace:
+	0x1edbc6ab4 AVFCapture!-[AVCaptureDeviceInput _authorizedToUseDeviceAndRequestIfNecessary:]
+	0x1edbc6848 AVFCapture!-[AVCaptureDeviceInput initWithDevice:error:]
+	0x11025279c /private/var/containers/Bundle/Application/8BE129F8-84AF-4F87-9D45-86AFEA689E29/VideoFusion.app/VideoFusion!-[IESMMCaptureKit p_initCaptureSession]
+	0x1102519b0 VideoFusion!0xf58d9b0 (0x10f58d9b0)
+	0x110a5aed0 VideoFusion!0xfd96ed0 (0x10fd96ed0)
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc698a50 libdispatch.dylib!_dispatch_lane_barrier_sync_invoke_and_complete
+	0x110a5ab78 /private/var/containers/Bundle/Application/8BE129F8-84AF-4F87-9D45-86AFEA689E29/VideoFusion.app/VideoFusion!-[VERunloopObject runSync:]
+	0x1102518b4 /private/var/containers/Bundle/Application/8BE129F8-84AF-4F87-9D45-86AFEA689E29/VideoFusion.app/VideoFusion!-[IESMMCaptureKit initWithCameraConfiguration:]
+	0x1102515e8 VideoFusion!0xf58d5e8 (0x10f58d5e8)
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc686ddc libdispatch.dylib!_dispatch_once_callout
+	0x110251584 /private/var/containers/Bundle/Application/8BE129F8-84AF-4F87-9D45-86AFEA689E29/VideoFusion.app/VideoFusion!+[IESMMCaptureKit sharedInstanceWithConfig:]
+	0x11098d9c8 VideoFusion!0xfcc99c8 (0x10fcc99c8)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+
+[*] Class Name: PHPhotoLibrary
+[*] Method Name: authorizationStatus
+	Backtrace:
+	0x10ccd6cfc VideoFusion!0xc012cfc (0x10c012cfc)
+	0x1032eca90 VideoFusion!0x2628a90 (0x102628a90)
+	0x109120610 VideoFusion!0x845c610 (0x10845c610)
+	0x10393baec VideoFusion!0x2c77aec (0x102c77aec)
+	0x10cceceec VideoFusion!0xc028eec (0x10c028eec)
+	0x103936e38 VideoFusion!0x2c72e38 (0x102c72e38)
+	0x10393a894 VideoFusion!0x2c76894 (0x102c76894)
+	0x10393a8dc /private/var/containers/Bundle/Application/8BE129F8-84AF-4F87-9D45-86AFEA689E29/VideoFusion.app/VideoFusion!-[LVCameraSwift.MainRecorderViewController applicationDidBecomeActive]
+	0x1d593c7d8 CoreFoundation!__CFNOTIFICATIONCENTER_IS_CALLING_OUT_TO_AN_OBSERVER__
+	0x1d59d90c0 CoreFoundation!___CFXRegistrationPost_block_invoke
+	0x1d59bd8a8 CoreFoundation!_CFXRegistrationPost
+	0x1d594feec CoreFoundation!_CFXNotificationPost
+	0x1cfced1c4 Foundation!-[NSNotificationCenter postNotificationName:object:userInfo:]
+	0x1d7b10880 UIKitCore!-[UIApplication _stopDeactivatingForReason:]
+	0x1d7a30dc0 UIKitCore!__101-[_UISceneLifecycleMultiplexer _evalTransitionToSettings:fromSettings:forceExit:withTransitionStore:]_block_invoke_2
+	0x1d79380b8 UIKitCore!_UIScenePerformActionsWithLifecycleActionMask
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: authorizationStatusForMediaType:
+	Backtrace:
+	0x103750ac4 VideoFusion!0x2a8cac4 (0x102a8cac4)
+	0x1039395d0 VideoFusion!0x2c755d0 (0x102c755d0)
+	0x1039433fc VideoFusion!0x2c7f3fc (0x102c7f3fc)
+	0x10cceceec VideoFusion!0xc028eec (0x10c028eec)
+	0x10393f954 VideoFusion!0x2c7b954 (0x102c7b954)
+	0x10380d438 VideoFusion!0x2b49438 (0x102b49438)
+	0x103801c64 VideoFusion!0x2b3dc64 (0x102b3dc64)
+	0x10380a0d0 VideoFusion!0x2b460d0 (0x102b460d0)
+	0x100f2863c VideoFusion!0x26463c (0x10026463c)
+	0x10375ab64 /private/var/containers/Bundle/Application/8BE129F8-84AF-4F87-9D45-86AFEA689E29/VideoFusion.app/VideoFusion!-[ACCCameraButton touchDown:]
+	0x1d7ad1764 UIKitCore!-[UIApplication sendAction:to:from:forEvent:]
+	0x1d7ad1484 UIKitCore!-[UIControl sendAction:to:forEvent:]
+	0x10f843d88 /private/var/containers/Bundle/Application/8BE129F8-84AF-4F87-9D45-86AFEA689E29/VideoFusion.app/VideoFusion!-[UIControl sendAction:to:forEvent:]
+	0x1d7ad0e8c UIKitCore!-[UIControl _sendActionsForEvents:withEvent:]
+	0x1d7ad0c10 UIKitCore!-[UIControl touchesBegan:withEvent:]
+	0x1d79918fc UIKitCore!-[UIWindow _sendTouchesForEvent:]
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: authorizationStatusForMediaType:
+	Backtrace:
+	0x103750ac4 VideoFusion!0x2a8cac4 (0x102a8cac4)
+	0x1039396a0 VideoFusion!0x2c756a0 (0x102c756a0)
+	0x1039433fc VideoFusion!0x2c7f3fc (0x102c7f3fc)
+	0x10cceceec VideoFusion!0xc028eec (0x10c028eec)
+	0x10393f954 VideoFusion!0x2c7b954 (0x102c7b954)
+	0x10380d438 VideoFusion!0x2b49438 (0x102b49438)
+	0x103801c64 VideoFusion!0x2b3dc64 (0x102b3dc64)
+	0x10380a0d0 VideoFusion!0x2b460d0 (0x102b460d0)
+	0x100f2863c VideoFusion!0x26463c (0x10026463c)
+	0x10375ab64 /private/var/containers/Bundle/Application/8BE129F8-84AF-4F87-9D45-86AFEA689E29/VideoFusion.app/VideoFusion!-[ACCCameraButton touchDown:]
+	0x1d7ad1764 UIKitCore!-[UIApplication sendAction:to:from:forEvent:]
+	0x1d7ad1484 UIKitCore!-[UIControl sendAction:to:forEvent:]
+	0x10f843d88 /private/var/containers/Bundle/Application/8BE129F8-84AF-4F87-9D45-86AFEA689E29/VideoFusion.app/VideoFusion!-[UIControl sendAction:to:forEvent:]
+	0x1d7ad0e8c UIKitCore!-[UIControl _sendActionsForEvents:withEvent:]
+	0x1d7ad0c10 UIKitCore!-[UIControl touchesBegan:withEvent:]
+	0x1d79918fc UIKitCore!-[UIWindow _sendTouchesForEvent:]
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: authorizationStatusForMediaType:
+	Backtrace:
+	0x103750ac4 VideoFusion!0x2a8cac4 (0x102a8cac4)
+	0x1039395d0 VideoFusion!0x2c755d0 (0x102c755d0)
+	0x1039433fc VideoFusion!0x2c7f3fc (0x102c7f3fc)
+	0x10cceceec VideoFusion!0xc028eec (0x10c028eec)
+	0x10393f954 VideoFusion!0x2c7b954 (0x102c7b954)
+	0x10380d438 VideoFusion!0x2b49438 (0x102b49438)
+	0x103801c64 VideoFusion!0x2b3dc64 (0x102b3dc64)
+	0x10380a0d0 VideoFusion!0x2b460d0 (0x102b460d0)
+	0x100f2863c VideoFusion!0x26463c (0x10026463c)
+	0x10375ab64 /private/var/containers/Bundle/Application/8BE129F8-84AF-4F87-9D45-86AFEA689E29/VideoFusion.app/VideoFusion!-[ACCCameraButton touchDown:]
+	0x1d7ad1764 UIKitCore!-[UIApplication sendAction:to:from:forEvent:]
+	0x1d7ad1484 UIKitCore!-[UIControl sendAction:to:forEvent:]
+	0x10f843d88 /private/var/containers/Bundle/Application/8BE129F8-84AF-4F87-9D45-86AFEA689E29/VideoFusion.app/VideoFusion!-[UIControl sendAction:to:forEvent:]
+	0x1d7ad0e8c UIKitCore!-[UIControl _sendActionsForEvents:withEvent:]
+	0x1d7ad0c10 UIKitCore!-[UIControl touchesBegan:withEvent:]
+	0x1d79918fc UIKitCore!-[UIWindow _sendTouchesForEvent:]
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: authorizationStatusForMediaType:
+	Backtrace:
+	0x103750ac4 VideoFusion!0x2a8cac4 (0x102a8cac4)
+	0x1039396a0 VideoFusion!0x2c756a0 (0x102c756a0)
+	0x1039433fc VideoFusion!0x2c7f3fc (0x102c7f3fc)
+	0x10cceceec VideoFusion!0xc028eec (0x10c028eec)
+	0x10393f954 VideoFusion!0x2c7b954 (0x102c7b954)
+	0x10380d438 VideoFusion!0x2b49438 (0x102b49438)
+	0x103801c64 VideoFusion!0x2b3dc64 (0x102b3dc64)
+	0x10380a0d0 VideoFusion!0x2b460d0 (0x102b460d0)
+	0x100f2863c VideoFusion!0x26463c (0x10026463c)
+	0x10375ab64 /private/var/containers/Bundle/Application/8BE129F8-84AF-4F87-9D45-86AFEA689E29/VideoFusion.app/VideoFusion!-[ACCCameraButton touchDown:]
+	0x1d7ad1764 UIKitCore!-[UIApplication sendAction:to:from:forEvent:]
+	0x1d7ad1484 UIKitCore!-[UIControl sendAction:to:forEvent:]
+	0x10f843d88 /private/var/containers/Bundle/Application/8BE129F8-84AF-4F87-9D45-86AFEA689E29/VideoFusion.app/VideoFusion!-[UIControl sendAction:to:forEvent:]
+	0x1d7ad0e8c UIKitCore!-[UIControl _sendActionsForEvents:withEvent:]
+	0x1d7ad0c10 UIKitCore!-[UIControl touchesBegan:withEvent:]
+	0x1d79918fc UIKitCore!-[UIWindow _sendTouchesForEvent:]
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: authorizationStatusForMediaType:
+	Backtrace:
+	0x103750ac4 VideoFusion!0x2a8cac4 (0x102a8cac4)
+	0x103939874 VideoFusion!0x2c75874 (0x102c75874)
+	0x103943804 VideoFusion!0x2c7f804 (0x102c7f804)
+	0x10ccf6468 VideoFusion!0xc032468 (0x10c032468)
+	0x100d1ee84 VideoFusion!0x5ae84 (0x10005ae84)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc697e10 libdispatch.dylib!_dispatch_main_queue_drain
+	0x1dc697a88 libdispatch.dylib!_dispatch_main_queue_callback_4CF$VARIANT$armv81
+	0x1d59999ac CoreFoundation!__CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+	0x1d597d648 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x100d1a8e0 VideoFusion!0x568e0 (0x1000568e0)
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: authorizationStatusForMediaType:
+	Backtrace:
+	0x103750ac4 VideoFusion!0x2a8cac4 (0x102a8cac4)
+	0x103939944 VideoFusion!0x2c75944 (0x102c75944)
+	0x103943804 VideoFusion!0x2c7f804 (0x102c7f804)
+	0x10ccf6468 VideoFusion!0xc032468 (0x10c032468)
+	0x100d1ee84 VideoFusion!0x5ae84 (0x10005ae84)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc697e10 libdispatch.dylib!_dispatch_main_queue_drain
+	0x1dc697a88 libdispatch.dylib!_dispatch_main_queue_callback_4CF$VARIANT$armv81
+	0x1d59999ac CoreFoundation!__CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+	0x1d597d648 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x100d1a8e0 VideoFusion!0x568e0 (0x1000568e0)
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: authorizationStatusForMediaType:
+	Backtrace:
+	0x103750ac4 VideoFusion!0x2a8cac4 (0x102a8cac4)
+	0x103939874 VideoFusion!0x2c75874 (0x102c75874)
+	0x103943804 VideoFusion!0x2c7f804 (0x102c7f804)
+	0x10ccf6468 VideoFusion!0xc032468 (0x10c032468)
+	0x100d1ee84 VideoFusion!0x5ae84 (0x10005ae84)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc697e10 libdispatch.dylib!_dispatch_main_queue_drain
+	0x1dc697a88 libdispatch.dylib!_dispatch_main_queue_callback_4CF$VARIANT$armv81
+	0x1d59999ac CoreFoundation!__CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+	0x1d597d648 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x100d1a8e0 VideoFusion!0x568e0 (0x1000568e0)
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: authorizationStatusForMediaType:
+	Backtrace:
+	0x103750ac4 VideoFusion!0x2a8cac4 (0x102a8cac4)
+	0x103939944 VideoFusion!0x2c75944 (0x102c75944)
+	0x103943804 VideoFusion!0x2c7f804 (0x102c7f804)
+	0x10ccf6468 VideoFusion!0xc032468 (0x10c032468)
+	0x100d1ee84 VideoFusion!0x5ae84 (0x10005ae84)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc697e10 libdispatch.dylib!_dispatch_main_queue_drain
+	0x1dc697a88 libdispatch.dylib!_dispatch_main_queue_callback_4CF$VARIANT$armv81
+	0x1d59999ac CoreFoundation!__CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+	0x1d597d648 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x100d1a8e0 VideoFusion!0x568e0 (0x1000568e0)
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: authorizationStatusForMediaType:
+	Backtrace:
+	0x103750ac4 VideoFusion!0x2a8cac4 (0x102a8cac4)
+	0x103753194 VideoFusion!0x2a8f194 (0x102a8f194)
+	0x100d1ee84 VideoFusion!0x5ae84 (0x10005ae84)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc69ad88 libdispatch.dylib!_dispatch_root_queue_drain
+	0x1dc69b430 libdispatch.dylib!_dispatch_worker_thread2
+	0x2206b1b94 libsystem_pthread.dylib!_pthread_wqthread
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: requestAccessForMediaType:completionHandler:
+	Backtrace:
+	0x103751da8 VideoFusion!0x2a8dda8 (0x102a8dda8)
+	0x10ccf2198 VideoFusion!0xc02e198 (0x10c02e198)
+	0x100d1ee84 VideoFusion!0x5ae84 (0x10005ae84)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc697e10 libdispatch.dylib!_dispatch_main_queue_drain
+	0x1dc697a88 libdispatch.dylib!_dispatch_main_queue_callback_4CF$VARIANT$armv81
+	0x1d59999ac CoreFoundation!__CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+	0x1d597d648 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x100d1a8e0 VideoFusion!0x568e0 (0x1000568e0)
+	0x11d72c344 dyld!start
+
+[*] Class Name: PHPhotoLibrary
+[*] Method Name: authorizationStatus
+	Backtrace:
+	0x10ccd6cfc VideoFusion!0xc012cfc (0x10c012cfc)
+	0x1032eca90 VideoFusion!0x2628a90 (0x102628a90)
+	0x109120610 VideoFusion!0x845c610 (0x10845c610)
+	0x10393baec VideoFusion!0x2c77aec (0x102c77aec)
+	0x10cceceec VideoFusion!0xc028eec (0x10c028eec)
+	0x103936e38 VideoFusion!0x2c72e38 (0x102c72e38)
+	0x10393a894 VideoFusion!0x2c76894 (0x102c76894)
+	0x10393a8dc /private/var/containers/Bundle/Application/8BE129F8-84AF-4F87-9D45-86AFEA689E29/VideoFusion.app/VideoFusion!-[LVCameraSwift.MainRecorderViewController applicationDidBecomeActive]
+	0x1d593c7d8 CoreFoundation!__CFNOTIFICATIONCENTER_IS_CALLING_OUT_TO_AN_OBSERVER__
+	0x1d59d90c0 CoreFoundation!___CFXRegistrationPost_block_invoke
+	0x1d59bd8a8 CoreFoundation!_CFXRegistrationPost
+	0x1d594feec CoreFoundation!_CFXNotificationPost
+	0x1cfced1c4 Foundation!-[NSNotificationCenter postNotificationName:object:userInfo:]
+	0x1d7b10880 UIKitCore!-[UIApplication _stopDeactivatingForReason:]
+	0x1d7a30dc0 UIKitCore!__101-[_UISceneLifecycleMultiplexer _evalTransitionToSettings:fromSettings:forceExit:withTransitionStore:]_block_invoke_2
+	0x1d79380b8 UIKitCore!_UIScenePerformActionsWithLifecycleActionMask
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: authorizationStatusForMediaType:
+	Backtrace:
+	0x103750ac4 VideoFusion!0x2a8cac4 (0x102a8cac4)
+	0x103753194 VideoFusion!0x2a8f194 (0x102a8f194)
+	0x100d1ee84 VideoFusion!0x5ae84 (0x10005ae84)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc69ad88 libdispatch.dylib!_dispatch_root_queue_drain
+	0x1dc69b430 libdispatch.dylib!_dispatch_worker_thread2
+	0x2206b1b94 libsystem_pthread.dylib!_pthread_wqthread
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: authorizationStatusForMediaType:
+	Backtrace:
+	0x11023d8d0 /private/var/containers/Bundle/Application/8BE129F8-84AF-4F87-9D45-86AFEA689E29/VideoFusion.app/VideoFusion!+[IESMMCameraDeviceAuthor isMicAuth]
+	0x110221834 /private/var/containers/Bundle/Application/8BE129F8-84AF-4F87-9D45-86AFEA689E29/VideoFusion.app/VideoFusion!-[IESMMAudioCapture init]
+	0x110247214 /private/var/containers/Bundle/Application/8BE129F8-84AF-4F87-9D45-86AFEA689E29/VideoFusion.app/VideoFusion!-[IESMMCaptureBase audioCapture]
+	0x1109b51bc /private/var/containers/Bundle/Application/8BE129F8-84AF-4F87-9D45-86AFEA689E29/VideoFusion.app/VideoFusion!-[VECrossPlatRecorder p_initAudioCapture]
+	0x11099573c /private/var/containers/Bundle/Application/8BE129F8-84AF-4F87-9D45-86AFEA689E29/VideoFusion.app/VideoFusion!-[VECrossPlatRecorder p_startAudioCaptureAsyncWithBlock:withPrivacyCert:]
+	0x1109956d0 /private/var/containers/Bundle/Application/8BE129F8-84AF-4F87-9D45-86AFEA689E29/VideoFusion.app/VideoFusion!-[VECrossPlatRecorder startAudioCapture:]
+	0x1037a8d9c /private/var/containers/Bundle/Application/8BE129F8-84AF-4F87-9D45-86AFEA689E29/VideoFusion.app/VideoFusion!-[LVAudioMiddleware handleAudioAction:]
+	0x1037a8cec /private/var/containers/Bundle/Application/8BE129F8-84AF-4F87-9D45-86AFEA689E29/VideoFusion.app/VideoFusion!-[LVAudioMiddleware handleAction:next:]
+	0x1037685f0 /private/var/containers/Bundle/Application/8BE129F8-84AF-4F87-9D45-86AFEA689E29/VideoFusion.app/VideoFusion!-[ACCCompositeMiddleware handleAction:next:]
+	0x103774c14 /private/var/containers/Bundle/Application/8BE129F8-84AF-4F87-9D45-86AFEA689E29/VideoFusion.app/VideoFusion!-[ACCStore dispatch:]
+	0x1037dfafc VideoFusion!0x2b1bafc (0x102b1bafc)
+	0x1039432b4 VideoFusion!0x2c7f2b4 (0x102c7f2b4)
+	0x1038444ac VideoFusion!0x2b804ac (0x102b804ac)
+	0x10393f454 VideoFusion!0x2c7b454 (0x102c7b454)
+	0x103943a4c VideoFusion!0x2c7fa4c (0x102c7fa4c)
+	0x10ccf7e04 VideoFusion!0xc033e04 (0x10c033e04)
+
+[*] Class Name: AVCaptureDevice
+[*] Method Name: authorizationStatusForMediaType:
+	Backtrace:
+	0x1109964ec /private/var/containers/Bundle/Application/8BE129F8-84AF-4F87-9D45-86AFEA689E29/VideoFusion.app/VideoFusion!-[VECrossPlatRecorder setupAudioSession]
+	0x110995988 /private/var/containers/Bundle/Application/8BE129F8-84AF-4F87-9D45-86AFEA689E29/VideoFusion.app/VideoFusion!-[VECrossPlatRecorder p_startAudioCaptureWithBlock:withPrivacyCert:]
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc6916fc libdispatch.dylib!_dispatch_lane_serial_drain$VARIANT$armv81
+	0x1dc6921b0 libdispatch.dylib!_dispatch_lane_invoke$VARIANT$armv81
+	0x1dc69bf14 libdispatch.dylib!_dispatch_workloop_worker_thread
+	0x2206b1bd0 libsystem_pthread.dylib!_pthread_wqthread
+
+[*] Class Name: PHPhotoLibrary
+[*] Method Name: authorizationStatus
+	Backtrace:
+	0x10ccd6cfc VideoFusion!0xc012cfc (0x10c012cfc)
+	0x1032eca90 VideoFusion!0x2628a90 (0x102628a90)
+	0x109120610 VideoFusion!0x845c610 (0x10845c610)
+	0x10393c2e4 VideoFusion!0x2c782e4 (0x102c782e4)
+	0x10ccf6468 VideoFusion!0xc032468 (0x10c032468)
+	0x100d1ee84 VideoFusion!0x5ae84 (0x10005ae84)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc697e10 libdispatch.dylib!_dispatch_main_queue_drain
+	0x1dc697a88 libdispatch.dylib!_dispatch_main_queue_callback_4CF$VARIANT$armv81
+	0x1d59999ac CoreFoundation!__CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+	0x1d597d648 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+[*] Started: Modify Return Value
+funcName_arg namePrefix
+[!] funcName_arg Exception: 
+funcName_arg givenName
+[!] funcName_arg Exception: 
+funcName_arg middleName
+[!] funcName_arg Exception: 
+funcName_arg familyName
+[!] funcName_arg Exception: 
+funcName_arg previousFamilyName
+[!] funcName_arg Exception: 
+funcName_arg nickname
+[!] funcName_arg Exception: 
+funcName_arg phoneticGivenName
+[!] funcName_arg Exception: 
+funcName_arg phoneticMiddleName
+[!] funcName_arg Exception: 
+funcName_arg phoneticFamilyName
+[!] funcName_arg Exception: 
+funcName_arg jobTitle
+[!] funcName_arg Exception: 
+funcName_arg departmentName
+[!] funcName_arg Exception: 
+funcName_arg organizationName
+[!] funcName_arg Exception: 
+funcName_arg phoneticOrganizationName
+[!] funcName_arg Exception: 
+funcName_arg postalAddresses
+[!] funcName_arg Exception: 
+funcName_arg urlAddresses
+[!] funcName_arg Exception: 
+funcName_arg phoneNumbers
+[!] funcName_arg Exception: 
+funcName_arg socialProfiles
+[!] funcName_arg Exception: 
+funcName_arg emailAddresses
+[!] funcName_arg Exception: 
+funcName_arg birthday
+[!] funcName_arg Exception: 
+funcName_arg dates
+[!] funcName_arg Exception: 
+funcName_arg nonGregorianBirthday
+[!] funcName_arg Exception: 
+funcName_arg note
+[!] funcName_arg Exception: 
+funcName_arg emailAddresses
+[!] funcName_arg Exception: 
+funcName_arg unifiedMeContactWithKeysToFetch:error:
+[!] funcName_arg Exception: 
+funcName_arg rfetchAssetsInAssetCollection:options:
+[!] funcName_arg Exception: 
+funcName_arg available
+[!] funcName_arg Exception: 
+funcName_arg recording
+[!] funcName_arg Exception: 
+funcName_arg cameraPreviewView
+[!] funcName_arg Exception: 
+funcName_arg microphoneEnabled
+[!] funcName_arg Exception: 
+funcName_arg cameraEnabled
+[!] funcName_arg Exception: 
+funcName_arg cameraEnabled
+[!] funcName_arg Exception: 
+funcName_arg 
+[!] funcName_arg Exception: 
+message: {'type': 'send', 'payload': '[*] Started: Modify Return Value'} data: None
+[*] Started: Modify Return Value
+funcName_arg namePrefix
+[!] funcName_arg Exception: 
+funcName_arg givenName
+[!] funcName_arg Exception: 
+funcName_arg middleName
+[!] funcName_arg Exception: 
+funcName_arg familyName
+[!] funcName_arg Exception: 
+funcName_arg previousFamilyName
+[!] funcName_arg Exception: 
+funcName_arg nickname
+[!] funcName_arg Exception: 
+funcName_arg phoneticGivenName
+[!] funcName_arg Exception: 
+funcName_arg phoneticMiddleName
+[!] funcName_arg Exception: 
+funcName_arg phoneticFamilyName
+[!] funcName_arg Exception: 
+funcName_arg jobTitle
+[!] funcName_arg Exception: 
+funcName_arg departmentName
+[!] funcName_arg Exception: 
+funcName_arg organizationName
+[!] funcName_arg Exception: 
+funcName_arg phoneticOrganizationName
+[!] funcName_arg Exception: 
+funcName_arg postalAddresses
+[!] funcName_arg Exception: 
+funcName_arg urlAddresses
+[!] funcName_arg Exception: 
+funcName_arg phoneNumbers
+[!] funcName_arg Exception: 
+funcName_arg socialProfiles
+[!] funcName_arg Exception: 
+funcName_arg emailAddresses
+[!] funcName_arg Exception: 
+funcName_arg birthday
+[!] funcName_arg Exception: 
+funcName_arg dates
+[!] funcName_arg Exception: 
+funcName_arg nonGregorianBirthday
+[!] funcName_arg Exception: 
+funcName_arg note
+[!] funcName_arg Exception: 
+funcName_arg emailAddresses
+[!] funcName_arg Exception: 
+funcName_arg unifiedMeContactWithKeysToFetch:error:
+[!] funcName_arg Exception: 
+funcName_arg rfetchAssetsInAssetCollection:options:
+[!] funcName_arg Exception: 
+funcName_arg available
+[!] funcName_arg Exception: 
+funcName_arg recording
+[!] funcName_arg Exception: 
+funcName_arg cameraPreviewView
+[!] funcName_arg Exception: 
+funcName_arg microphoneEnabled
+[!] funcName_arg Exception: 
+funcName_arg cameraEnabled
+[!] funcName_arg Exception: 
+funcName_arg cameraEnabled
+[!] funcName_arg Exception: 
+funcName_arg 
+[!] funcName_arg Exception: 
+message: {'type': 'send', 'payload': '[*] Started: Modify Return Value'} data: None
+
+
+

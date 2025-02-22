@@ -1,0 +1,2095 @@
+(base) mac@macdeMacBook-Pro autoTestiOS % frida -U -F -l hook_sensitive_api.js
+     ____
+    / _  |   Frida 16.2.1 - A world-class dynamic instrumentation toolkit
+   | (_| |
+    > _  |   Commands:
+   /_/ |_|       help      -> Displays the help system
+   . . . .       object?   -> Display information about 'object'
+   . . . .       exit/quit -> Exit
+   . . . .
+   . . . .   More info at https://frida.re/docs/home/
+   . . . .
+   . . . .   Connected to iPhone (id=02f66296483099a1e80d262c998b9f8feb885523)
+[*] Started: Modify Return Value
+funcName_arg namePrefix
+[!] funcName_arg Exception: 
+funcName_arg givenName
+[!] funcName_arg Exception: 
+funcName_arg middleName
+[!] funcName_arg Exception: 
+funcName_arg familyName
+[!] funcName_arg Exception: 
+funcName_arg previousFamilyName
+[!] funcName_arg Exception: 
+funcName_arg nickname
+[!] funcName_arg Exception: 
+funcName_arg phoneticGivenName
+[!] funcName_arg Exception: 
+funcName_arg phoneticMiddleName
+[!] funcName_arg Exception: 
+funcName_arg phoneticFamilyName
+[!] funcName_arg Exception: 
+funcName_arg jobTitle
+[!] funcName_arg Exception: 
+funcName_arg departmentName
+[!] funcName_arg Exception: 
+funcName_arg organizationName
+[!] funcName_arg Exception: 
+funcName_arg phoneticOrganizationName
+[!] funcName_arg Exception: 
+funcName_arg postalAddresses
+[!] funcName_arg Exception: 
+funcName_arg urlAddresses
+[!] funcName_arg Exception: 
+funcName_arg phoneNumbers
+[!] funcName_arg Exception: 
+funcName_arg socialProfiles
+[!] funcName_arg Exception: 
+funcName_arg emailAddresses
+[!] funcName_arg Exception: 
+funcName_arg birthday
+[!] funcName_arg Exception: 
+funcName_arg dates
+[!] funcName_arg Exception: 
+funcName_arg nonGregorianBirthday
+[!] funcName_arg Exception: 
+funcName_arg note
+[!] funcName_arg Exception: 
+funcName_arg emailAddresses
+[!] funcName_arg Exception: 
+funcName_arg unifiedMeContactWithKeysToFetch:error:
+[!] funcName_arg Exception: 
+funcName_arg rfetchAssetsInAssetCollection:options:
+[!] funcName_arg Exception: 
+message: {'type': 'send', 'payload': '[*] Started: Modify Return Value'} data: None
+[iPhone::小红书 ]->
+[*] Class Name: CLLocationManager
+[*] Method Name: authorizationStatus
+	Backtrace:
+	0x10ab89afc discover!0x5f1dafc (0x105f1dafc)
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc698b24 libdispatch.dylib!_dispatch_async_and_wait_invoke
+        0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc697e10 libdispatch.dylib!_dispatch_main_queue_drain
+	0x1dc697a88 libdispatch.dylib!_dispatch_main_queue_callback_4CF$VARIANT$armv81
+	0x1d59999ac CoreFoundation!__CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+        0x1d597d648 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x104d5b1e0 discover!0xef1e0 (0x1000ef1e0)
+	0x116d20344 dyld!start
+
+[*] Class Name: CLLocationManager
+[*] Method Name: authorizationStatus
+	Backtrace:
+	0x10ab89b18 discover!0x5f1db18 (0x105f1db18)
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc698b24 libdispatch.dylib!_dispatch_async_and_wait_invoke
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc697e10 libdispatch.dylib!_dispatch_main_queue_drain
+	0x1dc697a88 libdispatch.dylib!_dispatch_main_queue_callback_4CF$VARIANT$armv81
+	0x1d59999ac CoreFoundation!__CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+	0x1d597d648 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x104d5b1e0 discover!0xef1e0 (0x1000ef1e0)
+	0x116d20344 dyld!start
+
+[*] Class Name: CLLocationManager
+[*] Method Name: locationServicesEnabled
+	Backtrace:
+	0x104e4f394 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!+[INTULocationManager locationServicesState]
+	0x104e4f2a8 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocationManagerImp isLastLocationOutOfChina:]
+	0x104e4f10c /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYInAppNotificationManager refreshSocketConfig]
+	0x10501515c discover!0x3a915c (0x1003a915c)
+	0x104e6d3b4 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYSessionListenerHandle execute]
+	0x1100d717c discover!0xb46b17c (0x10b46b17c)
+	0x1d59118a8 CoreFoundation!__NSARRAY_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59d5330 CoreFoundation!-[__NSFrozenArrayM enumerateObjectsWithOptions:usingBlock:]
+	0x1100d70a4 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYSessionListener fire:]
+	0x1100dde28 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYSessionManager didSucceedLogin]
+	0x1100dbf4c discover!0xb46ff4c (0x10b46ff4c)
+	0x1100dcd78 discover!0xb470d78 (0x10b470d78)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc697e10 libdispatch.dylib!_dispatch_main_queue_drain
+	0x1dc697a88 libdispatch.dylib!_dispatch_main_queue_callback_4CF$VARIANT$armv81
+
+[*] Class Name: CLLocationManager
+[*] Method Name: authorizationStatus
+	Backtrace:
+	0x104e4f3b8 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!+[INTULocationManager locationServicesState]
+	0x104e4f2a8 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocationManagerImp isLastLocationOutOfChina:]
+	0x104e4f10c /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYInAppNotificationManager refreshSocketConfig]
+	0x10501515c discover!0x3a915c (0x1003a915c)
+	0x104e6d3b4 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYSessionListenerHandle execute]
+	0x1100d717c discover!0xb46b17c (0x10b46b17c)
+	0x1d59118a8 CoreFoundation!__NSARRAY_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59d5330 CoreFoundation!-[__NSFrozenArrayM enumerateObjectsWithOptions:usingBlock:]
+	0x1100d70a4 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYSessionListener fire:]
+	0x1100dde28 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYSessionManager didSucceedLogin]
+	0x1100dbf4c discover!0xb46ff4c (0x10b46ff4c)
+	0x1100dcd78 discover!0xb470d78 (0x10b470d78)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc697e10 libdispatch.dylib!_dispatch_main_queue_drain
+	0x1dc697a88 libdispatch.dylib!_dispatch_main_queue_callback_4CF$VARIANT$armv81
+
+[*] Class Name: CLLocationManager
+[*] Method Name: locationServicesEnabled
+	Backtrace:
+	0x104e4f394 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!+[INTULocationManager locationServicesState]
+	0x104fe0d8c /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYPHHomeTabbarController requestUserAuthority]
+	0x104fe0c48 discover!0x374c48 (0x100374c48)
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc68dd48 libdispatch.dylib!_dispatch_continuation_pop$VARIANT$armv81
+	0x1dc69f780 libdispatch.dylib!_dispatch_source_invoke$VARIANT$armv81
+	0x1dc697d64 libdispatch.dylib!_dispatch_main_queue_drain
+	0x1dc697a88 libdispatch.dylib!_dispatch_main_queue_callback_4CF$VARIANT$armv81
+	0x1d59999ac CoreFoundation!__CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+	0x1d597d648 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x104d5b1e0 discover!0xef1e0 (0x1000ef1e0)
+	0x116d20344 dyld!start
+
+[*] Class Name: CLLocationManager
+[*] Method Name: authorizationStatus
+	Backtrace:
+	0x104e4f3b8 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!+[INTULocationManager locationServicesState]
+	0x104fe0d8c /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYPHHomeTabbarController requestUserAuthority]
+	0x104fe0c48 discover!0x374c48 (0x100374c48)
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc68dd48 libdispatch.dylib!_dispatch_continuation_pop$VARIANT$armv81
+	0x1dc69f780 libdispatch.dylib!_dispatch_source_invoke$VARIANT$armv81
+	0x1dc697d64 libdispatch.dylib!_dispatch_main_queue_drain
+	0x1dc697a88 libdispatch.dylib!_dispatch_main_queue_callback_4CF$VARIANT$armv81
+	0x1d59999ac CoreFoundation!__CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+	0x1d597d648 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x104d5b1e0 discover!0xef1e0 (0x1000ef1e0)
+	0x116d20344 dyld!start
+
+[*] Class Name: CLLocationManager
+[*] Method Name: locationServicesEnabled
+	Backtrace:
+	0x104e4f394 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!+[INTULocationManager locationServicesState]
+	0x1050be23c /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYEXNearbyNotesViewController subscribeToLocationUpdates]
+	0x1050be208 discover!0x452208 (0x100452208)
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc68dd48 libdispatch.dylib!_dispatch_continuation_pop$VARIANT$armv81
+	0x1dc69f780 libdispatch.dylib!_dispatch_source_invoke$VARIANT$armv81
+	0x1dc697d64 libdispatch.dylib!_dispatch_main_queue_drain
+	0x1dc697a88 libdispatch.dylib!_dispatch_main_queue_callback_4CF$VARIANT$armv81
+	0x1d59999ac CoreFoundation!__CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+	0x1d597d648 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x104d5b1e0 discover!0xef1e0 (0x1000ef1e0)
+	0x116d20344 dyld!start
+
+[*] Class Name: CLLocationManager
+[*] Method Name: authorizationStatus
+	Backtrace:
+	0x104e4f3b8 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!+[INTULocationManager locationServicesState]
+	0x1050be23c /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYEXNearbyNotesViewController subscribeToLocationUpdates]
+	0x1050be208 discover!0x452208 (0x100452208)
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc68dd48 libdispatch.dylib!_dispatch_continuation_pop$VARIANT$armv81
+	0x1dc69f780 libdispatch.dylib!_dispatch_source_invoke$VARIANT$armv81
+	0x1dc697d64 libdispatch.dylib!_dispatch_main_queue_drain
+	0x1dc697a88 libdispatch.dylib!_dispatch_main_queue_callback_4CF$VARIANT$armv81
+	0x1d59999ac CoreFoundation!__CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+	0x1d597d648 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x104d5b1e0 discover!0xef1e0 (0x1000ef1e0)
+	0x116d20344 dyld!start
+
+[*] Class Name: CLLocationManager
+[*] Method Name: authorizationStatus
+	Backtrace:
+	0x10eee1d84 discover!0xa275d84 (0x10a275d84)
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc686ddc libdispatch.dylib!_dispatch_once_callout
+	0x10eee1d60 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocationManagerImp p_requestLocationAuthorizationIfNeed]
+	0x10eee172c /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocationManagerImp subscribeToSignificantLocationChangesWithBlock:]
+	0x10e8f2be4 discover!0x9c86be4 (0x109c86be4)
+	0x104e0f1c0 discover!0x1a31c0 (0x1001a31c0)
+	0x1d7bf6d8c UIKitCore!-[UIViewController _sendViewDidLoadWithAppearanceProxyObjectTaggingEnabled]
+	0x1d78bc5b8 UIKitCore!-[UIViewController loadViewIfRequired]
+	0x1d78bc2e4 UIKitCore!-[UIViewController view]
+	0x104f235b8 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[UIViewController xypg_addChildViewController:inView:withFrame:]
+	0x104f10a60 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYPageViewController addVisibleViewContorllerAtIndex:]
+	0x10f802000 discover!0xab96000 (0x10ab96000)
+	0x104f01aec /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYPageViewController showViewControllerAtIndex:animated:]
+	0x104f012b0 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYMHomeViewController showChildVCWithIndex:animated:enterType:extraInfo:]
+	0x10e964800 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYMHomeNaviBar segmentControl:willMoveToSegmentAtIndex:]
+
+[*] Class Name: CLLocationManager
+[*] Method Name: locationServicesEnabled
+	Backtrace:
+	0x104e4f394 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!+[INTULocationManager locationServicesState]
+	0x10e0f56fc /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager addLocationRequest:]
+	0x10e0f528c /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager subscribeToSignificantLocationChangesWithBlock:]
+	0x10eee178c /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocationManagerImp subscribeToSignificantLocationChangesWithBlock:]
+	0x10e8f2be4 discover!0x9c86be4 (0x109c86be4)
+	0x104e0f1c0 discover!0x1a31c0 (0x1001a31c0)
+	0x1d7bf6d8c UIKitCore!-[UIViewController _sendViewDidLoadWithAppearanceProxyObjectTaggingEnabled]
+	0x1d78bc5b8 UIKitCore!-[UIViewController loadViewIfRequired]
+	0x1d78bc2e4 UIKitCore!-[UIViewController view]
+	0x104f235b8 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[UIViewController xypg_addChildViewController:inView:withFrame:]
+	0x104f10a60 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYPageViewController addVisibleViewContorllerAtIndex:]
+	0x10f802000 discover!0xab96000 (0x10ab96000)
+	0x104f01aec /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYPageViewController showViewControllerAtIndex:animated:]
+	0x104f012b0 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYMHomeViewController showChildVCWithIndex:animated:enterType:extraInfo:]
+	0x10e964800 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYMHomeNaviBar segmentControl:willMoveToSegmentAtIndex:]
+	0x1100cc2b0 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYSegmentControl moveToSegmentAtIndex:animated:]
+
+[*] Class Name: CLLocationManager
+[*] Method Name: authorizationStatus
+	Backtrace:
+	0x104e4f3b8 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!+[INTULocationManager locationServicesState]
+	0x10e0f56fc /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager addLocationRequest:]
+	0x10e0f528c /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager subscribeToSignificantLocationChangesWithBlock:]
+	0x10eee178c /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocationManagerImp subscribeToSignificantLocationChangesWithBlock:]
+	0x10e8f2be4 discover!0x9c86be4 (0x109c86be4)
+	0x104e0f1c0 discover!0x1a31c0 (0x1001a31c0)
+	0x1d7bf6d8c UIKitCore!-[UIViewController _sendViewDidLoadWithAppearanceProxyObjectTaggingEnabled]
+	0x1d78bc5b8 UIKitCore!-[UIViewController loadViewIfRequired]
+	0x1d78bc2e4 UIKitCore!-[UIViewController view]
+	0x104f235b8 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[UIViewController xypg_addChildViewController:inView:withFrame:]
+	0x104f10a60 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYPageViewController addVisibleViewContorllerAtIndex:]
+	0x10f802000 discover!0xab96000 (0x10ab96000)
+	0x104f01aec /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYPageViewController showViewControllerAtIndex:animated:]
+	0x104f012b0 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYMHomeViewController showChildVCWithIndex:animated:enterType:extraInfo:]
+	0x10e964800 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYMHomeNaviBar segmentControl:willMoveToSegmentAtIndex:]
+	0x1100cc2b0 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYSegmentControl moveToSegmentAtIndex:animated:]
+
+[*] Class Name: CLLocationManager
+[*] Method Name: authorizationStatus
+	Backtrace:
+	0x10e8bc298 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYEXAPI fetchNoteLocalFeedsWithCursor:interactionType:oid:isOtherCity:cityName:callback:]
+	0x10e91b8a8 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYPHExploreNoteListDataSource fetchNoteFeedsWithCursor:interactionType:callback:]
+	0x10e91b3f8 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYPHExploreNoteListDataSource requestExploreNotesWithInteractionType:completion:]
+	0x10e8cde40 discover!0x9c61e40 (0x109c61e40)
+	0x104dd576c discover!0x16976c (0x10016976c)
+	0x104dd551c /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[RACSubscriptionScheduler schedule:]
+	0x104dd4b8c /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[RACDynamicSignal subscribe:]
+	0x104dd58f0 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[RACSignal subscribeNext:error:completed:]
+	0x104e27d68 discover!0x1bbd68 (0x1001bbd68)
+	0x104dd576c discover!0x16976c (0x10016976c)
+	0x104dd551c /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[RACSubscriptionScheduler schedule:]
+	0x104dd4b8c /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[RACDynamicSignal subscribe:]
+	0x104dd58f0 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[RACSignal subscribeNext:error:completed:]
+	0x104deff40 discover!0x183f40 (0x100183f40)
+	0x104deeae0 discover!0x182ae0 (0x100182ae0)
+	0x104debb24 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[RACSubscriber sendNext:]
+
+[*] Class Name: CLLocationManager
+[*] Method Name: locationServicesEnabled
+	Backtrace:
+	0x104e4f394 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!+[INTULocationManager locationServicesState]
+	0x10e0f56fc /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager addLocationRequest:]
+	0x10e0f5140 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager requestLocationWithDesiredAccuracy:desiredActivityType:timeout:delayUntilAuthorized:block:]
+	0x10eee1414 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocationManagerImp requestLocationWithDesiredAccuracy:desiredActivityType:timeout:delayUntilAuthorized:block:]
+	0x10e8f458c /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYEXNearbyNotesViewController requestLatestLocation]
+	0x10e8f3ef4 discover!0x9c87ef4 (0x109c87ef4)
+	0x104f82c88 discover!0x316c88 (0x100316c88)
+	0x1d5975f40 CoreFoundation!__invoking___
+	0x1d59271c8 CoreFoundation!-[NSInvocation invoke]
+	0x10e3dd514 discover!0x9771514 (0x109771514)
+	0x1d5926680 CoreFoundation!___forwarding___
+	0x1d59888fc CoreFoundation!_CF_forwarding_prep_0
+	0x1d78afa84 UIKitCore!-[UIViewController _setViewAppearState:isAnimating:]
+	0x1d7aaa8ac UIKitCore!-[UIViewController __viewDidAppear:]
+	0x1d7aaa758 UIKitCore!-[UIViewController _endAppearanceTransition:]
+	0x10f8021a0 discover!0xab961a0 (0x10ab961a0)
+
+[*] Class Name: CLLocationManager
+[*] Method Name: authorizationStatus
+	Backtrace:
+	0x104e4f3b8 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!+[INTULocationManager locationServicesState]
+	0x10e0f56fc /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager addLocationRequest:]
+	0x10e0f5140 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager requestLocationWithDesiredAccuracy:desiredActivityType:timeout:delayUntilAuthorized:block:]
+	0x10eee1414 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocationManagerImp requestLocationWithDesiredAccuracy:desiredActivityType:timeout:delayUntilAuthorized:block:]
+	0x10e8f458c /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYEXNearbyNotesViewController requestLatestLocation]
+	0x10e8f3ef4 discover!0x9c87ef4 (0x109c87ef4)
+	0x104f82c88 discover!0x316c88 (0x100316c88)
+	0x1d5975f40 CoreFoundation!__invoking___
+	0x1d59271c8 CoreFoundation!-[NSInvocation invoke]
+	0x10e3dd514 discover!0x9771514 (0x109771514)
+	0x1d5926680 CoreFoundation!___forwarding___
+	0x1d59888fc CoreFoundation!_CF_forwarding_prep_0
+	0x1d78afa84 UIKitCore!-[UIViewController _setViewAppearState:isAnimating:]
+	0x1d7aaa8ac UIKitCore!-[UIViewController __viewDidAppear:]
+	0x1d7aaa758 UIKitCore!-[UIViewController _endAppearanceTransition:]
+	0x10f8021a0 discover!0xab961a0 (0x10ab961a0)
+
+[*] Class Name: CLLocationManager
+[*] Method Name: authorizationStatus
+	Backtrace:
+	0x10e8d1f30 discover!0x9c65f30 (0x109c65f30)
+	0x104debb24 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[RACSubscriber sendNext:]
+	0x104deba98 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[RACPassthroughSubscriber sendNext:]
+	0x104debb24 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[RACSubscriber sendNext:]
+	0x104deba98 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[RACPassthroughSubscriber sendNext:]
+	0x104df03e8 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[RACSubject enumerateSubscribersUsingBlock:]
+	0x104df02dc /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[RACSubject sendNext:]
+	0x10e3dd540 discover!0x9771540 (0x109771540)
+	0x1d5926680 CoreFoundation!___forwarding___
+	0x1d59888fc CoreFoundation!_CF_forwarding_prep_0
+	0x1d78afa84 UIKitCore!-[UIViewController _setViewAppearState:isAnimating:]
+	0x1d7aaa8ac UIKitCore!-[UIViewController __viewDidAppear:]
+	0x1d7aaa758 UIKitCore!-[UIViewController _endAppearanceTransition:]
+	0x10f8021a0 discover!0xab961a0 (0x10ab961a0)
+	0x104f01b24 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYPageViewController showViewControllerAtIndex:animated:]
+	0x104f012b0 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYMHomeViewController showChildVCWithIndex:animated:enterType:extraInfo:]
+
+[*] Class Name: CLLocationManager
+[*] Method Name: authorizationStatus
+	Backtrace:
+	0x10e8d227c /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYEXGPSAuthorizationComponent _showPopupIfNeeded]
+	0x10e8d1f3c discover!0x9c65f3c (0x109c65f3c)
+	0x104debb24 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[RACSubscriber sendNext:]
+	0x104deba98 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[RACPassthroughSubscriber sendNext:]
+	0x104debb24 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[RACSubscriber sendNext:]
+	0x104deba98 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[RACPassthroughSubscriber sendNext:]
+	0x104df03e8 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[RACSubject enumerateSubscribersUsingBlock:]
+	0x104df02dc /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[RACSubject sendNext:]
+	0x10e3dd540 discover!0x9771540 (0x109771540)
+	0x1d5926680 CoreFoundation!___forwarding___
+	0x1d59888fc CoreFoundation!_CF_forwarding_prep_0
+	0x1d78afa84 UIKitCore!-[UIViewController _setViewAppearState:isAnimating:]
+	0x1d7aaa8ac UIKitCore!-[UIViewController __viewDidAppear:]
+	0x1d7aaa758 UIKitCore!-[UIViewController _endAppearanceTransition:]
+	0x10f8021a0 discover!0xab961a0 (0x10ab961a0)
+	0x104f01b24 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYPageViewController showViewControllerAtIndex:animated:]
+
+[*] Class Name: CLLocationManager
+[*] Method Name: authorizationStatus
+	Backtrace:
+	0x10e8d2048 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYEXGPSAuthorizationComponent showBottomGuideIfNeeded]
+	0x10e8d1f48 discover!0x9c65f48 (0x109c65f48)
+	0x104debb24 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[RACSubscriber sendNext:]
+	0x104deba98 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[RACPassthroughSubscriber sendNext:]
+	0x104debb24 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[RACSubscriber sendNext:]
+	0x104deba98 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[RACPassthroughSubscriber sendNext:]
+	0x104df03e8 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[RACSubject enumerateSubscribersUsingBlock:]
+	0x104df02dc /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[RACSubject sendNext:]
+	0x10e3dd540 discover!0x9771540 (0x109771540)
+	0x1d5926680 CoreFoundation!___forwarding___
+	0x1d59888fc CoreFoundation!_CF_forwarding_prep_0
+	0x1d78afa84 UIKitCore!-[UIViewController _setViewAppearState:isAnimating:]
+	0x1d7aaa8ac UIKitCore!-[UIViewController __viewDidAppear:]
+	0x1d7aaa758 UIKitCore!-[UIViewController _endAppearanceTransition:]
+	0x10f8021a0 discover!0xab961a0 (0x10ab961a0)
+	0x104f01b24 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYPageViewController showViewControllerAtIndex:animated:]
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x10e0f71f4 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d14c CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x104d5b1e0 discover!0xef1e0 (0x1000ef1e0)
+	0x116d20344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x10e0f7204 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d14c CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x104d5b1e0 discover!0xef1e0 (0x1000ef1e0)
+	0x116d20344 dyld!start
+
+[*] Class Name: CLLocationManager
+[*] Method Name: locationServicesEnabled
+	Backtrace:
+	0x104e4f394 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!+[INTULocationManager locationServicesState]
+	0x10e0f680c /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager statusForLocationRequest:]
+	0x10e0f64fc /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager processRecurringRequest:]
+	0x10e0f6178 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager processLocationRequests]
+	0x10e0f7240 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d14c CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+
+[*] Class Name: CLLocationManager
+[*] Method Name: authorizationStatus
+	Backtrace:
+	0x104e4f3b8 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!+[INTULocationManager locationServicesState]
+	0x10e0f680c /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager statusForLocationRequest:]
+	0x10e0f64fc /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager processRecurringRequest:]
+	0x10e0f6178 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager processLocationRequests]
+	0x10e0f7240 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d14c CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+
+[*] Class Name: CLLocation
+[*] Method Name: - timestamp
+	Backtrace:
+	0x10e0f6880 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager achievedAccuracyForLocation:]
+	0x10e0f6520 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager processRecurringRequest:]
+	0x10e0f6178 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager processLocationRequests]
+	0x10e0f7240 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d14c CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x104d5b1e0 discover!0xef1e0 (0x1000ef1e0)
+
+[*] Class Name: CLLocation
+[*] Method Name: - horizontalAccuracy
+	Backtrace:
+	0x10e0f68a4 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager achievedAccuracyForLocation:]
+	0x10e0f6520 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager processRecurringRequest:]
+	0x10e0f6178 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager processLocationRequests]
+	0x10e0f7240 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d14c CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x104d5b1e0 discover!0xef1e0 (0x1000ef1e0)
+
+[*] Class Name: CLLocation
+[*] Method Name: - timestamp
+	Backtrace:
+	0x10e0f6184 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager processLocationRequests]
+	0x10e0f7240 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d14c CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x104d5b1e0 discover!0xef1e0 (0x1000ef1e0)
+	0x116d20344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - horizontalAccuracy
+	Backtrace:
+	0x10e0f61a8 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager processLocationRequests]
+	0x10e0f7240 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d14c CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x104d5b1e0 discover!0xef1e0 (0x1000ef1e0)
+	0x116d20344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x10e0f71f4 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d14c CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x104d5b1e0 discover!0xef1e0 (0x1000ef1e0)
+	0x116d20344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x10e0f7204 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d14c CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x104d5b1e0 discover!0xef1e0 (0x1000ef1e0)
+	0x116d20344 dyld!start
+
+[*] Class Name: CLLocationManager
+[*] Method Name: locationServicesEnabled
+	Backtrace:
+	0x104e4f394 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!+[INTULocationManager locationServicesState]
+	0x10e0f680c /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager statusForLocationRequest:]
+	0x10e0f64fc /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager processRecurringRequest:]
+	0x10e0f6178 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager processLocationRequests]
+	0x10e0f7240 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d14c CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+
+[*] Class Name: CLLocationManager
+[*] Method Name: authorizationStatus
+	Backtrace:
+	0x104e4f3b8 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!+[INTULocationManager locationServicesState]
+	0x10e0f680c /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager statusForLocationRequest:]
+	0x10e0f64fc /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager processRecurringRequest:]
+	0x10e0f6178 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager processLocationRequests]
+	0x10e0f7240 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d14c CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+
+[*] Class Name: CLLocation
+[*] Method Name: - timestamp
+	Backtrace:
+	0x10e0f6880 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager achievedAccuracyForLocation:]
+	0x10e0f6520 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager processRecurringRequest:]
+	0x10e0f6178 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager processLocationRequests]
+	0x10e0f7240 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d14c CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x104d5b1e0 discover!0xef1e0 (0x1000ef1e0)
+
+[*] Class Name: CLLocation
+[*] Method Name: - horizontalAccuracy
+	Backtrace:
+	0x10e0f68a4 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager achievedAccuracyForLocation:]
+	0x10e0f6520 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager processRecurringRequest:]
+	0x10e0f6178 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager processLocationRequests]
+	0x10e0f7240 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d14c CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x104d5b1e0 discover!0xef1e0 (0x1000ef1e0)
+
+[*] Class Name: CLLocation
+[*] Method Name: - timestamp
+	Backtrace:
+	0x10e0f6184 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager processLocationRequests]
+	0x10e0f7240 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d14c CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x104d5b1e0 discover!0xef1e0 (0x1000ef1e0)
+	0x116d20344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - horizontalAccuracy
+	Backtrace:
+	0x10e0f61a8 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager processLocationRequests]
+	0x10e0f7240 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d14c CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x104d5b1e0 discover!0xef1e0 (0x1000ef1e0)
+	0x116d20344 dyld!start
+
+[*] Class Name: CLLocationManager
+[*] Method Name: locationServicesEnabled
+	Backtrace:
+	0x104e4f394 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!+[INTULocationManager locationServicesState]
+	0x10e0f680c /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager statusForLocationRequest:]
+	0x10e0f63ac /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager completeLocationRequest:]
+	0x10e0f6158 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager processLocationRequests]
+	0x10e0f7240 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d14c CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+
+[*] Class Name: CLLocationManager
+[*] Method Name: authorizationStatus
+	Backtrace:
+	0x104e4f3b8 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!+[INTULocationManager locationServicesState]
+	0x10e0f680c /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager statusForLocationRequest:]
+	0x10e0f63ac /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager completeLocationRequest:]
+	0x10e0f6158 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager processLocationRequests]
+	0x10e0f7240 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d14c CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+
+[*] Class Name: CLLocation
+[*] Method Name: - timestamp
+	Backtrace:
+	0x10e0f6880 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager achievedAccuracyForLocation:]
+	0x10e0f63d0 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager completeLocationRequest:]
+	0x10e0f6158 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager processLocationRequests]
+	0x10e0f7240 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d14c CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x104d5b1e0 discover!0xef1e0 (0x1000ef1e0)
+
+[*] Class Name: CLLocation
+[*] Method Name: - horizontalAccuracy
+	Backtrace:
+	0x10e0f68a4 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager achievedAccuracyForLocation:]
+	0x10e0f63d0 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager completeLocationRequest:]
+	0x10e0f6158 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager processLocationRequests]
+	0x10e0f7240 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d14c CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x104d5b1e0 discover!0xef1e0 (0x1000ef1e0)
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x10e0f71f4 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d14c CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x104d5b1e0 discover!0xef1e0 (0x1000ef1e0)
+	0x116d20344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x10e0f7204 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d14c CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x104d5b1e0 discover!0xef1e0 (0x1000ef1e0)
+	0x116d20344 dyld!start
+
+[*] Class Name: CLLocationManager
+[*] Method Name: locationServicesEnabled
+	Backtrace:
+	0x104e4f394 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!+[INTULocationManager locationServicesState]
+	0x10e0f680c /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager statusForLocationRequest:]
+	0x10e0f64fc /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager processRecurringRequest:]
+	0x10e0f6178 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager processLocationRequests]
+	0x10e0f7240 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d14c CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+
+[*] Class Name: CLLocationManager
+[*] Method Name: authorizationStatus
+	Backtrace:
+	0x104e4f3b8 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!+[INTULocationManager locationServicesState]
+	0x10e0f680c /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager statusForLocationRequest:]
+	0x10e0f64fc /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager processRecurringRequest:]
+	0x10e0f6178 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager processLocationRequests]
+	0x10e0f7240 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d14c CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+
+[*] Class Name: CLLocation
+[*] Method Name: - timestamp
+	Backtrace:
+	0x10e0f6880 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager achievedAccuracyForLocation:]
+	0x10e0f6520 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager processRecurringRequest:]
+	0x10e0f6178 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager processLocationRequests]
+	0x10e0f7240 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d14c CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x104d5b1e0 discover!0xef1e0 (0x1000ef1e0)
+
+[*] Class Name: CLLocation
+[*] Method Name: - horizontalAccuracy
+	Backtrace:
+	0x10e0f68a4 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager achievedAccuracyForLocation:]
+	0x10e0f6520 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager processRecurringRequest:]
+	0x10e0f6178 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager processLocationRequests]
+	0x10e0f7240 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d14c CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x104d5b1e0 discover!0xef1e0 (0x1000ef1e0)
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x10e0f71f4 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d14c CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x104d5b1e0 discover!0xef1e0 (0x1000ef1e0)
+	0x116d20344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x10e0f7204 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d14c CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x104d5b1e0 discover!0xef1e0 (0x1000ef1e0)
+	0x116d20344 dyld!start
+
+[*] Class Name: CLLocationManager
+[*] Method Name: locationServicesEnabled
+	Backtrace:
+	0x104e4f394 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!+[INTULocationManager locationServicesState]
+	0x10e0f680c /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager statusForLocationRequest:]
+	0x10e0f64fc /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager processRecurringRequest:]
+	0x10e0f6178 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager processLocationRequests]
+	0x10e0f7240 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d14c CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+
+[*] Class Name: CLLocationManager
+[*] Method Name: authorizationStatus
+	Backtrace:
+	0x104e4f3b8 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!+[INTULocationManager locationServicesState]
+	0x10e0f680c /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager statusForLocationRequest:]
+	0x10e0f64fc /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager processRecurringRequest:]
+	0x10e0f6178 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager processLocationRequests]
+	0x10e0f7240 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d14c CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+
+[*] Class Name: CLLocation
+[*] Method Name: - timestamp
+	Backtrace:
+	0x10e0f6880 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager achievedAccuracyForLocation:]
+	0x10e0f6520 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager processRecurringRequest:]
+	0x10e0f6178 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager processLocationRequests]
+	0x10e0f7240 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d14c CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x104d5b1e0 discover!0xef1e0 (0x1000ef1e0)
+
+[*] Class Name: CLLocation
+[*] Method Name: - horizontalAccuracy
+	Backtrace:
+	0x10e0f68a4 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager achievedAccuracyForLocation:]
+	0x10e0f6520 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager processRecurringRequest:]
+	0x10e0f6178 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager processLocationRequests]
+	0x10e0f7240 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d14c CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x104d5b1e0 discover!0xef1e0 (0x1000ef1e0)
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x10e0f71f4 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d14c CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x104d5b1e0 discover!0xef1e0 (0x1000ef1e0)
+	0x116d20344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x10e0f7204 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d14c CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x104d5b1e0 discover!0xef1e0 (0x1000ef1e0)
+	0x116d20344 dyld!start
+
+[*] Class Name: CLLocationManager
+[*] Method Name: locationServicesEnabled
+	Backtrace:
+	0x104e4f394 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!+[INTULocationManager locationServicesState]
+	0x10e0f680c /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager statusForLocationRequest:]
+	0x10e0f64fc /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager processRecurringRequest:]
+	0x10e0f6178 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager processLocationRequests]
+	0x10e0f7240 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d14c CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+
+[*] Class Name: CLLocationManager
+[*] Method Name: authorizationStatus
+	Backtrace:
+	0x104e4f3b8 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!+[INTULocationManager locationServicesState]
+	0x10e0f680c /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager statusForLocationRequest:]
+	0x10e0f64fc /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager processRecurringRequest:]
+	0x10e0f6178 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager processLocationRequests]
+	0x10e0f7240 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d14c CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+
+[*] Class Name: CLLocation
+[*] Method Name: - timestamp
+	Backtrace:
+	0x10e0f6880 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager achievedAccuracyForLocation:]
+	0x10e0f6520 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager processRecurringRequest:]
+	0x10e0f6178 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager processLocationRequests]
+	0x10e0f7240 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d14c CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x104d5b1e0 discover!0xef1e0 (0x1000ef1e0)
+
+[*] Class Name: CLLocation
+[*] Method Name: - horizontalAccuracy
+	Backtrace:
+	0x10e0f68a4 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager achievedAccuracyForLocation:]
+	0x10e0f6520 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager processRecurringRequest:]
+	0x10e0f6178 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager processLocationRequests]
+	0x10e0f7240 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[INTULocationManager locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d14c CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x104d5b1e0 discover!0xef1e0 (0x1000ef1e0)
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x10eee0880 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocation setCoreLocation:coordType:]
+	0x10eee01fc /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocation initWithCLLocation:status:accuracy:coordType:]
+	0x10eee1a9c /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocationManagerImp p_setCacheLastLocationWithLocation:achievedAccuracy:status:]
+	0x10eee17e4 discover!0xa2757e4 (0x10a2757e4)
+	0x10e0f6600 discover!0x948a600 (0x10948a600)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc697e10 libdispatch.dylib!_dispatch_main_queue_drain
+	0x1dc697a88 libdispatch.dylib!_dispatch_main_queue_callback_4CF$VARIANT$armv81
+	0x1d59999ac CoreFoundation!__CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+	0x1d597d648 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x104d5b1e0 discover!0xef1e0 (0x1000ef1e0)
+
+[*] Class Name: CLLocation
+[*] Method Name: - altitude
+	Backtrace:
+	0x10eee0928 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocation setCoreLocation:coordType:]
+	0x10eee01fc /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocation initWithCLLocation:status:accuracy:coordType:]
+	0x10eee1a9c /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocationManagerImp p_setCacheLastLocationWithLocation:achievedAccuracy:status:]
+	0x10eee17e4 discover!0xa2757e4 (0x10a2757e4)
+	0x10e0f6600 discover!0x948a600 (0x10948a600)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc697e10 libdispatch.dylib!_dispatch_main_queue_drain
+	0x1dc697a88 libdispatch.dylib!_dispatch_main_queue_callback_4CF$VARIANT$armv81
+	0x1d59999ac CoreFoundation!__CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+	0x1d597d648 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x104d5b1e0 discover!0xef1e0 (0x1000ef1e0)
+
+[*] Class Name: CLLocation
+[*] Method Name: - horizontalAccuracy
+	Backtrace:
+	0x10eee0934 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocation setCoreLocation:coordType:]
+	0x10eee01fc /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocation initWithCLLocation:status:accuracy:coordType:]
+	0x10eee1a9c /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocationManagerImp p_setCacheLastLocationWithLocation:achievedAccuracy:status:]
+	0x10eee17e4 discover!0xa2757e4 (0x10a2757e4)
+	0x10e0f6600 discover!0x948a600 (0x10948a600)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc697e10 libdispatch.dylib!_dispatch_main_queue_drain
+	0x1dc697a88 libdispatch.dylib!_dispatch_main_queue_callback_4CF$VARIANT$armv81
+	0x1d59999ac CoreFoundation!__CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+	0x1d597d648 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x104d5b1e0 discover!0xef1e0 (0x1000ef1e0)
+
+[*] Class Name: CLLocation
+[*] Method Name: - verticalAccuracy
+	Backtrace:
+	0x10eee0940 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocation setCoreLocation:coordType:]
+	0x10eee01fc /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocation initWithCLLocation:status:accuracy:coordType:]
+	0x10eee1a9c /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocationManagerImp p_setCacheLastLocationWithLocation:achievedAccuracy:status:]
+	0x10eee17e4 discover!0xa2757e4 (0x10a2757e4)
+	0x10e0f6600 discover!0x948a600 (0x10948a600)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc697e10 libdispatch.dylib!_dispatch_main_queue_drain
+	0x1dc697a88 libdispatch.dylib!_dispatch_main_queue_callback_4CF$VARIANT$armv81
+	0x1d59999ac CoreFoundation!__CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+	0x1d597d648 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x104d5b1e0 discover!0xef1e0 (0x1000ef1e0)
+
+[*] Class Name: CLLocation
+[*] Method Name: - timestamp
+	Backtrace:
+	0x10eee0964 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocation setCoreLocation:coordType:]
+	0x10eee01fc /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocation initWithCLLocation:status:accuracy:coordType:]
+	0x10eee1a9c /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocationManagerImp p_setCacheLastLocationWithLocation:achievedAccuracy:status:]
+	0x10eee17e4 discover!0xa2757e4 (0x10a2757e4)
+	0x10e0f6600 discover!0x948a600 (0x10948a600)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc697e10 libdispatch.dylib!_dispatch_main_queue_drain
+	0x1dc697a88 libdispatch.dylib!_dispatch_main_queue_callback_4CF$VARIANT$armv81
+	0x1d59999ac CoreFoundation!__CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+	0x1d597d648 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x104d5b1e0 discover!0xef1e0 (0x1000ef1e0)
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x10eee0238 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocation initWithCLLocation:status:accuracy:coordType:]
+	0x10eee1a9c /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocationManagerImp p_setCacheLastLocationWithLocation:achievedAccuracy:status:]
+	0x10eee17e4 discover!0xa2757e4 (0x10a2757e4)
+	0x10e0f6600 discover!0x948a600 (0x10948a600)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc697e10 libdispatch.dylib!_dispatch_main_queue_drain
+	0x1dc697a88 libdispatch.dylib!_dispatch_main_queue_callback_4CF$VARIANT$armv81
+	0x1d59999ac CoreFoundation!__CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+	0x1d597d648 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x104d5b1e0 discover!0xef1e0 (0x1000ef1e0)
+	0x116d20344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x10eee0264 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocation initWithCLLocation:status:accuracy:coordType:]
+	0x10eee1a9c /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocationManagerImp p_setCacheLastLocationWithLocation:achievedAccuracy:status:]
+	0x10eee17e4 discover!0xa2757e4 (0x10a2757e4)
+	0x10e0f6600 discover!0x948a600 (0x10948a600)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc697e10 libdispatch.dylib!_dispatch_main_queue_drain
+	0x1dc697a88 libdispatch.dylib!_dispatch_main_queue_callback_4CF$VARIANT$armv81
+	0x1d59999ac CoreFoundation!__CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+	0x1d597d648 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x104d5b1e0 discover!0xef1e0 (0x1000ef1e0)
+	0x116d20344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x10eee32d0 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!+[XYLocationUploader checkLocationValidWithLocation:]
+	0x10eee2930 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!+[XYLocationUploader uploadLocationToServiceWithLocation:completion:]
+	0x10eee1c80 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocationManagerImp p_uploadLocationToServiceWithLocation:]
+	0x10eee1b68 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocationManagerImp p_setCacheLastLocationWithLocation:achievedAccuracy:status:]
+	0x10eee17e4 discover!0xa2757e4 (0x10a2757e4)
+	0x10e0f6600 discover!0x948a600 (0x10948a600)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc697e10 libdispatch.dylib!_dispatch_main_queue_drain
+	0x1dc697a88 libdispatch.dylib!_dispatch_main_queue_callback_4CF$VARIANT$armv81
+	0x1d59999ac CoreFoundation!__CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+	0x1d597d648 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x10eee32e0 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!+[XYLocationUploader checkLocationValidWithLocation:]
+	0x10eee2930 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!+[XYLocationUploader uploadLocationToServiceWithLocation:completion:]
+	0x10eee1c80 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocationManagerImp p_uploadLocationToServiceWithLocation:]
+	0x10eee1b68 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocationManagerImp p_setCacheLastLocationWithLocation:achievedAccuracy:status:]
+	0x10eee17e4 discover!0xa2757e4 (0x10a2757e4)
+	0x10e0f6600 discover!0x948a600 (0x10948a600)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc697e10 libdispatch.dylib!_dispatch_main_queue_drain
+	0x1dc697a88 libdispatch.dylib!_dispatch_main_queue_callback_4CF$VARIANT$armv81
+	0x1d59999ac CoreFoundation!__CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+	0x1d597d648 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x10eee29a0 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!+[XYLocationUploader uploadLocationToServiceWithLocation:completion:]
+	0x10eee1c80 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocationManagerImp p_uploadLocationToServiceWithLocation:]
+	0x10eee1b68 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocationManagerImp p_setCacheLastLocationWithLocation:achievedAccuracy:status:]
+	0x10eee17e4 discover!0xa2757e4 (0x10a2757e4)
+	0x10e0f6600 discover!0x948a600 (0x10948a600)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc697e10 libdispatch.dylib!_dispatch_main_queue_drain
+	0x1dc697a88 libdispatch.dylib!_dispatch_main_queue_callback_4CF$VARIANT$armv81
+	0x1d59999ac CoreFoundation!__CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+	0x1d597d648 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x104d5b1e0 discover!0xef1e0 (0x1000ef1e0)
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x10eee29e0 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!+[XYLocationUploader uploadLocationToServiceWithLocation:completion:]
+	0x10eee1c80 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocationManagerImp p_uploadLocationToServiceWithLocation:]
+	0x10eee1b68 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocationManagerImp p_setCacheLastLocationWithLocation:achievedAccuracy:status:]
+	0x10eee17e4 discover!0xa2757e4 (0x10a2757e4)
+	0x10e0f6600 discover!0x948a600 (0x10948a600)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc697e10 libdispatch.dylib!_dispatch_main_queue_drain
+	0x1dc697a88 libdispatch.dylib!_dispatch_main_queue_callback_4CF$VARIANT$armv81
+	0x1d59999ac CoreFoundation!__CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+	0x1d597d648 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x104d5b1e0 discover!0xef1e0 (0x1000ef1e0)
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x10eee0880 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocation setCoreLocation:coordType:]
+	0x10eee01fc /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocation initWithCLLocation:status:accuracy:coordType:]
+	0x10eee1a9c /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocationManagerImp p_setCacheLastLocationWithLocation:achievedAccuracy:status:]
+	0x10eee17e4 discover!0xa2757e4 (0x10a2757e4)
+	0x10e0f6600 discover!0x948a600 (0x10948a600)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc697e10 libdispatch.dylib!_dispatch_main_queue_drain
+	0x1dc697a88 libdispatch.dylib!_dispatch_main_queue_callback_4CF$VARIANT$armv81
+	0x1d59999ac CoreFoundation!__CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+	0x1d597d648 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x104d5b1e0 discover!0xef1e0 (0x1000ef1e0)
+
+[*] Class Name: CLLocation
+[*] Method Name: - altitude
+	Backtrace:
+	0x104db59c8 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYAnalyticsContexts user]
+	0x104e2faf4 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYAnalyticsManager logEventWithTracker:config:]
+	0x104e2f988 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYAnalyticsManager logEventWithTrackerBuilder:config:]
+	0x104e2d504 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYAnalyticsManager logEventWithTrackerBuilderBlock:config:]
+	0x104e40ad4 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYAnalyticsManager sendHeartBeatData]
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc68dd48 libdispatch.dylib!_dispatch_continuation_pop$VARIANT$armv81
+	0x1dc69f780 libdispatch.dylib!_dispatch_source_invoke$VARIANT$armv81
+	0x1dc6915d4 libdispatch.dylib!_dispatch_lane_serial_drain$VARIANT$armv81
+	0x1dc6921b0 libdispatch.dylib!_dispatch_lane_invoke$VARIANT$armv81
+	0x1dc69bf14 libdispatch.dylib!_dispatch_workloop_worker_thread
+	0x2206b1bd0 libsystem_pthread.dylib!_pthread_wqthread
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x10eee0928 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocation setCoreLocation:coordType:]
+	0x10eee01fc /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocation initWithCLLocation:status:accuracy:coordType:]
+	0x10eee1a9c /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocationManagerImp p_setCacheLastLocationWithLocation:achievedAccuracy:status:]
+	0x10eee17e4 discover!0xa2757e4 (0x10a2757e4)
+	0x10e0f6600 discover!0x948a600 (0x10948a600)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc697e10 libdispatch.dylib!_dispatch_main_queue_drain
+	0x1dc697a88 libdispatch.dylib!_dispatch_main_queue_callback_4CF$VARIANT$armv81
+	0x1d59999ac CoreFoundation!__CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+	0x1d597d648 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x104d5b1e0 discover!0xef1e0 (0x1000ef1e0)
+
+[*] Class Name: CLLocation
+[*] Method Name: - horizontalAccuracy
+	Backtrace:
+	0x104db59d8 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYAnalyticsContexts user]
+	0x104e2faf4 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYAnalyticsManager logEventWithTracker:config:]
+	0x104e2f988 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYAnalyticsManager logEventWithTrackerBuilder:config:]
+	0x104e2d504 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYAnalyticsManager logEventWithTrackerBuilderBlock:config:]
+	0x104e40ad4 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYAnalyticsManager sendHeartBeatData]
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc68dd48 libdispatch.dylib!_dispatch_continuation_pop$VARIANT$armv81
+	0x1dc69f780 libdispatch.dylib!_dispatch_source_invoke$VARIANT$armv81
+	0x1dc6915d4 libdispatch.dylib!_dispatch_lane_serial_drain$VARIANT$armv81
+	0x1dc6921b0 libdispatch.dylib!_dispatch_lane_invoke$VARIANT$armv81
+	0x1dc69bf14 libdispatch.dylib!_dispatch_workloop_worker_thread
+	0x2206b1bd0 libsystem_pthread.dylib!_pthread_wqthread
+	Backtrace:
+	0x10eee0934 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocation setCoreLocation:coordType:]
+	0x10eee01fc /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocation initWithCLLocation:status:accuracy:coordType:]
+	0x10eee1a9c /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocationManagerImp p_setCacheLastLocationWithLocation:achievedAccuracy:status:]
+	0x10eee17e4 discover!0xa2757e4 (0x10a2757e4)
+	0x10e0f6600 discover!0x948a600 (0x10948a600)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc697e10 libdispatch.dylib!_dispatch_main_queue_drain
+	0x1dc697a88 libdispatch.dylib!_dispatch_main_queue_callback_4CF$VARIANT$armv81
+	0x1d59999ac CoreFoundation!__CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+	0x1d597d648 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x104d5b1e0 discover!0xef1e0 (0x1000ef1e0)
+
+[*] Class Name: CLLocation
+[*] Method Name: - verticalAccuracy
+	Backtrace:
+	0x10eee0940 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocation setCoreLocation:coordType:]
+	0x10eee01fc /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocation initWithCLLocation:status:accuracy:coordType:]
+	0x10eee1a9c /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocationManagerImp p_setCacheLastLocationWithLocation:achievedAccuracy:status:]
+	0x10eee17e4 discover!0xa2757e4 (0x10a2757e4)
+	0x10e0f6600 discover!0x948a600 (0x10948a600)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc697e10 libdispatch.dylib!_dispatch_main_queue_drain
+	0x1dc697a88 libdispatch.dylib!_dispatch_main_queue_callback_4CF$VARIANT$armv81
+	0x1d59999ac CoreFoundation!__CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+	0x1d597d648 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x104d5b1e0 discover!0xef1e0 (0x1000ef1e0)
+
+[*] Class Name: CLLocation
+[*] Method Name: - timestamp
+	Backtrace:
+	0x10eee0964 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocation setCoreLocation:coordType:]
+	0x10eee01fc /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocation initWithCLLocation:status:accuracy:coordType:]
+	0x10eee1a9c /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocationManagerImp p_setCacheLastLocationWithLocation:achievedAccuracy:status:]
+	0x10eee17e4 discover!0xa2757e4 (0x10a2757e4)
+	0x10e0f6600 discover!0x948a600 (0x10948a600)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc697e10 libdispatch.dylib!_dispatch_main_queue_drain
+	0x1dc697a88 libdispatch.dylib!_dispatch_main_queue_callback_4CF$VARIANT$armv81
+	0x1d59999ac CoreFoundation!__CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+	0x1d597d648 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x104d5b1e0 discover!0xef1e0 (0x1000ef1e0)
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x10eee0238 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocation initWithCLLocation:status:accuracy:coordType:]
+	0x10eee1a9c /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocationManagerImp p_setCacheLastLocationWithLocation:achievedAccuracy:status:]
+	0x10eee17e4 discover!0xa2757e4 (0x10a2757e4)
+	0x10e0f6600 discover!0x948a600 (0x10948a600)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc697e10 libdispatch.dylib!_dispatch_main_queue_drain
+	0x1dc697a88 libdispatch.dylib!_dispatch_main_queue_callback_4CF$VARIANT$armv81
+	0x1d59999ac CoreFoundation!__CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+	0x1d597d648 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x104d5b1e0 discover!0xef1e0 (0x1000ef1e0)
+	0x116d20344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x10eee0264 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocation initWithCLLocation:status:accuracy:coordType:]
+	0x10eee1a9c /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocationManagerImp p_setCacheLastLocationWithLocation:achievedAccuracy:status:]
+	0x10eee17e4 discover!0xa2757e4 (0x10a2757e4)
+	0x10e0f6600 discover!0x948a600 (0x10948a600)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc697e10 libdispatch.dylib!_dispatch_main_queue_drain
+	0x1dc697a88 libdispatch.dylib!_dispatch_main_queue_callback_4CF$VARIANT$armv81
+	0x1d59999ac CoreFoundation!__CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+	0x1d597d648 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x104d5b1e0 discover!0xef1e0 (0x1000ef1e0)
+	0x116d20344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x10eee0880 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocation setCoreLocation:coordType:]
+	0x10eee01fc /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocation initWithCLLocation:status:accuracy:coordType:]
+	0x10eee1a9c /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocationManagerImp p_setCacheLastLocationWithLocation:achievedAccuracy:status:]
+	0x10eee147c discover!0xa27547c (0x10a27547c)
+	0x10e0f64b0 discover!0x948a4b0 (0x10948a4b0)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc697e10 libdispatch.dylib!_dispatch_main_queue_drain
+	0x1dc697a88 libdispatch.dylib!_dispatch_main_queue_callback_4CF$VARIANT$armv81
+	0x1d59999ac CoreFoundation!__CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+	0x1d597d648 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x104d5b1e0 discover!0xef1e0 (0x1000ef1e0)
+
+[*] Class Name: CLLocation
+[*] Method Name: - altitude
+	Backtrace:
+	0x10eee0928 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocation setCoreLocation:coordType:]
+	0x10eee01fc /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocation initWithCLLocation:status:accuracy:coordType:]
+	0x10eee1a9c /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocationManagerImp p_setCacheLastLocationWithLocation:achievedAccuracy:status:]
+	0x10eee147c discover!0xa27547c (0x10a27547c)
+	0x10e0f64b0 discover!0x948a4b0 (0x10948a4b0)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc697e10 libdispatch.dylib!_dispatch_main_queue_drain
+	0x1dc697a88 libdispatch.dylib!_dispatch_main_queue_callback_4CF$VARIANT$armv81
+	0x1d59999ac CoreFoundation!__CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+	0x1d597d648 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x104d5b1e0 discover!0xef1e0 (0x1000ef1e0)
+
+[*] Class Name: CLLocation
+[*] Method Name: - horizontalAccuracy
+	Backtrace:
+	0x10eee0934 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocation setCoreLocation:coordType:]
+	0x10eee01fc /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocation initWithCLLocation:status:accuracy:coordType:]
+	0x10eee1a9c /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocationManagerImp p_setCacheLastLocationWithLocation:achievedAccuracy:status:]
+	0x10eee147c discover!0xa27547c (0x10a27547c)
+	0x10e0f64b0 discover!0x948a4b0 (0x10948a4b0)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc697e10 libdispatch.dylib!_dispatch_main_queue_drain
+	0x1dc697a88 libdispatch.dylib!_dispatch_main_queue_callback_4CF$VARIANT$armv81
+	0x1d59999ac CoreFoundation!__CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+	0x1d597d648 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x104d5b1e0 discover!0xef1e0 (0x1000ef1e0)
+
+[*] Class Name: CLLocation
+[*] Method Name: - verticalAccuracy
+	Backtrace:
+	0x10eee0940 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocation setCoreLocation:coordType:]
+	0x10eee01fc /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocation initWithCLLocation:status:accuracy:coordType:]
+	0x10eee1a9c /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocationManagerImp p_setCacheLastLocationWithLocation:achievedAccuracy:status:]
+	0x10eee147c discover!0xa27547c (0x10a27547c)
+	0x10e0f64b0 discover!0x948a4b0 (0x10948a4b0)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc697e10 libdispatch.dylib!_dispatch_main_queue_drain
+	0x1dc697a88 libdispatch.dylib!_dispatch_main_queue_callback_4CF$VARIANT$armv81
+	0x1d59999ac CoreFoundation!__CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+	0x1d597d648 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x104d5b1e0 discover!0xef1e0 (0x1000ef1e0)
+
+[*] Class Name: CLLocation
+[*] Method Name: - timestamp
+	Backtrace:
+	0x10eee0964 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocation setCoreLocation:coordType:]
+	0x10eee01fc /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocation initWithCLLocation:status:accuracy:coordType:]
+	0x10eee1a9c /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocationManagerImp p_setCacheLastLocationWithLocation:achievedAccuracy:status:]
+	0x10eee147c discover!0xa27547c (0x10a27547c)
+	0x10e0f64b0 discover!0x948a4b0 (0x10948a4b0)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc697e10 libdispatch.dylib!_dispatch_main_queue_drain
+	0x1dc697a88 libdispatch.dylib!_dispatch_main_queue_callback_4CF$VARIANT$armv81
+	0x1d59999ac CoreFoundation!__CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+	0x1d597d648 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x104d5b1e0 discover!0xef1e0 (0x1000ef1e0)
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x10eee0238 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocation initWithCLLocation:status:accuracy:coordType:]
+	0x10eee1a9c /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocationManagerImp p_setCacheLastLocationWithLocation:achievedAccuracy:status:]
+	0x10eee147c discover!0xa27547c (0x10a27547c)
+	0x10e0f64b0 discover!0x948a4b0 (0x10948a4b0)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc697e10 libdispatch.dylib!_dispatch_main_queue_drain
+	0x1dc697a88 libdispatch.dylib!_dispatch_main_queue_callback_4CF$VARIANT$armv81
+	0x1d59999ac CoreFoundation!__CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+	0x1d597d648 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x104d5b1e0 discover!0xef1e0 (0x1000ef1e0)
+	0x116d20344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x10eee0264 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocation initWithCLLocation:status:accuracy:coordType:]
+	0x10eee1a9c /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocationManagerImp p_setCacheLastLocationWithLocation:achievedAccuracy:status:]
+	0x10eee147c discover!0xa27547c (0x10a27547c)
+	0x10e0f64b0 discover!0x948a4b0 (0x10948a4b0)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc697e10 libdispatch.dylib!_dispatch_main_queue_drain
+	0x1dc697a88 libdispatch.dylib!_dispatch_main_queue_callback_4CF$VARIANT$armv81
+	0x1d59999ac CoreFoundation!__CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+	0x1d597d648 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x104d5b1e0 discover!0xef1e0 (0x1000ef1e0)
+	0x116d20344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x104db59c8 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYAnalyticsContexts user]
+	0x10e6a26d8 discover!0x9a366d8 (0x109a366d8)
+	0x104d34174 discover!0xc8174 (0x1000c8174)
+	0x104d33d04 discover!0xc7d04 (0x1000c7d04)
+	0x104d334d0 discover!0xc74d0 (0x1000c74d0)
+	0x104d23a48 discover!0xb7a48 (0x1000b7a48)
+	0x10eee1f58 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocationManagerImp p_reportRequestTime:status:]
+	0x10eee1498 discover!0xa275498 (0x10a275498)
+	0x10e0f64b0 discover!0x948a4b0 (0x10948a4b0)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc697e10 libdispatch.dylib!_dispatch_main_queue_drain
+	0x1dc697a88 libdispatch.dylib!_dispatch_main_queue_callback_4CF$VARIANT$armv81
+	0x1d59999ac CoreFoundation!__CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+	0x1d597d648 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x104db59d8 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYAnalyticsContexts user]
+	0x10e6a26d8 discover!0x9a366d8 (0x109a366d8)
+	0x104d34174 discover!0xc8174 (0x1000c8174)
+	0x104d33d04 discover!0xc7d04 (0x1000c7d04)
+	0x104d334d0 discover!0xc74d0 (0x1000c74d0)
+	0x104d23a48 discover!0xb7a48 (0x1000b7a48)
+	0x10eee1f58 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocationManagerImp p_reportRequestTime:status:]
+	0x10eee1498 discover!0xa275498 (0x10a275498)
+	0x10e0f64b0 discover!0x948a4b0 (0x10948a4b0)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc697e10 libdispatch.dylib!_dispatch_main_queue_drain
+	0x1dc697a88 libdispatch.dylib!_dispatch_main_queue_callback_4CF$VARIANT$armv81
+	0x1d59999ac CoreFoundation!__CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+	0x1d597d648 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x10eee0880 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocation setCoreLocation:coordType:]
+	0x10eee01fc /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocation initWithCLLocation:status:accuracy:coordType:]
+	0x10eee1a9c /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocationManagerImp p_setCacheLastLocationWithLocation:achievedAccuracy:status:]
+	0x10eee17e4 discover!0xa2757e4 (0x10a2757e4)
+	0x10e0f6600 discover!0x948a600 (0x10948a600)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc697e10 libdispatch.dylib!_dispatch_main_queue_drain
+	0x1dc697a88 libdispatch.dylib!_dispatch_main_queue_callback_4CF$VARIANT$armv81
+	0x1d59999ac CoreFoundation!__CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+	0x1d597d648 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+		0x1d7c14484 UIKitCore!UIApplicationMain
+	0x104d5b1e0 discover!0xef1e0 (0x1000ef1e0)
+
+[*] Class Name: CLLocation
+[*] Method Name: - altitude
+	Backtrace:
+	0x10eee0928 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocation setCoreLocation:coordType:]
+	0x10eee01fc /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocation initWithCLLocation:status:accuracy:coordType:]
+	0x10eee1a9c /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocationManagerImp p_setCacheLastLocationWithLocation:achievedAccuracy:status:]
+	0x10eee17e4 discover!0xa2757e4 (0x10a2757e4)
+	0x10e0f6600 discover!0x948a600 (0x10948a600)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc697e10 libdispatch.dylib!_dispatch_main_queue_drain
+	0x1dc697a88 libdispatch.dylib!_dispatch_main_queue_callback_4CF$VARIANT$armv81
+	0x1d59999ac CoreFoundation!__CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+	0x1d597d648 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x104d5b1e0 discover!0xef1e0 (0x1000ef1e0)
+
+[*] Class Name: CLLocation
+[*] Method Name: - horizontalAccuracy
+	Backtrace:
+	0x10eee0934 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocation setCoreLocation:coordType:]
+	0x10eee01fc /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocation initWithCLLocation:status:accuracy:coordType:]
+	0x10eee1a9c /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocationManagerImp p_setCacheLastLocationWithLocation:achievedAccuracy:status:]
+	0x10eee17e4 discover!0xa2757e4 (0x10a2757e4)
+	0x10e0f6600 discover!0x948a600 (0x10948a600)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc697e10 libdispatch.dylib!_dispatch_main_queue_drain
+	0x1dc697a88 libdispatch.dylib!_dispatch_main_queue_callback_4CF$VARIANT$armv81
+	0x1d59999ac CoreFoundation!__CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+	0x1d597d648 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x104d5b1e0 discover!0xef1e0 (0x1000ef1e0)
+
+[*] Class Name: CLLocation
+[*] Method Name: - verticalAccuracy
+	Backtrace:
+	0x10eee0940 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocation setCoreLocation:coordType:]
+	0x10eee01fc /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocation initWithCLLocation:status:accuracy:coordType:]
+	0x10eee1a9c /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocationManagerImp p_setCacheLastLocationWithLocation:achievedAccuracy:status:]
+	0x10eee17e4 discover!0xa2757e4 (0x10a2757e4)
+	0x10e0f6600 discover!0x948a600 (0x10948a600)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc697e10 libdispatch.dylib!_dispatch_main_queue_drain
+	0x1dc697a88 libdispatch.dylib!_dispatch_main_queue_callback_4CF$VARIANT$armv81
+	0x1d59999ac CoreFoundation!__CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+	0x1d597d648 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x104d5b1e0 discover!0xef1e0 (0x1000ef1e0)
+
+[*] Class Name: CLLocation
+[*] Method Name: - timestamp
+	Backtrace:
+	0x10eee0964 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocation setCoreLocation:coordType:]
+	0x10eee01fc /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocation initWithCLLocation:status:accuracy:coordType:]
+	0x10eee1a9c /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocationManagerImp p_setCacheLastLocationWithLocation:achievedAccuracy:status:]
+	0x10eee17e4 discover!0xa2757e4 (0x10a2757e4)
+	0x10e0f6600 discover!0x948a600 (0x10948a600)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc697e10 libdispatch.dylib!_dispatch_main_queue_drain
+	0x1dc697a88 libdispatch.dylib!_dispatch_main_queue_callback_4CF$VARIANT$armv81
+	0x1d59999ac CoreFoundation!__CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+	0x1d597d648 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x104d5b1e0 discover!0xef1e0 (0x1000ef1e0)
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x10eee0238 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocation initWithCLLocation:status:accuracy:coordType:]
+	0x10eee1a9c /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocationManagerImp p_setCacheLastLocationWithLocation:achievedAccuracy:status:]
+	0x10eee17e4 discover!0xa2757e4 (0x10a2757e4)
+	0x10e0f6600 discover!0x948a600 (0x10948a600)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc697e10 libdispatch.dylib!_dispatch_main_queue_drain
+	0x1dc697a88 libdispatch.dylib!_dispatch_main_queue_callback_4CF$VARIANT$armv81
+	0x1d59999ac CoreFoundation!__CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+	0x1d597d648 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x104d5b1e0 discover!0xef1e0 (0x1000ef1e0)
+	0x116d20344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x10eee0264 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocation initWithCLLocation:status:accuracy:coordType:]
+	0x10eee1a9c /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocationManagerImp p_setCacheLastLocationWithLocation:achievedAccuracy:status:]
+	0x10eee17e4 discover!0xa2757e4 (0x10a2757e4)
+	0x10e0f6600 discover!0x948a600 (0x10948a600)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc697e10 libdispatch.dylib!_dispatch_main_queue_drain
+	0x1dc697a88 libdispatch.dylib!_dispatch_main_queue_callback_4CF$VARIANT$armv81
+	0x1d59999ac CoreFoundation!__CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+	0x1d597d648 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x104d5b1e0 discover!0xef1e0 (0x1000ef1e0)
+	0x116d20344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x10eee0880 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocation setCoreLocation:coordType:]
+	0x10eee01fc /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocation initWithCLLocation:status:accuracy:coordType:]
+	0x10eee1a9c /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocationManagerImp p_setCacheLastLocationWithLocation:achievedAccuracy:status:]
+	0x10eee17e4 discover!0xa2757e4 (0x10a2757e4)
+	0x10e0f6600 discover!0x948a600 (0x10948a600)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc697e10 libdispatch.dylib!_dispatch_main_queue_drain
+	0x1dc697a88 libdispatch.dylib!_dispatch_main_queue_callback_4CF$VARIANT$armv81
+	0x1d59999ac CoreFoundation!__CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+	0x1d597d648 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x104d5b1e0 discover!0xef1e0 (0x1000ef1e0)
+
+[*] Class Name: CLLocation
+[*] Method Name: - altitude
+	Backtrace:
+	0x10eee0928 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocation setCoreLocation:coordType:]
+	0x10eee01fc /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocation initWithCLLocation:status:accuracy:coordType:]
+	0x10eee1a9c /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocationManagerImp p_setCacheLastLocationWithLocation:achievedAccuracy:status:]
+	0x10eee17e4 discover!0xa2757e4 (0x10a2757e4)
+	0x10e0f6600 discover!0x948a600 (0x10948a600)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc697e10 libdispatch.dylib!_dispatch_main_queue_drain
+	0x1dc697a88 libdispatch.dylib!_dispatch_main_queue_callback_4CF$VARIANT$armv81
+	0x1d59999ac CoreFoundation!__CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+	0x1d597d648 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x104d5b1e0 discover!0xef1e0 (0x1000ef1e0)
+
+[*] Class Name: CLLocation
+[*] Method Name: - horizontalAccuracy
+	Backtrace:
+	0x10eee0934 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocation setCoreLocation:coordType:]
+	0x10eee01fc /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocation initWithCLLocation:status:accuracy:coordType:]
+	0x10eee1a9c /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocationManagerImp p_setCacheLastLocationWithLocation:achievedAccuracy:status:]
+	0x10eee17e4 discover!0xa2757e4 (0x10a2757e4)
+	0x10e0f6600 discover!0x948a600 (0x10948a600)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc697e10 libdispatch.dylib!_dispatch_main_queue_drain
+	0x1dc697a88 libdispatch.dylib!_dispatch_main_queue_callback_4CF$VARIANT$armv81
+	0x1d59999ac CoreFoundation!__CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+	0x1d597d648 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x104d5b1e0 discover!0xef1e0 (0x1000ef1e0)
+
+[*] Class Name: CLLocation
+[*] Method Name: - verticalAccuracy
+	Backtrace:
+	0x10eee0940 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocation setCoreLocation:coordType:]
+	0x10eee01fc /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocation initWithCLLocation:status:accuracy:coordType:]
+	0x10eee1a9c /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocationManagerImp p_setCacheLastLocationWithLocation:achievedAccuracy:status:]
+	0x10eee17e4 discover!0xa2757e4 (0x10a2757e4)
+	0x10e0f6600 discover!0x948a600 (0x10948a600)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc697e10 libdispatch.dylib!_dispatch_main_queue_drain
+	0x1dc697a88 libdispatch.dylib!_dispatch_main_queue_callback_4CF$VARIANT$armv81
+	0x1d59999ac CoreFoundation!__CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+	0x1d597d648 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x104d5b1e0 discover!0xef1e0 (0x1000ef1e0)
+
+[*] Class Name: CLLocation
+[*] Method Name: - timestamp
+	Backtrace:
+	0x10eee0964 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocation setCoreLocation:coordType:]
+	0x10eee01fc /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocation initWithCLLocation:status:accuracy:coordType:]
+	0x10eee1a9c /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocationManagerImp p_setCacheLastLocationWithLocation:achievedAccuracy:status:]
+	0x10eee17e4 discover!0xa2757e4 (0x10a2757e4)
+	0x10e0f6600 discover!0x948a600 (0x10948a600)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc697e10 libdispatch.dylib!_dispatch_main_queue_drain
+	0x1dc697a88 libdispatch.dylib!_dispatch_main_queue_callback_4CF$VARIANT$armv81
+	0x1d59999ac CoreFoundation!__CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+	0x1d597d648 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x104d5b1e0 discover!0xef1e0 (0x1000ef1e0)
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x10eee0238 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocation initWithCLLocation:status:accuracy:coordType:]
+	0x10eee1a9c /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocationManagerImp p_setCacheLastLocationWithLocation:achievedAccuracy:status:]
+	0x10eee17e4 discover!0xa2757e4 (0x10a2757e4)
+	0x10e0f6600 discover!0x948a600 (0x10948a600)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc697e10 libdispatch.dylib!_dispatch_main_queue_drain
+	0x1dc697a88 libdispatch.dylib!_dispatch_main_queue_callback_4CF$VARIANT$armv81
+	0x1d59999ac CoreFoundation!__CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+	0x1d597d648 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x104d5b1e0 discover!0xef1e0 (0x1000ef1e0)
+	0x116d20344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x10eee0264 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocation initWithCLLocation:status:accuracy:coordType:]
+	0x10eee1a9c /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocationManagerImp p_setCacheLastLocationWithLocation:achievedAccuracy:status:]
+	0x10eee17e4 discover!0xa2757e4 (0x10a2757e4)
+	0x10e0f6600 discover!0x948a600 (0x10948a600)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc697e10 libdispatch.dylib!_dispatch_main_queue_drain
+	0x1dc697a88 libdispatch.dylib!_dispatch_main_queue_callback_4CF$VARIANT$armv81
+	0x1d59999ac CoreFoundation!__CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+	0x1d597d648 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x104d5b1e0 discover!0xef1e0 (0x1000ef1e0)
+	0x116d20344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x10eee0880 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocation setCoreLocation:coordType:]
+	0x10eee01fc /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocation initWithCLLocation:status:accuracy:coordType:]
+	0x10eee1a9c /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocationManagerImp p_setCacheLastLocationWithLocation:achievedAccuracy:status:]
+	0x10eee17e4 discover!0xa2757e4 (0x10a2757e4)
+	0x10e0f6600 discover!0x948a600 (0x10948a600)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc697e10 libdispatch.dylib!_dispatch_main_queue_drain
+	0x1dc697a88 libdispatch.dylib!_dispatch_main_queue_callback_4CF$VARIANT$armv81
+	0x1d59999ac CoreFoundation!__CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+	0x1d597d648 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x104d5b1e0 discover!0xef1e0 (0x1000ef1e0)
+
+[*] Class Name: CLLocation
+[*] Method Name: - altitude
+	Backtrace:
+	0x10eee0928 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocation setCoreLocation:coordType:]
+	0x10eee01fc /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocation initWithCLLocation:status:accuracy:coordType:]
+	0x10eee1a9c /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocationManagerImp p_setCacheLastLocationWithLocation:achievedAccuracy:status:]
+	0x10eee17e4 discover!0xa2757e4 (0x10a2757e4)
+	0x10e0f6600 discover!0x948a600 (0x10948a600)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc697e10 libdispatch.dylib!_dispatch_main_queue_drain
+	0x1dc697a88 libdispatch.dylib!_dispatch_main_queue_callback_4CF$VARIANT$armv81
+	0x1d59999ac CoreFoundation!__CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+	0x1d597d648 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x104d5b1e0 discover!0xef1e0 (0x1000ef1e0)
+
+[*] Class Name: CLLocation
+[*] Method Name: - horizontalAccuracy
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x10eee0934 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocation setCoreLocation:coordType:]
+	0x10eee01fc /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocation initWithCLLocation:status:accuracy:coordType:]
+	0x10eee1a9c /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocationManagerImp p_setCacheLastLocationWithLocation:achievedAccuracy:status:]
+	0x10eee17e4 discover!0xa2757e4 (0x10a2757e4)
+	0x10e0f6600 discover!0x948a600 (0x10948a600)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc697e10 libdispatch.dylib!_dispatch_main_queue_drain
+	0x1dc697a88 libdispatch.dylib!_dispatch_main_queue_callback_4CF$VARIANT$armv81
+	0x1d59999ac CoreFoundation!__CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+	0x1d597d648 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x104d5b1e0 discover!0xef1e0 (0x1000ef1e0)
+
+[*] Class Name: CLLocation
+[*] Method Name: - verticalAccuracy
+	Backtrace:
+	0x10eee0940 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocation setCoreLocation:coordType:]
+	0x10eee01fc /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocation initWithCLLocation:status:accuracy:coordType:]
+	0x10eee1a9c /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocationManagerImp p_setCacheLastLocationWithLocation:achievedAccuracy:status:]
+	0x10eee17e4 discover!0xa2757e4 (0x10a2757e4)
+	0x10e0f6600 discover!0x948a600 (0x10948a600)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc697e10 libdispatch.dylib!_dispatch_main_queue_drain
+	0x1dc697a88 libdispatch.dylib!_dispatch_main_queue_callback_4CF$VARIANT$armv81
+	0x1d59999ac CoreFoundation!__CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+	0x1d597d648 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x104d5b1e0 discover!0xef1e0 (0x1000ef1e0)
+
+[*] Class Name: CLLocation
+[*] Method Name: - timestamp
+	Backtrace:
+	0x10eee0964 /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocation setCoreLocation:coordType:]
+	0x10eee01fc /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocation initWithCLLocation:status:accuracy:coordType:]
+	0x10eee1a9c /private/var/containers/Bundle/Application/300263B2-8380-4506-A019-371F5934A323/discover.app/discover!-[XYLocationManagerImp p_setCacheLastLocationWithLocation:achievedAccuracy:status:]
+	0x10eee17e4 discover!0xa2757e4 (0x10a2757e4)
+	0x10e0f6600 discover!0x948a600 (0x10948a600)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc697e10 libdispatch.dylib!_dispatch_main_queue_drain
+	0x1dc697a88 libdispatch.dylib!_dispatch_main_queue_callback_4CF$VARIANT$armv81
+	0x1d59999ac CoreFoundation!__CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+	0x1d597d648 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x104d5b1e0 discover!0xef1e0 (0x1000ef1e0)
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+

@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c674e0a0-c28a-48ab-ade6-0a93279a7ca5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/process_privacy_policy_2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/userstudy/Ethics_Review_Form_for_Evaluation.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/userstudy/Ethics_Review_Form_for_FocusGroup.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/userstudy/Participant_InfoSheet_Consent_Form_FocusGroup.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/userstudy/Participant_InfoSheet_Consent_Form_ReportDataCleection.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/userstudy/Participant_InfoSheet_Consent_Form_ThinkAloud.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/userstudy/readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/extract_privacy_policy.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/extract_privacy_policy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -209,7 +200,7 @@
       <workItem from="1724396687457" duration="10570000" />
       <workItem from="1724826682764" duration="13000" />
       <workItem from="1725603196332" duration="599000" />
-      <workItem from="1740146948303" duration="1178000" />
+      <workItem from="1740146948303" duration="2248000" />
     </task>
     <servers />
   </component>

@@ -1,0 +1,161 @@
+(base) mac@macdeMacBook-Pro autoTestiOS % frida -U -F -l hook_sensitive_api.js
+     ____
+    / _  |   Frida 16.2.1 - A world-class dynamic instrumentation toolkit
+   | (_| |
+    > _  |   Commands:
+   /_/ |_|       help      -> Displays the help system
+   . . . .       object?   -> Display information about 'object'
+   . . . .       exit/quit -> Exit
+   . . . .
+   . . . .   More info at https://frida.re/docs/home/
+   . . . .
+   . . . .   Connected to iPhone (id=02f66296483099a1e80d262c998b9f8feb885523)
+[*] Started: Modify Return Value
+funcName_arg namePrefix
+[!] funcName_arg Exception: 
+funcName_arg givenName
+[!] funcName_arg Exception: 
+funcName_arg middleName
+[!] funcName_arg Exception: 
+funcName_arg familyName
+[!] funcName_arg Exception: 
+funcName_arg previousFamilyName
+[!] funcName_arg Exception: 
+funcName_arg nickname
+[!] funcName_arg Exception: 
+funcName_arg phoneticGivenName
+[!] funcName_arg Exception: 
+funcName_arg phoneticMiddleName
+[!] funcName_arg Exception: 
+funcName_arg phoneticFamilyName
+[!] funcName_arg Exception: 
+funcName_arg jobTitle
+[!] funcName_arg Exception: 
+funcName_arg departmentName
+[!] funcName_arg Exception: 
+funcName_arg organizationName
+[!] funcName_arg Exception: 
+funcName_arg phoneticOrganizationName
+[!] funcName_arg Exception: 
+funcName_arg postalAddresses
+[!] funcName_arg Exception: 
+funcName_arg urlAddresses
+[!] funcName_arg Exception: 
+funcName_arg phoneNumbers
+[!] funcName_arg Exception: 
+funcName_arg socialProfiles
+[!] funcName_arg Exception: 
+funcName_arg emailAddresses
+[!] funcName_arg Exception: 
+funcName_arg birthday
+[!] funcName_arg Exception: 
+funcName_arg dates
+[!] funcName_arg Exception: 
+funcName_arg nonGregorianBirthday
+[!] funcName_arg Exception: 
+funcName_arg note
+[!] funcName_arg Exception: 
+funcName_arg emailAddresses
+[!] funcName_arg Exception: 
+funcName_arg unifiedMeContactWithKeysToFetch:error:
+[!] funcName_arg Exception: 
+funcName_arg rfetchAssetsInAssetCollection:options:
+[!] funcName_arg Exception: 
+message: {'type': 'send', 'payload': '[*] Started: Modify Return Value'} data: None
+[iPhone::好大夫在线 ]->
+[*] Class Name: CLLocationManager
+[*] Method Name: locationServicesEnabled
+	Backtrace:
+	0x10692da70 /private/var/containers/Bundle/Application/CF5CD483-245A-45B4-AFE7-ED3079F34865/newPatient.app/newPatient!-[HDFLocationNewManager startLocation]
+	0x1059cf7f4 newPatient!0xd0f7f4 (0x100d0f7f4)
+	0x1059cf6bc /private/var/containers/Bundle/Application/CF5CD483-245A-45B4-AFE7-ED3079F34865/newPatient.app/newPatient!-[newPatient.HDFHomePageViewController guidePageDissmiss]
+        0x1d593c7d8 CoreFoundation!__CFNOTIFICATIONCENTER_IS_CALLING_OUT_TO_AN_OBSERVER__
+	0x1d59d90c0 CoreFoundation!___CFXRegistrationPost_block_invoke
+	0x1d59bd8a8 CoreFoundation!_CFXRegistrationPost
+	0x1d594feec CoreFoundation!_CFXNotificationPost
+        0x1cfced1c4 Foundation!-[NSNotificationCenter postNotificationName:object:userInfo:]
+	0x104d12870 newPatient!0x52870 (0x100052870)
+	0x1d7afd700 UIKitCore!-[UIPresentationController transitionDidFinish:]
+	0x1d79e214c UIKitCore!-[_UICurrentContextPresentationController transitionDidFinish:]
+	0x1d7fa211c UIKitCore!__56-[UIPresentationController runTransitionForCurrentState]_block_invoke.88
+	0x1d7b3500c UIKitCore!-[_UIViewControllerTransitionContext completeTransition:]
+	0x1d7b3611c UIKitCore!-[UITransitionView notifyDidCompleteTransition:]
+	0x1d7b35d6c UIKitCore!-[UITransitionView _didCompleteTransition:]
+	0x1d8800fcc UIKitCore!__UIVIEW_IS_EXECUTING_ANIMATION_COMPLETION_BLOCK__
+
+[*] Class Name: CLLocationManager
+[*] Method Name: authorizationStatus
+	Backtrace:
+	0x10692da7c /private/var/containers/Bundle/Application/CF5CD483-245A-45B4-AFE7-ED3079F34865/newPatient.app/newPatient!-[HDFLocationNewManager startLocation]
+	0x1059cf7f4 newPatient!0xd0f7f4 (0x100d0f7f4)
+	0x1059cf6bc /private/var/containers/Bundle/Application/CF5CD483-245A-45B4-AFE7-ED3079F34865/newPatient.app/newPatient!-[newPatient.HDFHomePageViewController guidePageDissmiss]
+	0x1d593c7d8 CoreFoundation!__CFNOTIFICATIONCENTER_IS_CALLING_OUT_TO_AN_OBSERVER__
+	0x1d59d90c0 CoreFoundation!___CFXRegistrationPost_block_invoke
+	0x1d59bd8a8 CoreFoundation!_CFXRegistrationPost
+	0x1d594feec CoreFoundation!_CFXNotificationPost
+	0x1cfced1c4 Foundation!-[NSNotificationCenter postNotificationName:object:userInfo:]
+	0x104d12870 newPatient!0x52870 (0x100052870)
+	0x1d7afd700 UIKitCore!-[UIPresentationController transitionDidFinish:]
+	0x1d79e214c UIKitCore!-[_UICurrentContextPresentationController transitionDidFinish:]
+	0x1d7fa211c UIKitCore!__56-[UIPresentationController runTransitionForCurrentState]_block_invoke.88
+	0x1d7b3500c UIKitCore!-[_UIViewControllerTransitionContext completeTransition:]
+	0x1d7b3611c UIKitCore!-[UITransitionView notifyDidCompleteTransition:]
+	0x1d7b35d6c UIKitCore!-[UITransitionView _didCompleteTransition:]
+	0x1d8800fcc UIKitCore!__UIVIEW_IS_EXECUTING_ANIMATION_COMPLETION_BLOCK__
+
+[*] Class Name: CLLocationManager
+[*] Method Name: authorizationStatus
+	Backtrace:
+	0x10692da8c /private/var/containers/Bundle/Application/CF5CD483-245A-45B4-AFE7-ED3079F34865/newPatient.app/newPatient!-[HDFLocationNewManager startLocation]
+	0x1059cf7f4 newPatient!0xd0f7f4 (0x100d0f7f4)
+	0x1059cf6bc /private/var/containers/Bundle/Application/CF5CD483-245A-45B4-AFE7-ED3079F34865/newPatient.app/newPatient!-[newPatient.HDFHomePageViewController guidePageDissmiss]
+	0x1d593c7d8 CoreFoundation!__CFNOTIFICATIONCENTER_IS_CALLING_OUT_TO_AN_OBSERVER__
+	0x1d59d90c0 CoreFoundation!___CFXRegistrationPost_block_invoke
+	0x1d59bd8a8 CoreFoundation!_CFXRegistrationPost
+	0x1d594feec CoreFoundation!_CFXNotificationPost
+	0x1cfced1c4 Foundation!-[NSNotificationCenter postNotificationName:object:userInfo:]
+	0x104d12870 newPatient!0x52870 (0x100052870)
+	0x1d7afd700 UIKitCore!-[UIPresentationController transitionDidFinish:]
+	0x1d79e214c UIKitCore!-[_UICurrentContextPresentationController transitionDidFinish:]
+	0x1d7fa211c UIKitCore!__56-[UIPresentationController runTransitionForCurrentState]_block_invoke.88
+	0x1d7b3500c UIKitCore!-[_UIViewControllerTransitionContext completeTransition:]
+	0x1d7b3611c UIKitCore!-[UITransitionView notifyDidCompleteTransition:]
+	0x1d7b35d6c UIKitCore!-[UITransitionView _didCompleteTransition:]
+	0x1d8800fcc UIKitCore!__UIVIEW_IS_EXECUTING_ANIMATION_COMPLETION_BLOCK__
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x10692db54 /private/var/containers/Bundle/Application/CF5CD483-245A-45B4-AFE7-ED3079F34865/newPatient.app/newPatient!-[HDFLocationNewManager locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d804 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x1052db0c4 newPatient!0x61b0c4 (0x10061b0c4)
+	0x10a280344 dyld!start
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x10692db60 /private/var/containers/Bundle/Application/CF5CD483-245A-45B4-AFE7-ED3079F34865/newPatient.app/newPatient!-[HDFLocationNewManager locationManager:didUpdateLocations:]
+	0x1e08d2224 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEventLocation:forceMapMatching:type:]
+	0x1e08b2170 /System/Library/Frameworks/CoreLocation.framework/CoreLocation!-[CLLocationManager onClientEvent:supportInfo:]
+	0x1e08ae9c4 CoreLocation!0xa9c4 (0x191d8a9c4)
+	0x1efbbb5c4 /System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport!-[CLSilo prepareAndRunBlock:]
+	0x1d5947f78 CoreFoundation!__CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__
+	0x1d59aa034 CoreFoundation!__CFRunLoopDoBlocks
+	0x1d597d804 CoreFoundation!__CFRunLoopRun
+	0x1d5981d20 CoreFoundation!CFRunLoopRunSpecific
+	0x20da4d998 GraphicsServices!GSEventRunModal
+	0x1d7c1480c UIKitCore!-[UIApplication _run]
+	0x1d7c14484 UIKitCore!UIApplicationMain
+	0x1052db0c4 newPatient!0x61b0c4 (0x10061b0c4)
+	0x10a280344 dyld!start
+

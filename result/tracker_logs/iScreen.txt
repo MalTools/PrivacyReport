@@ -1,0 +1,377 @@
+(base) mac@macdeMacBook-Pro autoTestiOS % frida -U -F -l hook_sensitive_api.js
+     ____
+    / _  |   Frida 16.2.1 - A world-class dynamic instrumentation toolkit
+   | (_| |
+    > _  |   Commands:
+   /_/ |_|       help      -> Displays the help system
+   . . . .       object?   -> Display information about 'object'
+   . . . .       exit/quit -> Exit
+   . . . .
+   . . . .   More info at https://frida.re/docs/home/
+   . . . .
+   . . . .   Connected to iPhone (id=02f66296483099a1e80d262c998b9f8feb885523)
+[*] Started: Modify Return Value
+funcName_arg namePrefix
+[!] funcName_arg Exception: 
+funcName_arg givenName
+[!] funcName_arg Exception: 
+funcName_arg middleName
+[!] funcName_arg Exception: 
+funcName_arg familyName
+[!] funcName_arg Exception: 
+funcName_arg previousFamilyName
+[!] funcName_arg Exception: 
+funcName_arg nickname
+[!] funcName_arg Exception: 
+funcName_arg phoneticGivenName
+[!] funcName_arg Exception: 
+funcName_arg phoneticMiddleName
+[!] funcName_arg Exception: 
+funcName_arg phoneticFamilyName
+[!] funcName_arg Exception: 
+funcName_arg jobTitle
+[!] funcName_arg Exception: 
+funcName_arg departmentName
+[!] funcName_arg Exception: 
+funcName_arg organizationName
+[!] funcName_arg Exception: 
+funcName_arg phoneticOrganizationName
+[!] funcName_arg Exception: 
+funcName_arg postalAddresses
+[!] funcName_arg Exception: 
+funcName_arg urlAddresses
+[!] funcName_arg Exception: 
+funcName_arg phoneNumbers
+[!] funcName_arg Exception: 
+funcName_arg socialProfiles
+[!] funcName_arg Exception: 
+funcName_arg emailAddresses
+[!] funcName_arg Exception: 
+funcName_arg birthday
+[!] funcName_arg Exception: 
+funcName_arg dates
+[!] funcName_arg Exception: 
+funcName_arg nonGregorianBirthday
+[!] funcName_arg Exception: 
+funcName_arg note
+[!] funcName_arg Exception: 
+funcName_arg emailAddresses
+[!] funcName_arg Exception: 
+funcName_arg unifiedMeContactWithKeysToFetch:error:
+[!] funcName_arg Exception: 
+funcName_arg rfetchAssetsInAssetCollection:options:
+[!] funcName_arg Exception: 
+message: {'type': 'send', 'payload': '[*] Started: Modify Return Value'} data: None
+[iPhone:: iScreen  ]->
+[*] Class Name: CLLocationManager
+[*] Method Name: locationServicesEnabled
+
+[*] Class Name: CLLocationManager
+[*] Method Name: locationServicesEnabled
+
+[*] Class Name: CLLocationManager
+[*] Method Name: authorizationStatus
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x10391f67c /private/var/containers/Bundle/Application/349258E7-06C7-4E25-817C-5D317F7CC4E9/HiWidget.app/HiWidget!-[ABULocationService _serviceEnable]
+	0x10391f4fc /private/var/containers/Bundle/Application/349258E7-06C7-4E25-817C-5D317F7CC4E9/HiWidget.app/HiWidget!-[ABULocationService _serviceEnable:]
+	0x1cfcebc4c Foundation!__NSThread__start__
+	0x2206b30ec libsystem_pthread.dylib!_pthread_start
+
+[*] Class Name: CLLocationManager
+[*] Method Name: authorizationStatus
+	Backtrace:
+	0x1033639f0 /private/var/containers/Bundle/Application/349258E7-06C7-4E25-817C-5D317F7CC4E9/HiWidget.app/HiWidget!-[CSJSDKLocation Show_StrLock]
+	0x1033636a4 HiWidget!0x28176a4 (0x1028176a4)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc68d9f8 libdispatch.dylib!_dispatch_queue_override_invoke
+	0x1dc69ac68 libdispatch.dylib!_dispatch_root_queue_drain
+	0x1dc69b430 libdispatch.dylib!_dispatch_worker_thread2
+	0x2206b1b94 libsystem_pthread.dylib!_pthread_wqthread
+
+[*] Class Name: CLLocationManager
+[*] Method Name: authorizationStatus
+	Backtrace:
+	0x1063aac40 KSAdSDK!-[KSAdLocationManager geoInfo]
+	0x106500d80 KSAdSDK!-[KSAdRequestParams geoInfo]
+	0x1cfc9a77c Foundation!-[NSObject(NSKeyValueCoding) valueForKey:]
+	0x106418c5c KSAdSDK!-[PodKSAdSDK_MJProperty valueForObject:]
+	0x10641fea8 KSAdSDK!__68-[NSObject(MJKeyValue) PodKSAdSDK_mj_keyValuesWithKeys:ignoredKeys:]_block_invoke_2
+	0x10641fa64 KSAdSDK!__68-[NSObject(MJKeyValue) PodKSAdSDK_mj_keyValuesWithKeys:ignoredKeys:]_block_invoke
+	0x10642219c KSAdSDK!+[NSObject(Property) PodKSAdSDK_mj_enumerateProperties:]
+	0x10641f848 KSAdSDK!-[NSObject(MJKeyValue) PodKSAdSDK_mj_keyValuesWithKeys:ignoredKeys:]
+	0x106500410 KSAdSDK!-[KSAdRequestParams getRequestParams]
+	0x106501fb8 KSAdSDK!-[KSAdPOSTHTTPRequest requestBodyWithEncryption]
+	0x106501e6c KSAdSDK!-[KSAdPOSTHTTPRequest requestWithURL:]
+	0x1064fdc68 KSAdSDK!-[KSAdHTTPRequest request]
+	0x10650232c KSAdSDK!-[KSAdPOSTHTTPRequest request]
+	0x1064fae6c KSAdSDK!-[PodKSAdSDK_AFURLSessionManager(KSAdURLSession) dataTaskWithRequest:cancellationToken:sessionTask:]
+	0x1064ff4b8 KSAdSDK!-[KSAdHTTPTaskManager dataTaskWithRequest:cancellationToken:]
+	0x1064fbf24 KSAdSDK!-[KSAdBaseAPI sendRequest:]
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x1063aac7c KSAdSDK!-[KSAdLocationManager geoInfo]
+	0x106500d80 KSAdSDK!-[KSAdRequestParams geoInfo]
+	0x1cfc9a77c Foundation!-[NSObject(NSKeyValueCoding) valueForKey:]
+	0x106418c5c KSAdSDK!-[PodKSAdSDK_MJProperty valueForObject:]
+	0x10641fea8 KSAdSDK!__68-[NSObject(MJKeyValue) PodKSAdSDK_mj_keyValuesWithKeys:ignoredKeys:]_block_invoke_2
+	0x10641fa64 KSAdSDK!__68-[NSObject(MJKeyValue) PodKSAdSDK_mj_keyValuesWithKeys:ignoredKeys:]_block_invoke
+	0x10642219c KSAdSDK!+[NSObject(Property) PodKSAdSDK_mj_enumerateProperties:]
+	0x10641f848 KSAdSDK!-[NSObject(MJKeyValue) PodKSAdSDK_mj_keyValuesWithKeys:ignoredKeys:]
+	0x106500410 KSAdSDK!-[KSAdRequestParams getRequestParams]
+	0x106501fb8 KSAdSDK!-[KSAdPOSTHTTPRequest requestBodyWithEncryption]
+	0x106501e6c KSAdSDK!-[KSAdPOSTHTTPRequest requestWithURL:]
+	0x1064fdc68 KSAdSDK!-[KSAdHTTPRequest request]
+	0x10650232c KSAdSDK!-[KSAdPOSTHTTPRequest request]
+	0x1064fae6c KSAdSDK!-[PodKSAdSDK_AFURLSessionManager(KSAdURLSession) dataTaskWithRequest:cancellationToken:sessionTask:]
+	0x1064ff4b8 KSAdSDK!-[KSAdHTTPTaskManager dataTaskWithRequest:cancellationToken:]
+	0x1064fbf24 KSAdSDK!-[KSAdBaseAPI sendRequest:]
+	Backtrace:
+	0x10391f690 /private/var/containers/Bundle/Application/349258E7-06C7-4E25-817C-5D317F7CC4E9/HiWidget.app/HiWidget!-[ABULocationService _serviceEnable]
+	0x10391f4fc /private/var/containers/Bundle/Application/349258E7-06C7-4E25-817C-5D317F7CC4E9/HiWidget.app/HiWidget!-[ABULocationService _serviceEnable:]
+	0x1cfcebc4c Foundation!__NSThread__start__
+	0x2206b30ec libsystem_pthread.dylib!_pthread_start
+	Backtrace:
+	0x103363a54 /private/var/containers/Bundle/Application/349258E7-06C7-4E25-817C-5D317F7CC4E9/HiWidget.app/HiWidget!-[CSJSDKLocation Show_StrLock]
+	0x1033636a4 HiWidget!0x28176a4 (0x1028176a4)
+	0x1dc6b57a8 libdispatch.dylib!_dispatch_call_block_and_release
+	0x1dc6b6780 libdispatch.dylib!_dispatch_client_callout
+	0x1dc68d9f8 libdispatch.dylib!_dispatch_queue_override_invoke
+	0x1dc69ac68 libdispatch.dylib!_dispatch_root_queue_drain
+	0x1dc69b430 libdispatch.dylib!_dispatch_worker_thread2
+	0x2206b1b94 libsystem_pthread.dylib!_pthread_wqthread
+	Backtrace:
+	0x103616a40 HiWidget!0x2acaa40 (0x102acaa40)
+	0x1036193ec HiWidget!0x2acd3ec (0x102acd3ec)
+	0x1036448e8 HiWidget!0x2af88e8 (0x102af88e8)
+	0x103652664 HiWidget!0x2b06664 (0x102b06664)
+	0x103657900 HiWidget!0x2b0b900 (0x102b0b900)
+	0x10360c70c HiWidget!0x2ac070c (0x102ac070c)
+	0x103650604 HiWidget!0x2b04604 (0x102b04604)
+	0x103603630 HiWidget!0x2ab7630 (0x102ab7630)
+	0x2206b30ec libsystem_pthread.dylib!_pthread_start
+
+[*] Class Name: CLLocationManager
+[*] Method Name: authorizationStatus
+	Backtrace:
+	0x103616a40 HiWidget!0x2acaa40 (0x102acaa40)
+	0x1036193ec HiWidget!0x2acd3ec (0x102acd3ec)
+	0x1036448e8 HiWidget!0x2af88e8 (0x102af88e8)
+	0x103652664 HiWidget!0x2b06664 (0x102b06664)
+	0x103657900 HiWidget!0x2b0b900 (0x102b0b900)
+	0x10360c70c HiWidget!0x2ac070c (0x102ac070c)
+	0x103650604 HiWidget!0x2b04604 (0x102b04604)
+	0x103603630 HiWidget!0x2ab7630 (0x102ab7630)
+	0x2206b30ec libsystem_pthread.dylib!_pthread_start
+
+[*] Class Name: CLLocationManager
+[*] Method Name: authorizationStatus
+	Backtrace:
+	0x103616a40 HiWidget!0x2acaa40 (0x102acaa40)
+	0x1036193ec HiWidget!0x2acd3ec (0x102acd3ec)
+	0x1036448e8 HiWidget!0x2af88e8 (0x102af88e8)
+	0x103652664 HiWidget!0x2b06664 (0x102b06664)
+	0x103657900 HiWidget!0x2b0b900 (0x102b0b900)
+	0x10360c70c HiWidget!0x2ac070c (0x102ac070c)
+	0x103650604 HiWidget!0x2b04604 (0x102b04604)
+	0x103603630 HiWidget!0x2ab7630 (0x102ab7630)
+	0x2206b30ec libsystem_pthread.dylib!_pthread_start
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x1063aac40 KSAdSDK!-[KSAdLocationManager geoInfo]
+	0x106500d80 KSAdSDK!-[KSAdRequestParams geoInfo]
+	0x1cfc9a77c Foundation!-[NSObject(NSKeyValueCoding) valueForKey:]
+	0x106418c5c KSAdSDK!-[PodKSAdSDK_MJProperty valueForObject:]
+	0x10641fea8 KSAdSDK!__68-[NSObject(MJKeyValue) PodKSAdSDK_mj_keyValuesWithKeys:ignoredKeys:]_block_invoke_2
+	0x10641fa64 KSAdSDK!__68-[NSObject(MJKeyValue) PodKSAdSDK_mj_keyValuesWithKeys:ignoredKeys:]_block_invoke
+	0x10642219c KSAdSDK!+[NSObject(Property) PodKSAdSDK_mj_enumerateProperties:]
+	0x10641f848 KSAdSDK!-[NSObject(MJKeyValue) PodKSAdSDK_mj_keyValuesWithKeys:ignoredKeys:]
+	0x106500410 KSAdSDK!-[KSAdRequestParams getRequestParams]
+	0x106501fb8 KSAdSDK!-[KSAdPOSTHTTPRequest requestBodyWithEncryption]
+	0x106501e6c KSAdSDK!-[KSAdPOSTHTTPRequest requestWithURL:]
+	0x1064fdc68 KSAdSDK!-[KSAdHTTPRequest request]
+	0x10650232c KSAdSDK!-[KSAdPOSTHTTPRequest request]
+	0x1064fae6c KSAdSDK!-[PodKSAdSDK_AFURLSessionManager(KSAdURLSession) dataTaskWithRequest:cancellationToken:sessionTask:]
+	0x1064ff4b8 KSAdSDK!-[KSAdHTTPTaskManager dataTaskWithRequest:cancellationToken:]
+	0x1064fbf24 KSAdSDK!-[KSAdBaseAPI sendRequest:]
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x1063aac7c KSAdSDK!-[KSAdLocationManager geoInfo]
+	0x106500d80 KSAdSDK!-[KSAdRequestParams geoInfo]
+	0x1cfc9a77c Foundation!-[NSObject(NSKeyValueCoding) valueForKey:]
+	0x106418c5c KSAdSDK!-[PodKSAdSDK_MJProperty valueForObject:]
+	0x10641fea8 KSAdSDK!__68-[NSObject(MJKeyValue) PodKSAdSDK_mj_keyValuesWithKeys:ignoredKeys:]_block_invoke_2
+	0x10641fa64 KSAdSDK!__68-[NSObject(MJKeyValue) PodKSAdSDK_mj_keyValuesWithKeys:ignoredKeys:]_block_invoke
+	0x10642219c KSAdSDK!+[NSObject(Property) PodKSAdSDK_mj_enumerateProperties:]
+	0x10641f848 KSAdSDK!-[NSObject(MJKeyValue) PodKSAdSDK_mj_keyValuesWithKeys:ignoredKeys:]
+	0x106500410 KSAdSDK!-[KSAdRequestParams getRequestParams]
+	0x106501fb8 KSAdSDK!-[KSAdPOSTHTTPRequest requestBodyWithEncryption]
+	0x106501e6c KSAdSDK!-[KSAdPOSTHTTPRequest requestWithURL:]
+	0x1064fdc68 KSAdSDK!-[KSAdHTTPRequest request]
+	0x10650232c KSAdSDK!-[KSAdPOSTHTTPRequest request]
+	0x1064fae6c KSAdSDK!-[PodKSAdSDK_AFURLSessionManager(KSAdURLSession) dataTaskWithRequest:cancellationToken:sessionTask:]
+	0x1064ff4b8 KSAdSDK!-[KSAdHTTPTaskManager dataTaskWithRequest:cancellationToken:]
+	0x1064fbf24 KSAdSDK!-[KSAdBaseAPI sendRequest:]
+
+[*] Class Name: PHPhotoLibrary
+[*] Method Name: requestAuthorizationForAccessLevel:handler:
+	Backtrace:
+	0x1011a1120 HiWidget!0x655120 (0x100655120)
+	0x1011a04e4 HiWidget!0x6544e4 (0x1006544e4)
+	0x1011a0ce8 /private/var/containers/Bundle/Application/349258E7-06C7-4E25-817C-5D317F7CC4E9/HiWidget.app/HiWidget!-[HiWidget.NewPicPreviewVC downloadAction]
+	0x1d7ad1764 UIKitCore!-[UIApplication sendAction:to:from:forEvent:]
+	0x1073a128c SensorsAnalyticsSDK!-[UIApplication(AutoTrack) sa_sendAction:to:from:forEvent:]
+	0x1d7ad1484 UIKitCore!-[UIControl sendAction:to:forEvent:]
+	0x1d7ad0e8c UIKitCore!-[UIControl _sendActionsForEvents:withEvent:]
+	0x1d7ad0d68 UIKitCore!-[UIButton _sendActionsForEvents:withEvent:]
+	0x1d7ad0944 UIKitCore!-[UIControl touchesEnded:withEvent:]
+	0x1036dbe78 /private/var/containers/Bundle/Application/349258E7-06C7-4E25-817C-5D317F7CC4E9/HiWidget.app/HiWidget!-[UIButton touchesEnded:withEvent:]
+	0x1d7991b18 UIKitCore!-[UIWindow _sendTouchesForEvent:]
+	0x1d7990e2c UIKitCore!-[UIWindow sendEvent:]
+	0x1d7990118 UIKitCore!-[UIApplication sendEvent:]
+	0x1d798e38c UIKitCore!__dispatchPreprocessedEventFromEventQueue
+	0x1d79d3d58 UIKitCore!__processEventQueue
+	0x1d7cb40d4 UIKitCore!__eventFetcherSourceCallback
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x1063aac40 KSAdSDK!-[KSAdLocationManager geoInfo]
+	0x106500d80 KSAdSDK!-[KSAdRequestParams geoInfo]
+	0x1cfc9a77c Foundation!-[NSObject(NSKeyValueCoding) valueForKey:]
+	0x106418c5c KSAdSDK!-[PodKSAdSDK_MJProperty valueForObject:]
+	0x10641fea8 KSAdSDK!__68-[NSObject(MJKeyValue) PodKSAdSDK_mj_keyValuesWithKeys:ignoredKeys:]_block_invoke_2
+	0x10641fa64 KSAdSDK!__68-[NSObject(MJKeyValue) PodKSAdSDK_mj_keyValuesWithKeys:ignoredKeys:]_block_invoke
+	0x10642219c KSAdSDK!+[NSObject(Property) PodKSAdSDK_mj_enumerateProperties:]
+	0x10641f848 KSAdSDK!-[NSObject(MJKeyValue) PodKSAdSDK_mj_keyValuesWithKeys:ignoredKeys:]
+	0x106500410 KSAdSDK!-[KSAdRequestParams getRequestParams]
+	0x106501fb8 KSAdSDK!-[KSAdPOSTHTTPRequest requestBodyWithEncryption]
+	0x106501e6c KSAdSDK!-[KSAdPOSTHTTPRequest requestWithURL:]
+	0x1064fdc68 KSAdSDK!-[KSAdHTTPRequest request]
+	0x10650232c KSAdSDK!-[KSAdPOSTHTTPRequest request]
+	0x1064fae6c KSAdSDK!-[PodKSAdSDK_AFURLSessionManager(KSAdURLSession) dataTaskWithRequest:cancellationToken:sessionTask:]
+	0x1064ff4b8 KSAdSDK!-[KSAdHTTPTaskManager dataTaskWithRequest:cancellationToken:]
+	0x1064fbf24 KSAdSDK!-[KSAdBaseAPI sendRequest:]
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x1063aac7c KSAdSDK!-[KSAdLocationManager geoInfo]
+	0x106500d80 KSAdSDK!-[KSAdRequestParams geoInfo]
+	0x1cfc9a77c Foundation!-[NSObject(NSKeyValueCoding) valueForKey:]
+	0x106418c5c KSAdSDK!-[PodKSAdSDK_MJProperty valueForObject:]
+	0x10641fea8 KSAdSDK!__68-[NSObject(MJKeyValue) PodKSAdSDK_mj_keyValuesWithKeys:ignoredKeys:]_block_invoke_2
+	0x10641fa64 KSAdSDK!__68-[NSObject(MJKeyValue) PodKSAdSDK_mj_keyValuesWithKeys:ignoredKeys:]_block_invoke
+	0x10642219c KSAdSDK!+[NSObject(Property) PodKSAdSDK_mj_enumerateProperties:]
+	0x10641f848 KSAdSDK!-[NSObject(MJKeyValue) PodKSAdSDK_mj_keyValuesWithKeys:ignoredKeys:]
+	0x106500410 KSAdSDK!-[KSAdRequestParams getRequestParams]
+	0x106501fb8 KSAdSDK!-[KSAdPOSTHTTPRequest requestBodyWithEncryption]
+	0x106501e6c KSAdSDK!-[KSAdPOSTHTTPRequest requestWithURL:]
+	0x1064fdc68 KSAdSDK!-[KSAdHTTPRequest request]
+	0x10650232c KSAdSDK!-[KSAdPOSTHTTPRequest request]
+	0x1064fae6c KSAdSDK!-[PodKSAdSDK_AFURLSessionManager(KSAdURLSession) dataTaskWithRequest:cancellationToken:sessionTask:]
+	0x1064ff4b8 KSAdSDK!-[KSAdHTTPTaskManager dataTaskWithRequest:cancellationToken:]
+	0x1064fbf24 KSAdSDK!-[KSAdBaseAPI sendRequest:]
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x1063aac40 KSAdSDK!-[KSAdLocationManager geoInfo]
+	0x106500d80 KSAdSDK!-[KSAdRequestParams geoInfo]
+	0x1cfc9a77c Foundation!-[NSObject(NSKeyValueCoding) valueForKey:]
+	0x106418c5c KSAdSDK!-[PodKSAdSDK_MJProperty valueForObject:]
+	0x10641fea8 KSAdSDK!__68-[NSObject(MJKeyValue) PodKSAdSDK_mj_keyValuesWithKeys:ignoredKeys:]_block_invoke_2
+	0x10641fa64 KSAdSDK!__68-[NSObject(MJKeyValue) PodKSAdSDK_mj_keyValuesWithKeys:ignoredKeys:]_block_invoke
+	0x10642219c KSAdSDK!+[NSObject(Property) PodKSAdSDK_mj_enumerateProperties:]
+	0x10641f848 KSAdSDK!-[NSObject(MJKeyValue) PodKSAdSDK_mj_keyValuesWithKeys:ignoredKeys:]
+	0x106500410 KSAdSDK!-[KSAdRequestParams getRequestParams]
+	0x106501fb8 KSAdSDK!-[KSAdPOSTHTTPRequest requestBodyWithEncryption]
+	0x106501e6c KSAdSDK!-[KSAdPOSTHTTPRequest requestWithURL:]
+	0x1064fdc68 KSAdSDK!-[KSAdHTTPRequest request]
+	0x10650232c KSAdSDK!-[KSAdPOSTHTTPRequest request]
+	0x1064fae6c KSAdSDK!-[PodKSAdSDK_AFURLSessionManager(KSAdURLSession) dataTaskWithRequest:cancellationToken:sessionTask:]
+	0x1064ff4b8 KSAdSDK!-[KSAdHTTPTaskManager dataTaskWithRequest:cancellationToken:]
+	0x1064fbf24 KSAdSDK!-[KSAdBaseAPI sendRequest:]
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x1063aac7c KSAdSDK!-[KSAdLocationManager geoInfo]
+	0x106500d80 KSAdSDK!-[KSAdRequestParams geoInfo]
+	0x1cfc9a77c Foundation!-[NSObject(NSKeyValueCoding) valueForKey:]
+	0x106418c5c KSAdSDK!-[PodKSAdSDK_MJProperty valueForObject:]
+	0x10641fea8 KSAdSDK!__68-[NSObject(MJKeyValue) PodKSAdSDK_mj_keyValuesWithKeys:ignoredKeys:]_block_invoke_2
+	0x10641fa64 KSAdSDK!__68-[NSObject(MJKeyValue) PodKSAdSDK_mj_keyValuesWithKeys:ignoredKeys:]_block_invoke
+	0x10642219c KSAdSDK!+[NSObject(Property) PodKSAdSDK_mj_enumerateProperties:]
+	0x10641f848 KSAdSDK!-[NSObject(MJKeyValue) PodKSAdSDK_mj_keyValuesWithKeys:ignoredKeys:]
+	0x106500410 KSAdSDK!-[KSAdRequestParams getRequestParams]
+	0x106501fb8 KSAdSDK!-[KSAdPOSTHTTPRequest requestBodyWithEncryption]
+	0x106501e6c KSAdSDK!-[KSAdPOSTHTTPRequest requestWithURL:]
+	0x1064fdc68 KSAdSDK!-[KSAdHTTPRequest request]
+	0x10650232c KSAdSDK!-[KSAdPOSTHTTPRequest request]
+	0x1064fae6c KSAdSDK!-[PodKSAdSDK_AFURLSessionManager(KSAdURLSession) dataTaskWithRequest:cancellationToken:sessionTask:]
+	0x1064ff4b8 KSAdSDK!-[KSAdHTTPTaskManager dataTaskWithRequest:cancellationToken:]
+	0x1064fbf24 KSAdSDK!-[KSAdBaseAPI sendRequest:]
+
+[*] Class Name: CLLocationManager
+[*] Method Name: authorizationStatus
+	Backtrace:
+	0x103616a40 HiWidget!0x2acaa40 (0x102acaa40)
+	0x1036193ec HiWidget!0x2acd3ec (0x102acd3ec)
+	0x1036448e8 HiWidget!0x2af88e8 (0x102af88e8)
+	0x103652664 HiWidget!0x2b06664 (0x102b06664)
+	0x103657900 HiWidget!0x2b0b900 (0x102b0b900)
+	0x10360c70c HiWidget!0x2ac070c (0x102ac070c)
+	0x103650604 HiWidget!0x2b04604 (0x102b04604)
+	0x103603630 HiWidget!0x2ab7630 (0x102ab7630)
+	0x2206b30ec libsystem_pthread.dylib!_pthread_start
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x1063aac40 KSAdSDK!-[KSAdLocationManager geoInfo]
+	0x106500d80 KSAdSDK!-[KSAdRequestParams geoInfo]
+	0x1cfc9a77c Foundation!-[NSObject(NSKeyValueCoding) valueForKey:]
+	0x106418c5c KSAdSDK!-[PodKSAdSDK_MJProperty valueForObject:]
+	0x10641fea8 KSAdSDK!__68-[NSObject(MJKeyValue) PodKSAdSDK_mj_keyValuesWithKeys:ignoredKeys:]_block_invoke_2
+	0x10641fa64 KSAdSDK!__68-[NSObject(MJKeyValue) PodKSAdSDK_mj_keyValuesWithKeys:ignoredKeys:]_block_invoke
+	0x10642219c KSAdSDK!+[NSObject(Property) PodKSAdSDK_mj_enumerateProperties:]
+	0x10641f848 KSAdSDK!-[NSObject(MJKeyValue) PodKSAdSDK_mj_keyValuesWithKeys:ignoredKeys:]
+	0x106500410 KSAdSDK!-[KSAdRequestParams getRequestParams]
+	0x106501fb8 KSAdSDK!-[KSAdPOSTHTTPRequest requestBodyWithEncryption]
+	0x106501e6c KSAdSDK!-[KSAdPOSTHTTPRequest requestWithURL:]
+	0x1064fdc68 KSAdSDK!-[KSAdHTTPRequest request]
+	0x10650232c KSAdSDK!-[KSAdPOSTHTTPRequest request]
+	0x1064fae6c KSAdSDK!-[PodKSAdSDK_AFURLSessionManager(KSAdURLSession) dataTaskWithRequest:cancellationToken:sessionTask:]
+	0x1064ff4b8 KSAdSDK!-[KSAdHTTPTaskManager dataTaskWithRequest:cancellationToken:]
+	0x1064fbf24 KSAdSDK!-[KSAdBaseAPI sendRequest:]
+
+[*] Class Name: CLLocation
+[*] Method Name: - coordinate
+	Backtrace:
+	0x1063aac7c KSAdSDK!-[KSAdLocationManager geoInfo]
+	0x106500d80 KSAdSDK!-[KSAdRequestParams geoInfo]
+	0x1cfc9a77c Foundation!-[NSObject(NSKeyValueCoding) valueForKey:]
+	0x106418c5c KSAdSDK!-[PodKSAdSDK_MJProperty valueForObject:]
+	0x10641fea8 KSAdSDK!__68-[NSObject(MJKeyValue) PodKSAdSDK_mj_keyValuesWithKeys:ignoredKeys:]_block_invoke_2
+	0x10641fa64 KSAdSDK!__68-[NSObject(MJKeyValue) PodKSAdSDK_mj_keyValuesWithKeys:ignoredKeys:]_block_invoke
+	0x10642219c KSAdSDK!+[NSObject(Property) PodKSAdSDK_mj_enumerateProperties:]
+	0x10641f848 KSAdSDK!-[NSObject(MJKeyValue) PodKSAdSDK_mj_keyValuesWithKeys:ignoredKeys:]
+	0x106500410 KSAdSDK!-[KSAdRequestParams getRequestParams]
+	0x106501fb8 KSAdSDK!-[KSAdPOSTHTTPRequest requestBodyWithEncryption]
+	0x106501e6c KSAdSDK!-[KSAdPOSTHTTPRequest requestWithURL:]
+	0x1064fdc68 KSAdSDK!-[KSAdHTTPRequest request]
+	0x10650232c KSAdSDK!-[KSAdPOSTHTTPRequest request]
+	0x1064fae6c KSAdSDK!-[PodKSAdSDK_AFURLSessionManager(KSAdURLSession) dataTaskWithRequest:cancellationToken:sessionTask:]
+	0x1064ff4b8 KSAdSDK!-[KSAdHTTPTaskManager dataTaskWithRequest:cancellationToken:]
+	0x1064fbf24 KSAdSDK!-[KSAdBaseAPI sendRequest:]
+
