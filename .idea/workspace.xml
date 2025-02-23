@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c674e0a0-c28a-48ab-ade6-0a93279a7ca5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/deduplicate_calls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hook_sensitive_api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/hook_sensitive_api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,7 +201,7 @@
       <workItem from="1724826682764" duration="13000" />
       <workItem from="1725603196332" duration="599000" />
       <workItem from="1740146948303" duration="2248000" />
-      <workItem from="1740219669939" duration="4557000" />
+      <workItem from="1740219669939" duration="4712000" />
     </task>
     <servers />
   </component>

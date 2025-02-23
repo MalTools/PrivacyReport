@@ -26,10 +26,10 @@ In this repository, we provide the key data and code used in our study.
 │   ├── domain_desc_log.txt
 │   ├── functionality_log.txt
 │   ├── inference_examples.xlsx
-│   ├── tracker_logs
-│   └── ~$app_permission_track.xlsx
+│   └── tracker_logs
 ├── src
 │   ├── cot_reasoning.py
+│   ├── deduplicate_calls.py
 │   ├── extract_description.py
 │   ├── extract_domain_info.py
 │   ├── extract_privacy_policy.py
