@@ -21,13 +21,23 @@ function show_modify_function_return_value(className_arg, funcName_arg) {
                 console.log("[*] Timestamp: " + timestamp);
                 console.log('\tBacktrace:\n\t' + Thread.backtrace(this.context, Backtracer.ACCURATE).map(DebugSymbol.fromAddress).join('\n\t'));
 
-
                 // send("\n[*] Class Name: " + className);
                 // send("[*] Method Name: " + funcName);
                 // send("\t[-] Type of return value: " + typeof retval);
                 // send("\t[-] Return Value: " + ObjC.Object(retval).toString());
                 // send('\tBacktrace:\n\t' + Thread.backtrace(this.context, Backtracer.ACCURATE).map(DebugSymbol.fromAddress).join('\n\t'));
+                var callStack = {
+                    "Class Name": className,
+                    "Method Name": funcName,
+                    "Backtrace": Thread.backtrace(this.context, Backtracer.ACCURATE).map(DebugSymbol.fromAddress),
+                    "Timestamp": new Date().toISOString()
+                };
 
+                // 将输出数据写入文件
+                var file = new File("/data/output_call_stack.json", "a");
+                file.write(JSON.stringify(callStack) + "\n");
+                file.flush();
+                file.close();
             }
         });
 
