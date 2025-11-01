@@ -7,7 +7,7 @@ from lib import ROLE_SYSTEM, ROLE_USER, ROLE_ASSISTANT, chat, append_messages, p
 from input_privacy_policy import read_paragraphs_from_file
 
 
-file_path = "/Users/liuwang/Desktop/bupt/毕设/PrivacyReport/privacypolicies/pp_slicing/NetEase Youdao Dictionary.txt"
+file_path = "NetEase Youdao Dictionary.txt"
 privacy_policy_statements = read_paragraphs_from_file(file_path)
 
 
@@ -54,6 +54,6 @@ if __name__ == '__main__':
 
         # if (i+1) % 10 == 0:
         print_messages(messages)
-        store_messages(messages, '/Users/liuwang/Desktop/bupt/毕设/PrivacyReport/privacypolicies/pp_slicing/NetEase Youdao Dictionary_log.txt')
+        store_messages(messages, 'NetEase Youdao Dictionary_log.txt')
 
         time.sleep(2)

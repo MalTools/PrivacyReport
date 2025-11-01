@@ -1,35 +1,35 @@
 
 
 def deduplicate_with_time_window(api_calls, time_window=2):
-    # 假设api_calls是一个包含类名、方法名、时间戳和Backtrace的列表
+    # Assume api_calls is a list containing class name, method name, timestamp, and backtrace
     deduplicated_calls = []
     current_window = []
     last_timestamp = None
 
     for call in api_calls:
-        # 将时间戳转为秒（假设时间戳是一个浮动的UNIX时间戳，单位是秒）
+        # Convert timestamp to seconds (assume it's a floating UNIX timestamp in seconds)
         timestamp = call['Timestamp']
         call_id = (call['Class Name'], call['Method Name'], tuple(call['Backtrace']))
 
-        # 检查当前时间是否在当前窗口内（例如时间窗口为2秒）
+        # Check whether the current timestamp is within the time window (e.g., 2 seconds)
         if last_timestamp is None or timestamp - last_timestamp <= time_window:
-            # 如果当前调用和上次调用在2秒内，则加入当前时间窗口
+            # If the current call occurs within 2 seconds of the last one, add it to the current window
             if call_id not in [(c['Class Name'], c['Method Name'], tuple(c['Backtrace'])) for c in current_window]:
                 current_window.append(call)
         else:
-            # 如果时间超出了2秒，处理当前窗口，并重置窗口
+            # If the time exceeds 2 seconds, process the current window and reset it
             deduplicated_calls.append(current_window)
             current_window = [call]
 
         last_timestamp = timestamp
 
-    # 加入最后一个窗口
+    # Add the final window
     if current_window:
         deduplicated_calls.append(current_window)
 
     return deduplicated_calls
 
-# 示例API调用数据
+# Example API call data
 api_calls = [
     {"Timestamp": 1681902000.1, "Class Name": "CLLocation", "Method Name": "- timestamp",
      "Backtrace": [
@@ -46,10 +46,10 @@ api_calls = [
     ]},
 ]
 
-# 去重操作
+# Perform deduplication
 deduplicated_calls = deduplicate_with_time_window(api_calls, time_window=2)
 
-# 输出去重后的结果
+# Output the deduplicated results
 for group in deduplicated_calls:
     print(f"Time Window:")
     for call in group:

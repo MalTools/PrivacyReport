@@ -1,6 +1,6 @@
 from bs4 import BeautifulSoup
 
-path = "/Users/liuwang/Desktop/bupt/毕设/PrivacyReport/privacypolicies/"
+path = "./privacypolicies/"
 
 
 def extract_paragraph(file_path):
@@ -11,7 +11,6 @@ def extract_paragraph(file_path):
     soup = BeautifulSoup(content, 'html.parser')
     paragraphs = []
 
-    # 遍历body中的每个直接子元素
     body = soup.find('body')
     # for element in body.descendants:
     #     if element.name == 'p':
